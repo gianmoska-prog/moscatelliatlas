@@ -31,7 +31,7 @@ Deno.serve(async (req) => {
 
   let body: { contentId?: string; kind?: string; test?: boolean } = {};
   try { body = await req.json(); } catch { return json({ error: "invalid_json" }, 400); }
-  const routeKey = body.test ? "testing" : "updates";
+  const routeKey = body.test ? "testing" : "atlas";
   const { data: route } = await admin.from("slack_channel_routes").select("channel_id,channel_name,enabled").eq("route_key", routeKey).single();
   if (!route?.enabled || !route.channel_id) return json({ error: "slack_route_unavailable" }, 503);
 
