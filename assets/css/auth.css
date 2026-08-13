@@ -163,6 +163,9 @@ html[data-auth-state="checking"] [data-auth-app-surface] {
 }
 html[data-auth-state="authenticated"] [data-auth-app-surface] { visibility: visible; }
 .auth-gate[data-state="success"] { opacity: 0; transition: opacity 160ms var(--ease-standard); pointer-events: none; }
+[data-auth-app-surface][data-auth-entering="true"] { animation: atlas-auth-app-in 220ms var(--ease-route) both; }
+
+@keyframes atlas-auth-app-in { from { opacity: 0; } to { opacity: 1; } }
 
 .auth-session-strip {
   display: flex;
@@ -225,6 +228,7 @@ html[data-auth-state="authenticated"] [data-auth-app-surface] { visibility: visi
 
 @media (prefers-reduced-motion: reduce) {
   .auth-gate[data-state="success"] { transition: none; }
+  [data-auth-app-surface][data-auth-entering="true"] { animation: none; }
 }
 
 .menu-secondary .auth-signout {
