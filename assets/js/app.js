@@ -25,7 +25,6 @@ const menuCloser = document.querySelector('[data-menu-close]');
 const globalSearchDialog = document.querySelector('#atlas-global-search');
 const globalSearchOpeners = document.querySelectorAll('[data-global-search-open]');
 const globalSearchCloser = document.querySelector('[data-global-search-close]');
-let routeAnimationTimer = 0;
 let hasRenderedRoute = false;
 let searchInteractionController = null;
 let lastMenuOpener = null;
@@ -892,18 +891,13 @@ function commitRoute(markup, title, serial) {
     outlet.innerHTML = markup;
     if (isInitialRoute) {
       outlet.dataset.initialRoute = 'true';
-      delete outlet.dataset.routeEntering;
     } else {
       delete outlet.dataset.initialRoute;
-      outlet.dataset.routeEntering = 'true';
     }
     outlet.removeAttribute('aria-busy');
   };
 
   const afterUpdate = () => {
-    window.clearTimeout(routeAnimationTimer);
-    routeAnimationTimer = window.setTimeout(() => delete outlet.dataset.routeEntering, 540);
-
     const route = window.__ATLAS_CURRENT_ROUTE__;
     if (route) updateNavigationState(route);
     bindRouteControls(route);

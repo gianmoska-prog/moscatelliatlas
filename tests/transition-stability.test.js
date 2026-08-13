@@ -16,14 +16,23 @@ describe('transition stability', () => {
     expect(auth.indexOf('await onAuthenticatedCallback?.')).toBeLessThan(auth.indexOf("dataset.authState = 'authenticated'"));
   });
 
-  it('cancels superseded route transitions and prevents double animation', async () => {
+  it('uses a sequential outlet-only transition and prevents double animation', async () => {
     const [motion, css] = await Promise.all([
       read('assets/js/motion.js'),
       read('assets/css/motion.css'),
     ]);
 
-    expect(motion).toContain('activeRouteTransition.skipTransition?.()');
-    expect(css).toContain('html:not([data-atlas-route-transition="true"])');
-    expect(css).toContain('@keyframes atlas-root-old { to { opacity: 0; } }');
+    expect(motion).toContain('const inheritedOpacity');
+    expect(motion).toContain("outlet.dataset.routeMotion = 'leaving'");
+    expect(motion).toContain("outlet.dataset.routeMotion = 'entering'");
+    expect(motion).not.toContain('document.startViewTransition');
+    expect(css).toContain('.route-outlet[data-route-motion]');
+    expect(css).not.toContain('::view-transition-old(root)');
+  });
+
+  it('fully dismisses authentication before revealing the app surface', async () => {
+    const auth = await read('assets/js/auth-gate.js');
+    expect(auth.indexOf('if (root) root.hidden = true')).toBeLessThan(auth.indexOf("dataset.authState = 'authenticated'"));
+    expect(auth).toContain("appSurface.dataset.authEntering = 'true'");
   });
 });

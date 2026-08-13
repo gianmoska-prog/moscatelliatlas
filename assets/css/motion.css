@@ -1,13 +1,8 @@
 /* MOSCATELLI ATLAS — Motion system, Patch 10
    Motion communicates continuity/state only. All effects are progressive enhancement. */
 
-.route-outlet h1 { view-transition-name: atlas-route-title; }
-html[data-atlas-shared-transition="true"] .route-outlet h1 { view-transition-name: atlas-shared-title; }
-
 @media (prefers-reduced-motion: no-preference) {
-  html:not([data-atlas-route-transition="true"]) .route-outlet[data-route-entering="true"] > * {
-    animation: atlas-route-fallback-in var(--duration-route) var(--ease-route) both;
-  }
+  .route-outlet[data-route-motion] { pointer-events: none; will-change: opacity; }
 
   .atlas-menu[open] .atlas-menu__panel { animation: atlas-menu-in 340ms var(--ease-route) both; }
   .atlas-menu[open]::backdrop { animation: atlas-backdrop-in 240ms var(--ease-standard) both; }
@@ -49,28 +44,6 @@ html[data-atlas-shared-transition="true"] .route-outlet h1 { view-transition-nam
   }
 }
 
-/* Same-document View Transitions. These rules are ignored where unsupported. */
-::view-transition-old(root) {
-  animation: atlas-root-old 150ms cubic-bezier(.4, 0, 1, 1) both;
-}
-::view-transition-new(root) {
-  animation: atlas-root-new 230ms var(--ease-route) 85ms both;
-}
-::view-transition-group(atlas-route-title),
-::view-transition-group(atlas-shared-title) {
-  animation-duration: var(--duration-route);
-  animation-timing-function: var(--ease-route);
-}
-::view-transition-old(atlas-route-title),
-::view-transition-old(atlas-shared-title) { animation: atlas-title-old 145ms ease both; }
-::view-transition-new(atlas-route-title),
-::view-transition-new(atlas-shared-title) { animation: atlas-title-new 230ms var(--ease-route) 85ms both; }
-
-@keyframes atlas-root-old { to { opacity: 0; } }
-@keyframes atlas-root-new { from { opacity: 0; } to { opacity: 1; } }
-@keyframes atlas-title-old { to { opacity: 0; } }
-@keyframes atlas-title-new { from { opacity: 0; } to { opacity: 1; } }
-@keyframes atlas-route-fallback-in { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes atlas-menu-in { from { transform: translateX(-24px); opacity: .4; } to { transform: translateX(0); opacity: 1; } }
 @keyframes atlas-menu-out { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-18px); opacity: .35; } }
 @keyframes atlas-backdrop-in { from { opacity: 0; } to { opacity: 1; } }
@@ -82,7 +55,6 @@ html[data-atlas-shared-transition="true"] .route-outlet h1 { view-transition-nam
 @keyframes atlas-search-result-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 
 @media (prefers-reduced-motion: reduce) {
-  .route-outlet h1 { view-transition-name: none; }
   html.motion-enhanced .motion-reveal,
   html.motion-enhanced .motion-reveal.motion-reveal--visible { opacity: 1; transform: none; filter: none; }
 }

@@ -1,88 +1,80 @@
 /**
  * MOSCATELLI ATLAS motion orchestration.
  * Progressive enhancement only: content remains visible and usable if this module,
- * IntersectionObserver, Web Animations or the View Transitions API are unavailable.
+ * IntersectionObserver or Web Animations are unavailable.
  */
 
 const REDUCE_QUERY = '(prefers-reduced-motion: reduce)';
-let pendingSharedSource = null;
 let revealObserver = null;
-let activeRouteTransition = null;
+let routeMotionSerial = 0;
+let activeRouteAnimations = [];
 
 export function prefersReducedMotion() {
   return Boolean(window.matchMedia?.(REDUCE_QUERY).matches);
 }
 
-function sharedTitleCandidate(link) {
-  return link?.querySelector?.([
-    '.library-item__title',
-    '.search-result__title',
-    '.playbook-list-item__title',
-    '.personal-item strong',
-    '.academia-lesson-row__copy strong',
-  ].join(',')) || null;
-}
-
-export function prepareRouteMotion(link) {
-  if (prefersReducedMotion() || !document.startViewTransition) return;
-  clearSharedRouteMotion();
-  const source = sharedTitleCandidate(link);
-  if (!source) return;
-  source.style.viewTransitionName = 'atlas-shared-title';
-  pendingSharedSource = source;
-  document.documentElement.dataset.atlasSharedTransition = 'true';
-}
+export function prepareRouteMotion() {}
 
 export function clearSharedRouteMotion() {
-  if (pendingSharedSource instanceof HTMLElement) pendingSharedSource.style.removeProperty('view-transition-name');
-  pendingSharedSource = null;
   delete document.documentElement.dataset.atlasSharedTransition;
 }
 
-export function commitRouteWithMotion(update, afterUpdate, outlet) {
-  if (activeRouteTransition) {
-    activeRouteTransition.skipTransition?.();
-    activeRouteTransition = null;
-    outlet?.querySelector('h1')?.style.removeProperty('view-transition-name');
-    clearSharedRouteMotion();
-    delete document.documentElement.dataset.atlasRouteTransition;
-  }
+function clearRouteAnimations(outlet) {
+  activeRouteAnimations.forEach((animation) => animation.cancel());
+  activeRouteAnimations = [];
+  outlet?.removeAttribute('data-route-motion');
+  delete document.documentElement.dataset.atlasRouteTransition;
+  clearSharedRouteMotion();
+}
 
-  const run = () => {
+export function commitRouteWithMotion(update, afterUpdate, outlet) {
+  const serial = ++routeMotionSerial;
+  const inheritedOpacity = outlet ? Number.parseFloat(getComputedStyle(outlet).opacity) : 1;
+  clearRouteAnimations(outlet);
+
+  const swap = () => {
     update();
-    if (pendingSharedSource && outlet) {
-      const destination = outlet.querySelector('h1');
-      if (destination) destination.style.viewTransitionName = 'atlas-shared-title';
-    }
     afterUpdate?.();
   };
 
-  if (prefersReducedMotion() || typeof document.startViewTransition !== 'function') {
-    run();
-    clearSharedRouteMotion();
+  if (!outlet || prefersReducedMotion() || typeof outlet.animate !== 'function') {
+    swap();
     return null;
   }
 
   document.documentElement.dataset.atlasRouteTransition = 'true';
-  let transition;
-  try {
-    transition = document.startViewTransition(run);
-    activeRouteTransition = transition;
-  } catch {
-    run();
-    clearSharedRouteMotion();
-    delete document.documentElement.dataset.atlasRouteTransition;
-    return null;
-  }
+  outlet.dataset.routeMotion = 'leaving';
+  const startOpacity = Number.isFinite(inheritedOpacity) ? inheritedOpacity : 1;
+  const exit = outlet.animate([
+    { opacity: startOpacity },
+    { opacity: 0 },
+  ], { duration: Math.round(110 * startOpacity), easing: 'cubic-bezier(.4,0,1,1)', fill: 'forwards' });
+  activeRouteAnimations = [exit];
 
-  transition.finished.catch(() => {}).then(() => {
-    if (activeRouteTransition !== transition) return;
-    activeRouteTransition = null;
-    outlet?.querySelector('h1')?.style.removeProperty('view-transition-name');
-    clearSharedRouteMotion();
-    delete document.documentElement.dataset.atlasRouteTransition;
+  const finished = exit.finished.catch(() => {}).then(() => {
+    if (serial !== routeMotionSerial) return;
+    swap();
+    outlet.dataset.routeMotion = 'entering';
+    const enter = outlet.animate([
+      { opacity: 0 },
+      { opacity: 1 },
+    ], { duration: 190, easing: 'cubic-bezier(.22,.72,.14,1)', fill: 'forwards' });
+    exit.cancel();
+    activeRouteAnimations = [enter];
+    return enter.finished.catch(() => {}).then(() => {
+      if (serial !== routeMotionSerial) return;
+      enter.cancel();
+      activeRouteAnimations = [];
+      outlet.removeAttribute('data-route-motion');
+      delete document.documentElement.dataset.atlasRouteTransition;
+    });
   });
-  return transition;
+
+  return Object.freeze({ finished, cancel: () => {
+    if (serial !== routeMotionSerial) return;
+    routeMotionSerial += 1;
+    clearRouteAnimations(outlet);
+  } });
 }
 
 const REVEAL_SELECTOR = [
@@ -147,7 +139,7 @@ export function pulseState(control) {
 
 export const motionStatus = Object.freeze({
   orchestrationImplemented: true,
-  viewTransitions: typeof document !== 'undefined' && 'startViewTransition' in document,
+  viewTransitions: false,
   intersectionReveals: typeof window !== 'undefined' && 'IntersectionObserver' in window,
   reducedMotionAware: true,
 });

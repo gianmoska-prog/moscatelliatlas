@@ -136,20 +136,32 @@ async function revealApplication(session) {
   await new Promise((resolve) => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
   if (serial !== revealSerial || !currentSession) return;
 
-  document.documentElement.dataset.authState = 'authenticated';
-  if (appSurface) {
-    appSurface.removeAttribute('inert');
-    appSurface.setAttribute('aria-hidden', 'false');
-  }
   if (root) {
     root.dataset.state = 'success';
     root.setAttribute('aria-hidden', 'true');
     root.inert = true;
   }
 
-  const finish = () => { if (serial === revealSerial && root) root.hidden = true; };
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) finish();
-  else window.setTimeout(finish, 180);
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    await new Promise((resolve) => window.setTimeout(resolve, 170));
+  }
+  if (serial !== revealSerial || !currentSession) return;
+
+  if (root) root.hidden = true;
+  if (appSurface) {
+    appSurface.dataset.authEntering = 'true';
+    appSurface.removeAttribute('inert');
+    appSurface.setAttribute('aria-hidden', 'false');
+  }
+  document.documentElement.dataset.authState = 'authenticated';
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    appSurface?.removeAttribute('data-auth-entering');
+  } else {
+    window.setTimeout(() => {
+      if (serial === revealSerial) appSurface?.removeAttribute('data-auth-entering');
+    }, 230);
+  }
 }
 
 function showGate({ message = '' } = {}) {
@@ -158,6 +170,7 @@ function showGate({ message = '' } = {}) {
   document.documentElement.dataset.authState = 'locked';
   document.documentElement.dataset.authMode = ATLAS_CONFIG.demoMode ? 'demo-preview' : 'provider';
   if (appSurface) {
+    appSurface.removeAttribute('data-auth-entering');
     appSurface.setAttribute('inert', '');
     appSurface.setAttribute('aria-hidden', 'true');
   }
