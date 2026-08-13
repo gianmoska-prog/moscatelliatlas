@@ -292,7 +292,7 @@ async function libraryTemplate(activeSlug = null) {
         <label class="library-filter">
           <span class="sr-only">Filter the current Library view</span>
           <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.15A6.5 6.5 0 1 1 5 11.5a6.5 6.5 0 0 1 13 0Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          <input type="search" data-library-filter autocomplete="off" placeholder="Filter this view">
+          <input type="search" data-library-filter autocomplete="off" placeholder="${escapeHTML(t('Filter this view'))}">
         </label>
       </div>
 
