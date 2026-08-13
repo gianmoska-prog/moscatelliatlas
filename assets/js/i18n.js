@@ -30,6 +30,8 @@ Object.assign(pt, {
 });
 Object.assign(it, { 'reference':'riferimento','references':'riferimenti','result':'risultato','results':'risultati' });
 Object.assign(pt, { 'reference':'referência','references':'referências','result':'resultado','results':'resultados' });
+Object.assign(it, { 'Mobile Atlas navigation':'Navigazione mobile di Atlas' });
+Object.assign(pt, { 'Mobile Atlas navigation':'Navegação móvel do Atlas' });
 const dictionaries = Object.freeze({ en: Object.freeze({}), it: Object.freeze(it), 'pt-BR': Object.freeze(pt) });
 
 function savedLocale() {
