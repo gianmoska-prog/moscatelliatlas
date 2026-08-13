@@ -1,14 +1,14 @@
 import { ATLAS_CONFIG } from './config.js';
 import { initPWA } from './pwa.js';
-import { navigate, startRouter } from './router.js';
+import { navigate, resolveRoute, startRouter } from './router.js';
 import { readDemoJSON, writeDemoJSON } from './store.js';
-import { getAcademiaCourses, getAcademiaLessonMetadata, getArticleMetadata, getCategories, getCategory, getLibraryItems, getPlaybookItems, getPlaybookMetadata, getUpdates, loadAcademiaCourse, loadAcademiaLesson, loadArticle, loadContentIndex, loadPlaybook, resolveAcademiaPath } from './content-service.js';
-import { getReadingProgress, hydrateReadingProgress, trackReadingProgress } from './reading-progress.js';
-import { getBookmarks, hydrateBookmarks, isBookmarked, toggleBookmark } from './bookmarks.js';
-import { getAcknowledgements, hydrateAcknowledgements, setAcknowledgement } from './acknowledgements.js';
+import { getAcademiaCourses, getAcademiaLessonMetadata, getArticleMetadata, getCategories, getCategory, getLibraryItems, getPlaybookItems, getPlaybookMetadata, getUpdates, loadAcademiaCourse, loadAcademiaLesson, loadArticle, loadContentIndex, loadPlaybook, resetContentService, resolveAcademiaPath } from './content-service.js';
+import { getReadingProgress, hydrateReadingProgress, resetReadingProgress, trackReadingProgress } from './reading-progress.js';
+import { getBookmarks, hydrateBookmarks, isBookmarked, resetBookmarks, toggleBookmark } from './bookmarks.js';
+import { getAcknowledgements, hydrateAcknowledgements, resetAcknowledgements, setAcknowledgement } from './acknowledgements.js';
 import { getReadingHistory, recordReadingHistory } from './history.js';
-import { buildLocalSearchIndex, searchAtlas } from './search.js';
-import { closeDialogWithMotion, commitRouteWithMotion, enhanceRouteReveals, prepareRouteMotion, pulseState } from './motion.js';
+import { buildLocalSearchIndex, resetSearchIndex, searchAtlas } from './search.js';
+import { cancelRouteMotion, closeDialogWithMotion, commitRouteWithMotion, enhanceRouteReveals, prepareRouteMotion, pulseState } from './motion.js';
 import { getAuthenticationSnapshot, initAuthenticationThreshold, signOutAtlas } from './auth-gate.js';
 import { prepareAuthProvider } from './auth-provider.js';
 import { initI18n, t } from './i18n.js';
@@ -882,11 +882,12 @@ async function academiaPathTemplate(slug) {
   return resolved.kind === 'course' ? academiaCourseTemplate(resolved.document) : academiaLessonTemplate(resolved.document);
 }
 
-function commitRoute(markup, title, serial) {
+function commitRoute(markup, title, serial, route) {
   if (serial !== renderSerial) return;
   const isInitialRoute = !hasRenderedRoute;
 
   const update = () => {
+    if (serial !== renderSerial) return false;
     document.title = title;
     outlet.innerHTML = markup;
     if (isInitialRoute) {
@@ -895,10 +896,11 @@ function commitRoute(markup, title, serial) {
       delete outlet.dataset.initialRoute;
     }
     outlet.removeAttribute('aria-busy');
+    return true;
   };
 
   const afterUpdate = () => {
-    const route = window.__ATLAS_CURRENT_ROUTE__;
+    if (serial !== renderSerial) return;
     if (route) updateNavigationState(route);
     bindRouteControls(route);
     void recordHistoryFromRoute(route);
@@ -925,6 +927,7 @@ function commitRoute(markup, title, serial) {
 
 async function renderRoute(route) {
   const serial = ++renderSerial;
+  cancelRouteMotion(outlet);
   window.__ATLAS_CURRENT_ROUTE__ = route;
   outlet.setAttribute('aria-busy', 'true');
   searchInteractionController?.abort();
@@ -1019,7 +1022,7 @@ async function renderRoute(route) {
     }
   }
 
-  commitRoute(markup, title, serial);
+  commitRoute(markup, title, serial, route);
 }
 
 function updateNavigationState(route) {
@@ -1523,7 +1526,17 @@ function bindRouteControls(route) {
 let atlasApplicationStarted = false;
 
 async function startAtlasApplication() {
-  if (atlasApplicationStarted) return firstRouteReady;
+  if (atlasApplicationStarted) {
+    resetContentService();
+    resetSearchIndex();
+    resetBookmarks();
+    resetReadingProgress();
+    resetAcknowledgements();
+    await Promise.all([hydrateBookmarks(), hydrateReadingProgress(), hydrateAcknowledgements()]);
+    hasRenderedRoute = false;
+    await renderRoute(resolveRoute());
+    return;
+  }
   atlasApplicationStarted = true;
   await Promise.all([hydrateBookmarks(), hydrateReadingProgress(), hydrateAcknowledgements()]);
 

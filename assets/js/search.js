@@ -311,9 +311,11 @@ export function getSearchSynonyms() {
   return SYNONYM_GROUPS.map((group) => [...group]);
 }
 
-export function resetLocalSearchIndexForTesting() {
+export function resetSearchIndex() {
   localIndexPromise = null;
 }
+
+export const resetLocalSearchIndexForTesting = resetSearchIndex;
 
 export const searchStatus = Object.freeze({
   implemented: true,

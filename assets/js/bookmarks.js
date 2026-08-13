@@ -4,6 +4,10 @@ import { getSupabaseClient } from './auth-adapter.js';
 const BOOKMARK_STORAGE_KEY = 'bookmarks.v1';
 let databaseBookmarks = null;
 
+export function resetBookmarks() {
+  databaseBookmarks = null;
+}
+
 export async function hydrateBookmarks() {
   const client = getSupabaseClient();
   if (!client) return;

@@ -13,12 +13,15 @@ import {
   verifyEmailOtp,
 } from './auth-adapter.js';
 import { t } from './i18n.js';
+import { setStorageIdentity } from './store.js';
 
 const DEMO_SESSION_KEY = 'moscatelli.atlas.demo.auth-session.v1';
 let currentSession = null;
-let appStarted = false;
 let onAuthenticatedCallback = null;
 let providerUnsubscribe = null;
+let providerRevealPromise = null;
+let providerRevealUserId = null;
+let providerTransitionSerial = 0;
 
 const root = document.querySelector('[data-auth-gate]');
 const panel = root?.querySelector('[data-auth-panel]');
@@ -120,17 +123,75 @@ async function sessionFromProvider(session) {
   });
 }
 
+function providerUserId(session) {
+  return session?.user?.id || '';
+}
+
+function publishSession() {
+  window.dispatchEvent(new CustomEvent('atlas:auth-session', { detail: getAuthenticationSnapshot() }));
+}
+
+function synchroniseProviderSession(session) {
+  if (!session || currentSession?.demo || providerUserId(session) !== currentSession?.user?.id) return false;
+  const providerUser = session.user || {};
+  currentSession = Object.freeze({
+    ...currentSession,
+    user: Object.freeze({
+      ...currentSession.user,
+      email: providerUser.email || currentSession.user.email || '',
+    }),
+    raw: session,
+  });
+  publishSession();
+  return true;
+}
+
+async function openProviderSession(session) {
+  const userId = providerUserId(session);
+  if (!userId) throw new AtlasAuthError('AUTH_SESSION_MISSING', 'The authentication provider did not return an active user.');
+  if (synchroniseProviderSession(session)) return currentSession;
+  if (providerRevealPromise && providerRevealUserId === userId) return providerRevealPromise;
+
+  const transitionSerial = ++providerTransitionSerial;
+  providerRevealUserId = userId;
+  const revealPromise = sessionFromProvider(session).then((resolvedSession) => {
+    if (transitionSerial !== providerTransitionSerial) return null;
+    return revealApplication(resolvedSession);
+  });
+  providerRevealPromise = revealPromise;
+  try {
+    await revealPromise;
+    return currentSession;
+  } finally {
+    if (providerRevealPromise === revealPromise) {
+      providerRevealPromise = null;
+      providerRevealUserId = null;
+    }
+  }
+}
+
+async function refreshProviderProfile(session) {
+  if (!session) return;
+  const userId = providerUserId(session);
+  if (currentSession?.user?.id !== userId) {
+    await openProviderSession(session);
+    return;
+  }
+  const refreshed = await sessionFromProvider(session);
+  if (!currentSession || currentSession.demo || currentSession.user?.id !== userId) return;
+  currentSession = refreshed;
+  publishSession();
+}
+
 async function revealApplication(session) {
   const serial = ++revealSerial;
   currentSession = session;
+  setStorageIdentity(session?.user?.id || session?.provider || 'anonymous');
   document.documentElement.dataset.authState = 'checking';
   document.documentElement.dataset.authMode = session?.demo ? 'demo' : 'provider';
-  window.dispatchEvent(new CustomEvent('atlas:auth-session', { detail: getAuthenticationSnapshot() }));
+  publishSession();
 
-  if (!appStarted) {
-    appStarted = true;
-    await onAuthenticatedCallback?.(getAuthenticationSnapshot());
-  }
+  await onAuthenticatedCallback?.(getAuthenticationSnapshot());
   if (serial !== revealSerial || !currentSession) return;
 
   await new Promise((resolve) => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
@@ -165,8 +226,13 @@ async function revealApplication(session) {
 }
 
 function showGate({ message = '' } = {}) {
+  if (!currentSession && document.documentElement.dataset.authState === 'locked' && !message) return;
   revealSerial += 1;
+  providerTransitionSerial += 1;
   currentSession = null;
+  setStorageIdentity(null);
+  providerRevealPromise = null;
+  providerRevealUserId = null;
   document.documentElement.dataset.authState = 'locked';
   document.documentElement.dataset.authMode = ATLAS_CONFIG.demoMode ? 'demo-preview' : 'provider';
   if (appSurface) {
@@ -202,7 +268,7 @@ async function handlePasswordSubmit(event) {
     const session = await signInWithPassword({ email, password });
     if (!session) throw new AtlasAuthError('AUTH_SESSION_MISSING', 'The authentication provider did not return an active session.');
     setStatus('Access confirmed.', 'success');
-    await revealApplication(await sessionFromProvider(session));
+    await openProviderSession(session);
   } catch (error) {
     setStatus(error?.message || 'Atlas could not sign in.', 'error');
   } finally { setBusy(false); }
@@ -220,7 +286,7 @@ async function handleOtpSubmit(event) {
       if (token.length !== 6) throw new AtlasAuthError('AUTH_INVALID_OTP', 'Enter the six-digit email code.');
       const session = await verifyEmailOtp({ email, token });
       if (!session) throw new AtlasAuthError('AUTH_SESSION_MISSING', 'The code was accepted but no session was returned.');
-      await revealApplication(await sessionFromProvider(session));
+      await openProviderSession(session);
     } else {
       await signInWithOtp({ email, emailRedirectTo: window.location.href.split('#')[0] });
       const verification = form.querySelector('[data-auth-otp-verification]');
@@ -245,7 +311,7 @@ async function handleRecoverySubmit(event) {
     await updatePassword({ password });
     const session = await getSession();
     setStatus('Password updated. Opening Atlas…', 'success');
-    await revealApplication(await sessionFromProvider(session));
+    await openProviderSession(session);
   } catch (error) { setStatus(error?.message || 'Atlas could not update the password.', 'error'); }
   finally { setBusy(false); }
 }
@@ -333,12 +399,29 @@ export async function initAuthenticationThreshold({ onAuthenticated } = {}) {
       const session = await getSession();
       const isRecovery = new URLSearchParams(window.location.hash.slice(1)).get('type') === 'recovery';
       if (session && isRecovery) setMode('recovery');
-      else if (session) await revealApplication(await sessionFromProvider(session));
+      else if (session) await openProviderSession(session);
       else showGate();
       providerUnsubscribe = onAuthStateChange(async (event, nextSession) => {
-        if (event === 'PASSWORD_RECOVERY') { setMode('recovery'); return; }
-        if (nextSession) await revealApplication(await sessionFromProvider(nextSession));
-        else if (event === 'SIGNED_OUT') showGate();
+        try {
+          if (event === 'PASSWORD_RECOVERY') { setMode('recovery'); return; }
+          if (event === 'SIGNED_OUT') { showGate(); return; }
+          if (!nextSession) return;
+
+          // INITIAL_SESSION is emitted on subscription, TOKEN_REFRESHED happens
+          // in the background, and SIGNED_IN may repeat when a tab regains focus.
+          // They update session data silently when the authenticated user is the
+          // same; only a genuinely new session crosses the visual auth threshold.
+          if (event === 'TOKEN_REFRESHED' || event === 'INITIAL_SESSION' || event === 'SIGNED_IN') {
+            if (!synchroniseProviderSession(nextSession)) await openProviderSession(nextSession);
+            return;
+          }
+          if (event === 'USER_UPDATED') await refreshProviderProfile(nextSession);
+        } catch (error) {
+          console.error(`[Atlas] Authentication event ${event} failed:`, error);
+          if (!currentSession || event === 'USER_UPDATED') {
+            showGate({ message: error?.message || 'Atlas could not verify the updated authentication session.' });
+          }
+        }
       });
     } catch (error) {
       showGate({ message: error?.message || 'Atlas could not check the authentication session.' });

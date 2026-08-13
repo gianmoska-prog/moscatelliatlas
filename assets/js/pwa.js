@@ -64,13 +64,18 @@ function listenForConnectivity() {
 
 function watchForUpdates(registration) {
   if (!registration) return;
+  let reloadRequested = false;
 
   const promptForWaitingWorker = () => {
     if (!registration.waiting) return;
     showStatus('A newer Atlas shell is ready.', {
       actionLabel: 'Reload',
       persistent: true,
-      onAction: () => registration.waiting?.postMessage({ type: 'SKIP_WAITING' }),
+      onAction: () => {
+        if (!registration.waiting || reloadRequested) return;
+        reloadRequested = true;
+        registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+      },
     });
   };
 
@@ -85,7 +90,9 @@ function watchForUpdates(registration) {
 
   let reloading = false;
   navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (reloading) return;
+    // clients.claim() also fires controllerchange on the first installation.
+    // Reload only when the user explicitly accepted an available update.
+    if (!reloadRequested || reloading) return;
     reloading = true;
     window.location.reload();
   });

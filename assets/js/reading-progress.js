@@ -4,6 +4,10 @@ import { getSupabaseClient } from './auth-adapter.js';
 const STORAGE_KEY = 'reading-progress.v1';
 let databaseProgress = null;
 
+export function resetReadingProgress() {
+  databaseProgress = null;
+}
+
 export async function hydrateReadingProgress() {
   const client = getSupabaseClient();
   if (!client) return;

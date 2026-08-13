@@ -7,9 +7,14 @@
  */
 const DEMO_STORAGE_PREFIX = 'moscatelli.atlas.demo.';
 const memoryFallback = new Map();
+let storageIdentity = 'anonymous';
+
+export function setStorageIdentity(identity) {
+  storageIdentity = encodeURIComponent(String(identity || 'anonymous'));
+}
 
 function keyFor(name) {
-  return `${DEMO_STORAGE_PREFIX}${name}`;
+  return `${DEMO_STORAGE_PREFIX}${storageIdentity}.${name}`;
 }
 
 export function readDemoJSON(name, fallback) {
@@ -37,6 +42,7 @@ export function writeDemoJSON(name, value) {
 export const demoStorageStatus = Object.freeze({
   implemented: true,
   namespace: DEMO_STORAGE_PREFIX,
+  identityScoped: true,
   productionPersistence: false,
   memoryFallback: true,
 });

@@ -6,6 +6,7 @@
 
 const REDUCE_QUERY = '(prefers-reduced-motion: reduce)';
 let revealObserver = null;
+let revealFallbackTimer = 0;
 let routeMotionSerial = 0;
 let activeRouteAnimations = [];
 
@@ -27,14 +28,20 @@ function clearRouteAnimations(outlet) {
   clearSharedRouteMotion();
 }
 
+export function cancelRouteMotion(outlet) {
+  routeMotionSerial += 1;
+  clearRouteAnimations(outlet);
+}
+
 export function commitRouteWithMotion(update, afterUpdate, outlet) {
   const serial = ++routeMotionSerial;
   const inheritedOpacity = outlet ? Number.parseFloat(getComputedStyle(outlet).opacity) : 1;
   clearRouteAnimations(outlet);
 
   const swap = () => {
-    update();
+    if (update() === false) return false;
     afterUpdate?.();
+    return true;
   };
 
   if (!outlet || prefersReducedMotion() || typeof outlet.animate !== 'function') {
@@ -53,7 +60,10 @@ export function commitRouteWithMotion(update, afterUpdate, outlet) {
 
   const finished = exit.finished.catch(() => {}).then(() => {
     if (serial !== routeMotionSerial) return;
-    swap();
+    if (!swap()) {
+      clearRouteAnimations(outlet);
+      return;
+    }
     outlet.dataset.routeMotion = 'entering';
     const enter = outlet.animate([
       { opacity: 0 },
@@ -93,6 +103,8 @@ const REVEAL_SELECTOR = [
 export function enhanceRouteReveals(root) {
   revealObserver?.disconnect();
   revealObserver = null;
+  window.clearTimeout(revealFallbackTimer);
+  revealFallbackTimer = 0;
   if (!root || prefersReducedMotion() || !('IntersectionObserver' in window)) return;
 
   const elements = [...root.querySelectorAll(REVEAL_SELECTOR)];
@@ -113,8 +125,9 @@ export function enhanceRouteReveals(root) {
   }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
 
   elements.forEach((element) => revealObserver.observe(element));
-  window.setTimeout(() => {
+  revealFallbackTimer = window.setTimeout(() => {
     for (const element of elements) element.classList.add('motion-reveal--visible');
+    revealFallbackTimer = 0;
   }, 900);
 }
 

@@ -2,6 +2,10 @@ import { getSupabaseClient } from './auth-adapter.js';
 
 let acknowledgements = [];
 
+export function resetAcknowledgements() {
+  acknowledgements = [];
+}
+
 export async function hydrateAcknowledgements() {
   const client = getSupabaseClient();
   if (!client) return;

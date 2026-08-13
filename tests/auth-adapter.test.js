@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { configureAuthAdapter, resetAuthAdapter, signInWithOtp, updatePassword, verifyEmailOtp } from '../assets/js/auth-adapter.js';
+import { configureAuthAdapter, resetAuthAdapter, signInWithOtp, signOut, updatePassword, verifyEmailOtp } from '../assets/js/auth-adapter.js';
 
 afterEach(() => resetAuthAdapter());
 
@@ -18,5 +18,12 @@ describe('Supabase auth adapter', () => {
     await expect(verifyEmailOtp({ email: 'member@example.com', token: '123456' })).resolves.toEqual({ access_token: 'test' });
     await updatePassword({ password: 'a secure test password' });
     expect(updateUser).toHaveBeenCalledWith({ password: 'a secure test password' });
+  });
+
+  it('signs out only the current Atlas session', async () => {
+    const signOutMock = vi.fn().mockResolvedValue({ error: null });
+    configureAuthAdapter({ auth: { signOut: signOutMock } });
+    await signOut();
+    expect(signOutMock).toHaveBeenCalledWith({ scope: 'local' });
   });
 });

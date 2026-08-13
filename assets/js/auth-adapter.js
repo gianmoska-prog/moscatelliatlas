@@ -152,7 +152,7 @@ export async function resetPasswordForEmail({ email, redirectTo } = {}) {
 export async function signOut() {
   try {
     const client = requireClient();
-    const { error } = await client.auth.signOut();
+    const { error } = await client.auth.signOut({ scope: 'local' });
     if (error) throw error;
     return true;
   } catch (error) {
@@ -164,7 +164,11 @@ export function onAuthStateChange(listener) {
   if (typeof listener !== 'function') throw new TypeError('onAuthStateChange requires a listener function.');
   const client = requireClient();
   const { data } = client.auth.onAuthStateChange((event, session) => {
-    window.setTimeout(() => listener(event, session || null), 0);
+    window.setTimeout(() => {
+      Promise.resolve(listener(event, session || null)).catch((error) => {
+        console.error(`[Atlas] Unhandled authentication event ${event}:`, error);
+      });
+    }, 0);
   });
   const subscription = data?.subscription;
   unsubscribe = () => subscription?.unsubscribe?.();

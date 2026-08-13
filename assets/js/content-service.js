@@ -15,6 +15,16 @@ const lessonPromises = new Map();
 let updatesPromise = null;
 let academiaIndexPromise = null;
 
+export function resetContentService() {
+  indexPromise = null;
+  articlePromises.clear();
+  playbookPromises.clear();
+  coursePromises.clear();
+  lessonPromises.clear();
+  updatesPromise = null;
+  academiaIndexPromise = null;
+}
+
 function databaseClient() { return getSupabaseClient(); }
 function useEnglishDatabaseContent() { return Boolean(databaseClient()) && getLocale() === 'en'; }
 function contentURL(relativePath) {
