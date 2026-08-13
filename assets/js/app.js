@@ -28,6 +28,7 @@ const globalSearchCloser = document.querySelector('[data-global-search-close]');
 let routeAnimationTimer = 0;
 let hasRenderedRoute = false;
 let searchInteractionController = null;
+let lastMenuOpener = null;
 let routeInteractionController = null;
 let renderSerial = 0;
 let globalSearchRenderSerial = 0;
@@ -1021,6 +1022,9 @@ function updateNavigationState(route) {
     if (isExact || isSection) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
   });
+  const mobileSearch = document.querySelector('[data-mobile-search]');
+  if (route.name === 'search') mobileSearch?.setAttribute('aria-current', 'page');
+  else mobileSearch?.removeAttribute('aria-current');
 }
 
 function trapDialogTab(dialog, event) {
@@ -1048,8 +1052,9 @@ function trapDialogTab(dialog, event) {
   }
 }
 
-function openMenu() {
+function openMenu(event) {
   if (!menu || menu.open) return;
+  lastMenuOpener = event?.currentTarget instanceof HTMLElement ? event.currentTarget : document.activeElement;
   menu.showModal();
   requestAnimationFrame(() => menu.querySelector('[data-menu-close]')?.focus());
 }
@@ -1525,7 +1530,11 @@ async function startAtlasApplication() {
     if (routeLink && menu?.open) menu.close();
   });
   menu?.addEventListener('keydown', (event) => trapDialogTab(menu, event));
-  menu?.addEventListener('close', () => document.querySelector('[data-menu-open]')?.focus({ preventScroll: true }));
+  menu?.addEventListener('close', () => {
+    const target = lastMenuOpener;
+    lastMenuOpener = null;
+    if (target instanceof HTMLElement && document.contains(target)) target.focus({ preventScroll: true });
+  });
 
   bindSkipLink();
   bindGlobalSearch();
