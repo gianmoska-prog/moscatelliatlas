@@ -11,7 +11,7 @@ import { buildLocalSearchIndex, searchAtlas } from './search.js';
 import { closeDialogWithMotion, commitRouteWithMotion, enhanceRouteReveals, prepareRouteMotion, pulseState } from './motion.js';
 import { getAuthenticationSnapshot, initAuthenticationThreshold, signOutAtlas } from './auth-gate.js';
 import { prepareAuthProvider } from './auth-provider.js';
-import { initI18n } from './i18n.js';
+import { initI18n, t } from './i18n.js';
 
 initI18n();
 import { slackAdapter } from './integrations/slack.js';
@@ -301,8 +301,8 @@ async function libraryTemplate(activeSlug = null) {
         <aside class="library-subject" aria-label="Subject information">${topicMarkup}</aside>
         <div class="library-results">
           <div class="library-results__head">
-            <p><span data-library-count>${items.length}</span> <span data-library-count-noun>${items.length === 1 ? 'reference' : 'references'}</span></p>
-            <span>${activeCategory ? escapeHTML(activeCategory.name) : 'All subjects'}</span>
+            <p><span data-library-count>${items.length}</span> <span data-library-count-noun>${t(items.length === 1 ? 'reference' : 'references')}</span></p>
+            <span>${activeCategory ? escapeHTML(activeCategory.name) : t('All subjects')}</span>
           </div>
           <div class="library-list" data-library-list>
             ${items.map((item) => libraryItemMarkup(item, categoriesBySlug)).join('')}
@@ -1179,7 +1179,7 @@ function bindLibraryFilter() {
       if (show) visible += 1;
     });
     count.textContent = String(visible);
-    if (countNoun) countNoun.textContent = visible === 1 ? 'reference' : 'references';
+    if (countNoun) countNoun.textContent = t(visible === 1 ? 'reference' : 'references');
     empty.hidden = visible !== 0;
   };
 

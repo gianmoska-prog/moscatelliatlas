@@ -28,6 +28,8 @@ Object.assign(pt, {
   'Subject information':'Informações sobre o assunto','Use the subject strip or the Browse menu to narrow the institutional reference by area.':'Use a faixa de assuntos ou o menu Explorar para restringir a referência institucional por área.',
   'subjects':'assuntos','demo references':'referências demonstrativas','All subjects':'Todos os assuntos','Under review':'Em revisão','Demo':'Demonstração','Current':'Atual','Filter':'Filtrar'
 });
+Object.assign(it, { 'reference':'riferimento','references':'riferimenti','result':'risultato','results':'risultati' });
+Object.assign(pt, { 'reference':'referência','references':'referências','result':'resultado','results':'resultados' });
 const dictionaries = Object.freeze({ en: Object.freeze({}), it: Object.freeze(it), 'pt-BR': Object.freeze(pt) });
 
 function savedLocale() {
