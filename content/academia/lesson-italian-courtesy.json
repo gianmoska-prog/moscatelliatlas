@@ -1,0 +1,67 @@
+{
+  "id": "lesson.italian-courtesy",
+  "slug": "italian-courtesy",
+  "type": "academia-lesson",
+  "courseSlug": "italian-foundation",
+  "moduleId": "presence",
+  "order": 2,
+  "category": "people",
+  "topic": "Development",
+  "eyebrow": "Academia lesson",
+  "title": "Cortesia professionale",
+  "summary": "Build a compact set of polite forms for requests, thanks and clarification in ordinary professional conversation.",
+  "keywords": [
+    "Italian",
+    "courtesy",
+    "please",
+    "thank you",
+    "clarification"
+  ],
+  "estimatedMinutes": 20,
+  "readingMinutes": 20,
+  "requirement": "required",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "Useful forms",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Per favore. — Please.",
+            "Grazie mille. — Thank you very much.",
+            "Potresti ripetere? — Could you repeat? (informal)",
+            "Potrebbe ripetere? — Could you repeat? (formal)",
+            "Non ho capito bene. — I did not understand clearly.",
+            "Va bene, grazie. — That is fine, thank you."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Register",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Italian changes according to familiarity and formality. This preview introduces both informal and formal forms, but a real curriculum should define the preferred register for specific MOSCATELLI situations."
+        }
+      ]
+    }
+  ]
+}

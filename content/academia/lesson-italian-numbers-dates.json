@@ -1,0 +1,67 @@
+{
+  "id": "lesson.italian-numbers-dates",
+  "slug": "italian-numbers-dates",
+  "type": "academia-lesson",
+  "courseSlug": "italian-foundation",
+  "moduleId": "coordination",
+  "order": 3,
+  "category": "people",
+  "topic": "Development",
+  "eyebrow": "Academia lesson",
+  "title": "Numeri e date",
+  "summary": "Recognise and produce the number and date forms most useful for prices, quantities and appointments.",
+  "keywords": [
+    "Italian",
+    "numbers",
+    "dates",
+    "quantities",
+    "prices"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "required",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "Date pattern",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Italian commonly states the day before the month: 13 agosto 2026. For the first day of a month, primo is common: il primo settembre."
+        }
+      ]
+    },
+    {
+      "heading": "Practice set",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "13 agosto — 13 August",
+            "24 aprile — 24 April",
+            "trenta — thirty",
+            "cento — one hundred",
+            "mille — one thousand",
+            "duecentocinquanta euro — two hundred and fifty euros"
+          ]
+        }
+      ]
+    }
+  ]
+}

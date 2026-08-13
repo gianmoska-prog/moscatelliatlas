@@ -1,0 +1,67 @@
+{
+  "id": "lesson.italian-times-scheduling",
+  "slug": "italian-times-scheduling",
+  "type": "academia-lesson",
+  "courseSlug": "italian-foundation",
+  "moduleId": "coordination",
+  "order": 4,
+  "category": "people",
+  "topic": "Development",
+  "eyebrow": "Academia lesson",
+  "title": "Orari e appuntamenti",
+  "summary": "Use simple structures for proposing, confirming and changing times.",
+  "keywords": [
+    "Italian",
+    "time",
+    "schedule",
+    "appointment",
+    "calendar"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "required",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "Core forms",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Alle nove. — At nine.",
+            "Verso le tre. — Around three.",
+            "Domani mattina. — Tomorrow morning.",
+            "Va bene per le quattro? — Is four o’clock okay?",
+            "Possiamo spostare l’appuntamento? — Can we move the appointment?",
+            "Confermo per venerdì alle dieci. — I confirm for Friday at ten."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Accuracy matters",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For operational coordination, repeat the day and time in the confirmation rather than relying on context. This reduces misunderstandings while the learner is still building confidence."
+        }
+      ]
+    }
+  ]
+}

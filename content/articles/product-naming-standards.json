@@ -1,0 +1,98 @@
+{
+  "id": "article.product-naming",
+  "slug": "product-naming-standards",
+  "type": "article",
+  "category": "products-and-quality",
+  "topic": "Product naming",
+  "eyebrow": "Product standard",
+  "title": "Product naming standards",
+  "summary": "A demonstration framework for creating product names that remain coherent, distinctive and usable across records and communications.",
+  "keywords": [
+    "product",
+    "naming",
+    "standards",
+    "SKU",
+    "collection"
+  ],
+  "readingMinutes": 6,
+  "owner": "Creative Direction",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Creative",
+    "Operations",
+    "Marketing"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Naming test",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A product name should be distinctive enough to identify the object while remaining consistent across editorial, operational and commercial contexts."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Easy to read and pronounce in the principal operating languages",
+            "Distinct from an existing product or project name",
+            "Appropriate to the product rather than dependent on temporary campaign language",
+            "Usable in internal records without ambiguity"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Working name and final name",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Development names may be practical and temporary. A final product name should only replace them once the change can be reflected consistently across the relevant records."
+        },
+        {
+          "type": "callout",
+          "label": "Consistency",
+          "text": "Avoid allowing different teams to use competing names for the same product. If a name changes, the previous reference should remain traceable."
+        }
+      ]
+    },
+    {
+      "heading": "Approval sequence",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Check the existing catalogue",
+              "text": "Confirm that the proposed name does not create an avoidable collision."
+            },
+            {
+              "title": "Review meaning and use",
+              "text": "Consider pronunciation, connotation and how the name appears in editorial and operational contexts."
+            },
+            {
+              "title": "Approve once",
+              "text": "Record the final decision and update dependent references from a single source of truth."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "supplier-sample-review-procedure",
+    "photography-approval-checklist"
+  ],
+  "mainHubLinks": []
+}

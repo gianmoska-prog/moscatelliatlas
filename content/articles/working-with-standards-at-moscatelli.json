@@ -1,0 +1,82 @@
+{
+  "id": "article.house-standards",
+  "slug": "working-with-standards-at-moscatelli",
+  "type": "article",
+  "category": "the-house",
+  "topic": "Mission and values",
+  "eyebrow": "The House",
+  "title": "Working with standards at MOSCATELLI",
+  "summary": "A demonstration reference for how standards should guide decisions without turning judgement into bureaucracy.",
+  "keywords": [
+    "standards",
+    "values",
+    "decisions",
+    "quality"
+  ],
+  "readingMinutes": 5,
+  "owner": "Founder",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "under-review",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Purpose",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Standards create a shared quality threshold and a repeatable point of reference. They should support judgement rather than replace it."
+        },
+        {
+          "type": "callout",
+          "label": "Principle",
+          "text": "A standard should make an important decision clearer. If it only creates paperwork without protecting quality, consistency or accountability, it should be reconsidered."
+        }
+      ]
+    },
+    {
+      "heading": "When a standard applies",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a published standard when the work falls within its stated scope. If circumstances materially differ, record the exception rather than silently ignoring the standard."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Confirm that the current version applies",
+            "Identify any material exception before proceeding",
+            "Record who approved a departure when one is necessary",
+            "Feed recurring exceptions back into the next review"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Standards and judgement",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Luxury quality depends on discernment as well as consistency. A standard defines the floor and the shared vocabulary; creative and commercial judgement still determine the best answer within that framework."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "welcome-to-moscatelli-atlas",
+    "how-moscatelli-records-decisions"
+  ],
+  "mainHubLinks": []
+}

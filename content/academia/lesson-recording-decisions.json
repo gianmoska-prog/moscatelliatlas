@@ -1,0 +1,66 @@
+{
+  "id": "lesson.recording-decisions",
+  "slug": "recording-decisions",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "working-practice",
+  "order": 3,
+  "category": "operations",
+  "topic": "Records",
+  "eyebrow": "Academia lesson",
+  "title": "Recording decisions",
+  "summary": "Practice a concise decision record that preserves context without turning routine work into bureaucracy.",
+  "keywords": [
+    "record",
+    "decision",
+    "owner",
+    "context",
+    "MainHub"
+  ],
+  "estimatedMinutes": 20,
+  "readingMinutes": 20,
+  "requirement": "required",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "What a useful record preserves",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "What was decided",
+            "Why the decision was necessary",
+            "Who owns the next action",
+            "Any material constraint or deadline",
+            "The source documents or discussion that informed it"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Write for the next reader",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A good internal record should make sense to a colleague who was not present. It should be concise enough to scan and complete enough to avoid reconstructing the decision from scattered messages."
+        }
+      ]
+    }
+  ]
+}

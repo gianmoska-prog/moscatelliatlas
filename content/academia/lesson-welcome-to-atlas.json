@@ -1,0 +1,69 @@
+{
+  "id": "lesson.welcome-to-atlas",
+  "slug": "welcome-to-atlas",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "orientation",
+  "order": 1,
+  "category": "systems",
+  "topic": "Atlas",
+  "eyebrow": "Academia lesson",
+  "title": "Welcome to Atlas",
+  "summary": "Understand what Atlas is for, what it is not, and when to consult it before asking for institutional guidance.",
+  "keywords": [
+    "Atlas",
+    "onboarding",
+    "knowledge",
+    "institutional memory",
+    "MainHub"
+  ],
+  "estimatedMinutes": 12,
+  "readingMinutes": 12,
+  "requirement": "required",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "The purpose of Atlas",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Atlas is the internal reference layer for MOSCATELLI. It explains standards, procedures, learning material and recurring situations; MainHub remains the place where live work is carried out and recorded."
+        },
+        {
+          "type": "callout",
+          "label": "Development note",
+          "text": "The content in this preview validates the learning interface only and is not final policy."
+        }
+      ]
+    },
+    {
+      "heading": "A simple working rule",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Use Atlas when you need to understand how something should be approached.",
+            "Use MainHub when you need to act on live company work or record a current decision.",
+            "When a reference and a live record conflict, stop and raise the discrepancy rather than silently choosing one."
+          ]
+        }
+      ]
+    }
+  ]
+}

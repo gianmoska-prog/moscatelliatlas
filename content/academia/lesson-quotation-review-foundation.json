@@ -1,0 +1,69 @@
+{
+  "id": "lesson.quotation-review-foundation",
+  "slug": "quotation-review-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "supplier-procedures",
+  "moduleId": "commercial",
+  "order": 1,
+  "category": "suppliers",
+  "topic": "Quotations",
+  "eyebrow": "Academia lesson",
+  "title": "Quotation review · Foundation",
+  "summary": "Read supplier quotations as versioned commercial records and identify the details that must be clear before approval.",
+  "keywords": [
+    "supplier",
+    "vendor",
+    "quotation",
+    "quote",
+    "price",
+    "terms"
+  ],
+  "estimatedMinutes": 22,
+  "readingMinutes": 22,
+  "requirement": "required",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "What to establish first",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Supplier identity and quotation date",
+            "Currency",
+            "Product or service description",
+            "Quantity and minimum order requirements",
+            "Unit and total pricing",
+            "Payment terms",
+            "Lead time and validity period"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Do not fill gaps by assumption",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If a commercial term is absent or ambiguous, the correct next step is clarification. Silence in a quotation should not be converted into a favourable assumption in the internal record."
+        }
+      ]
+    }
+  ]
+}

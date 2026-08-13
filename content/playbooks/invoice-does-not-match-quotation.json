@@ -1,0 +1,81 @@
+{
+  "id": "playbook.invoice-does-not-match-quotation",
+  "slug": "invoice-does-not-match-quotation",
+  "type": "playbook",
+  "category": "finance-and-administration",
+  "topic": "Invoices",
+  "eyebrow": "Operational playbook",
+  "title": "An invoice does not match the quotation",
+  "summary": "A verification sequence for mismatched amounts, quantities, currencies or payment terms before any financial record is treated as final.",
+  "keywords": [
+    "invoice",
+    "bill",
+    "quotation",
+    "quote",
+    "amount",
+    "currency",
+    "payment",
+    "mismatch"
+  ],
+  "owner": "Finance & Administration",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration playbook for interface validation. It is not final MOSCATELLI policy and must be reviewed before operational use.",
+  "scenario": "Use this when an invoice differs from the approved quotation, purchase understanding or documented commercial terms.",
+  "immediateAction": [
+    "Pause approval of the disputed amount; do not silently edit the supplier document or reinterpret the difference.",
+    "Compare the invoice against the latest approved quotation and any documented revision.",
+    "Identify each discrepancy explicitly: amount, quantity, currency, tax, freight, payment term or line item."
+  ],
+  "whoToInform": [
+    {
+      "role": "Budget/record owner",
+      "when": "As soon as the mismatch is confirmed."
+    },
+    {
+      "role": "Founder",
+      "when": "Before approving a material exception or new commercial term."
+    }
+  ],
+  "whatToRecord": [
+    "Invoice identifier and date",
+    "Quotation/version used for comparison",
+    "Exact mismatching line(s)",
+    "Currency and tax treatment shown",
+    "Supplier explanation and final resolution"
+  ],
+  "escalationConditions": [
+    "The supplier requests payment before correcting or explaining the discrepancy.",
+    "The difference changes the approved budget or commitment.",
+    "The mismatch suggests duplicate billing, an undocumented scope change or a recurring documentation problem."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Comparison",
+      "label": "Discrepancy note",
+      "text": "List the quoted value, invoiced value, difference and source document for each mismatched line."
+    },
+    {
+      "kind": "Reference",
+      "label": "Recording a training expense",
+      "route": "#/article/recording-a-training-expense"
+    }
+  ],
+  "relatedProcedures": [
+    "reviewing-a-supplier-quotation",
+    "recording-a-training-expense"
+  ]
+}

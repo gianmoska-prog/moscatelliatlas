@@ -1,0 +1,80 @@
+{
+  "id": "playbook.image-has-wrong-resolution",
+  "slug": "image-has-wrong-resolution",
+  "type": "playbook",
+  "category": "brand",
+  "topic": "Photography",
+  "eyebrow": "Operational playbook",
+  "title": "An image has the wrong resolution",
+  "summary": "A controlled response for stopping unsuitable imagery from progressing while preserving the source file and approval history.",
+  "keywords": [
+    "image",
+    "resolution",
+    "photography",
+    "pixels",
+    "quality",
+    "approval",
+    "asset"
+  ],
+  "owner": "Creative Direction",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration playbook for interface validation. It is not final MOSCATELLI policy and must be reviewed before operational use.",
+  "scenario": "Use this when an image is too small, incorrectly exported, visibly degraded or otherwise unsuitable for its intended MOSCATELLI output.",
+  "immediateAction": [
+    "Do not upscale or overwrite the source file merely to make the dimensions appear compliant.",
+    "Identify the intended output and the actual pixel dimensions/file characteristics.",
+    "Locate the highest-quality source or request a new export before approval continues."
+  ],
+  "whoToInform": [
+    {
+      "role": "Creative Direction",
+      "when": "When the asset cannot meet the intended output without source replacement."
+    },
+    {
+      "role": "Asset owner",
+      "when": "When a new export or original file is required."
+    }
+  ],
+  "whatToRecord": [
+    "Asset filename and location",
+    "Intended use/output",
+    "Actual dimensions and file format",
+    "Source/original availability",
+    "Replacement or approval decision"
+  ],
+  "escalationConditions": [
+    "No suitable source exists.",
+    "The image has already been distributed or published in the wrong form.",
+    "Repeated export errors indicate an asset-management workflow problem."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Reference",
+      "label": "Photography approval checklist",
+      "route": "#/article/photography-approval-checklist"
+    },
+    {
+      "kind": "Reference",
+      "label": "File organisation and naming",
+      "route": "#/article/file-organisation-and-naming"
+    }
+  ],
+  "relatedProcedures": [
+    "photography-approval-checklist",
+    "file-organisation-and-naming"
+  ]
+}

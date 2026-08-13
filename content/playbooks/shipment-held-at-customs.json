@@ -1,0 +1,75 @@
+{
+  "id": "playbook.shipment-held-at-customs",
+  "slug": "shipment-held-at-customs",
+  "type": "playbook",
+  "category": "operations",
+  "topic": "Customs",
+  "eyebrow": "Operational playbook",
+  "title": "A shipment is held at customs",
+  "summary": "A fact-led response for establishing the hold reason, gathering documents and escalating only with the relevant shipment record intact.",
+  "keywords": [
+    "shipment",
+    "shipping",
+    "delivery",
+    "customs",
+    "held",
+    "carrier",
+    "documents"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration playbook for interface validation. It is not final MOSCATELLI policy and must be reviewed before operational use.",
+  "scenario": "Use this when a carrier, broker or customs authority indicates that a shipment is being held, delayed for documentation or awaiting clarification.",
+  "immediateAction": [
+    "Confirm the shipment reference, current carrier status and stated reason for the hold.",
+    "Gather the commercial invoice, packing information and any already-issued shipment documentation without creating replacement documents casually.",
+    "Identify who is formally requesting information and respond through the established carrier/broker channel."
+  ],
+  "whoToInform": [
+    {
+      "role": "Shipment/project owner",
+      "when": "Immediately once a hold is confirmed."
+    },
+    {
+      "role": "Founder",
+      "when": "The hold threatens a launch/production milestone or requires an exceptional financial/commercial decision."
+    }
+  ],
+  "whatToRecord": [
+    "Tracking/shipment reference",
+    "Carrier/broker contact",
+    "Stated hold reason",
+    "Documents requested/provided",
+    "Deadlines, fees or milestone impact communicated"
+  ],
+  "escalationConditions": [
+    "The reason for hold is unclear or contradictory.",
+    "Additional charges, return/destruction risk or legal/compliance questions arise.",
+    "The delivery delay affects a critical sample, production or launch milestone."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Record",
+      "label": "Shipment incident note",
+      "text": "Keep the carrier status, request, documents sent, timestamps and next expected update in one continuous record."
+    }
+  ],
+  "relatedProcedures": [
+    "file-organisation-and-naming",
+    "how-moscatelli-records-decisions"
+  ]
+}

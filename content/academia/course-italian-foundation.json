@@ -1,0 +1,37 @@
+{
+  "id": "course.italian-foundation",
+  "slug": "italian-foundation",
+  "type": "academia-course",
+  "area": "Italian lessons",
+  "title": "Italian · Foundation",
+  "summary": "A restrained first learning path for practical Italian used around dates, introductions and routine coordination.",
+  "owner": "People",
+  "audience": [
+    "Team members studying Italian"
+  ],
+  "estimatedMinutes": 90,
+  "status": "current",
+  "version": "0.1-demo",
+  "demo": true,
+  "modules": [
+    {
+      "id": "presence",
+      "title": "Presence",
+      "summary": "Introduce yourself and handle simple professional courtesies.",
+      "lessons": [
+        "italian-introductions",
+        "italian-courtesy"
+      ]
+    },
+    {
+      "id": "coordination",
+      "title": "Coordination",
+      "summary": "Use numbers, dates and times in ordinary scheduling situations.",
+      "lessons": [
+        "italian-numbers-dates",
+        "italian-times-scheduling"
+      ]
+    }
+  ],
+  "sortOrder": 40
+}

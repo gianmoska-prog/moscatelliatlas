@@ -1,0 +1,75 @@
+{
+  "id": "playbook.confidential-information-request",
+  "slug": "confidential-information-request",
+  "type": "playbook",
+  "category": "people",
+  "topic": "Internal policies",
+  "eyebrow": "Operational playbook",
+  "title": "Someone requests confidential information",
+  "summary": "A low-drama response for pausing disclosure, verifying need and authority, and recording sensitive-information decisions.",
+  "keywords": [
+    "confidential",
+    "private",
+    "information",
+    "data",
+    "supplier",
+    "request",
+    "permission"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration playbook for interface validation. It is not final MOSCATELLI policy and must be reviewed before operational use.",
+  "scenario": "Use this when a supplier, contractor, candidate, team member or external party asks for information that may be commercially sensitive, personal, restricted or outside their usual access.",
+  "immediateAction": [
+    "Do not disclose the information while authority or purpose is unclear.",
+    "Clarify exactly what is being requested, why it is needed and who will receive it.",
+    "Route the request to the information owner or Founder when the permission basis is not already established."
+  ],
+  "whoToInform": [
+    {
+      "role": "Information owner",
+      "when": "Before any restricted information is shared."
+    },
+    {
+      "role": "Founder",
+      "when": "For commercially sensitive, strategic, financial or exceptional disclosures."
+    }
+  ],
+  "whatToRecord": [
+    "Requester and organisation",
+    "Exact information requested",
+    "Stated purpose",
+    "Decision owner and approval/decline",
+    "What was ultimately shared, if anything"
+  ],
+  "escalationConditions": [
+    "The requester pressures for immediate disclosure without a clear need.",
+    "The request includes financial, strategic, personal or access-control information.",
+    "There is doubt about recipient identity, forwarding risk or contractual confidentiality."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Response structure",
+      "label": "Holding reply",
+      "text": "Acknowledge the request, explain that access must be verified internally, and give a realistic time for a response without implying approval."
+    }
+  ],
+  "relatedProcedures": [
+    "internal-communication-standards",
+    "working-with-standards-at-moscatelli"
+  ]
+}

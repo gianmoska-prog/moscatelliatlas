@@ -1,0 +1,87 @@
+{
+  "id": "article.training-expense",
+  "slug": "recording-a-training-expense",
+  "type": "article",
+  "category": "finance-and-administration",
+  "topic": "Training costs",
+  "eyebrow": "Finance guidance",
+  "title": "Recording a training expense",
+  "summary": "A demonstration administrative procedure for preserving the invoice, purpose, currency and internal approval of training expenditure.",
+  "keywords": [
+    "training",
+    "expense",
+    "cost",
+    "invoice",
+    "receipt",
+    "finance"
+  ],
+  "readingMinutes": 6,
+  "owner": "Finance",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Founder",
+    "Operations"
+  ],
+  "permissions": [
+    "finance-guidance"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Minimum record",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Preserve the supplier, purpose, amount, currency, invoice or receipt, date and any internal approval reference required by the eventual finance process."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Supplier or teacher name",
+            "Training purpose and participant",
+            "Gross amount and currency",
+            "Invoice, receipt or equivalent evidence",
+            "Payment date or due date",
+            "Internal approval or budget context where applicable"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Currency and conversion",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Record the original transaction currency. If an internal report later requires conversion, the converted amount should not erase the source value or the basis used."
+        },
+        {
+          "type": "callout",
+          "label": "Demonstration only",
+          "text": "The exact accounting and tax treatment will be defined with professional advice and production finance procedures. This article currently validates the Atlas information structure only."
+        }
+      ]
+    },
+    {
+      "heading": "Why training was purchased",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A short purpose note helps distinguish role-related development from other expenditure and makes later review of training investment more meaningful."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "reviewing-a-supplier-quotation",
+    "how-moscatelli-records-decisions"
+  ],
+  "mainHubLinks": []
+}

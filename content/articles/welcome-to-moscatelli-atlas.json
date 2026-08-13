@@ -1,0 +1,109 @@
+{
+  "id": "article.welcome-atlas",
+  "slug": "welcome-to-moscatelli-atlas",
+  "type": "article",
+  "category": "the-house",
+  "topic": "Internal terminology",
+  "eyebrow": "Orientation",
+  "title": "Welcome to MOSCATELLI Atlas",
+  "summary": "What Atlas is for, what belongs here and how to distinguish institutional knowledge from live operational work.",
+  "keywords": [
+    "Atlas",
+    "knowledge",
+    "standards",
+    "orientation",
+    "MainHub"
+  ],
+  "readingMinutes": 4,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Atlas and MainHub",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Atlas is the reference layer: it explains standards, procedures and institutional knowledge. MainHub remains the place for live operational work, current projects and records."
+        },
+        {
+          "type": "callout",
+          "label": "Working distinction",
+          "text": "If the information should still be useful after the current task has ended, it probably belongs in Atlas. If it represents live work, ownership or a current operational record, it belongs in MainHub."
+        }
+      ]
+    },
+    {
+      "heading": "What belongs here",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Atlas should contain durable guidance that another team member can rely upon without reconstructing context from messages, meetings or memory."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Standards that define an expected quality threshold",
+            "Procedures that should be repeated consistently",
+            "Reference material that explains MOSCATELLI terminology or decisions",
+            "Learning material that supports onboarding and role development"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How to use an article",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Confirm the status",
+              "text": "Check whether the article is current, under review, superseded or archived."
+            },
+            {
+              "title": "Read the governing context",
+              "text": "Use the owner, approver and review dates to understand who maintains the reference."
+            },
+            {
+              "title": "Follow related material",
+              "text": "Move to a linked procedure or MainHub destination when the reference points to live work."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Demonstration content in this preview is explicitly labelled and should not be treated as final company policy."
+        }
+      ]
+    },
+    {
+      "heading": "Institutional memory",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The long-term purpose of Atlas is to reduce dependency on individual memory. A useful knowledge system makes the company easier to operate, teach and improve without making the work feel bureaucratic."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "working-with-standards-at-moscatelli",
+    "how-moscatelli-records-decisions"
+  ],
+  "mainHubLinks": []
+}

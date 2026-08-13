@@ -1,0 +1,67 @@
+.atlas-shell {
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: var(--header-height) 1fr;
+}
+
+.app-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-inline: var(--gutter);
+  position: relative;
+  z-index: 20;
+}
+
+.app-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.app-main {
+  min-height: 0;
+}
+
+.route-outlet {
+  min-height: calc(100svh - var(--header-height));
+}
+
+.home-view {
+  min-height: calc(100svh - var(--header-height));
+  overflow: clip;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 2vw, 2rem) var(--gutter);
+}
+
+.home-search-stage {
+  align-self: center;
+  justify-self: center;
+  width: min(100%, 54rem);
+  padding-block: clamp(2rem, 5vw, 4rem);
+  text-align: center;
+  position: relative;
+  isolation: isolate;
+}
+
+
+.route-page {
+  min-height: calc(100svh - var(--header-height));
+  display: grid;
+  place-items: center;
+  padding: var(--space-6) var(--gutter);
+}
+
+.route-page__inner {
+  width: min(100%, 58rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 0.36fr);
+  gap: var(--space-6);
+  align-items: end;
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--atlas-line-strong);
+  border-bottom: 1px solid var(--atlas-line);
+}

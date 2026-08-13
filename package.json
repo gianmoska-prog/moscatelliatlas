@@ -1,0 +1,23 @@
+{
+  "name": "moscatelli-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build:vendor": "esbuild scripts/supabase-entry.js --bundle --format=esm --minify --sourcemap --outfile=assets/vendor/supabase.js",
+    "build": "npm run build:vendor",
+    "serve": "http-server . -p 8765 -c-1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run build && npm test && node scripts/validate-project.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.112.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "http-server": "14.1.1",
+    "vitest": "4.1.10"
+  }
+}

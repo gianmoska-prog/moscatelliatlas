@@ -1,0 +1,74 @@
+{
+  "id": "playbook.mainhub-access-failure",
+  "slug": "mainhub-access-failure",
+  "type": "playbook",
+  "category": "systems",
+  "topic": "MainHub",
+  "eyebrow": "Operational playbook",
+  "title": "A team member cannot access MainHub",
+  "summary": "A short diagnostic route for distinguishing account, session and permission problems before escalating a systems issue.",
+  "keywords": [
+    "MainHub",
+    "login",
+    "sign in",
+    "access",
+    "account",
+    "permission",
+    "troubleshooting"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration playbook for interface validation. It is not final MOSCATELLI policy and must be reviewed before operational use.",
+  "scenario": "Use this when an internal user cannot sign in to MainHub, can sign in but cannot reach an expected area, or sees an access state that differs from their role.",
+  "immediateAction": [
+    "Confirm whether the failure is sign-in, session, device/browser or permission-specific.",
+    "Ask the user to capture the exact visible error/state without sharing passwords or authentication codes.",
+    "Check whether the issue occurs in a clean session or another supported browser before treating it as a permissions change."
+  ],
+  "whoToInform": [
+    {
+      "role": "Operations / system owner",
+      "when": "After the basic state is identified."
+    },
+    {
+      "role": "Founder",
+      "when": "A role/permission change is actually required or sensitive access is involved."
+    }
+  ],
+  "whatToRecord": [
+    "User identity/account email",
+    "Device/browser and approximate time",
+    "Exact route or function attempted",
+    "Visible error text or screenshot location",
+    "Whether sign-in itself succeeds"
+  ],
+  "escalationConditions": [
+    "Multiple users are affected.",
+    "The user appears to have access they should not have.",
+    "A required role/permission mapping is missing or unexpectedly changed."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Reference",
+      "label": "MainHub access troubleshooting",
+      "route": "#/article/mainhub-access-troubleshooting"
+    }
+  ],
+  "relatedProcedures": [
+    "mainhub-access-troubleshooting"
+  ]
+}

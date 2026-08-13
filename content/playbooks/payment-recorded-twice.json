@@ -1,0 +1,75 @@
+{
+  "id": "playbook.payment-recorded-twice",
+  "slug": "payment-recorded-twice",
+  "type": "playbook",
+  "category": "finance-and-administration",
+  "topic": "Payments",
+  "eyebrow": "Operational playbook",
+  "title": "A payment was recorded twice",
+  "summary": "A non-destructive verification process for suspected duplicate records before correcting financial history.",
+  "keywords": [
+    "payment",
+    "duplicate",
+    "record",
+    "expense",
+    "finance",
+    "transaction",
+    "twice"
+  ],
+  "owner": "Finance & Administration",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration playbook for interface validation. It is not final MOSCATELLI policy and must be reviewed before operational use.",
+  "scenario": "Use this when two records appear to represent the same payment, expense or supplier transaction.",
+  "immediateAction": [
+    "Do not delete either record until the duplication is verified against the underlying transaction evidence.",
+    "Compare amount, currency, date, supplier/reference and supporting receipt or invoice.",
+    "Mark the suspected duplicate for review using the available non-destructive workflow; preserve the audit trail."
+  ],
+  "whoToInform": [
+    {
+      "role": "Finance record owner",
+      "when": "Once the suspected duplicate is identified."
+    },
+    {
+      "role": "Founder",
+      "when": "The correction changes reporting, a supplier balance or an approved commitment."
+    }
+  ],
+  "whatToRecord": [
+    "Both record identifiers",
+    "Underlying bank/payment reference",
+    "Amount and currency",
+    "Evidence used to determine duplication",
+    "Correction taken and who approved it"
+  ],
+  "escalationConditions": [
+    "The underlying transaction itself may have been paid twice.",
+    "The records differ in a way that cannot be reconciled from evidence.",
+    "Removing/correcting the duplicate would materially change a reported total."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Reference",
+      "label": "Recording a training expense",
+      "route": "#/article/recording-a-training-expense"
+    }
+  ],
+  "relatedProcedures": [
+    "recording-a-training-expense",
+    "how-moscatelli-records-decisions"
+  ]
+}

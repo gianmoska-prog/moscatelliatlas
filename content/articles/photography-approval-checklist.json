@@ -1,0 +1,100 @@
+{
+  "id": "article.photography-approval",
+  "slug": "photography-approval-checklist",
+  "type": "article",
+  "category": "brand",
+  "topic": "Photography",
+  "eyebrow": "Brand checklist",
+  "title": "Photography approval checklist",
+  "summary": "The visual and technical points to review before an image is treated as approved MOSCATELLI material.",
+  "keywords": [
+    "photography",
+    "image",
+    "approval",
+    "resolution",
+    "brand"
+  ],
+  "readingMinutes": 6,
+  "owner": "Creative Direction",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Creative",
+    "Marketing",
+    "Operations"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Before approval",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirm subject, crop, resolution, colour treatment, rights status and intended use before treating an image as approved material."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Composition supports the intended hierarchy and crop",
+            "Focus and detail are sufficient at the intended output size",
+            "Colour and contrast remain natural to the art direction",
+            "No distracting artefacts, accidental branding or unresolved retouching",
+            "Usage rights and source are documented where required"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Technical review",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Technical adequacy depends on the intended placement. A social crop, a full-width website image and print material may require different dimensions and export treatment."
+        },
+        {
+          "type": "callout",
+          "label": "Do not approve by appearance alone",
+          "text": "A visually pleasing preview can still be unsuitable if the source file is too small, excessively compressed or missing the required usage information."
+        }
+      ]
+    },
+    {
+      "heading": "Creative review",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "The image feels consistent with the approved MOSCATELLI visual language.",
+            "Lighting, materials and skin or product tones remain believable.",
+            "The frame does not depend on fashionable effects that overwhelm the subject.",
+            "The crop preserves intentional negative space where copy may be required."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Record the decision",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When an image is approved, keep the approved source and the decision context together so that later teams do not need to determine again which version is authoritative."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "introduction-to-moscatelli-tone-of-voice",
+    "product-naming-standards"
+  ],
+  "mainHubLinks": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "playbook.sample-arrived-damaged",
+  "slug": "sample-arrived-damaged",
+  "type": "playbook",
+  "category": "products-and-quality",
+  "topic": "Sample stages",
+  "eyebrow": "Operational playbook",
+  "title": "A sample arrived damaged",
+  "summary": "A preservation-first response for documenting damage, separating transit issues from workmanship issues and protecting the review trail.",
+  "keywords": [
+    "sample",
+    "prototype",
+    "damaged",
+    "quality",
+    "shipping",
+    "evidence",
+    "photography"
+  ],
+  "owner": "Product Development",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration playbook for interface validation. It is not final MOSCATELLI policy and must be reviewed before operational use.",
+  "scenario": "Use this when a physical sample arrives with visible damage, deformation, contamination, missing components or packaging failure that could distort the product review.",
+  "immediateAction": [
+    "Do not repair, clean or alter the sample before documenting its received condition.",
+    "Photograph the outer packaging, labels, internal protection and damage in a consistent sequence.",
+    "Separate what appears to be transit damage from any possible construction or quality issue; do not assume the cause."
+  ],
+  "whoToInform": [
+    {
+      "role": "Product owner",
+      "when": "Immediately after the received condition is documented."
+    },
+    {
+      "role": "Supplier contact",
+      "when": "After evidence is complete and the issue can be described neutrally."
+    }
+  ],
+  "whatToRecord": [
+    "Delivery date and carrier reference",
+    "Packaging condition",
+    "Photo set location",
+    "Observed damage without speculation",
+    "Whether review can continue or needs replacement"
+  ],
+  "escalationConditions": [
+    "The damage prevents meaningful fit, construction or material review.",
+    "There is repeated damage across more than one shipment or sample.",
+    "A quality dispute begins or replacement timing affects a launch milestone."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Checklist",
+      "label": "Damage evidence sequence",
+      "text": "Outer package → shipping label → internal protection → full sample → close-up damage → scale/reference image."
+    },
+    {
+      "kind": "Reference",
+      "label": "Photography approval checklist",
+      "route": "#/article/photography-approval-checklist"
+    }
+  ],
+  "relatedProcedures": [
+    "supplier-sample-review-procedure",
+    "photography-approval-checklist"
+  ]
+}

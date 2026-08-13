@@ -1,0 +1,73 @@
+{
+  "id": "lesson.communication-basics",
+  "slug": "communication-basics",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "working-practice",
+  "order": 4,
+  "category": "people",
+  "topic": "Communication standards",
+  "eyebrow": "Academia lesson",
+  "title": "Internal communication basics",
+  "summary": "Use a calm, precise structure for internal updates, requests and handovers.",
+  "keywords": [
+    "communication",
+    "handover",
+    "update",
+    "request",
+    "team"
+  ],
+  "estimatedMinutes": 22,
+  "readingMinutes": 22,
+  "requirement": "required",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "Structure before style",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "State the point",
+              "text": "Open with the decision, request or material update."
+            },
+            {
+              "title": "Add only useful context",
+              "text": "Include the facts another person needs to respond correctly."
+            },
+            {
+              "title": "Make ownership visible",
+              "text": "If an action is required, state who is expected to do what and by when."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Avoid ambiguity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Politeness should not obscure the request. A composed MOSCATELLI message can still be explicit about ownership, timing and the decision needed."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en" data-atlas-version="1.0.0" data-auth-state="checking">
+<head>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://htxzyqjynthuxrhnfcrj.supabase.co wss://htxzyqjynthuxrhnfcrj.supabase.co; img-src 'self' data:; style-src 'self'; script-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F7F5F0">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="MOSCATELLI ATLAS — Knowledge, standards and practice.">
+  <meta name="referrer" content="same-origin">
+  <meta name="application-name" content="MOSCATELLI ATLAS">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/atlas-temp-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/atlas-temp-192.png">
+  <title>MOSCATELLI ATLAS</title>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/motion.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body>
+  <section class="auth-gate" data-auth-gate data-state="checking" aria-labelledby="atlas-auth-title">
+    <div class="auth-gate__stage">
+      <div class="auth-gate__brand" aria-label="MOSCATELLI ATLAS">
+        <strong>MOSCATELLI</strong><span>ATLAS</span>
+      </div>
+
+      <div class="auth-gate__center">
+        <div class="auth-panel" data-auth-panel>
+          <header class="auth-panel__intro">
+            <p class="auth-panel__eyebrow">Private institutional reference</p>
+            <h1 id="atlas-auth-title" data-auth-title>Welcome back.</h1>
+            <p class="auth-panel__description" data-auth-description>Sign in to enter MOSCATELLI Atlas.</p>
+          </header>
+
+          <form class="auth-form" data-auth-form="password" novalidate>
+            <div class="auth-field">
+              <label for="atlas-auth-email">Email</label>
+              <input id="atlas-auth-email" name="email" type="email" inputmode="email" autocomplete="username" autocapitalize="none" spellcheck="false" required>
+            </div>
+            <div class="auth-field">
+              <label for="atlas-auth-password">Password</label>
+              <input id="atlas-auth-password" name="password" type="password" autocomplete="current-password" required>
+            </div>
+            <button class="auth-submit" type="submit">Sign in</button>
+            <div class="auth-options" aria-label="Alternative sign-in options">
+              <button class="auth-option" type="button" data-auth-mode="otp" aria-pressed="false">Use email code</button>
+              <button class="auth-option" type="button" data-auth-mode="reset" aria-pressed="false">Forgot password?</button>
+            </div>
+          </form>
+
+          <form class="auth-form" data-auth-form="otp" novalidate hidden>
+            <div class="auth-field">
+              <label for="atlas-auth-otp-email">Email</label>
+              <input id="atlas-auth-otp-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" required>
+            </div>
+            <button class="auth-submit" type="submit">Send email code</button>
+            <div class="auth-field" data-auth-otp-verification hidden>
+              <label for="atlas-auth-otp-token">Six-digit code</label>
+              <input id="atlas-auth-otp-token" name="token" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6">
+            </div>
+            <div class="auth-options"><button class="auth-option" type="button" data-auth-mode="password" aria-pressed="false">Use password instead</button></div>
+          </form>
+
+          <form class="auth-form" data-auth-form="recovery" novalidate hidden>
+            <div class="auth-field">
+              <label for="atlas-auth-new-password">New password</label>
+              <input id="atlas-auth-new-password" name="password" type="password" autocomplete="new-password" minlength="12" required>
+            </div>
+            <div class="auth-field">
+              <label for="atlas-auth-confirm-password">Confirm new password</label>
+              <input id="atlas-auth-confirm-password" name="confirmation" type="password" autocomplete="new-password" minlength="12" required>
+            </div>
+            <button class="auth-submit" type="submit">Update password</button>
+          </form>
+
+          <form class="auth-form" data-auth-form="reset" novalidate hidden>
+            <div class="auth-field">
+              <label for="atlas-auth-reset-email">Email</label>
+              <input id="atlas-auth-reset-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" required>
+            </div>
+            <button class="auth-submit" type="submit">Send reset email</button>
+            <div class="auth-options"><button class="auth-option" type="button" data-auth-mode="password" aria-pressed="false">Return to sign in</button></div>
+          </form>
+
+          <p class="auth-status" data-auth-status role="status" aria-live="polite" aria-atomic="true" hidden></p>
+
+          <aside class="auth-demo" aria-label="Development preview access" hidden>
+            <span class="auth-demo__label">Development preview</span>
+            <p>This preview uses an isolated demo session. It does not validate credentials and must not be mistaken for production security.</p>
+            <button class="auth-demo__button" type="button" data-auth-demo-entry>Enter Atlas demo</button>
+          </aside>
+        </div>
+      </div>
+
+      <p class="auth-gate__foot">Protected by MOSCATELLI Supabase authentication and database-level Row Level Security.</p>
+    </div>
+  </section>
+
+  <div class="atlas-app-surface" data-auth-app-surface inert aria-hidden="true">
+  <a class="skip-link" href="#main-content" data-skip-link>Skip to content</a>
+  <p class="sr-only" id="atlas-route-status" role="status" aria-live="polite" aria-atomic="true"></p>
+
+  <div class="atlas-shell">
+    <header class="app-header" aria-label="MOSCATELLI Atlas">
+      <a class="atlas-wordmark" href="#/home" data-route-link aria-label="MOSCATELLI Atlas home">
+        <span class="atlas-wordmark__house">MOSCATELLI</span>
+        <span class="atlas-wordmark__product">ATLAS</span>
+      </a>
+
+      <div class="app-header__actions">
+        <button class="menu-trigger" type="button" data-menu-open aria-haspopup="dialog" aria-controls="atlas-menu">
+          <span>Browse</span>
+          <span class="menu-trigger__icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="app-main" tabindex="-1">
+      <div id="app" class="route-outlet">
+        <section class="home-view" data-route-view="home" aria-labelledby="home-question">
+          <div class="home-search-stage">
+            <h1 id="home-question">What are you looking for?</h1>
+            <div class="search-experience" data-search-experience>
+              <form class="atlas-search-box" data-home-search-form role="search" novalidate>
+              <label class="sr-only" for="atlas-home-search">Search Atlas</label>
+              <span class="atlas-search-box__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="21" height="21"><path d="m21 21-4.35-4.35m1.35-5.15A6.5 6.5 0 1 1 5 11.5a6.5 6.5 0 0 1 13 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <input id="atlas-home-search" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="Search knowledge, standards and procedures" role="combobox" aria-autocomplete="list" aria-haspopup="listbox" aria-expanded="false" aria-controls="atlas-home-suggestions">
+              <button class="search-submit" type="submit" aria-label="Search Atlas">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              </form>
+              <div class="search-disclosure" id="atlas-home-suggestions" data-search-disclosure role="listbox" aria-label="Search suggestions" hidden></div>
+            </div>
+            <p id="search-preview-note" class="home-search-note" aria-live="polite"></p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <dialog class="atlas-menu" id="atlas-menu" aria-labelledby="atlas-menu-title">
+    <div class="atlas-menu__panel">
+      <header class="atlas-menu__header">
+        <div>
+          <p class="menu-eyebrow">MOSCATELLI ATLAS</p>
+          <h2 id="atlas-menu-title">Browse</h2>
+        </div>
+        <button class="menu-close" type="button" data-menu-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </header>
+
+      <div class="atlas-menu__scroll">
+        <nav class="menu-primary" aria-label="Primary Atlas navigation">
+          <a href="#/home" data-route-link>Home</a>
+          <button class="menu-search-open" type="button" data-global-search-open><span>Search Atlas</span><small>/</small></button>
+          <a href="#/library" data-route-link>Library</a>
+          <a href="#/playbooks" data-route-link>Playbooks</a>
+          <a href="#/academia" data-route-link>Academia</a>
+          <a href="#/updates" data-route-link>Updates</a>
+        </nav>
+
+        <section class="menu-section" aria-labelledby="manual-research-title">
+          <div class="menu-section__heading">
+            <h3 id="manual-research-title">Manual research</h3>
+            <p>Browse the Library by subject.</p>
+          </div>
+          <nav class="category-nav" aria-label="Library categories">
+            <a href="#/library/the-house" data-route-link><span>The House</span><span aria-hidden="true">↗</span></a>
+            <a href="#/library/brand" data-route-link><span>Brand</span><span aria-hidden="true">↗</span></a>
+            <a href="#/library/products-and-quality" data-route-link><span>Products &amp; Quality</span><span aria-hidden="true">↗</span></a>
+            <a href="#/library/operations" data-route-link><span>Operations</span><span aria-hidden="true">↗</span></a>
+            <a href="#/library/suppliers" data-route-link><span>Suppliers</span><span aria-hidden="true">↗</span></a>
+            <a href="#/library/finance-and-administration" data-route-link><span>Finance &amp; Administration</span><span aria-hidden="true">↗</span></a>
+            <a href="#/library/people" data-route-link><span>People</span><span aria-hidden="true">↗</span></a>
+            <a href="#/library/systems" data-route-link><span>Systems</span><span aria-hidden="true">↗</span></a>
+          </nav>
+        </section>
+
+        <section class="menu-section menu-section--personal" aria-labelledby="personal-title">
+          <div class="menu-section__heading"><h3 id="personal-title">Personal</h3></div>
+          <nav class="menu-secondary" aria-label="Personal Atlas navigation">
+            <a href="#/bookmarks" data-route-link>Bookmarks</a>
+            <a href="#/continue-reading" data-route-link>Continue reading</a>
+            <a href="#/history" data-route-link>Reading history</a>
+            <a href="#/profile" data-route-link>Profile</a>
+            <button class="auth-signout" type="button" data-auth-signout>Sign out</button>
+            <span class="menu-disabled" aria-disabled="true">Return to MainHub <small>Integration later</small></span>
+          </nav>
+        </section>
+      </div>
+
+      <footer class="atlas-menu__footer">
+        <span>Knowledge, standards and practice.</span>
+        <span>Final frontend · v1.0</span>
+      </footer>
+    </div>
+  </dialog>
+
+
+  <dialog class="global-search" id="atlas-global-search" aria-labelledby="global-search-title">
+    <div class="global-search__panel">
+      <header class="global-search__header">
+        <div>
+          <p>MOSCATELLI ATLAS</p>
+          <h2 id="global-search-title">Search</h2>
+        </div>
+        <button class="global-search__close" type="button" data-global-search-close aria-label="Close search">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </header>
+      <form class="global-search__form" data-global-search-form role="search" novalidate>
+        <label class="sr-only" for="atlas-global-search-input">Search Atlas</label>
+        <span aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="m21 21-4.35-4.35m1.35-5.15A6.5 6.5 0 1 1 5 11.5a6.5 6.5 0 0 1 13 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+        <input id="atlas-global-search-input" data-global-search-input name="q" type="search" autocomplete="off" spellcheck="false" placeholder="What are you looking for?">
+        <button type="submit" aria-label="Open full search"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </form>
+      <div class="global-search__results" data-global-search-results aria-live="polite"></div>
+      <footer class="global-search__footer"><span>Search references, playbooks and Academia lessons.</span><span>Esc to close</span></footer>
+    </div>
+  </dialog>
+
+  <div class="pwa-status" data-pwa-status role="status" aria-live="polite" aria-atomic="true" hidden>
+    <span data-pwa-status-text></span>
+    <button type="button" data-pwa-action hidden>Reload</button>
+    <button type="button" data-pwa-dismiss aria-label="Dismiss notification">×</button>
+  </div>
+
+  </div>
+
+  <noscript>
+    <div class="noscript-note">Atlas requires JavaScript for application routing. The full knowledge content will remain progressively readable as later content patches are implemented.</div>
+  </noscript>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

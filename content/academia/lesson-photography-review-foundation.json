@@ -1,0 +1,65 @@
+{
+  "id": "lesson.photography-review-foundation",
+  "slug": "photography-review-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "brand-foundations",
+  "moduleId": "image",
+  "order": 3,
+  "category": "brand",
+  "topic": "Photography",
+  "eyebrow": "Academia lesson",
+  "title": "Photography review · Foundation",
+  "summary": "A concise first review of image suitability before detailed creative approval.",
+  "keywords": [
+    "photography",
+    "image",
+    "approval",
+    "resolution",
+    "brand"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "optional",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "Technical before aesthetic",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirm that the image is technically usable before spending time on detailed creative judgement. Resolution, crop flexibility, colour integrity and source-file quality should be known first."
+        }
+      ]
+    },
+    {
+      "heading": "Then judge the image as MOSCATELLI",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Does the image feel controlled rather than busy?",
+            "Is the product or subject represented truthfully?",
+            "Does the light support material and form?",
+            "Would the image remain credible alongside the rest of the house?"
+          ]
+        }
+      ]
+    }
+  ]
+}

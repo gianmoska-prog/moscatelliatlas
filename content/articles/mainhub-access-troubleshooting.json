@@ -1,0 +1,98 @@
+{
+  "id": "article.mainhub-access",
+  "slug": "mainhub-access-troubleshooting",
+  "type": "article",
+  "category": "systems",
+  "topic": "MainHub",
+  "eyebrow": "Systems guide",
+  "title": "MainHub access troubleshooting",
+  "summary": "A demonstration first-response checklist for common access problems before a technical issue is escalated.",
+  "keywords": [
+    "MainHub",
+    "login",
+    "sign in",
+    "access",
+    "password",
+    "troubleshooting"
+  ],
+  "readingMinutes": 5,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "First checks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirm the correct account, connectivity, browser state and whether the issue is isolated before escalating with a concise description of what was tested."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Correct MOSCATELLI account is being used",
+            "Network connection is working normally",
+            "Browser has been refreshed or restarted",
+            "Issue reproduced in a clean browser context where appropriate",
+            "Exact error message or behaviour has been captured"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Do not weaken security",
+      "blocks": [
+        {
+          "type": "callout",
+          "label": "Important",
+          "text": "Troubleshooting must never involve sharing passwords, bypassing access controls or exposing production secrets. Access should be restored through the approved authentication path."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the problem appears permission-related, record which area the user expected to access rather than attempting to reveal restricted content through another account."
+        }
+      ]
+    },
+    {
+      "heading": "Escalation note",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Describe the failure",
+              "text": "State the route or action, expected result and actual result."
+            },
+            {
+              "title": "Attach useful evidence",
+              "text": "Include the exact error text and a screenshot only when it does not expose sensitive data."
+            },
+            {
+              "title": "List checks already performed",
+              "text": "Prevent the next person from repeating basic troubleshooting unnecessarily."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "internal-communication-standards",
+    "file-organisation-and-naming"
+  ],
+  "mainHubLinks": []
+}

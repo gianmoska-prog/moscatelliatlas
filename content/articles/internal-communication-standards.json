@@ -1,0 +1,85 @@
+{
+  "id": "article.communication-standards",
+  "slug": "internal-communication-standards",
+  "type": "article",
+  "category": "people",
+  "topic": "Communication standards",
+  "eyebrow": "People standard",
+  "title": "Internal communication standards",
+  "summary": "A demonstration guide to concise updates, ownership, context and appropriate use of synchronous versus asynchronous communication.",
+  "keywords": [
+    "people",
+    "team",
+    "staff",
+    "communication",
+    "Slack",
+    "email"
+  ],
+  "readingMinutes": 6,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Useful updates",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "State what changed, what is needed, who owns the next action and when another update is expected when timing matters."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Lead with the material update",
+            "Separate facts from assumptions",
+            "Name the owner of the next action",
+            "Include a deadline only when one is real",
+            "Link the relevant source instead of duplicating it"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Choose the channel",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use asynchronous communication by default when the subject can be understood and resolved without a meeting. Use a call when nuance, speed or active collaboration materially improves the result."
+        },
+        {
+          "type": "callout",
+          "label": "After a call",
+          "text": "If the conversation creates a decision, commitment or change that matters later, preserve the relevant conclusion in the appropriate written record."
+        }
+      ]
+    },
+    {
+      "heading": "Escalation without noise",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Escalation should describe the blocker, consequence and requested decision. Adding more recipients without clarifying the need rarely improves the outcome."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "how-moscatelli-records-decisions",
+    "introduction-to-moscatelli-tone-of-voice"
+  ],
+  "mainHubLinks": []
+}

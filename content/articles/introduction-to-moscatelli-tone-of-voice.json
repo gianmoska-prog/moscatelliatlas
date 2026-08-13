@@ -1,0 +1,114 @@
+{
+  "id": "article.tone-of-voice",
+  "slug": "introduction-to-moscatelli-tone-of-voice",
+  "type": "article",
+  "category": "brand",
+  "topic": "Tone of voice",
+  "eyebrow": "Brand standard",
+  "title": "Introduction to MOSCATELLI’s tone of voice",
+  "summary": "A practical introduction to restraint, clarity and authority in internal and external MOSCATELLI writing.",
+  "keywords": [
+    "brand",
+    "tone",
+    "voice",
+    "writing",
+    "communication"
+  ],
+  "readingMinutes": 7,
+  "owner": "Creative Direction",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Principles",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Prefer precise language, calm confidence and useful context. Avoid inflated claims, filler and unnecessary informality."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Say exactly what is known and what is not.",
+            "Use restraint instead of superlatives.",
+            "Write for comprehension before ornament.",
+            "Preserve warmth without becoming casual or verbose."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Authority without noise",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "MOSCATELLI should not need to insist that something is exceptional. The writing should communicate confidence through specificity, proportion and control."
+        },
+        {
+          "type": "callout",
+          "label": "Avoid",
+          "text": "Generic luxury language such as “unparalleled”, “timeless elegance” or “the finest” should not substitute for concrete information."
+        }
+      ]
+    },
+    {
+      "heading": "Internal writing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Internal communication can be more direct than public copy, but it should remain clear enough that another person can understand the decision, action and context later."
+        },
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Lead with the point",
+              "text": "State the decision, request or change early."
+            },
+            {
+              "title": "Add material context",
+              "text": "Include only the information needed to understand why it matters."
+            },
+            {
+              "title": "Make ownership explicit",
+              "text": "When action is required, identify who owns it and when it is expected."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Review test",
+      "blocks": [
+        {
+          "type": "checklist",
+          "items": [
+            "Is every claim supportable?",
+            "Could the sentence be shorter without losing meaning?",
+            "Does the tone sound composed rather than promotional?",
+            "Would the wording still make sense outside the immediate conversation?"
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "photography-approval-checklist",
+    "internal-communication-standards"
+  ],
+  "mainHubLinks": []
+}

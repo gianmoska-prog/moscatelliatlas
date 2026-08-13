@@ -1,0 +1,66 @@
+{
+  "id": "lesson.italian-introductions",
+  "slug": "italian-introductions",
+  "type": "academia-lesson",
+  "courseSlug": "italian-foundation",
+  "moduleId": "presence",
+  "order": 1,
+  "category": "people",
+  "topic": "Development",
+  "eyebrow": "Academia lesson",
+  "title": "Presentarsi con precisione",
+  "summary": "Use a small set of natural structures to introduce yourself and your role without overloading the first exchange.",
+  "keywords": [
+    "Italian",
+    "introductions",
+    "presentarsi",
+    "role",
+    "language"
+  ],
+  "estimatedMinutes": 20,
+  "readingMinutes": 20,
+  "requirement": "required",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "Core structures",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Mi chiamo … — My name is …",
+            "Lavoro con MOSCATELLI. — I work with MOSCATELLI.",
+            "Mi occupo di … — I am responsible for / I deal with …",
+            "Piacere di conoscerti. — Nice to meet you. (informal)",
+            "Piacere di conoscerla. — Nice to meet you. (formal)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Practice",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Combine only the information the situation requires: name, organisation and one clear description of your role. The goal is comfortable, intelligible speech rather than a memorised biography."
+        }
+      ]
+    }
+  ]
+}

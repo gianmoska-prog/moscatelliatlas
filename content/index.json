@@ -1,0 +1,1650 @@
+{
+  "schemaVersion": 4,
+  "generatedFor": "Patch 08 development preview",
+  "contentStatus": "demonstration",
+  "notice": "All policy-like content in this dataset is demonstration material for interface validation and must not be treated as final MOSCATELLI policy.",
+  "categories": [
+    {
+      "slug": "the-house",
+      "name": "The House",
+      "shortName": "The House",
+      "description": "The institution itself: purpose, structure, responsibilities and the language used inside MOSCATELLI.",
+      "topics": [
+        "MOSCATELLI’s story",
+        "Mission and values",
+        "Organisational structure",
+        "Roles and responsibilities",
+        "Internal terminology",
+        "Company contacts"
+      ]
+    },
+    {
+      "slug": "brand",
+      "name": "Brand",
+      "shortName": "Brand",
+      "description": "The standards that govern how MOSCATELLI looks, sounds and presents itself.",
+      "topics": [
+        "Visual identity",
+        "Logo and monogram usage",
+        "Colour",
+        "Typography",
+        "Tone of voice",
+        "Writing",
+        "Photography",
+        "Social media",
+        "Approved assets"
+      ]
+    },
+    {
+      "slug": "products-and-quality",
+      "name": "Products & Quality",
+      "shortName": "Products",
+      "description": "Product development, materials, construction, naming, review and release standards.",
+      "topics": [
+        "Product development",
+        "Sample stages",
+        "Materials",
+        "Construction",
+        "Quality standards",
+        "Product naming",
+        "Photography requirements",
+        "Packaging",
+        "Revisions",
+        "Release checklist"
+      ]
+    },
+    {
+      "slug": "operations",
+      "name": "Operations",
+      "shortName": "Operations",
+      "description": "How work is organised, recorded and moved forward across the company.",
+      "topics": [
+        "Project procedures",
+        "Calendar conventions",
+        "Production workflow",
+        "Supplier communication",
+        "Shipping",
+        "Customs",
+        "Records",
+        "File organisation",
+        "Incident handling"
+      ]
+    },
+    {
+      "slug": "suppliers",
+      "name": "Suppliers",
+      "shortName": "Suppliers",
+      "description": "Reference procedures for selecting, briefing, reviewing and working with suppliers.",
+      "topics": [
+        "Supplier onboarding",
+        "Quotations",
+        "Samples",
+        "Negotiations",
+        "Documentation",
+        "Payments",
+        "Quality disputes",
+        "Ending a relationship"
+      ]
+    },
+    {
+      "slug": "finance-and-administration",
+      "name": "Finance & Administration",
+      "shortName": "Finance",
+      "description": "Administrative guidance for expenses, invoices, receipts, currencies, approvals and confidentiality.",
+      "topics": [
+        "Income",
+        "Expenses",
+        "Expense categories",
+        "Invoices",
+        "Receipts",
+        "Recurring costs",
+        "Training costs",
+        "Currencies",
+        "Approvals",
+        "Confidentiality"
+      ],
+      "permissionHint": "Role-aware access required later"
+    },
+    {
+      "slug": "people",
+      "name": "People",
+      "shortName": "People",
+      "description": "Onboarding, communication, responsibilities and professional working practices.",
+      "topics": [
+        "Team onboarding",
+        "Roles",
+        "Communication standards",
+        "Working practices",
+        "Availability",
+        "Development",
+        "Internal policies"
+      ]
+    },
+    {
+      "slug": "systems",
+      "name": "Systems",
+      "shortName": "Systems",
+      "description": "How to use and troubleshoot MOSCATELLI’s internal systems and account access.",
+      "topics": [
+        "MainHub",
+        "Atlas",
+        "Slack",
+        "Email",
+        "Account access",
+        "Password guidance",
+        "PWA installation",
+        "Troubleshooting",
+        "Reporting technical problems"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "article.welcome-atlas",
+      "slug": "welcome-to-moscatelli-atlas",
+      "type": "article",
+      "category": "the-house",
+      "topic": "Internal terminology",
+      "eyebrow": "Orientation",
+      "title": "Welcome to MOSCATELLI Atlas",
+      "summary": "What Atlas is for, what belongs here and how to distinguish institutional knowledge from live operational work.",
+      "keywords": [
+        "Atlas",
+        "knowledge",
+        "standards",
+        "orientation",
+        "MainHub"
+      ],
+      "readingMinutes": 4,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-11-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.house-standards",
+      "slug": "working-with-standards-at-moscatelli",
+      "type": "article",
+      "category": "the-house",
+      "topic": "Mission and values",
+      "eyebrow": "The House",
+      "title": "Working with standards at MOSCATELLI",
+      "summary": "A demonstration reference for how standards should guide decisions without turning judgement into bureaucracy.",
+      "keywords": [
+        "standards",
+        "values",
+        "decisions",
+        "quality"
+      ],
+      "readingMinutes": 5,
+      "owner": "Founder",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-11-13",
+      "languageStatus": "English demonstration",
+      "status": "under-review",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.tone-of-voice",
+      "slug": "introduction-to-moscatelli-tone-of-voice",
+      "type": "article",
+      "category": "brand",
+      "topic": "Tone of voice",
+      "eyebrow": "Brand standard",
+      "title": "Introduction to MOSCATELLI’s tone of voice",
+      "summary": "A practical introduction to restraint, clarity and authority in internal and external MOSCATELLI writing.",
+      "keywords": [
+        "brand",
+        "tone",
+        "voice",
+        "writing",
+        "communication"
+      ],
+      "readingMinutes": 7,
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.photography-approval",
+      "slug": "photography-approval-checklist",
+      "type": "article",
+      "category": "brand",
+      "topic": "Photography",
+      "eyebrow": "Brand checklist",
+      "title": "Photography approval checklist",
+      "summary": "The visual and technical points to review before an image is treated as approved MOSCATELLI material.",
+      "keywords": [
+        "photography",
+        "image",
+        "approval",
+        "resolution",
+        "brand"
+      ],
+      "readingMinutes": 6,
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Creative",
+        "Marketing",
+        "Operations"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.product-naming",
+      "slug": "product-naming-standards",
+      "type": "article",
+      "category": "products-and-quality",
+      "topic": "Product naming",
+      "eyebrow": "Product standard",
+      "title": "Product naming standards",
+      "summary": "A demonstration framework for creating product names that remain coherent, distinctive and usable across records and communications.",
+      "keywords": [
+        "product",
+        "naming",
+        "standards",
+        "SKU",
+        "collection"
+      ],
+      "readingMinutes": 6,
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Creative",
+        "Operations",
+        "Marketing"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.sample-review",
+      "slug": "supplier-sample-review-procedure",
+      "type": "article",
+      "category": "products-and-quality",
+      "topic": "Sample stages",
+      "eyebrow": "Quality procedure",
+      "title": "Supplier sample review procedure",
+      "summary": "A repeatable demonstration process for inspecting, documenting and responding to a supplier sample.",
+      "keywords": [
+        "supplier",
+        "sample",
+        "prototype",
+        "review",
+        "quality"
+      ],
+      "readingMinutes": 8,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Creative",
+        "Operations"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.decision-records",
+      "slug": "how-moscatelli-records-decisions",
+      "type": "article",
+      "category": "operations",
+      "topic": "Records",
+      "eyebrow": "Operating practice",
+      "title": "How MOSCATELLI records decisions",
+      "summary": "Where a meaningful decision should be recorded, what context to preserve and how to leave a useful institutional trail.",
+      "keywords": [
+        "record",
+        "decision",
+        "MainHub",
+        "documentation",
+        "history"
+      ],
+      "readingMinutes": 5,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-11-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.file-organisation",
+      "slug": "file-organisation-and-naming",
+      "type": "article",
+      "category": "operations",
+      "topic": "File organisation",
+      "eyebrow": "Operating standard",
+      "title": "File organisation and naming",
+      "summary": "A demonstration convention for keeping project material findable, version-aware and understandable to another team member.",
+      "keywords": [
+        "files",
+        "folders",
+        "naming",
+        "version",
+        "records"
+      ],
+      "readingMinutes": 5,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-11-13",
+      "languageStatus": "English demonstration",
+      "status": "under-review",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.quotation-review",
+      "slug": "reviewing-a-supplier-quotation",
+      "type": "article",
+      "category": "suppliers",
+      "topic": "Quotations",
+      "eyebrow": "Supplier procedure",
+      "title": "Reviewing a supplier quotation",
+      "summary": "What to verify before a quotation is treated as comparable, complete and ready for a commercial decision.",
+      "keywords": [
+        "supplier",
+        "vendor",
+        "quotation",
+        "quote",
+        "cost",
+        "MOQ"
+      ],
+      "readingMinutes": 7,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Operations",
+        "Founder"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.training-expense",
+      "slug": "recording-a-training-expense",
+      "type": "article",
+      "category": "finance-and-administration",
+      "topic": "Training costs",
+      "eyebrow": "Finance guidance",
+      "title": "Recording a training expense",
+      "summary": "A demonstration administrative procedure for preserving the invoice, purpose, currency and internal approval of training expenditure.",
+      "keywords": [
+        "training",
+        "expense",
+        "cost",
+        "invoice",
+        "receipt",
+        "finance"
+      ],
+      "readingMinutes": 6,
+      "owner": "Finance",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Founder",
+        "Operations"
+      ],
+      "permissions": [
+        "finance-guidance"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.communication-standards",
+      "slug": "internal-communication-standards",
+      "type": "article",
+      "category": "people",
+      "topic": "Communication standards",
+      "eyebrow": "People standard",
+      "title": "Internal communication standards",
+      "summary": "A demonstration guide to concise updates, ownership, context and appropriate use of synchronous versus asynchronous communication.",
+      "keywords": [
+        "people",
+        "team",
+        "staff",
+        "communication",
+        "Slack",
+        "email"
+      ],
+      "readingMinutes": 6,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-11-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.mainhub-access",
+      "slug": "mainhub-access-troubleshooting",
+      "type": "article",
+      "category": "systems",
+      "topic": "MainHub",
+      "eyebrow": "Systems guide",
+      "title": "MainHub access troubleshooting",
+      "summary": "A demonstration first-response checklist for common access problems before a technical issue is escalated.",
+      "keywords": [
+        "MainHub",
+        "login",
+        "sign in",
+        "access",
+        "password",
+        "troubleshooting"
+      ],
+      "readingMinutes": 5,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.responding-to-a-delayed-supplier",
+      "slug": "responding-to-a-delayed-supplier",
+      "type": "playbook",
+      "category": "suppliers",
+      "topic": "Supplier communication",
+      "eyebrow": "Operational playbook",
+      "title": "A supplier has stopped responding",
+      "summary": "A calm sequence for re-establishing contact, protecting the schedule and escalating only when silence becomes operationally material.",
+      "keywords": [
+        "supplier",
+        "vendor",
+        "delayed",
+        "no response",
+        "follow-up",
+        "deadline",
+        "communication"
+      ],
+      "owner": "Operations",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.sample-arrived-damaged",
+      "slug": "sample-arrived-damaged",
+      "type": "playbook",
+      "category": "products-and-quality",
+      "topic": "Sample stages",
+      "eyebrow": "Operational playbook",
+      "title": "A sample arrived damaged",
+      "summary": "A preservation-first response for documenting damage, separating transit issues from workmanship issues and protecting the review trail.",
+      "keywords": [
+        "sample",
+        "prototype",
+        "damaged",
+        "quality",
+        "shipping",
+        "evidence",
+        "photography"
+      ],
+      "owner": "Product Development",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.invoice-does-not-match-quotation",
+      "slug": "invoice-does-not-match-quotation",
+      "type": "playbook",
+      "category": "finance-and-administration",
+      "topic": "Invoices",
+      "eyebrow": "Operational playbook",
+      "title": "An invoice does not match the quotation",
+      "summary": "A verification sequence for mismatched amounts, quantities, currencies or payment terms before any financial record is treated as final.",
+      "keywords": [
+        "invoice",
+        "bill",
+        "quotation",
+        "quote",
+        "amount",
+        "currency",
+        "payment",
+        "mismatch"
+      ],
+      "owner": "Finance & Administration",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.deadline-will-be-missed",
+      "slug": "deadline-will-be-missed",
+      "type": "playbook",
+      "category": "operations",
+      "topic": "Project procedures",
+      "eyebrow": "Operational playbook",
+      "title": "A deadline will be missed",
+      "summary": "A decision-first response for surfacing slippage early, separating facts from assumptions and resetting commitments with a documented owner.",
+      "keywords": [
+        "deadline",
+        "late",
+        "delay",
+        "milestone",
+        "schedule",
+        "timeline",
+        "escalation"
+      ],
+      "owner": "Operations",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.confidential-information-request",
+      "slug": "confidential-information-request",
+      "type": "playbook",
+      "category": "people",
+      "topic": "Internal policies",
+      "eyebrow": "Operational playbook",
+      "title": "Someone requests confidential information",
+      "summary": "A low-drama response for pausing disclosure, verifying need and authority, and recording sensitive-information decisions.",
+      "keywords": [
+        "confidential",
+        "private",
+        "information",
+        "data",
+        "supplier",
+        "request",
+        "permission"
+      ],
+      "owner": "Operations",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.mainhub-access-failure",
+      "slug": "mainhub-access-failure",
+      "type": "playbook",
+      "category": "systems",
+      "topic": "MainHub",
+      "eyebrow": "Operational playbook",
+      "title": "A team member cannot access MainHub",
+      "summary": "A short diagnostic route for distinguishing account, session and permission problems before escalating a systems issue.",
+      "keywords": [
+        "MainHub",
+        "login",
+        "sign in",
+        "access",
+        "account",
+        "permission",
+        "troubleshooting"
+      ],
+      "owner": "Operations",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.image-has-wrong-resolution",
+      "slug": "image-has-wrong-resolution",
+      "type": "playbook",
+      "category": "brand",
+      "topic": "Photography",
+      "eyebrow": "Operational playbook",
+      "title": "An image has the wrong resolution",
+      "summary": "A controlled response for stopping unsuitable imagery from progressing while preserving the source file and approval history.",
+      "keywords": [
+        "image",
+        "resolution",
+        "photography",
+        "pixels",
+        "quality",
+        "approval",
+        "asset"
+      ],
+      "owner": "Creative Direction",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.payment-recorded-twice",
+      "slug": "payment-recorded-twice",
+      "type": "playbook",
+      "category": "finance-and-administration",
+      "topic": "Payments",
+      "eyebrow": "Operational playbook",
+      "title": "A payment was recorded twice",
+      "summary": "A non-destructive verification process for suspected duplicate records before correcting financial history.",
+      "keywords": [
+        "payment",
+        "duplicate",
+        "record",
+        "expense",
+        "finance",
+        "transaction",
+        "twice"
+      ],
+      "owner": "Finance & Administration",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.shipment-held-at-customs",
+      "slug": "shipment-held-at-customs",
+      "type": "playbook",
+      "category": "operations",
+      "topic": "Customs",
+      "eyebrow": "Operational playbook",
+      "title": "A shipment is held at customs",
+      "summary": "A fact-led response for establishing the hold reason, gathering documents and escalating only with the relevant shipment record intact.",
+      "keywords": [
+        "shipment",
+        "shipping",
+        "delivery",
+        "customs",
+        "held",
+        "carrier",
+        "documents"
+      ],
+      "owner": "Operations",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.welcome-to-atlas",
+      "slug": "welcome-to-atlas",
+      "type": "academia-lesson",
+      "courseSlug": "moscatelli-onboarding",
+      "moduleId": "orientation",
+      "order": 1,
+      "category": "systems",
+      "topic": "Atlas",
+      "eyebrow": "Academia lesson",
+      "title": "Welcome to Atlas",
+      "summary": "Understand what Atlas is for, what it is not, and when to consult it before asking for institutional guidance.",
+      "keywords": [
+        "Atlas",
+        "onboarding",
+        "knowledge",
+        "institutional memory",
+        "MainHub"
+      ],
+      "estimatedMinutes": 12,
+      "readingMinutes": 12,
+      "requirement": "required",
+      "acknowledgementRequired": true,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.working-with-standards",
+      "slug": "working-with-standards",
+      "type": "academia-lesson",
+      "courseSlug": "moscatelli-onboarding",
+      "moduleId": "orientation",
+      "order": 2,
+      "category": "the-house",
+      "topic": "Mission and values",
+      "eyebrow": "Academia lesson",
+      "title": "Working with standards",
+      "summary": "Learn how to treat published standards as controlled references rather than informal suggestions.",
+      "keywords": [
+        "standards",
+        "procedure",
+        "version",
+        "review",
+        "governance"
+      ],
+      "estimatedMinutes": 16,
+      "readingMinutes": 16,
+      "requirement": "required",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.recording-decisions",
+      "slug": "recording-decisions",
+      "type": "academia-lesson",
+      "courseSlug": "moscatelli-onboarding",
+      "moduleId": "working-practice",
+      "order": 3,
+      "category": "operations",
+      "topic": "Records",
+      "eyebrow": "Academia lesson",
+      "title": "Recording decisions",
+      "summary": "Practice a concise decision record that preserves context without turning routine work into bureaucracy.",
+      "keywords": [
+        "record",
+        "decision",
+        "owner",
+        "context",
+        "MainHub"
+      ],
+      "estimatedMinutes": 20,
+      "readingMinutes": 20,
+      "requirement": "required",
+      "acknowledgementRequired": true,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.communication-basics",
+      "slug": "communication-basics",
+      "type": "academia-lesson",
+      "courseSlug": "moscatelli-onboarding",
+      "moduleId": "working-practice",
+      "order": 4,
+      "category": "people",
+      "topic": "Communication standards",
+      "eyebrow": "Academia lesson",
+      "title": "Internal communication basics",
+      "summary": "Use a calm, precise structure for internal updates, requests and handovers.",
+      "keywords": [
+        "communication",
+        "handover",
+        "update",
+        "request",
+        "team"
+      ],
+      "estimatedMinutes": 22,
+      "readingMinutes": 22,
+      "requirement": "required",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.tone-of-voice-foundation",
+      "slug": "tone-of-voice-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "brand-foundations",
+      "moduleId": "voice",
+      "order": 1,
+      "category": "brand",
+      "topic": "Tone of voice",
+      "eyebrow": "Academia lesson",
+      "title": "Tone of voice · Foundation",
+      "summary": "Recognise the difference between restrained confidence and language that feels inflated, generic or over-written.",
+      "keywords": [
+        "brand",
+        "tone",
+        "voice",
+        "writing",
+        "language"
+      ],
+      "estimatedMinutes": 22,
+      "readingMinutes": 22,
+      "requirement": "required",
+      "acknowledgementRequired": true,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.product-naming-foundation",
+      "slug": "product-naming-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "brand-foundations",
+      "moduleId": "voice",
+      "order": 2,
+      "category": "products-and-quality",
+      "topic": "Product naming",
+      "eyebrow": "Academia lesson",
+      "title": "Product naming · Foundation",
+      "summary": "Understand the early naming discipline used to keep product language coherent and reviewable.",
+      "keywords": [
+        "product",
+        "naming",
+        "name",
+        "collection",
+        "standard"
+      ],
+      "estimatedMinutes": 18,
+      "readingMinutes": 18,
+      "requirement": "required",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.photography-review-foundation",
+      "slug": "photography-review-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "brand-foundations",
+      "moduleId": "image",
+      "order": 3,
+      "category": "brand",
+      "topic": "Photography",
+      "eyebrow": "Academia lesson",
+      "title": "Photography review · Foundation",
+      "summary": "A concise first review of image suitability before detailed creative approval.",
+      "keywords": [
+        "photography",
+        "image",
+        "approval",
+        "resolution",
+        "brand"
+      ],
+      "estimatedMinutes": 25,
+      "readingMinutes": 25,
+      "requirement": "optional",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.quotation-review-foundation",
+      "slug": "quotation-review-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "supplier-procedures",
+      "moduleId": "commercial",
+      "order": 1,
+      "category": "suppliers",
+      "topic": "Quotations",
+      "eyebrow": "Academia lesson",
+      "title": "Quotation review · Foundation",
+      "summary": "Read supplier quotations as versioned commercial records and identify the details that must be clear before approval.",
+      "keywords": [
+        "supplier",
+        "vendor",
+        "quotation",
+        "quote",
+        "price",
+        "terms"
+      ],
+      "estimatedMinutes": 22,
+      "readingMinutes": 22,
+      "requirement": "required",
+      "acknowledgementRequired": true,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.sample-review-foundation",
+      "slug": "sample-review-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "supplier-procedures",
+      "moduleId": "samples",
+      "order": 2,
+      "category": "products-and-quality",
+      "topic": "Sample stages",
+      "eyebrow": "Academia lesson",
+      "title": "Sample review · Foundation",
+      "summary": "A controlled first pass for physical samples that keeps evidence, observations and revisions separate.",
+      "keywords": [
+        "sample",
+        "prototype",
+        "quality",
+        "review",
+        "supplier"
+      ],
+      "estimatedMinutes": 25,
+      "readingMinutes": 25,
+      "requirement": "required",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.supplier-follow-up-foundation",
+      "slug": "supplier-follow-up-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "supplier-procedures",
+      "moduleId": "samples",
+      "order": 3,
+      "category": "suppliers",
+      "topic": "Supplier communication",
+      "eyebrow": "Academia lesson",
+      "title": "Supplier follow-up · Foundation",
+      "summary": "Handle a missed supplier response without creating noise, losing the decision date or escalating prematurely.",
+      "keywords": [
+        "supplier",
+        "vendor",
+        "follow-up",
+        "delay",
+        "communication"
+      ],
+      "estimatedMinutes": 23,
+      "readingMinutes": 23,
+      "requirement": "optional",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.italian-introductions",
+      "slug": "italian-introductions",
+      "type": "academia-lesson",
+      "courseSlug": "italian-foundation",
+      "moduleId": "presence",
+      "order": 1,
+      "category": "people",
+      "topic": "Development",
+      "eyebrow": "Academia lesson",
+      "title": "Presentarsi con precisione",
+      "summary": "Use a small set of natural structures to introduce yourself and your role without overloading the first exchange.",
+      "keywords": [
+        "Italian",
+        "introductions",
+        "presentarsi",
+        "role",
+        "language"
+      ],
+      "estimatedMinutes": 20,
+      "readingMinutes": 20,
+      "requirement": "required",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.italian-courtesy",
+      "slug": "italian-courtesy",
+      "type": "academia-lesson",
+      "courseSlug": "italian-foundation",
+      "moduleId": "presence",
+      "order": 2,
+      "category": "people",
+      "topic": "Development",
+      "eyebrow": "Academia lesson",
+      "title": "Cortesia professionale",
+      "summary": "Build a compact set of polite forms for requests, thanks and clarification in ordinary professional conversation.",
+      "keywords": [
+        "Italian",
+        "courtesy",
+        "please",
+        "thank you",
+        "clarification"
+      ],
+      "estimatedMinutes": 20,
+      "readingMinutes": 20,
+      "requirement": "required",
+      "acknowledgementRequired": true,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.italian-numbers-dates",
+      "slug": "italian-numbers-dates",
+      "type": "academia-lesson",
+      "courseSlug": "italian-foundation",
+      "moduleId": "coordination",
+      "order": 3,
+      "category": "people",
+      "topic": "Development",
+      "eyebrow": "Academia lesson",
+      "title": "Numeri e date",
+      "summary": "Recognise and produce the number and date forms most useful for prices, quantities and appointments.",
+      "keywords": [
+        "Italian",
+        "numbers",
+        "dates",
+        "quantities",
+        "prices"
+      ],
+      "estimatedMinutes": 25,
+      "readingMinutes": 25,
+      "requirement": "required",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.italian-times-scheduling",
+      "slug": "italian-times-scheduling",
+      "type": "academia-lesson",
+      "courseSlug": "italian-foundation",
+      "moduleId": "coordination",
+      "order": 4,
+      "category": "people",
+      "topic": "Development",
+      "eyebrow": "Academia lesson",
+      "title": "Orari e appuntamenti",
+      "summary": "Use simple structures for proposing, confirming and changing times.",
+      "keywords": [
+        "Italian",
+        "time",
+        "schedule",
+        "appointment",
+        "calendar"
+      ],
+      "estimatedMinutes": 25,
+      "readingMinutes": 25,
+      "requirement": "required",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Internal learners"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "update.atlas-foundation",
+      "slug": "atlas-foundation",
+      "type": "update",
+      "updateType": "informational",
+      "changeKind": "new",
+      "category": "systems",
+      "topic": "Atlas",
+      "eyebrow": "New content",
+      "title": "Atlas foundation is now available",
+      "summary": "The first Atlas knowledge, search, playbook and learning experiences are available in the development reference.",
+      "changeSummary": "A structured internal reference now exists for Library material, situational Playbooks and Academia learning paths.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "welcome-to-moscatelli-atlas",
+        "label": "Welcome to MOSCATELLI Atlas"
+      },
+      "keywords": [
+        "Atlas",
+        "new content",
+        "knowledge",
+        "launch"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.sample-review-revised",
+      "slug": "sample-review-revised",
+      "type": "update",
+      "updateType": "important",
+      "changeKind": "revised",
+      "category": "products-and-quality",
+      "topic": "Sample stages",
+      "eyebrow": "Revised content",
+      "title": "Supplier sample review procedure revised",
+      "summary": "The demonstration sample-review reference now places the physical inspection record before disposition decisions.",
+      "changeSummary": "The revision clarifies sequencing: document condition first, compare against the approved reference second, then decide whether to accept, revise or escalate.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Product Development",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "Product Development",
+        "Operations"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "supplier-sample-review-procedure",
+        "label": "Supplier sample review procedure"
+      },
+      "keywords": [
+        "sample",
+        "revised",
+        "inspection",
+        "supplier"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.photography-check-required",
+      "slug": "photography-check-required",
+      "type": "update",
+      "updateType": "required",
+      "changeKind": "important",
+      "category": "brand",
+      "topic": "Photography",
+      "eyebrow": "Required reading",
+      "title": "Photography approval checks require review",
+      "summary": "Creative and marketing users should review the current demonstration photography approval checklist before image approval exercises.",
+      "changeSummary": "This preview marks a knowledge change as required reading to validate acknowledgement behaviour and governance presentation.",
+      "effectiveDate": "2026-08-14",
+      "publishedDate": "2026-08-13",
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "Creative",
+        "Marketing"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": true,
+      "target": {
+        "type": "article",
+        "slug": "photography-approval-checklist",
+        "label": "Photography approval checklist"
+      },
+      "keywords": [
+        "required reading",
+        "photography",
+        "approval",
+        "acknowledgement"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.mainhub-access-important",
+      "slug": "mainhub-access-important",
+      "type": "update",
+      "updateType": "important",
+      "changeKind": "revised",
+      "category": "systems",
+      "topic": "MainHub",
+      "eyebrow": "Important update",
+      "title": "MainHub access troubleshooting clarified",
+      "summary": "The access troubleshooting reference now separates account, browser and permission checks more clearly.",
+      "changeSummary": "The demonstration change makes escalation conditions easier to identify before a technical problem is passed onward.",
+      "effectiveDate": "2026-08-15",
+      "publishedDate": "2026-08-13",
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "mainhub-access-troubleshooting",
+        "label": "MainHub access troubleshooting"
+      },
+      "keywords": [
+        "MainHub",
+        "access",
+        "troubleshooting",
+        "important"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.naming-standard-revised",
+      "slug": "naming-standard-revised",
+      "type": "update",
+      "updateType": "informational",
+      "changeKind": "revised",
+      "category": "products-and-quality",
+      "topic": "Product naming",
+      "eyebrow": "Revised content",
+      "title": "Product naming reference updated",
+      "summary": "The demonstration naming reference now emphasises checking the wider naming family before approval.",
+      "changeSummary": "The update reinforces that naming is a system rather than a series of isolated creative decisions.",
+      "effectiveDate": "2026-08-16",
+      "publishedDate": "2026-08-13",
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "Creative",
+        "Product Development"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "product-naming-standards",
+        "label": "Product naming standards"
+      },
+      "keywords": [
+        "naming",
+        "product",
+        "revised",
+        "standard"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.training-expense-archive",
+      "slug": "training-expense-archive",
+      "type": "update",
+      "updateType": "archived",
+      "changeKind": "archived",
+      "category": "finance-and-administration",
+      "topic": "Training costs",
+      "eyebrow": "Archived notice",
+      "title": "Earlier training-expense note archived",
+      "summary": "An earlier demonstration note has been superseded by the current training-expense reference.",
+      "changeSummary": "This archived notice exists to demonstrate how Atlas can preserve superseded knowledge without presenting it as current guidance.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Finance",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "Finance",
+        "Operations"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "archived",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "recording-a-training-expense",
+        "label": "Recording a training expense"
+      },
+      "keywords": [
+        "archived",
+        "training expense",
+        "superseded",
+        "finance"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    }
+  ]
+}

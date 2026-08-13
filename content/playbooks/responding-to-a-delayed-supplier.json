@@ -1,0 +1,80 @@
+{
+  "id": "playbook.responding-to-a-delayed-supplier",
+  "slug": "responding-to-a-delayed-supplier",
+  "type": "playbook",
+  "category": "suppliers",
+  "topic": "Supplier communication",
+  "eyebrow": "Operational playbook",
+  "title": "A supplier has stopped responding",
+  "summary": "A calm sequence for re-establishing contact, protecting the schedule and escalating only when silence becomes operationally material.",
+  "keywords": [
+    "supplier",
+    "vendor",
+    "delayed",
+    "no response",
+    "follow-up",
+    "deadline",
+    "communication"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration playbook for interface validation. It is not final MOSCATELLI policy and must be reviewed before operational use.",
+  "scenario": "Use this when a supplier has missed an expected reply or agreed update and the silence could begin to affect a sample, quotation, production milestone or decision.",
+  "immediateAction": [
+    "Verify the last agreed response date and the most recent complete message thread.",
+    "Send one concise follow-up that states the pending question, the original expectation and the next decision date.",
+    "Record the follow-up in the relevant project record and set a specific next-check time rather than repeatedly chasing."
+  ],
+  "whoToInform": [
+    {
+      "role": "Project owner",
+      "when": "When the missed reply affects a committed internal milestone."
+    },
+    {
+      "role": "Founder",
+      "when": "When production, cash commitment or launch timing may be affected."
+    }
+  ],
+  "whatToRecord": [
+    "Supplier name and contact used",
+    "Last substantive reply date",
+    "What information remains outstanding",
+    "Follow-up date/time and channel",
+    "Decision or milestone that may be affected"
+  ],
+  "escalationConditions": [
+    "A second agreed response point passes without acknowledgement.",
+    "The supplier becomes unreachable across the established business channels.",
+    "The delay threatens a payment, production slot, launch date or material commitment."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Message structure",
+      "label": "Concise supplier follow-up",
+      "text": "Reference the pending item, restate the agreed timing, ask for a clear update, and state the date by which MOSCATELLI needs a response."
+    },
+    {
+      "kind": "Record",
+      "label": "Project decision record",
+      "text": "Capture the impact and next decision point in the relevant MainHub record once integration is active."
+    }
+  ],
+  "relatedProcedures": [
+    "reviewing-a-supplier-quotation",
+    "supplier-sample-review-procedure"
+  ]
+}

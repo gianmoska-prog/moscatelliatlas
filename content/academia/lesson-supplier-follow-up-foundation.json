@@ -1,0 +1,64 @@
+{
+  "id": "lesson.supplier-follow-up-foundation",
+  "slug": "supplier-follow-up-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "supplier-procedures",
+  "moduleId": "samples",
+  "order": 3,
+  "category": "suppliers",
+  "topic": "Supplier communication",
+  "eyebrow": "Academia lesson",
+  "title": "Supplier follow-up · Foundation",
+  "summary": "Handle a missed supplier response without creating noise, losing the decision date or escalating prematurely.",
+  "keywords": [
+    "supplier",
+    "vendor",
+    "follow-up",
+    "delay",
+    "communication"
+  ],
+  "estimatedMinutes": 23,
+  "readingMinutes": 23,
+  "requirement": "optional",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "One clear follow-up is better than repeated chasing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Restate the pending item, the earlier expectation and the date by which MOSCATELLI now needs a response. Then record the next check point instead of sending repeated messages without a decision threshold."
+        }
+      ]
+    },
+    {
+      "heading": "Escalate on impact",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "A production or sample slot may be lost.",
+            "A payment or commercial commitment is approaching.",
+            "A launch or internal milestone is now materially at risk."
+          ]
+        }
+      ]
+    }
+  ]
+}

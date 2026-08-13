@@ -1,0 +1,243 @@
+{
+  "version": "0.1-demo",
+  "updates": [
+    {
+      "id": "update.atlas-foundation",
+      "slug": "atlas-foundation",
+      "type": "update",
+      "updateType": "informational",
+      "changeKind": "new",
+      "category": "systems",
+      "topic": "Atlas",
+      "eyebrow": "New content",
+      "title": "Atlas foundation is now available",
+      "summary": "The first Atlas knowledge, search, playbook and learning experiences are available in the development reference.",
+      "changeSummary": "A structured internal reference now exists for Library material, situational Playbooks and Academia learning paths.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "welcome-to-moscatelli-atlas",
+        "label": "Welcome to MOSCATELLI Atlas"
+      },
+      "keywords": [
+        "Atlas",
+        "new content",
+        "knowledge",
+        "launch"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.sample-review-revised",
+      "slug": "sample-review-revised",
+      "type": "update",
+      "updateType": "important",
+      "changeKind": "revised",
+      "category": "products-and-quality",
+      "topic": "Sample stages",
+      "eyebrow": "Revised content",
+      "title": "Supplier sample review procedure revised",
+      "summary": "The demonstration sample-review reference now places the physical inspection record before disposition decisions.",
+      "changeSummary": "The revision clarifies sequencing: document condition first, compare against the approved reference second, then decide whether to accept, revise or escalate.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Product Development",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "Product Development",
+        "Operations"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "supplier-sample-review-procedure",
+        "label": "Supplier sample review procedure"
+      },
+      "keywords": [
+        "sample",
+        "revised",
+        "inspection",
+        "supplier"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.photography-check-required",
+      "slug": "photography-check-required",
+      "type": "update",
+      "updateType": "required",
+      "changeKind": "important",
+      "category": "brand",
+      "topic": "Photography",
+      "eyebrow": "Required reading",
+      "title": "Photography approval checks require review",
+      "summary": "Creative and marketing users should review the current demonstration photography approval checklist before image approval exercises.",
+      "changeSummary": "This preview marks a knowledge change as required reading to validate acknowledgement behaviour and governance presentation.",
+      "effectiveDate": "2026-08-14",
+      "publishedDate": "2026-08-13",
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "Creative",
+        "Marketing"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": true,
+      "target": {
+        "type": "article",
+        "slug": "photography-approval-checklist",
+        "label": "Photography approval checklist"
+      },
+      "keywords": [
+        "required reading",
+        "photography",
+        "approval",
+        "acknowledgement"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.mainhub-access-important",
+      "slug": "mainhub-access-important",
+      "type": "update",
+      "updateType": "important",
+      "changeKind": "revised",
+      "category": "systems",
+      "topic": "MainHub",
+      "eyebrow": "Important update",
+      "title": "MainHub access troubleshooting clarified",
+      "summary": "The access troubleshooting reference now separates account, browser and permission checks more clearly.",
+      "changeSummary": "The demonstration change makes escalation conditions easier to identify before a technical problem is passed onward.",
+      "effectiveDate": "2026-08-15",
+      "publishedDate": "2026-08-13",
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "All internal users"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "mainhub-access-troubleshooting",
+        "label": "MainHub access troubleshooting"
+      },
+      "keywords": [
+        "MainHub",
+        "access",
+        "troubleshooting",
+        "important"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.naming-standard-revised",
+      "slug": "naming-standard-revised",
+      "type": "update",
+      "updateType": "informational",
+      "changeKind": "revised",
+      "category": "products-and-quality",
+      "topic": "Product naming",
+      "eyebrow": "Revised content",
+      "title": "Product naming reference updated",
+      "summary": "The demonstration naming reference now emphasises checking the wider naming family before approval.",
+      "changeSummary": "The update reinforces that naming is a system rather than a series of isolated creative decisions.",
+      "effectiveDate": "2026-08-16",
+      "publishedDate": "2026-08-13",
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "Creative",
+        "Product Development"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "product-naming-standards",
+        "label": "Product naming standards"
+      },
+      "keywords": [
+        "naming",
+        "product",
+        "revised",
+        "standard"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.training-expense-archive",
+      "slug": "training-expense-archive",
+      "type": "update",
+      "updateType": "archived",
+      "changeKind": "archived",
+      "category": "finance-and-administration",
+      "topic": "Training costs",
+      "eyebrow": "Archived notice",
+      "title": "Earlier training-expense note archived",
+      "summary": "An earlier demonstration note has been superseded by the current training-expense reference.",
+      "changeSummary": "This archived notice exists to demonstrate how Atlas can preserve superseded knowledge without presenting it as current guidance.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Finance",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "Finance",
+        "Operations"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "archived",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "recording-a-training-expense",
+        "label": "Recording a training expense"
+      },
+      "keywords": [
+        "archived",
+        "training expense",
+        "superseded",
+        "finance"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    }
+  ]
+}

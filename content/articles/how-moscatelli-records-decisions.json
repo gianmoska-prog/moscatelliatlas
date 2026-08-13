@@ -1,0 +1,97 @@
+{
+  "id": "article.decision-records",
+  "slug": "how-moscatelli-records-decisions",
+  "type": "article",
+  "category": "operations",
+  "topic": "Records",
+  "eyebrow": "Operating practice",
+  "title": "How MOSCATELLI records decisions",
+  "summary": "Where a meaningful decision should be recorded, what context to preserve and how to leave a useful institutional trail.",
+  "keywords": [
+    "record",
+    "decision",
+    "MainHub",
+    "documentation",
+    "history"
+  ],
+  "readingMinutes": 5,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Record the why",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A useful decision record preserves the conclusion, owner, date and the material reasoning or constraint that explains why the decision was made."
+        },
+        {
+          "type": "callout",
+          "label": "The test",
+          "text": "Someone who was not in the room should be able to understand what changed, who decided it and why the decision made sense at the time."
+        }
+      ]
+    },
+    {
+      "heading": "What deserves a record",
+      "blocks": [
+        {
+          "type": "checklist",
+          "items": [
+            "A change to an agreed product, supplier or launch direction",
+            "An exception to a published standard",
+            "A material financial or contractual commitment",
+            "A decision likely to be questioned or revisited later",
+            "A conclusion that changes another team member’s work"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Minimum decision note",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "State the decision",
+              "text": "Write the conclusion in one clear sentence."
+            },
+            {
+              "title": "Preserve context",
+              "text": "Record the constraint, evidence or trade-off that materially shaped it."
+            },
+            {
+              "title": "Name ownership",
+              "text": "Record the decision owner and any person responsible for the next action."
+            },
+            {
+              "title": "Link the live work",
+              "text": "When relevant, connect the decision record to the MainHub item it affects."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "file-organisation-and-naming",
+    "working-with-standards-at-moscatelli"
+  ],
+  "mainHubLinks": []
+}

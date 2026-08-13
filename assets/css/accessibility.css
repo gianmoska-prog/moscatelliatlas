@@ -1,0 +1,120 @@
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation-duration: 0.01ms !important; }
+}
+
+@media (forced-colors: active) {
+  .menu-trigger,
+  .atlas-search-box,
+  .search-submit,
+  .menu-close,
+  .atlas-menu__panel,
+  .search-disclosure,
+  .search-suggestion,
+  .library-filter,
+  .library-category-pill,
+  .library-item { border: 1px solid CanvasText; }
+  .search-submit { background: ButtonFace; color: ButtonText; }
+  .atlas-menu::backdrop { background: transparent; }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --atlas-muted: #55534f;
+    --atlas-line: rgba(28, 28, 26, 0.24);
+    --atlas-line-strong: rgba(28, 28, 26, 0.38);
+  }
+}
+
+@media (forced-colors: active) {
+  .article-demo-notice,
+  .article-callout,
+  .article-checklist__mark,
+  .article-toc-mobile { border: 1px solid CanvasText; }
+  .article-progress > span { background: Highlight; }
+}
+
+@media (forced-colors: active) {
+  .menu-search-open,
+  .global-search__panel,
+  .global-search__form,
+  .global-search__close,
+  .global-search-starter,
+  .search-route-form,
+  .search-route-form > button,
+  .search-subject-filter select,
+  .search-result__link { border: 1px solid CanvasText; }
+  .search-result mark { background: Highlight; color: HighlightText; }
+  .global-search::backdrop { background: transparent; }
+}
+
+
+@media (forced-colors: active) {
+  .playbooks-filter,
+  .playbook-list-item,
+  .playbooks-demo-notice,
+  .playbook-demo-mark,
+  .playbook-immediate ol,
+  .playbook-response-section,
+  .playbook-escalation,
+  .playbook-resource,
+  .playbook-related a,
+  .playbook-governance dl { border-color: CanvasText; }
+}
+
+
+/* Patch 11 — accessibility hardening */
+:focus-visible {
+  scroll-margin: 0.75rem;
+}
+
+@media (forced-colors: active) {
+  .atlas-bookmark-button,
+  .updates-filter button,
+  .update-item__actions a,
+  .update-item__actions button,
+  .academia-action,
+  .academia-completion,
+  .updates-demo-notice,
+  .personal-empty {
+    border: 1px solid CanvasText;
+  }
+  .atlas-bookmark-button[aria-pressed="true"],
+  .updates-filter button[aria-pressed="true"],
+  .academia-action[aria-pressed="true"] {
+    forced-color-adjust: auto;
+  }
+}
+
+@media print {
+  .app-header,
+  .article-progress,
+  .article-rail,
+  .article-toc-mobile,
+  .atlas-reading-actions,
+  .playbook-end,
+  .academia-completion,
+  .academia-lesson-nav { display: none !important; }
+  .atlas-shell,
+  .route-outlet { display: block; min-height: 0; }
+  body { background: #fff; color: #000; }
+  .article-view,
+  .playbook-view,
+  .academia-lesson-view { width: 100%; padding: 0; }
+  .article-reading,
+  .playbook-main,
+  .academia-reading { max-width: none; }
+}
+
+/* Patch 14 — print and contrast polish for newly refined states */
+@media (forced-colors: active) {
+  .menu-primary a[aria-current="page"]::after,
+  .category-nav a[aria-current="page"]::after,
+  .menu-secondary a[aria-current="page"]::after { background: Highlight; }
+  .update-item[data-focus="true"] { box-shadow: inset 2px 0 0 Highlight; }
+}

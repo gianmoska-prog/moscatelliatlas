@@ -1,0 +1,65 @@
+{
+  "id": "lesson.tone-of-voice-foundation",
+  "slug": "tone-of-voice-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "brand-foundations",
+  "moduleId": "voice",
+  "order": 1,
+  "category": "brand",
+  "topic": "Tone of voice",
+  "eyebrow": "Academia lesson",
+  "title": "Tone of voice · Foundation",
+  "summary": "Recognise the difference between restrained confidence and language that feels inflated, generic or over-written.",
+  "keywords": [
+    "brand",
+    "tone",
+    "voice",
+    "writing",
+    "language"
+  ],
+  "estimatedMinutes": 22,
+  "readingMinutes": 22,
+  "requirement": "required",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "The underlying principle",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "MOSCATELLI language should make precision feel effortless. It should not depend on superlatives, manufactured mystique or repeated claims of luxury to create stature."
+        }
+      ]
+    },
+    {
+      "heading": "A useful editing pass",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Remove claims that cannot be demonstrated.",
+            "Prefer one precise noun or verb over stacked adjectives.",
+            "Keep institutional writing calm even when the subject is important.",
+            "Allow product, material and context to carry prestige."
+          ]
+        }
+      ]
+    }
+  ]
+}

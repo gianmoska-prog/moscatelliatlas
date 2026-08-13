@@ -1,0 +1,73 @@
+{
+  "id": "lesson.working-with-standards",
+  "slug": "working-with-standards",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "orientation",
+  "order": 2,
+  "category": "the-house",
+  "topic": "Mission and values",
+  "eyebrow": "Academia lesson",
+  "title": "Working with standards",
+  "summary": "Learn how to treat published standards as controlled references rather than informal suggestions.",
+  "keywords": [
+    "standards",
+    "procedure",
+    "version",
+    "review",
+    "governance"
+  ],
+  "estimatedMinutes": 16,
+  "readingMinutes": 16,
+  "requirement": "required",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "Read the record, not only the headline",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A standard should be read together with its owner, version, status and review information. Those details establish whether the reference is current and who is responsible for it."
+        }
+      ]
+    },
+    {
+      "heading": "When something is unclear",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Check the current version",
+              "text": "Confirm that the item is current rather than archived or under review."
+            },
+            {
+              "title": "Identify the owner",
+              "text": "Direct clarification to the person or function responsible for the standard."
+            },
+            {
+              "title": "Preserve the uncertainty",
+              "text": "Do not turn an interpretation into a new rule without a documented decision."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

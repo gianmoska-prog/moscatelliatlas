@@ -1,0 +1,115 @@
+{
+  "id": "article.sample-review",
+  "slug": "supplier-sample-review-procedure",
+  "type": "article",
+  "category": "products-and-quality",
+  "topic": "Sample stages",
+  "eyebrow": "Quality procedure",
+  "title": "Supplier sample review procedure",
+  "summary": "A repeatable demonstration process for inspecting, documenting and responding to a supplier sample.",
+  "keywords": [
+    "supplier",
+    "sample",
+    "prototype",
+    "review",
+    "quality"
+  ],
+  "readingMinutes": 8,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Creative",
+    "Operations"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Before inspection",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Record when the sample arrived and identify the specification, quotation or previous sample against which it should be reviewed."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Correct supplier and project",
+            "Sample stage is known",
+            "Relevant specification or previous reference is available",
+            "Packaging and transit condition are recorded before disposal"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Review sequence",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Inspect objectively",
+              "text": "Check dimensions, materials, construction, finish and any agreed measurable requirements."
+            },
+            {
+              "title": "Photograph evidence",
+              "text": "Capture both the overall sample and details that explain any deviation or requested revision."
+            },
+            {
+              "title": "Separate fact from preference",
+              "text": "Distinguish specification failures from creative refinements so the supplier can understand the priority."
+            },
+            {
+              "title": "Consolidate feedback",
+              "text": "Send one coherent revision request rather than fragmented comments from multiple channels."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Classifying findings",
+      "blocks": [
+        {
+          "type": "callout",
+          "label": "Useful distinction",
+          "text": "A defect is not the same as a design change. Recording the distinction improves supplier accountability and preserves a clearer development history."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Critical: prevents approval or safe use",
+            "Material: meaningful deviation from specification or intended quality",
+            "Minor: acceptable for the stage but worth monitoring",
+            "Creative revision: requested change rather than supplier non-conformity"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Close the review",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Record the outcome, the requested next sample or action, and any agreed timing. Keep the evidence with the development record so the next review can compare like with like."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "reviewing-a-supplier-quotation",
+    "product-naming-standards"
+  ],
+  "mainHubLinks": []
+}

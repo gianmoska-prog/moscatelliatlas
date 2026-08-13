@@ -1,0 +1,77 @@
+{
+  "id": "lesson.sample-review-foundation",
+  "slug": "sample-review-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "supplier-procedures",
+  "moduleId": "samples",
+  "order": 2,
+  "category": "products-and-quality",
+  "topic": "Sample stages",
+  "eyebrow": "Academia lesson",
+  "title": "Sample review · Foundation",
+  "summary": "A controlled first pass for physical samples that keeps evidence, observations and revisions separate.",
+  "keywords": [
+    "sample",
+    "prototype",
+    "quality",
+    "review",
+    "supplier"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "required",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "Review in a repeatable order",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Received condition",
+              "text": "Document packaging and any transit issue before altering the sample."
+            },
+            {
+              "title": "Specification",
+              "text": "Compare measurable details with the version that was requested."
+            },
+            {
+              "title": "Construction and material",
+              "text": "Record observations as facts before proposing revisions."
+            },
+            {
+              "title": "Decision",
+              "text": "State whether the sample is approved, rejected or requires a new revision."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Keep the trail intact",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A later reviewer should be able to distinguish the sample that arrived, the observations made on it and the revision that was subsequently requested."
+        }
+      ]
+    }
+  ]
+}

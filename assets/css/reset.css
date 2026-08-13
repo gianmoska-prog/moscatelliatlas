@@ -1,0 +1,11 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { min-width: 0; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body, h1, h2, h3, p, blockquote, dl, dd, ul, ol { margin: 0; }
+body { min-height: 100vh; }
+img, picture, svg, video { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+button { color: inherit; }
+a { color: inherit; }
+button, a, summary { -webkit-tap-highlight-color: transparent; }
+code { font: inherit; }
+dialog { padding: 0; }

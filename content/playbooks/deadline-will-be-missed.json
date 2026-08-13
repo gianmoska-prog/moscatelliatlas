@@ -1,0 +1,75 @@
+{
+  "id": "playbook.deadline-will-be-missed",
+  "slug": "deadline-will-be-missed",
+  "type": "playbook",
+  "category": "operations",
+  "topic": "Project procedures",
+  "eyebrow": "Operational playbook",
+  "title": "A deadline will be missed",
+  "summary": "A decision-first response for surfacing slippage early, separating facts from assumptions and resetting commitments with a documented owner.",
+  "keywords": [
+    "deadline",
+    "late",
+    "delay",
+    "milestone",
+    "schedule",
+    "timeline",
+    "escalation"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration playbook for interface validation. It is not final MOSCATELLI policy and must be reviewed before operational use.",
+  "scenario": "Use this when a committed internal or external milestone is no longer realistically achievable on the agreed date.",
+  "immediateAction": [
+    "Confirm the earliest credible completion date and the specific dependency causing the change.",
+    "Notify the owner before the deadline passes; avoid waiting for perfect information.",
+    "Present the impact, the proposed revised date and one practical mitigation option."
+  ],
+  "whoToInform": [
+    {
+      "role": "Project owner",
+      "when": "As soon as slippage is credible rather than merely possible."
+    },
+    {
+      "role": "Founder",
+      "when": "When launch, supplier commitments, public communication or material spend may change."
+    }
+  ],
+  "whatToRecord": [
+    "Original date and owner",
+    "Cause stated as observable fact",
+    "New forecast date",
+    "Affected dependencies",
+    "Decision made and person responsible"
+  ],
+  "escalationConditions": [
+    "The revised date affects a launch, customer-facing commitment or production slot.",
+    "More than one dependent milestone moves.",
+    "The cause is recurring or reveals a process/control failure."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Update structure",
+      "label": "Deadline change note",
+      "text": "Original commitment → current fact → impact → revised date → mitigation → decision needed."
+    }
+  ],
+  "relatedProcedures": [
+    "how-moscatelli-records-decisions",
+    "file-organisation-and-naming"
+  ]
+}

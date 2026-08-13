@@ -1,0 +1,101 @@
+{
+  "id": "article.quotation-review",
+  "slug": "reviewing-a-supplier-quotation",
+  "type": "article",
+  "category": "suppliers",
+  "topic": "Quotations",
+  "eyebrow": "Supplier procedure",
+  "title": "Reviewing a supplier quotation",
+  "summary": "What to verify before a quotation is treated as comparable, complete and ready for a commercial decision.",
+  "keywords": [
+    "supplier",
+    "vendor",
+    "quotation",
+    "quote",
+    "cost",
+    "MOQ"
+  ],
+  "readingMinutes": 7,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Operations",
+    "Founder"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Comparable inputs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirm material, dimensions, quantity, currency, taxes, shipping assumptions, sample costs, lead time and payment terms before comparing quotations."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Material and specification match the brief",
+            "Quantity and MOQ are explicit",
+            "Currency and tax basis are clear",
+            "Sampling and tooling costs are separated where relevant",
+            "Freight, Incoterms or delivery assumptions are stated",
+            "Lead time begins from a defined event",
+            "Payment schedule is understood"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Normalise before comparing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Two headline unit prices may not be comparable if one excludes tooling, finishing, packing or transport. Convert quotations into the same commercial frame before drawing a conclusion."
+        },
+        {
+          "type": "callout",
+          "label": "Commercial caution",
+          "text": "The lowest unit price is not necessarily the lowest total cost or the lowest operational risk."
+        }
+      ]
+    },
+    {
+      "heading": "Questions back to the supplier",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Consolidate gaps",
+              "text": "Gather missing or ambiguous points into one clear request."
+            },
+            {
+              "title": "Reference the exact quote",
+              "text": "Use the quotation date or identifier so both parties are discussing the same document."
+            },
+            {
+              "title": "Preserve revisions",
+              "text": "Keep the revised quotation rather than silently replacing the earlier commercial history."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "supplier-sample-review-procedure",
+    "recording-a-training-expense"
+  ],
+  "mainHubLinks": []
+}

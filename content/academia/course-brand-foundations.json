@@ -1,0 +1,38 @@
+{
+  "id": "course.brand-foundations",
+  "slug": "brand-foundations",
+  "type": "academia-course",
+  "area": "Brand education",
+  "title": "Brand foundations",
+  "summary": "Core visual and verbal judgement for people who create, review or represent MOSCATELLI material.",
+  "owner": "Creative Direction",
+  "audience": [
+    "Creative",
+    "Marketing",
+    "Operations"
+  ],
+  "estimatedMinutes": 65,
+  "status": "current",
+  "version": "0.1-demo",
+  "demo": true,
+  "modules": [
+    {
+      "id": "voice",
+      "title": "Voice and naming",
+      "summary": "Apply restraint and precision to language and product naming.",
+      "lessons": [
+        "tone-of-voice-foundation",
+        "product-naming-foundation"
+      ]
+    },
+    {
+      "id": "image",
+      "title": "Image review",
+      "summary": "Understand the minimum review logic before imagery moves forward.",
+      "lessons": [
+        "photography-review-foundation"
+      ]
+    }
+  ],
+  "sortOrder": 20
+}

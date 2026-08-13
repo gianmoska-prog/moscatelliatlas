@@ -1,0 +1,64 @@
+{
+  "id": "lesson.product-naming-foundation",
+  "slug": "product-naming-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "brand-foundations",
+  "moduleId": "voice",
+  "order": 2,
+  "category": "products-and-quality",
+  "topic": "Product naming",
+  "eyebrow": "Academia lesson",
+  "title": "Product naming · Foundation",
+  "summary": "Understand the early naming discipline used to keep product language coherent and reviewable.",
+  "keywords": [
+    "product",
+    "naming",
+    "name",
+    "collection",
+    "standard"
+  ],
+  "estimatedMinutes": 18,
+  "readingMinutes": 18,
+  "requirement": "required",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Internal learners"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration learning content for interface validation. It is not final MOSCATELLI policy, curriculum or language instruction and must be reviewed before operational use.",
+  "sections": [
+    {
+      "heading": "Naming is a system",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Product names should work as a family rather than as isolated creative exercises. A name must be distinctive enough to identify the object while remaining compatible with the wider house vocabulary."
+        }
+      ]
+    },
+    {
+      "heading": "Before approval",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Check the name against existing product and project names.",
+            "Confirm spelling, accents and intended pronunciation.",
+            "Record the approved form once a decision is made."
+          ]
+        }
+      ]
+    }
+  ]
+}

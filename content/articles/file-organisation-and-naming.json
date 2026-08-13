@@ -1,0 +1,83 @@
+{
+  "id": "article.file-organisation",
+  "slug": "file-organisation-and-naming",
+  "type": "article",
+  "category": "operations",
+  "topic": "File organisation",
+  "eyebrow": "Operating standard",
+  "title": "File organisation and naming",
+  "summary": "A demonstration convention for keeping project material findable, version-aware and understandable to another team member.",
+  "keywords": [
+    "files",
+    "folders",
+    "naming",
+    "version",
+    "records"
+  ],
+  "readingMinutes": 5,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "under-review",
+  "audience": [
+    "All internal users"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Demonstration content for Atlas interface development; not final MOSCATELLI policy.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Findability",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Names should help another person understand the subject, version and purpose without opening every file."
+        },
+        {
+          "type": "callout",
+          "label": "Rule of thumb",
+          "text": "Optimise names for the colleague who did not create the file, not for the person who already knows where it is."
+        }
+      ]
+    },
+    {
+      "heading": "Naming pattern",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use stable project or subject language first, followed by the specific asset or purpose and a meaningful version or date only when it helps distinguish working states."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Prefer words over unexplained personal abbreviations.",
+            "Avoid “final-final”, “new” and other labels that lose meaning over time.",
+            "Do not encode sensitive information in a filename merely for convenience.",
+            "Keep approved and working files distinguishable."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Version discipline",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a file becomes authoritative, the location and status should make that clear. Working duplicates should not be able to compete silently with an approved source."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "how-moscatelli-records-decisions",
+    "mainhub-access-troubleshooting"
+  ],
+  "mainHubLinks": []
+}

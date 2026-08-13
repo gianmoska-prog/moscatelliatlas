@@ -1,0 +1,72 @@
+html {
+  background: var(--atlas-canvas);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 0;
+  background: var(--atlas-canvas);
+  color: var(--atlas-ink);
+  font-family: var(--atlas-sans);
+  font-size: var(--step-0);
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+::selection {
+  background: rgba(137, 92, 55, 0.15);
+  color: var(--atlas-ink);
+}
+
+h1, h2, h3 {
+  font-family: var(--atlas-display);
+  font-weight: 430;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+p { text-wrap: pretty; }
+
+code {
+  font-family: var(--atlas-mono);
+  font-size: 0.84em;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 1px solid var(--atlas-bronze);
+  outline-offset: 3px;
+  box-shadow: var(--focus-ring);
+}
+
+button { cursor: pointer; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+/* Patch 11 — resilient reflow and text scaling */
+html { overflow-wrap: break-word; }
+body { max-width: 100%; }
+h1, h2, h3, p, li, dd, dt, a, button, label, summary { min-width: 0; }
+pre, code { overflow-wrap: anywhere; word-break: break-word; }
+:target { scroll-margin-block-start: calc(var(--header-height) + 1rem); }
+
+/* Patch 14 — final visual-density and stability refinements */
+html { scrollbar-gutter: stable; }
+
+/* Programmatic route focus should not introduce a large visual ring around main. */
+#main-content:focus { outline: 0; }
