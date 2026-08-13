@@ -7,6 +7,7 @@
 const REDUCE_QUERY = '(prefers-reduced-motion: reduce)';
 let pendingSharedSource = null;
 let revealObserver = null;
+let activeRouteTransition = null;
 
 export function prefersReducedMotion() {
   return Boolean(window.matchMedia?.(REDUCE_QUERY).matches);
@@ -39,6 +40,14 @@ export function clearSharedRouteMotion() {
 }
 
 export function commitRouteWithMotion(update, afterUpdate, outlet) {
+  if (activeRouteTransition) {
+    activeRouteTransition.skipTransition?.();
+    activeRouteTransition = null;
+    outlet?.querySelector('h1')?.style.removeProperty('view-transition-name');
+    clearSharedRouteMotion();
+    delete document.documentElement.dataset.atlasRouteTransition;
+  }
+
   const run = () => {
     update();
     if (pendingSharedSource && outlet) {
@@ -58,6 +67,7 @@ export function commitRouteWithMotion(update, afterUpdate, outlet) {
   let transition;
   try {
     transition = document.startViewTransition(run);
+    activeRouteTransition = transition;
   } catch {
     run();
     clearSharedRouteMotion();
@@ -66,6 +76,8 @@ export function commitRouteWithMotion(update, afterUpdate, outlet) {
   }
 
   transition.finished.catch(() => {}).then(() => {
+    if (activeRouteTransition !== transition) return;
+    activeRouteTransition = null;
     outlet?.querySelector('h1')?.style.removeProperty('view-transition-name');
     clearSharedRouteMotion();
     delete document.documentElement.dataset.atlasRouteTransition;
@@ -93,6 +105,7 @@ export function enhanceRouteReveals(root) {
 
   const elements = [...root.querySelectorAll(REVEAL_SELECTOR)];
   if (!elements.length) return;
+  if (document.documentElement.dataset.atlasRouteTransition === 'true') return;
   document.documentElement.classList.add('motion-enhanced');
   elements.forEach((element, index) => {
     element.classList.add('motion-reveal');

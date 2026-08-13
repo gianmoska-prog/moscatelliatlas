@@ -5,7 +5,7 @@
 html[data-atlas-shared-transition="true"] .route-outlet h1 { view-transition-name: atlas-shared-title; }
 
 @media (prefers-reduced-motion: no-preference) {
-  .route-outlet[data-route-entering="true"] > * {
+  html:not([data-atlas-route-transition="true"]) .route-outlet[data-route-entering="true"] > * {
     animation: atlas-route-fallback-in var(--duration-route) var(--ease-route) both;
   }
 
@@ -15,6 +15,7 @@ html[data-atlas-shared-transition="true"] .route-outlet h1 { view-transition-nam
   .atlas-menu[data-closing="true"]::backdrop { animation: atlas-backdrop-out var(--duration-overlay-out) linear both; }
 
   .home-search-stage { animation: atlas-home-compose var(--duration-editorial) var(--ease-emphasis) both; }
+  .route-outlet[data-initial-route="true"] .home-search-stage { animation: none; }
   .search-disclosure:not([hidden]) { animation: atlas-search-disclosure-in 190ms var(--ease-emphasis) both; transform-origin: 50% 0; }
 
   .global-search[open] .global-search__panel { animation: atlas-global-search-in 300ms var(--ease-route) both; }
@@ -28,20 +29,19 @@ html[data-atlas-shared-transition="true"] .route-outlet h1 { view-transition-nam
   .global-search-result-list .search-result:nth-child(4) { animation-delay: 54ms; }
   .global-search-result-list .search-result:nth-child(5) { animation-delay: 72ms; }
 
-  html.motion-enhanced .motion-reveal {
+  html.motion-enhanced:not([data-atlas-route-transition="true"]) .motion-reveal {
     opacity: 0;
     transform: translateY(var(--motion-distance));
-    filter: blur(2px);
   }
-  html.motion-enhanced .motion-reveal.motion-reveal--visible {
+  html.motion-enhanced:not([data-atlas-route-transition="true"]) .motion-reveal.motion-reveal--visible {
     opacity: 1;
     transform: translateY(0);
-    filter: blur(0);
     transition:
-      opacity 430ms var(--ease-route) calc(var(--motion-order, 0) * 22ms),
-      transform 480ms var(--ease-route) calc(var(--motion-order, 0) * 22ms),
-      filter 380ms var(--ease-route) calc(var(--motion-order, 0) * 22ms);
+      opacity 300ms var(--ease-route) calc(var(--motion-order, 0) * 16ms),
+      transform 340ms var(--ease-route) calc(var(--motion-order, 0) * 16ms);
   }
+
+  html[data-atlas-route-transition="true"] .home-search-stage { animation: none; }
 
   .article-progress > span,
   .academia-progress__track > span {
@@ -51,10 +51,10 @@ html[data-atlas-shared-transition="true"] .route-outlet h1 { view-transition-nam
 
 /* Same-document View Transitions. These rules are ignored where unsupported. */
 ::view-transition-old(root) {
-  animation: atlas-root-old 180ms cubic-bezier(.4, 0, 1, 1) both;
+  animation: atlas-root-old 150ms cubic-bezier(.4, 0, 1, 1) both;
 }
 ::view-transition-new(root) {
-  animation: atlas-root-new var(--duration-route) var(--ease-route) both;
+  animation: atlas-root-new 230ms var(--ease-route) 85ms both;
 }
 ::view-transition-group(atlas-route-title),
 ::view-transition-group(atlas-shared-title) {
@@ -62,14 +62,14 @@ html[data-atlas-shared-transition="true"] .route-outlet h1 { view-transition-nam
   animation-timing-function: var(--ease-route);
 }
 ::view-transition-old(atlas-route-title),
-::view-transition-old(atlas-shared-title) { animation: atlas-title-old 190ms ease both; }
+::view-transition-old(atlas-shared-title) { animation: atlas-title-old 145ms ease both; }
 ::view-transition-new(atlas-route-title),
-::view-transition-new(atlas-shared-title) { animation: atlas-title-new 360ms var(--ease-route) both; }
+::view-transition-new(atlas-shared-title) { animation: atlas-title-new 230ms var(--ease-route) 85ms both; }
 
-@keyframes atlas-root-old { to { opacity: 0.18; filter: blur(1.5px); } }
+@keyframes atlas-root-old { to { opacity: 0; } }
 @keyframes atlas-root-new { from { opacity: 0; } to { opacity: 1; } }
-@keyframes atlas-title-old { to { opacity: 0.12; } }
-@keyframes atlas-title-new { from { opacity: 0.25; } to { opacity: 1; } }
+@keyframes atlas-title-old { to { opacity: 0; } }
+@keyframes atlas-title-new { from { opacity: 0; } to { opacity: 1; } }
 @keyframes atlas-route-fallback-in { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes atlas-menu-in { from { transform: translateX(-24px); opacity: .4; } to { transform: translateX(0); opacity: 1; } }
 @keyframes atlas-menu-out { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-18px); opacity: .35; } }

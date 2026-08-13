@@ -29,6 +29,7 @@ const forms = [...(root?.querySelectorAll('[data-auth-form]') || [])];
 const modeButtons = [...(root?.querySelectorAll('[data-auth-mode]') || [])];
 const demoEntry = root?.querySelector('[data-auth-demo-entry]');
 const appSurface = document.querySelector('[data-auth-app-surface]');
+let revealSerial = 0;
 
 function focusableElements(container) {
   if (!container) return [];
@@ -119,33 +120,40 @@ async function sessionFromProvider(session) {
   });
 }
 
-function revealApplication(session) {
+async function revealApplication(session) {
+  const serial = ++revealSerial;
   currentSession = session;
-  document.documentElement.dataset.authState = 'authenticated';
+  document.documentElement.dataset.authState = 'checking';
   document.documentElement.dataset.authMode = session?.demo ? 'demo' : 'provider';
+  window.dispatchEvent(new CustomEvent('atlas:auth-session', { detail: getAuthenticationSnapshot() }));
+
+  if (!appStarted) {
+    appStarted = true;
+    await onAuthenticatedCallback?.(getAuthenticationSnapshot());
+  }
+  if (serial !== revealSerial || !currentSession) return;
+
+  await new Promise((resolve) => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
+  if (serial !== revealSerial || !currentSession) return;
+
+  document.documentElement.dataset.authState = 'authenticated';
+  if (appSurface) {
+    appSurface.removeAttribute('inert');
+    appSurface.setAttribute('aria-hidden', 'false');
+  }
   if (root) {
     root.dataset.state = 'success';
     root.setAttribute('aria-hidden', 'true');
     root.inert = true;
   }
-  if (appSurface) {
-    appSurface.removeAttribute('inert');
-    appSurface.setAttribute('aria-hidden', 'false');
-  }
-  window.dispatchEvent(new CustomEvent('atlas:auth-session', { detail: getAuthenticationSnapshot() }));
 
-  const finish = () => {
-    if (root) root.hidden = true;
-    if (!appStarted) {
-      appStarted = true;
-      onAuthenticatedCallback?.(getAuthenticationSnapshot());
-    }
-  };
+  const finish = () => { if (serial === revealSerial && root) root.hidden = true; };
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) finish();
-  else window.setTimeout(finish, 220);
+  else window.setTimeout(finish, 180);
 }
 
 function showGate({ message = '' } = {}) {
+  revealSerial += 1;
   currentSession = null;
   document.documentElement.dataset.authState = 'locked';
   document.documentElement.dataset.authMode = ATLAS_CONFIG.demoMode ? 'demo-preview' : 'provider';
@@ -181,7 +189,7 @@ async function handlePasswordSubmit(event) {
     const session = await signInWithPassword({ email, password });
     if (!session) throw new AtlasAuthError('AUTH_SESSION_MISSING', 'The authentication provider did not return an active session.');
     setStatus('Access confirmed.', 'success');
-    revealApplication(await sessionFromProvider(session));
+    await revealApplication(await sessionFromProvider(session));
   } catch (error) {
     setStatus(error?.message || 'Atlas could not sign in.', 'error');
   } finally { setBusy(false); }
@@ -199,7 +207,7 @@ async function handleOtpSubmit(event) {
       if (token.length !== 6) throw new AtlasAuthError('AUTH_INVALID_OTP', 'Enter the six-digit email code.');
       const session = await verifyEmailOtp({ email, token });
       if (!session) throw new AtlasAuthError('AUTH_SESSION_MISSING', 'The code was accepted but no session was returned.');
-      revealApplication(await sessionFromProvider(session));
+      await revealApplication(await sessionFromProvider(session));
     } else {
       await signInWithOtp({ email, emailRedirectTo: window.location.href.split('#')[0] });
       const verification = form.querySelector('[data-auth-otp-verification]');
@@ -224,7 +232,7 @@ async function handleRecoverySubmit(event) {
     await updatePassword({ password });
     const session = await getSession();
     setStatus('Password updated. Opening Atlas…', 'success');
-    revealApplication(await sessionFromProvider(session));
+    await revealApplication(await sessionFromProvider(session));
   } catch (error) { setStatus(error?.message || 'Atlas could not update the password.', 'error'); }
   finally { setBusy(false); }
 }
@@ -248,12 +256,12 @@ function bindGateInteractions() {
   forms.find((form) => form.dataset.authForm === 'reset')?.addEventListener('submit', handleResetSubmit);
   forms.find((form) => form.dataset.authForm === 'recovery')?.addEventListener('submit', handleRecoverySubmit);
 
-  demoEntry?.addEventListener('click', () => {
+  demoEntry?.addEventListener('click', async () => {
     if (!ATLAS_CONFIG.demoMode) return;
     const session = demoSession();
     storeDemoSession(session);
     setStatus('Opening the isolated development preview…', 'success');
-    revealApplication(session);
+    await revealApplication(session);
   });
 
   root?.addEventListener('keydown', (event) => {
@@ -296,13 +304,13 @@ export async function initAuthenticationThreshold({ onAuthenticated } = {}) {
 
   if (!ATLAS_CONFIG.authenticationEnabled) {
     if (!ATLAS_CONFIG.demoMode) throw new Error('Authentication is disabled while demo mode is also disabled. Atlas would have no safe entry path.');
-    revealApplication(demoSession());
+    await revealApplication(demoSession());
     return getAuthenticationSnapshot();
   }
 
   const storedDemo = ATLAS_CONFIG.demoMode ? readDemoSession() : null;
   if (storedDemo) {
-    revealApplication(storedDemo);
+    await revealApplication(storedDemo);
     return getAuthenticationSnapshot();
   }
 
@@ -312,11 +320,11 @@ export async function initAuthenticationThreshold({ onAuthenticated } = {}) {
       const session = await getSession();
       const isRecovery = new URLSearchParams(window.location.hash.slice(1)).get('type') === 'recovery';
       if (session && isRecovery) setMode('recovery');
-      else if (session) revealApplication(await sessionFromProvider(session));
+      else if (session) await revealApplication(await sessionFromProvider(session));
       else showGate();
       providerUnsubscribe = onAuthStateChange(async (event, nextSession) => {
         if (event === 'PASSWORD_RECOVERY') { setMode('recovery'); return; }
-        if (nextSession) revealApplication(await sessionFromProvider(nextSession));
+        if (nextSession) await revealApplication(await sessionFromProvider(nextSession));
         else if (event === 'SIGNED_OUT') showGate();
       });
     } catch (error) {

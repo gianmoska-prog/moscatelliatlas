@@ -162,7 +162,7 @@ html[data-auth-state="checking"] [data-auth-app-surface] {
   pointer-events: none;
 }
 html[data-auth-state="authenticated"] [data-auth-app-surface] { visibility: visible; }
-.auth-gate[data-state="success"] { opacity: 0; transform: scale(1.008); transition: opacity 210ms var(--ease-standard), transform 210ms var(--ease-standard); pointer-events: none; }
+.auth-gate[data-state="success"] { opacity: 0; transition: opacity 160ms var(--ease-standard); pointer-events: none; }
 
 .auth-session-strip {
   display: flex;
@@ -224,7 +224,7 @@ html[data-auth-state="authenticated"] [data-auth-app-surface] { visibility: visi
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .auth-gate[data-state="success"] { transition: none; transform: none; }
+  .auth-gate[data-state="success"] { transition: none; }
 }
 
 .menu-secondary .auth-signout {
