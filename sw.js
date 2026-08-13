@@ -1,4 +1,4 @@
-const VERSION = 'atlas-shell-v1.2.0';
+const VERSION = 'atlas-shell-v1.2.1';
 const SHELL_CACHE = `${VERSION}-static`;
 
 const SHELL_ASSETS = [
