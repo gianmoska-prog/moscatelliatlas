@@ -33,6 +33,8 @@ let routeInteractionController = null;
 let renderSerial = 0;
 let globalSearchRenderSerial = 0;
 let lastGlobalSearchOpener = null;
+let resolveFirstRouteReady;
+const firstRouteReady = new Promise((resolve) => { resolveFirstRouteReady = resolve; });
 
 document.documentElement.classList.add('js');
 document.documentElement.dataset.atlasVersion = ATLAS_CONFIG.version;
@@ -883,11 +885,18 @@ async function academiaPathTemplate(slug) {
 
 function commitRoute(markup, title, serial) {
   if (serial !== renderSerial) return;
+  const isInitialRoute = !hasRenderedRoute;
 
   const update = () => {
     document.title = title;
     outlet.innerHTML = markup;
-    outlet.dataset.routeEntering = 'true';
+    if (isInitialRoute) {
+      outlet.dataset.initialRoute = 'true';
+      delete outlet.dataset.routeEntering;
+    } else {
+      delete outlet.dataset.initialRoute;
+      outlet.dataset.routeEntering = 'true';
+    }
     outlet.removeAttribute('aria-busy');
   };
 
@@ -908,9 +917,16 @@ function commitRoute(markup, title, serial) {
       window.requestAnimationFrame(() => { routeStatus.textContent = route?.name === 'home' ? 'Home' : (title.replace(/ — MOSCATELLI ATLAS$/, '') || 'MOSCATELLI ATLAS'); });
     }
     hasRenderedRoute = true;
+    resolveFirstRouteReady?.();
+    resolveFirstRouteReady = null;
   };
 
-  commitRouteWithMotion(update, afterUpdate, outlet);
+  if (isInitialRoute) {
+    update();
+    afterUpdate();
+  } else {
+    commitRouteWithMotion(update, afterUpdate, outlet);
+  }
 }
 
 async function renderRoute(route) {
@@ -1513,7 +1529,7 @@ function bindRouteControls(route) {
 let atlasApplicationStarted = false;
 
 async function startAtlasApplication() {
-  if (atlasApplicationStarted) return;
+  if (atlasApplicationStarted) return firstRouteReady;
   atlasApplicationStarted = true;
   await Promise.all([hydrateBookmarks(), hydrateReadingProgress(), hydrateAcknowledgements()]);
 
@@ -1542,6 +1558,7 @@ async function startAtlasApplication() {
   void initPWA();
 
   startRouter(renderRoute);
+  return firstRouteReady;
 }
 
 void (async () => {
