@@ -64,7 +64,11 @@ export function translateDOM(root = document) {
     return node.parentElement?.closest('script,style') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
   }});
   while (walker.nextNode()) translateTextNode(walker.currentNode);
-  root.querySelectorAll?.('[placeholder],[aria-label],[title]').forEach((element) => {
+  const elements = [
+    ...(root.matches?.('[placeholder],[aria-label],[title]') ? [root] : []),
+    ...(root.querySelectorAll?.('[placeholder],[aria-label],[title]') || [])
+  ];
+  elements.forEach((element) => {
     for (const attribute of ['placeholder','aria-label','title']) {
       const value = element.getAttribute(attribute); if (value) element.setAttribute(attribute, t(value));
     }
