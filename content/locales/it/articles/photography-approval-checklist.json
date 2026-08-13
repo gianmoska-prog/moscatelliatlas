@@ -1,0 +1,100 @@
+{
+  "id": "article.photography-approval",
+  "slug": "photography-approval-checklist",
+  "type": "article",
+  "category": "brand",
+  "topic": "Fotografia",
+  "eyebrow": "Lista di controllo del marchio",
+  "title": "Lista di controllo per l'approvazione della fotografia",
+  "summary": "I punti visivi e tecnici da rivedere prima che un'immagine venga trattata come materiale MOSCATELLI approvato.",
+  "keywords": [
+    "fotografia",
+    "immagine",
+    "approvazione",
+    "risoluzione",
+    "marca"
+  ],
+  "readingMinutes": 6,
+  "owner": "Creative Direction",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Creativo",
+    "Marketing",
+    "Operazioni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Prima dell'approvazione",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Conferma il soggetto, il ritaglio, la risoluzione, il trattamento del colore, lo stato dei diritti e l'uso previsto prima di trattare un'immagine come materiale approvato."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "La composizione supporta la gerarchia e il ritaglio previsti",
+            "Messa a fuoco e dettaglio sono sufficienti per le dimensioni di output previste",
+            "Colore e contrasto rimangono naturali per la direzione artistica",
+            "Nessun artefatto che possa distrarre, branding accidentale o ritocco irrisolto",
+            "I diritti di utilizzo e la fonte sono documentati ove richiesto"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Revisione tecnica",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "L'adeguatezza tecnica dipende dal posizionamento previsto. Un ritaglio social, un'immagine di un sito web a tutta larghezza e materiale stampato possono richiedere dimensioni e trattamenti di esportazione diversi."
+        },
+        {
+          "type": "callout",
+          "label": "Non approvare solo in apparenza",
+          "text": "Un'anteprima visivamente gradevole può comunque non essere adatta se il file sorgente è troppo piccolo, eccessivamente compresso o mancano le informazioni di utilizzo richieste."
+        }
+      ]
+    },
+    {
+      "heading": "Revisione creativa",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "L'immagine sembra coerente con il linguaggio visivo approvato da MOSCATELLI.",
+            "L'illuminazione, i materiali e le tonalità della pelle o del prodotto rimangono credibili.",
+            "L'inquadratura non dipende da effetti alla moda che travolgono il soggetto.",
+            "Il ritaglio preserva intenzionalmente lo spazio negativo in cui potrebbe essere richiesta la copia."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Registra la decisione",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Quando un'immagine viene approvata, mantieni insieme la fonte approvata e il contesto della decisione in modo che i team successivi non debbano determinare nuovamente quale versione è autorevole."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "introduction-to-moscatelli-tone-of-voice",
+    "product-naming-standards"
+  ],
+  "mainHubLinks": []
+}

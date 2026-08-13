@@ -1,0 +1,243 @@
+{
+  "version": "0.1-demo",
+  "updates": [
+    {
+      "id": "update.atlas-foundation",
+      "slug": "atlas-foundation",
+      "type": "update",
+      "updateType": "informational",
+      "changeKind": "new",
+      "category": "systems",
+      "topic": "Atlas",
+      "eyebrow": "Novo conteúdo",
+      "title": "A fundação Atlas já está disponível",
+      "summary": "O primeiro conhecimento, pesquisa, manual e experiências de aprendizagem do Atlas estão disponíveis na referência de desenvolvimento.",
+      "changeSummary": "Agora existe uma referência interna estruturada para material da Biblioteca, Playbooks situacionais e roteiros de aprendizagem da Academia.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "welcome-to-moscatelli-atlas",
+        "label": "Bem-vindo ao MOSCATELLI Atlas"
+      },
+      "keywords": [
+        "Atlas",
+        "novo conteúdo",
+        "conhecimento",
+        "lançar"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.sample-review-revised",
+      "slug": "sample-review-revised",
+      "type": "update",
+      "updateType": "important",
+      "changeKind": "revised",
+      "category": "products-and-quality",
+      "topic": "Estágios de amostra",
+      "eyebrow": "Conteúdo revisado",
+      "title": "Procedimento de revisão de amostra de fornecedor revisado",
+      "summary": "A referência de revisão de amostra de demonstração agora coloca o registro de inspeção física antes das decisões de disposição.",
+      "changeSummary": "A revisão esclarece a sequência: primeiro documente a condição, depois compare com a referência aprovada e depois decida se aceita, revisa ou escala.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Product Development",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "Desenvolvimento de Produto",
+        "Operações"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "supplier-sample-review-procedure",
+        "label": "Procedimento de revisão de amostra de fornecedor"
+      },
+      "keywords": [
+        "amostra",
+        "revisado",
+        "inspeção",
+        "fornecedor"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.photography-check-required",
+      "slug": "photography-check-required",
+      "type": "update",
+      "updateType": "required",
+      "changeKind": "important",
+      "category": "brand",
+      "topic": "Fotografia",
+      "eyebrow": "Leitura obrigatória",
+      "title": "As verificações de aprovação de fotografia exigem revisão",
+      "summary": "Os usuários criativos e de marketing devem revisar a lista de verificação atual de aprovação de fotografias de demonstração antes dos exercícios de aprovação de imagens.",
+      "changeSummary": "Esta visualização marca uma mudança de conhecimento como leitura obrigatória para validar o comportamento de reconhecimento e a apresentação de governança.",
+      "effectiveDate": "2026-08-14",
+      "publishedDate": "2026-08-13",
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "Criativo",
+        "Marketing"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": true,
+      "target": {
+        "type": "article",
+        "slug": "photography-approval-checklist",
+        "label": "Lista de verificação de aprovação de fotografia"
+      },
+      "keywords": [
+        "leitura obrigatória",
+        "fotografia",
+        "aprovação",
+        "reconhecimento"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.mainhub-access-important",
+      "slug": "mainhub-access-important",
+      "type": "update",
+      "updateType": "important",
+      "changeKind": "revised",
+      "category": "systems",
+      "topic": "MainHub",
+      "eyebrow": "Atualização importante",
+      "title": "Solução de problemas de acesso ao MainHub esclarecida",
+      "summary": "A referência de solução de problemas de acesso agora separa as verificações de conta, navegador e permissão de forma mais clara.",
+      "changeSummary": "A mudança de demonstração facilita a identificação das condições de escalonamento antes que um problema técnico seja transmitido.",
+      "effectiveDate": "2026-08-15",
+      "publishedDate": "2026-08-13",
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "mainhub-access-troubleshooting",
+        "label": "Solução de problemas de acesso ao MainHub"
+      },
+      "keywords": [
+        "MainHub",
+        "acesso",
+        "solução de problemas",
+        "importante"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.naming-standard-revised",
+      "slug": "naming-standard-revised",
+      "type": "update",
+      "updateType": "informational",
+      "changeKind": "revised",
+      "category": "products-and-quality",
+      "topic": "Nomenclatura do produto",
+      "eyebrow": "Conteúdo revisado",
+      "title": "Referência de nomenclatura do produto atualizada",
+      "summary": "A referência de nomenclatura de demonstração agora enfatiza a verificação da família de nomenclatura mais ampla antes da aprovação.",
+      "changeSummary": "A atualização reforça que a nomenclatura é um sistema e não uma série de decisões criativas isoladas.",
+      "effectiveDate": "2026-08-16",
+      "publishedDate": "2026-08-13",
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "Criativo",
+        "Desenvolvimento de Produto"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "product-naming-standards",
+        "label": "Padrões de nomenclatura de produtos"
+      },
+      "keywords": [
+        "nomeando",
+        "produto",
+        "revisado",
+        "padrão"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.training-expense-archive",
+      "slug": "training-expense-archive",
+      "type": "update",
+      "updateType": "archived",
+      "changeKind": "archived",
+      "category": "finance-and-administration",
+      "topic": "Custos de treinamento",
+      "eyebrow": "Aviso arquivado",
+      "title": "Nota anterior de despesas de treinamento arquivada",
+      "summary": "Uma nota de demonstração anterior foi substituída pela atual referência de despesas de treinamento.",
+      "changeSummary": "Este aviso arquivado existe para demonstrar como o Atlas pode preservar o conhecimento substituído sem apresentá-lo como orientação atual.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Finance",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "Finanças",
+        "Operações"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "archived",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "recording-a-training-expense",
+        "label": "Registrando uma despesa de treinamento"
+      },
+      "keywords": [
+        "arquivado",
+        "despesa de treinamento",
+        "substituído",
+        "financiar"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    }
+  ]
+}

@@ -52,6 +52,36 @@
 .menu-trigger__icon i { display: block; height: 1px; background: currentColor; }
 .menu-trigger__icon i:last-child { width: 11px; justify-self: end; }
 
+.language-switcher {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: 0 .35rem 0 .65rem;
+  border: 1px solid var(--atlas-line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.55);
+  backdrop-filter: blur(12px);
+  color: var(--atlas-ink-soft);
+  transition: background var(--duration-micro) var(--ease-standard), border-color var(--duration-micro) var(--ease-standard);
+}
+.language-switcher:hover, .language-switcher:focus-within { background: var(--atlas-paper-elevated); border-color: var(--atlas-line-strong); }
+.language-switcher__globe { font-size: .9rem; line-height: 1; color: var(--atlas-muted); }
+.language-switcher select {
+  min-height: 38px;
+  padding: 0 1.15rem 0 .15rem;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: .72rem;
+  font-weight: 720;
+  letter-spacing: .08em;
+  cursor: pointer;
+}
+.language-switcher--auth { margin-left: auto; background: rgba(255,255,255,.72); }
+
 
 .home-search-stage::before {
   content: "";

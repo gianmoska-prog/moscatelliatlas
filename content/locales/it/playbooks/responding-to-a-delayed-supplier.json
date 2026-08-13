@@ -1,0 +1,80 @@
+{
+  "id": "playbook.responding-to-a-delayed-supplier",
+  "slug": "responding-to-a-delayed-supplier",
+  "type": "playbook",
+  "category": "suppliers",
+  "topic": "Comunicazione del fornitore",
+  "eyebrow": "Manuale operativo",
+  "title": "Un fornitore ha smesso di rispondere",
+  "summary": "Una sequenza calma per ristabilire il contatto, salvaguardando il programma e intensificandosi solo quando il silenzio diventa operativamente materiale.",
+  "keywords": [
+    "fornitore",
+    "venditore",
+    "ritardato",
+    "nessuna risposta",
+    "seguito",
+    "scadenza",
+    "comunicazione"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Playbook dimostrativo per la convalida dell'interfaccia. Non è la politica MOSCATELLI definitiva e deve essere rivista prima dell'uso operativo.",
+  "scenario": "Utilizzalo quando un fornitore non ha ricevuto una risposta prevista o un aggiornamento concordato e il silenzio potrebbe iniziare a influenzare un campione, un preventivo, un traguardo di produzione o una decisione.",
+  "immediateAction": [
+    "Verificare l'ultima data di risposta concordata e il thread di messaggi completo più recente.",
+    "Invia un follow-up conciso che indichi la domanda in sospeso, l'aspettativa originale e la data della prossima decisione.",
+    "Registra il follow-up nel relativo record di progetto e imposta un orario specifico per il controllo successivo anziché inseguirlo ripetutamente."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsabile del progetto",
+      "when": "Quando la risposta mancata influisce su un traguardo interno impegnato."
+    },
+    {
+      "role": "Fondatore",
+      "when": "Quando la produzione, l'impegno in contanti o i tempi di lancio potrebbero essere influenzati."
+    }
+  ],
+  "whatToRecord": [
+    "Nome del fornitore e contatto utilizzati",
+    "Data dell'ultima risposta sostanziale",
+    "Quali informazioni rimangono in sospeso",
+    "Data/ora e canale di follow-up",
+    "Decisione o traguardo che potrebbe essere influenzato"
+  ],
+  "escalationConditions": [
+    "Un secondo punto di risposta concordato passa senza conferma.",
+    "Il fornitore diventa irraggiungibile attraverso i canali commerciali consolidati.",
+    "Il ritardo mette a rischio il pagamento, lo slot di produzione, la data di lancio o l'impegno materiale."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Message structure",
+      "label": "Follow-up conciso dei fornitori",
+      "text": "Fare riferimento alla questione in sospeso, ribadire i tempi concordati, chiedere un aggiornamento chiaro e indicare la data entro la quale MOSCATELLI necessita di una risposta."
+    },
+    {
+      "kind": "Record",
+      "label": "Registro delle decisioni sul progetto",
+      "text": "Cattura l'impatto e il prossimo punto decisionale nel record MainHub pertinente una volta attiva l'integrazione."
+    }
+  ],
+  "relatedProcedures": [
+    "reviewing-a-supplier-quotation",
+    "supplier-sample-review-procedure"
+  ]
+}

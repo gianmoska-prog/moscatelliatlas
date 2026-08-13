@@ -1,0 +1,75 @@
+{
+  "id": "playbook.payment-recorded-twice",
+  "slug": "payment-recorded-twice",
+  "type": "playbook",
+  "category": "finance-and-administration",
+  "topic": "Pagamenti",
+  "eyebrow": "Manuale operativo",
+  "title": "Un pagamento è stato registrato due volte",
+  "summary": "Un processo di verifica non distruttiva per sospetti record duplicati prima di correggere la storia finanziaria.",
+  "keywords": [
+    "pagamento",
+    "duplicato",
+    "documentazione",
+    "spese",
+    "finanza",
+    "transazione",
+    "due volte"
+  ],
+  "owner": "Finance & Administration",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Playbook dimostrativo per la convalida dell'interfaccia. Non è la politica MOSCATELLI definitiva e deve essere rivista prima dell'uso operativo.",
+  "scenario": "Utilizzarlo quando due record sembrano rappresentare lo stesso pagamento, spesa o transazione con il fornitore.",
+  "immediateAction": [
+    "Non eliminare nessuno dei due record finché la duplicazione non viene verificata rispetto alla prova della transazione sottostante.",
+    "Confronta importo, valuta, data, fornitore/riferimento e ricevuta o fattura giustificativa.",
+    "Contrassegnare il sospetto duplicato per la revisione utilizzando il flusso di lavoro non distruttivo disponibile; preservare la traccia di controllo."
+  ],
+  "whoToInform": [
+    {
+      "role": "Titolare del registro finanziario",
+      "when": "Una volta identificato il sospetto duplicato."
+    },
+    {
+      "role": "Fondatore",
+      "when": "La correzione modifica il reporting, un saldo fornitore o un impegno approvato."
+    }
+  ],
+  "whatToRecord": [
+    "Entrambi registrano gli identificatori",
+    "Riferimento banca/pagamento sottostante",
+    "Importo e valuta",
+    "Prove utilizzate per determinare la duplicazione",
+    "Correzione apportata e chi l'ha approvata"
+  ],
+  "escalationConditions": [
+    "La transazione sottostante stessa potrebbe essere stata pagata due volte.",
+    "I documenti differiscono in un modo che non può essere conciliato con le prove.",
+    "La rimozione/correzione del duplicato modificherebbe sostanzialmente il totale riportato."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Reference",
+      "label": "Registrazione di una spesa di formazione",
+      "route": "#/article/recording-a-training-expense"
+    }
+  ],
+  "relatedProcedures": [
+    "recording-a-training-expense",
+    "how-moscatelli-records-decisions"
+  ]
+}

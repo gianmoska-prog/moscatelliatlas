@@ -1,0 +1,83 @@
+{
+  "id": "article.file-organisation",
+  "slug": "file-organisation-and-naming",
+  "type": "article",
+  "category": "operations",
+  "topic": "Organização de arquivos",
+  "eyebrow": "Padrão operacional",
+  "title": "Organização e nomenclatura de arquivos",
+  "summary": "Uma convenção de demonstração para manter o material do projeto localizável, com reconhecimento de versão e compreensível para outro membro da equipe.",
+  "keywords": [
+    "arquivos",
+    "pastas",
+    "nomeando",
+    "versão",
+    "registros"
+  ],
+  "readingMinutes": 5,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "under-review",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Encontrabilidade",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Os nomes devem ajudar outra pessoa a compreender o assunto, a versão e a finalidade sem abrir todos os arquivos."
+        },
+        {
+          "type": "callout",
+          "label": "Regra prática",
+          "text": "Otimize nomes para o colega que não criou o arquivo, e não para a pessoa que já sabe onde ele está."
+        }
+      ]
+    },
+    {
+      "heading": "Padrão de nomenclatura",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use primeiro o idioma estável do projeto ou do assunto, seguido do ativo ou propósito específico e uma versão ou data significativa somente quando isso ajudar a distinguir os estados de funcionamento."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Prefira palavras a abreviações pessoais inexplicáveis.",
+            "Evite rótulos “final-final”, “novo” e outros que perdem sentido com o tempo.",
+            "Não codifique informações confidenciais em um nome de arquivo apenas por conveniência.",
+            "Mantenha os arquivos aprovados e em funcionamento distinguíveis."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Disciplina de versão",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Quando um arquivo se torna oficial, a localização e o status devem deixar isso claro. Duplicatas funcionais não devem poder competir silenciosamente com uma fonte aprovada."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "how-moscatelli-records-decisions",
+    "mainhub-access-troubleshooting"
+  ],
+  "mainHubLinks": []
+}

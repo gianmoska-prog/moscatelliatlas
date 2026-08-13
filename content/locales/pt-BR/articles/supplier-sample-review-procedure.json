@@ -1,0 +1,115 @@
+{
+  "id": "article.sample-review",
+  "slug": "supplier-sample-review-procedure",
+  "type": "article",
+  "category": "products-and-quality",
+  "topic": "Estágios de amostra",
+  "eyebrow": "Procedimento de qualidade",
+  "title": "Procedimento de revisão de amostra de fornecedor",
+  "summary": "Um processo de demonstração repetível para inspecionar, documentar e responder a uma amostra de fornecedor.",
+  "keywords": [
+    "fornecedor",
+    "amostra",
+    "protótipo",
+    "análise",
+    "qualidade"
+  ],
+  "readingMinutes": 8,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Criativo",
+    "Operações"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Antes da inspeção",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Registre quando a amostra chegou e identifique a especificação, cotação ou amostra anterior em relação à qual ela deve ser revisada."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Fornecedor e projeto corretos",
+            "O estágio de amostra é conhecido",
+            "Especificação relevante ou referência anterior está disponível",
+            "As condições de embalagem e trânsito são registradas antes do descarte"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Sequência de revisão",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Inspecione objetivamente",
+              "text": "Verifique dimensões, materiais, construção, acabamento e quaisquer requisitos mensuráveis ​​acordados."
+            },
+            {
+              "title": "Evidência fotográfica",
+              "text": "Capture a amostra geral e os detalhes que explicam qualquer desvio ou revisão solicitada."
+            },
+            {
+              "title": "Separe o fato da preferência",
+              "text": "Distinguir falhas de especificação de refinamentos criativos para que o fornecedor possa compreender a prioridade."
+            },
+            {
+              "title": "Consolidar feedback",
+              "text": "Envie uma solicitação de revisão coerente em vez de comentários fragmentados de vários canais."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Classificando descobertas",
+      "blocks": [
+        {
+          "type": "callout",
+          "label": "Distinção útil",
+          "text": "Um defeito não é o mesmo que uma mudança de projeto. O registro da distinção melhora a responsabilidade do fornecedor e preserva um histórico de desenvolvimento mais claro."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Crítico: impede aprovação ou uso seguro",
+            "Material: desvio significativo da especificação ou qualidade pretendida",
+            "Menor: aceitável para o palco, mas vale a pena monitorar",
+            "Revisão criativa: mudança solicitada em vez de não conformidade do fornecedor"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Fechar a revisão",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Registre o resultado, a próxima amostra ou ação solicitada e qualquer momento acordado. Mantenha as evidências com o registro de desenvolvimento para que a próxima revisão possa comparar iguais."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "reviewing-a-supplier-quotation",
+    "product-naming-standards"
+  ],
+  "mainHubLinks": []
+}

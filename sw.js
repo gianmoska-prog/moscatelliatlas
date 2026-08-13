@@ -1,4 +1,4 @@
-const VERSION = 'atlas-shell-v1.1.0';
+const VERSION = 'atlas-shell-v1.2.0';
 const SHELL_CACHE = `${VERSION}-static`;
 
 const SHELL_ASSETS = [
@@ -18,6 +18,7 @@ const SHELL_ASSETS = [
   './assets/css/auth.css',
   './assets/js/config.js',
   './assets/js/app.js',
+  './assets/js/i18n.js',
   './assets/vendor/supabase.js',
   './assets/js/router.js',
   './assets/js/store.js',

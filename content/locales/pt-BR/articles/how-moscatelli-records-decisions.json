@@ -1,0 +1,97 @@
+{
+  "id": "article.decision-records",
+  "slug": "how-moscatelli-records-decisions",
+  "type": "article",
+  "category": "operations",
+  "topic": "Registros",
+  "eyebrow": "Prática operacional",
+  "title": "Como MOSCATELLI registra decisões",
+  "summary": "Onde deve ser registrada uma decisão significativa, que contexto preservar e como deixar uma trilha institucional útil.",
+  "keywords": [
+    "registro",
+    "decisão",
+    "MainHub",
+    "documentação",
+    "história"
+  ],
+  "readingMinutes": 5,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Registre o porquê",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Um registro de decisão útil preserva a conclusão, o responsável, a data e o raciocínio ou restrição material que explica por que a decisão foi tomada."
+        },
+        {
+          "type": "callout",
+          "label": "O teste",
+          "text": "Alguém que não estava presente deveria ser capaz de entender o que mudou, quem decidiu e por que a decisão fez sentido naquele momento."
+        }
+      ]
+    },
+    {
+      "heading": "O que merece um registro",
+      "blocks": [
+        {
+          "type": "checklist",
+          "items": [
+            "Uma mudança em um produto, fornecedor ou direção de lançamento acordado",
+            "Uma exceção a um padrão publicado",
+            "Um compromisso financeiro ou contratual material",
+            "Uma decisão que provavelmente será questionada ou revista mais tarde",
+            "Uma conclusão que muda o trabalho de outro membro da equipe"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Nota mínima de decisão",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Indique a decisão",
+              "text": "Escreva a conclusão em uma frase clara."
+            },
+            {
+              "title": "Preservar o contexto",
+              "text": "Registre a restrição, evidência ou compensação que o moldou materialmente."
+            },
+            {
+              "title": "Responsabilidade do nome",
+              "text": "Registre o responsável da decisão e qualquer pessoa responsável pela próxima ação."
+            },
+            {
+              "title": "Vincule o trabalho em andamento",
+              "text": "Quando relevante, conecte o registro de decisão ao item MainHub que ele afeta."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "file-organisation-and-naming",
+    "working-with-standards-at-moscatelli"
+  ],
+  "mainHubLinks": []
+}

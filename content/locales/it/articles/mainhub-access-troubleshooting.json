@@ -1,0 +1,98 @@
+{
+  "id": "article.mainhub-access",
+  "slug": "mainhub-access-troubleshooting",
+  "type": "article",
+  "category": "systems",
+  "topic": "MainHub",
+  "eyebrow": "Guida ai sistemi",
+  "title": "Risoluzione dei problemi di accesso a MainHub",
+  "summary": "Una lista di controllo dimostrativa di prima risposta per problemi di accesso comuni prima che un problema tecnico venga intensificato.",
+  "keywords": [
+    "MainHub",
+    "login",
+    "registrazione",
+    "accesso",
+    "password",
+    "Risoluzione dei problemi"
+  ],
+  "readingMinutes": 5,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Primi controlli",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Conferma l'account, la connettività, lo stato del browser corretti e se il problema è isolato prima di inoltrarlo con una descrizione concisa di ciò che è stato testato."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Viene utilizzato l'account MOSCATELLI corretto",
+            "La connessione di rete funziona normalmente",
+            "Il browser è stato aggiornato o riavviato",
+            "Problema riprodotto in un contesto di browser pulito, ove appropriato",
+            "È stato acquisito il messaggio di errore o il comportamento esatto"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Non indebolire la sicurezza",
+      "blocks": [
+        {
+          "type": "callout",
+          "label": "Importante",
+          "text": "La risoluzione dei problemi non deve mai comportare la condivisione di password, l'elusione dei controlli di accesso o l'esposizione di segreti di produzione. L'accesso deve essere ripristinato tramite il percorso di autenticazione approvato."
+        },
+        {
+          "type": "paragraph",
+          "text": "Se il problema sembra correlato all'autorizzazione, registra l'area a cui l'utente prevedeva di accedere anziché tentare di rivelare contenuti riservati tramite un altro account."
+        }
+      ]
+    },
+    {
+      "heading": "Nota di escalation",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Descrivi il fallimento",
+              "text": "Indicare il percorso o l'azione, il risultato atteso e il risultato effettivo."
+            },
+            {
+              "title": "Allega prove utili",
+              "text": "Includi il testo esatto dell'errore e uno screenshot solo quando non espone dati sensibili."
+            },
+            {
+              "title": "Elenca i controlli già eseguiti",
+              "text": "Evitare che la persona successiva ripeta inutilmente la risoluzione dei problemi di base."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "internal-communication-standards",
+    "file-organisation-and-naming"
+  ],
+  "mainHubLinks": []
+}

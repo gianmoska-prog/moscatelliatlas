@@ -1,0 +1,80 @@
+{
+  "id": "playbook.responding-to-a-delayed-supplier",
+  "slug": "responding-to-a-delayed-supplier",
+  "type": "playbook",
+  "category": "suppliers",
+  "topic": "Comunicação com fornecedores",
+  "eyebrow": "Manual operacional",
+  "title": "Um fornecedor parou de responder",
+  "summary": "Uma sequência calma para restabelecer o contato, proteger o cronograma e escalar somente quando o silêncio se tornar operacionalmente material.",
+  "keywords": [
+    "fornecedor",
+    "fornecedor",
+    "atrasado",
+    "sem resposta",
+    "seguir",
+    "prazo final",
+    "comunicação"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Manual de demonstração para validação de interface. Não é a política final do MOSCATELLI e deve ser revisada antes do uso operacional.",
+  "scenario": "Use isto quando um fornecedor perdeu uma resposta esperada ou atualização acordada e o silêncio pode começar a afetar uma amostra, cotação, marco de produção ou decisão.",
+  "immediateAction": [
+    "Verifique a data da última resposta acordada e o encadeamento de mensagens completo mais recente.",
+    "Envie um acompanhamento conciso que indique a questão pendente, a expectativa original e a próxima data de decisão.",
+    "Registre o acompanhamento no registro do projeto relevante e defina um horário específico para a próxima verificação, em vez de persegui-lo repetidamente."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsável do projeto",
+      "when": "Quando a resposta perdida afeta um marco interno comprometido."
+    },
+    {
+      "role": "Fundador",
+      "when": "Quando a produção, o compromisso de caixa ou o prazo de lançamento podem ser afetados."
+    }
+  ],
+  "whatToRecord": [
+    "Nome do fornecedor e contato usado",
+    "Data da última resposta substantiva",
+    "Quais informações permanecem pendentes",
+    "Data/hora e canal de acompanhamento",
+    "Decisão ou marco que pode ser afetado"
+  ],
+  "escalationConditions": [
+    "Um segundo ponto de resposta acordado passa sem reconhecimento.",
+    "O fornecedor torna-se inacessível através dos canais de negócios estabelecidos.",
+    "O atraso ameaça um pagamento, um intervalo de produção, uma data de lançamento ou um compromisso material."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Message structure",
+      "label": "Acompanhamento conciso do fornecedor",
+      "text": "Faça referência ao item pendente, reafirme o prazo acordado, solicite uma atualização clara e indique a data até a qual MOSCATELLI precisa de uma resposta."
+    },
+    {
+      "kind": "Record",
+      "label": "Registro de decisão do projeto",
+      "text": "Capture o impacto e o próximo ponto de decisão no registro MainHub relevante assim que a integração estiver ativa."
+    }
+  ],
+  "relatedProcedures": [
+    "reviewing-a-supplier-quotation",
+    "supplier-sample-review-procedure"
+  ]
+}

@@ -12,6 +12,7 @@ import {
   updatePassword,
   verifyEmailOtp,
 } from './auth-adapter.js';
+import { t } from './i18n.js';
 
 const DEMO_SESSION_KEY = 'moscatelli.atlas.demo.auth-session.v1';
 let currentSession = null;
@@ -37,7 +38,7 @@ function focusableElements(container) {
 
 function setStatus(message = '', kind = 'neutral') {
   if (!status) return;
-  status.textContent = message;
+  status.textContent = t(message);
   status.dataset.kind = kind;
   status.hidden = !message;
 }
@@ -61,17 +62,17 @@ function setMode(mode = 'password') {
   setStatus('');
 
   if (selected === 'password') {
-    title.textContent = 'Welcome back.';
-    description.textContent = 'Sign in to enter MOSCATELLI Atlas.';
+    title.textContent = t('Welcome back.');
+    description.textContent = t('Sign in to enter MOSCATELLI Atlas.');
   } else if (selected === 'otp') {
-    title.textContent = 'Use an email code.';
-    description.textContent = 'Request a one-time sign-in link or code from the connected authentication provider.';
+    title.textContent = t('Use an email code.');
+    description.textContent = t('Request a one-time sign-in link or code from the connected authentication provider.');
   } else if (selected === 'reset') {
-    title.textContent = 'Reset your password.';
-    description.textContent = 'Request the secure password-reset flow for your Atlas account.';
+    title.textContent = t('Reset your password.');
+    description.textContent = t('Request the secure password-reset flow for your Atlas account.');
   } else {
-    title.textContent = 'Choose a new password.';
-    description.textContent = 'Use at least 12 characters and a password unique to MOSCATELLI.';
+    title.textContent = t('Choose a new password.');
+    description.textContent = t('Use at least 12 characters and a password unique to MOSCATELLI.');
   }
   window.requestAnimationFrame(() => root.querySelector(`[data-auth-form="${selected}"] input`)?.focus({ preventScroll: true }));
 }
@@ -204,7 +205,7 @@ async function handleOtpSubmit(event) {
       const verification = form.querySelector('[data-auth-otp-verification]');
       if (verification) verification.hidden = false;
       form.elements.token?.setAttribute('required', '');
-      form.querySelector('[type="submit"]').textContent = 'Verify email code';
+      form.querySelector('[type="submit"]').textContent = t('Verify email code');
       setStatus('Check your email, then enter the six-digit code or use the secure link.', 'success');
       window.requestAnimationFrame(() => form.elements.token?.focus());
     }

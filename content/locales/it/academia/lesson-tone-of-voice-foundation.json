@@ -1,0 +1,65 @@
+{
+  "id": "lesson.tone-of-voice-foundation",
+  "slug": "tone-of-voice-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "brand-foundations",
+  "moduleId": "voice",
+  "order": 1,
+  "category": "brand",
+  "topic": "Tono di voce",
+  "eyebrow": "Lezione accademica",
+  "title": "Tono di voce · Fondotinta",
+  "summary": "Riconoscere la differenza tra sicurezza contenuta e linguaggio che sembra esagerato, generico o sovrascritto.",
+  "keywords": [
+    "marca",
+    "tono",
+    "voce",
+    "scrivere",
+    "lingua"
+  ],
+  "estimatedMinutes": 22,
+  "readingMinutes": 22,
+  "requirement": "necessario",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "Il principio fondamentale",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Il linguaggio MOSCATELLI dovrebbe far sì che la precisione sembri semplice. Non dovrebbe dipendere da superlativi, mistica fabbricata o ripetute pretese di lusso per creare statura."
+        }
+      ]
+    },
+    {
+      "heading": "Un utile passaggio di editing",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Eliminare le affermazioni che non possono essere dimostrate.",
+            "Preferire un sostantivo o un verbo preciso rispetto agli aggettivi impilati.",
+            "Mantieni la calma nella scrittura istituzionale anche quando l'argomento è importante.",
+            "Consentire al prodotto, al materiale e al contesto di avere prestigio."
+          ]
+        }
+      ]
+    }
+  ]
+}

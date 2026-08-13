@@ -1,0 +1,98 @@
+{
+  "id": "article.product-naming",
+  "slug": "product-naming-standards",
+  "type": "article",
+  "category": "products-and-quality",
+  "topic": "Denominazione del prodotto",
+  "eyebrow": "Norma del prodotto",
+  "title": "Standard di denominazione dei prodotti",
+  "summary": "Un quadro dimostrativo per la creazione di nomi di prodotti che rimangano coerenti, distintivi e utilizzabili in tutti i registri e nelle comunicazioni.",
+  "keywords": [
+    "prodotto",
+    "denominazione",
+    "standard",
+    "SKU",
+    "collezione"
+  ],
+  "readingMinutes": 6,
+  "owner": "Creative Direction",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Creativo",
+    "Operazioni",
+    "Marketing"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Prova di denominazione",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Il nome di un prodotto dovrebbe essere sufficientemente distintivo per identificare l'oggetto pur rimanendo coerente nei contesti editoriali, operativi e commerciali."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Facile da leggere e pronunciare nelle principali lingue operative",
+            "Distinto dal nome di un prodotto o di un progetto esistente",
+            "Appropriato al prodotto piuttosto che dipendente dal linguaggio temporaneo della campagna",
+            "Utilizzabile nei registri interni senza ambiguità"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Nome di lavoro e nome definitivo",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "I nomi di sviluppo possono essere pratici e temporanei. Il nome del prodotto finale dovrebbe sostituirli solo quando la modifica può riflettersi in modo coerente in tutti i registri pertinenti."
+        },
+        {
+          "type": "callout",
+          "label": "Coerenza",
+          "text": "Evita di consentire a team diversi di utilizzare nomi concorrenti per lo stesso prodotto. Se un nome cambia, il riferimento precedente dovrebbe rimanere tracciabile."
+        }
+      ]
+    },
+    {
+      "heading": "Sequenza di approvazione",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Controlla il catalogo esistente",
+              "text": "Confermare che il nome proposto non crei una collisione evitabile."
+            },
+            {
+              "title": "Rivedi significato e utilizzo",
+              "text": "Considera la pronuncia, la connotazione e il modo in cui il nome appare nei contesti editoriali e operativi."
+            },
+            {
+              "title": "Approvare una volta",
+              "text": "Registra la decisione finale e aggiorna i riferimenti dipendenti da un'unica fonte di verità."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "supplier-sample-review-procedure",
+    "photography-approval-checklist"
+  ],
+  "mainHubLinks": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "course.italian-foundation",
+  "slug": "italian-foundation",
+  "type": "academia-course",
+  "area": "Lezioni di italiano",
+  "title": "Italiano · Fondamenti",
+  "summary": "Un primo percorso di apprendimento moderato per l'italiano pratico basato su date, introduzioni e coordinamento di routine.",
+  "owner": "People",
+  "audience": [
+    "Membri del team che studiano italiano"
+  ],
+  "estimatedMinutes": 90,
+  "status": "current",
+  "version": "0.1-demo",
+  "demo": true,
+  "modules": [
+    {
+      "id": "presence",
+      "title": "Presenza",
+      "summary": "Presentati e gestisci semplici cortesie professionali.",
+      "lessons": [
+        "italian-introductions",
+        "italian-courtesy"
+      ]
+    },
+    {
+      "id": "coordination",
+      "title": "Coordinamento",
+      "summary": "Utilizzare numeri, date e orari in situazioni di pianificazione ordinaria.",
+      "lessons": [
+        "italian-numbers-dates",
+        "italian-times-scheduling"
+      ]
+    }
+  ],
+  "sortOrder": 40
+}

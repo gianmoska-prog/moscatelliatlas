@@ -1,0 +1,64 @@
+{
+  "id": "lesson.product-naming-foundation",
+  "slug": "product-naming-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "brand-foundations",
+  "moduleId": "voice",
+  "order": 2,
+  "category": "products-and-quality",
+  "topic": "Nomenclatura do produto",
+  "eyebrow": "Lição acadêmica",
+  "title": "Nome do produto · Fundamentos",
+  "summary": "Entenda a disciplina inicial de nomenclatura usada para manter a linguagem do produto coerente e revisável.",
+  "keywords": [
+    "produto",
+    "nomeando",
+    "nome",
+    "coleção",
+    "padrão"
+  ],
+  "estimatedMinutes": 18,
+  "readingMinutes": 18,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "A nomenclatura é um sistema",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Os nomes dos produtos devem funcionar como uma família e não como exercícios criativos isolados. Um nome deve ser distinto o suficiente para identificar o objeto e, ao mesmo tempo, permanecer compatível com o vocabulário mais amplo da casa."
+        }
+      ]
+    },
+    {
+      "heading": "Antes da aprovação",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Compare o nome com os nomes de produtos e projetos existentes.",
+            "Confirme a ortografia, os acentos e a pronúncia pretendida.",
+            "Registre o formulário aprovado assim que uma decisão for tomada."
+          ]
+        }
+      ]
+    }
+  ]
+}

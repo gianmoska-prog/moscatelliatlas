@@ -1,0 +1,114 @@
+{
+  "id": "article.tone-of-voice",
+  "slug": "introduction-to-moscatelli-tone-of-voice",
+  "type": "article",
+  "category": "brand",
+  "topic": "Tono di voce",
+  "eyebrow": "Standard del marchio",
+  "title": "Introduzione al tono di voce di MOSCATELLI",
+  "summary": "Un'introduzione pratica alla moderazione, alla chiarezza e all'autorità nella scrittura MOSCATELLI interna ed esterna.",
+  "keywords": [
+    "marca",
+    "tono",
+    "voce",
+    "scrivere",
+    "comunicazione"
+  ],
+  "readingMinutes": 7,
+  "owner": "Creative Direction",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Principi",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Preferire un linguaggio preciso, una calma confidenza e un contesto utile. Evita affermazioni esagerate, riempitivi e informalità inutili."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Dire esattamente cosa è noto e cosa non lo è.",
+            "Usa moderazione invece di superlativi.",
+            "Scrivere per comprendere prima dell'ornamento.",
+            "Preserva il calore senza diventare casuale o prolisso."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Autorità senza rumore",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "MOSCATELLI non dovrebbe aver bisogno di insistere sul fatto che qualcosa è eccezionale. La scrittura dovrebbe comunicare fiducia attraverso specificità, proporzione e controllo."
+        },
+        {
+          "type": "callout",
+          "label": "Evitare",
+          "text": "Un linguaggio generico sul lusso come “impareggiabile”, “eleganza senza tempo” o “il più raffinato” non dovrebbe sostituire informazioni concrete."
+        }
+      ]
+    },
+    {
+      "heading": "Scrittura interna",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La comunicazione interna può essere più diretta della copia pubblica, ma dovrebbe rimanere sufficientemente chiara da consentire a un'altra persona di comprendere successivamente la decisione, l'azione e il contesto."
+        },
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Guida con il punto",
+              "text": "Dichiarare la decisione, richiedere o modificare in anticipo."
+            },
+            {
+              "title": "Aggiungi contesto materiale",
+              "text": "Includi solo le informazioni necessarie per capire perché sono importanti."
+            },
+            {
+              "title": "Rendi esplicita la responsabilità",
+              "text": "Quando è necessaria un'azione, identificare chi ne è il responsabile e quando è prevista."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Prova di revisione",
+      "blocks": [
+        {
+          "type": "checklist",
+          "items": [
+            "Ogni affermazione è sostenibile?",
+            "La frase potrebbe essere più breve senza perdere significato?",
+            "Il tono sembra composto piuttosto che promozionale?",
+            "La formulazione avrebbe ancora senso al di fuori della conversazione immediata?"
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "photography-approval-checklist",
+    "internal-communication-standards"
+  ],
+  "mainHubLinks": []
+}

@@ -26,13 +26,15 @@ html[data-auth-state="checking"] { overflow: hidden; }
     max(1.2rem, env(safe-area-inset-left));
 }
 .auth-gate__brand {
-  justify-self: start;
+  justify-self: stretch;
+  width: 100%;
   display: inline-flex;
   align-items: baseline;
   gap: .58rem;
   text-decoration: none;
   letter-spacing: -.02em;
 }
+.auth-gate__brand > div { display: flex; align-items: baseline; gap: .55rem; }
 .auth-gate__brand strong { font-size: .95rem; font-weight: 720; letter-spacing: .06em; }
 .auth-gate__brand span { font-size: .67rem; font-weight: 650; letter-spacing: .12em; color: var(--atlas-muted); }
 .auth-gate__center {

@@ -1,0 +1,87 @@
+{
+  "id": "article.training-expense",
+  "slug": "recording-a-training-expense",
+  "type": "article",
+  "category": "finance-and-administration",
+  "topic": "Custos de treinamento",
+  "eyebrow": "Orientação financeira",
+  "title": "Registrando uma despesa de treinamento",
+  "summary": "Um procedimento administrativo demonstrativo para preservação da fatura, finalidade, moeda e aprovação interna das despesas de treinamento.",
+  "keywords": [
+    "treinamento",
+    "despesa",
+    "custo",
+    "fatura",
+    "recibo",
+    "financiar"
+  ],
+  "readingMinutes": 6,
+  "owner": "Finance",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Fundador",
+    "Operações"
+  ],
+  "permissions": [
+    "finance-guidance"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Registro mínimo",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Preservar o fornecedor, finalidade, valor, moeda, fatura ou recibo, data e qualquer referência de aprovação interna exigida pelo eventual processo financeiro."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Nome do fornecedor ou professor",
+            "Objetivo do treinamento e participante",
+            "Valor bruto e moeda",
+            "Fatura, recibo ou comprovante equivalente",
+            "Data de pagamento ou data de vencimento",
+            "Aprovação interna ou contexto orçamentário, quando aplicável"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Moeda e conversão",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Registre a moeda da transação original. Se posteriormente um relatório interno exigir conversão, o valor convertido não deverá apagar o valor de origem ou a base utilizada."
+        },
+        {
+          "type": "callout",
+          "label": "Apenas demonstração",
+          "text": "O tratamento contabilístico e fiscal exato será definido com aconselhamento profissional e procedimentos de financiamento da produção. Atualmente, este artigo valida apenas a estrutura de informações do Atlas."
+        }
+      ]
+    },
+    {
+      "heading": "Por que o treinamento foi adquirido",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Uma breve nota de objectivo ajuda a distinguir o desenvolvimento relacionado com a função de outras despesas e torna mais significativa a análise posterior do investimento em treinamento."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "reviewing-a-supplier-quotation",
+    "how-moscatelli-records-decisions"
+  ],
+  "mainHubLinks": []
+}

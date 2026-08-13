@@ -1,0 +1,85 @@
+{
+  "id": "article.communication-standards",
+  "slug": "internal-communication-standards",
+  "type": "article",
+  "category": "people",
+  "topic": "Standard di comunicazione",
+  "eyebrow": "Persone standard",
+  "title": "Standard di comunicazione interna",
+  "summary": "Una guida dimostrativa per aggiornamenti concisi, responsabilità, contesto e uso appropriato della comunicazione sincrona e asincrona.",
+  "keywords": [
+    "persone",
+    "squadra",
+    "personale",
+    "comunicazione",
+    "Slack",
+    "e-mail"
+  ],
+  "readingMinutes": 6,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Aggiornamenti utili",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Indica cosa è cambiato, cosa è necessario, chi possiede l'azione successiva e quando è previsto un altro aggiornamento quando la tempistica è importante."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Condurre l'aggiornamento del materiale",
+            "Separare i fatti dalle ipotesi",
+            "Assegna un nome al responsabile dell'azione successiva",
+            "Includi una scadenza solo quando è reale",
+            "Collega la fonte pertinente invece di duplicarla"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Scegli il canale",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Utilizzare la comunicazione asincrona per impostazione predefinita quando l'argomento può essere compreso e risolto senza una riunione. Utilizza una chiamata quando le sfumature, la velocità o la collaborazione attiva migliorano materialmente il risultato."
+        },
+        {
+          "type": "callout",
+          "label": "Dopo una chiamata",
+          "text": "Se la conversazione crea una decisione, un impegno o un cambiamento che avrà importanza in seguito, conserva la conclusione pertinente nell'appropriata registrazione scritta."
+        }
+      ]
+    },
+    {
+      "heading": "Escalation senza rumore",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "L'escalation dovrebbe descrivere l'elemento bloccante, la conseguenza e la decisione richiesta. Aggiungere più destinatari senza chiarire la necessità raramente migliora il risultato."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "how-moscatelli-records-decisions",
+    "introduction-to-moscatelli-tone-of-voice"
+  ],
+  "mainHubLinks": []
+}

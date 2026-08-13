@@ -1,0 +1,37 @@
+{
+  "id": "course.supplier-procedures",
+  "slug": "supplier-procedures",
+  "type": "academia-course",
+  "area": "Procedimentos do fornecedor",
+  "title": "Procedimentos do fornecedor",
+  "summary": "Uma base prática para cotações, amostras físicas e comunicação com fornecedores sem complicar demais o fluxo de trabalho.",
+  "owner": "Operations",
+  "audience": [
+    "Operações",
+    "Desenvolvimento de Produto"
+  ],
+  "estimatedMinutes": 70,
+  "status": "current",
+  "version": "0.1-demo",
+  "demo": true,
+  "modules": [
+    {
+      "id": "commercial",
+      "title": "Documentos comerciais",
+      "summary": "Leia as citações como documentos de trabalho controlados.",
+      "lessons": [
+        "quotation-review-foundation"
+      ]
+    },
+    {
+      "id": "samples",
+      "title": "Amostras e acompanhamento",
+      "summary": "Revise as amostras físicas com cuidado e lide com o silêncio sem perder o registro.",
+      "lessons": [
+        "sample-review-foundation",
+        "supplier-follow-up-foundation"
+      ]
+    }
+  ],
+  "sortOrder": 30
+}

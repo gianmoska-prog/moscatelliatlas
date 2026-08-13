@@ -1,0 +1,69 @@
+{
+  "id": "lesson.welcome-to-atlas",
+  "slug": "welcome-to-atlas",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "orientation",
+  "order": 1,
+  "category": "systems",
+  "topic": "Atlas",
+  "eyebrow": "Lição acadêmica",
+  "title": "Bem-vindo ao Atlas",
+  "summary": "Entenda para que serve o Atlas, o que não é e quando consultá-lo antes de pedir orientação institucional.",
+  "keywords": [
+    "Atlas",
+    "integração",
+    "conhecimento",
+    "memória institucional",
+    "MainHub"
+  ],
+  "estimatedMinutes": 12,
+  "readingMinutes": 12,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "O objetivo do Atlas",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Atlas é a camada de referência interna para MOSCATELLI. Explica normas, procedimentos, material didático e situações recorrentes; MainHub continua sendo o local onde o trabalho em andamento é realizado e gravado."
+        },
+        {
+          "type": "callout",
+          "label": "Nota de desenvolvimento",
+          "text": "O conteúdo desta visualização valida apenas a interface de aprendizagem e não é uma política final."
+        }
+      ]
+    },
+    {
+      "heading": "Uma regra de trabalho simples",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Use o Atlas quando precisar entender como algo deve ser abordado.",
+            "Use MainHub quando precisar agir em tempo real no trabalho da empresa ou registrar uma decisão atual.",
+            "Quando uma referência e uma registro em andamento entrarem em conflito, pare e levante a discrepância em vez de escolher uma silenciosamente."
+          ]
+        }
+      ]
+    }
+  ]
+}

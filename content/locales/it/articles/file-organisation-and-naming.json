@@ -1,0 +1,83 @@
+{
+  "id": "article.file-organisation",
+  "slug": "file-organisation-and-naming",
+  "type": "article",
+  "category": "operations",
+  "topic": "Organizzazione dei file",
+  "eyebrow": "Norma operativa",
+  "title": "Organizzazione e denominazione dei file",
+  "summary": "Una convenzione dimostrativa per mantenere il materiale del progetto reperibile, compatibile con la versione e comprensibile a un altro membro del team.",
+  "keywords": [
+    "file",
+    "cartelle",
+    "denominazione",
+    "versione",
+    "record"
+  ],
+  "readingMinutes": 5,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "under-review",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Trovabilità",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "I nomi dovrebbero aiutare un'altra persona a comprendere l'oggetto, la versione e lo scopo senza aprire ogni file."
+        },
+        {
+          "type": "callout",
+          "label": "Regola pratica",
+          "text": "Ottimizza i nomi per il collega che non ha creato il file, non per la persona che sa già dove si trova."
+        }
+      ]
+    },
+    {
+      "heading": "Modello di denominazione",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Utilizzare prima un linguaggio stabile del progetto o dell'argomento, seguito dalla risorsa o dallo scopo specifico e da una versione o una data significativa solo quando aiuta a distinguere gli stati operativi."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Preferire le parole alle abbreviazioni personali inspiegabili.",
+            "Evita “finale-finale”, “nuovo” e altre etichette che perdono significato nel tempo.",
+            "Non codificare informazioni sensibili in un nome file solo per comodità.",
+            "Mantenere distinguibili i file approvati e quelli di lavoro."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Disciplina della versione",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Quando un file diventa autorevole, la posizione e lo stato dovrebbero renderlo chiaro. I duplicati funzionanti non dovrebbero essere in grado di competere silenziosamente con una fonte approvata."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "how-moscatelli-records-decisions",
+    "mainhub-access-troubleshooting"
+  ],
+  "mainHubLinks": []
+}

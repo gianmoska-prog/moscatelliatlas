@@ -1,0 +1,75 @@
+{
+  "id": "playbook.deadline-will-be-missed",
+  "slug": "deadline-will-be-missed",
+  "type": "playbook",
+  "category": "operations",
+  "topic": "Procedure di progetto",
+  "eyebrow": "Manuale operativo",
+  "title": "Una scadenza non verrà rispettata",
+  "summary": "Una risposta decisionale per far emergere tempestivamente lo slittamento, separando i fatti dalle ipotesi e reimpostando gli impegni con un responsabile documentato.",
+  "keywords": [
+    "scadenza",
+    "tardi",
+    "ritardo",
+    "pietra miliare",
+    "programma",
+    "sequenza temporale",
+    "escalation"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Playbook dimostrativo per la convalida dell'interfaccia. Non è la politica MOSCATELLI definitiva e deve essere rivista prima dell'uso operativo.",
+  "scenario": "Utilizzare questa opzione quando un traguardo interno o esterno impegnato non è più realisticamente realizzabile alla data concordata.",
+  "immediateAction": [
+    "Conferma la prima data di completamento credibile e la dipendenza specifica che causa la modifica.",
+    "Avvisare il responsabile prima della scadenza del termine; evitare di aspettare informazioni perfette.",
+    "Presentare l'impatto, la data rivista proposta e un'opzione pratica di mitigazione."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsabile del progetto",
+      "when": "Non appena lo slittamento sarà credibile e non semplicemente possibile."
+    },
+    {
+      "role": "Fondatore",
+      "when": "Al momento del lancio, gli impegni dei fornitori, la comunicazione pubblica o la spesa materiale potrebbero cambiare."
+    }
+  ],
+  "whatToRecord": [
+    "Data e responsabile originali",
+    "Causa dichiarata come fatto osservabile",
+    "Nuova data di previsione",
+    "Dipendenze interessate",
+    "Decisione presa e persona responsabile"
+  ],
+  "escalationConditions": [
+    "La data modificata influisce sul lancio, sull'impegno rivolto al cliente o sullo slot di produzione.",
+    "Si sposta più di una pietra miliare dipendente.",
+    "La causa è ricorrente o rivela un fallimento del processo/controllo."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Update structure",
+      "label": "Nota sulla modifica della scadenza",
+      "text": "Impegno originario → fatto attuale → impatto → data rivista → mitigazione → decisione necessaria."
+    }
+  ],
+  "relatedProcedures": [
+    "how-moscatelli-records-decisions",
+    "file-organisation-and-naming"
+  ]
+}

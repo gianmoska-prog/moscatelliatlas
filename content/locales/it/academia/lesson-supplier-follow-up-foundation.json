@@ -1,0 +1,64 @@
+{
+  "id": "lesson.supplier-follow-up-foundation",
+  "slug": "supplier-follow-up-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "supplier-procedures",
+  "moduleId": "samples",
+  "order": 3,
+  "category": "suppliers",
+  "topic": "Comunicazione del fornitore",
+  "eyebrow": "Lezione accademica",
+  "title": "Follow-up dei fornitori · Fondamenti",
+  "summary": "Gestisci la mancata risposta di un fornitore senza creare rumore, perdere la data della decisione o inoltrare un'escalation prematuramente.",
+  "keywords": [
+    "fornitore",
+    "venditore",
+    "seguito",
+    "ritardo",
+    "comunicazione"
+  ],
+  "estimatedMinutes": 23,
+  "readingMinutes": 23,
+  "requirement": "opzionale",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "Un chiaro follow-up è meglio di ripetuti inseguimenti",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Ribadire la questione in sospeso, l'aspettativa precedente e la data entro la quale MOSCATELLI ora necessita di una risposta. Quindi registra il punto di controllo successivo invece di inviare messaggi ripetuti senza una soglia decisionale."
+        }
+      ]
+    },
+    {
+      "heading": "Aumentare all'impatto",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Uno slot di produzione o di campionamento potrebbe andare perso.",
+            "Si sta avvicinando un pagamento o un impegno commerciale.",
+            "Un lancio o una pietra miliare interna è ora materialmente a rischio."
+          ]
+        }
+      ]
+    }
+  ]
+}

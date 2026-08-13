@@ -1,0 +1,85 @@
+{
+  "id": "article.communication-standards",
+  "slug": "internal-communication-standards",
+  "type": "article",
+  "category": "people",
+  "topic": "Padrões de comunicação",
+  "eyebrow": "Padrão de pessoas",
+  "title": "Padrões de comunicação interna",
+  "summary": "Um guia de demonstração para atualizações concisas, responsabilidade, contexto e uso apropriado de comunicação síncrona versus assíncrona.",
+  "keywords": [
+    "pessoas",
+    "equipe",
+    "funcionários",
+    "comunicação",
+    "Slack",
+    "e-mail"
+  ],
+  "readingMinutes": 6,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Atualizações úteis",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Indique o que mudou, o que é necessário, quem é o responsável pela próxima ação e quando outra atualização é esperada quando o momento for importante."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Lidere com a atualização do material",
+            "Separe os fatos das suposições",
+            "Nomeie o responsável da próxima ação",
+            "Inclua um prazo apenas quando ele for real",
+            "Vincule a fonte relevante em vez de duplicá-la"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Escolha o canal",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use comunicação assíncrona por padrão quando o assunto puder ser entendido e resolvido sem reunião. Use uma chamada quando nuances, velocidade ou colaboração ativa melhorarem materialmente o resultado."
+        },
+        {
+          "type": "callout",
+          "label": "Depois de uma ligação",
+          "text": "Se a conversa criar uma decisão, compromisso ou mudança que tenha importância posteriormente, preserve a conclusão relevante no registro escrito apropriado."
+        }
+      ]
+    },
+    {
+      "heading": "Escalada sem ruído",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A escalada deve descrever o bloqueador, a consequência e a decisão solicitada. Adicionar mais destinatários sem esclarecer a necessidade raramente melhora o resultado."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "how-moscatelli-records-decisions",
+    "introduction-to-moscatelli-tone-of-voice"
+  ],
+  "mainHubLinks": []
+}

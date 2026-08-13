@@ -1,0 +1,69 @@
+{
+  "id": "lesson.welcome-to-atlas",
+  "slug": "welcome-to-atlas",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "orientation",
+  "order": 1,
+  "category": "systems",
+  "topic": "Atlas",
+  "eyebrow": "Lezione accademica",
+  "title": "Benvenuti in Atlante",
+  "summary": "Capire a cosa serve Atlas, cosa non è e quando consultarlo prima di chiedere indicazioni istituzionali.",
+  "keywords": [
+    "Atlas",
+    "onboarding",
+    "conoscenza",
+    "memoria istituzionale",
+    "MainHub"
+  ],
+  "estimatedMinutes": 12,
+  "readingMinutes": 12,
+  "requirement": "necessario",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "Lo scopo di Atlas",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Atlas è il livello di riferimento interno per MOSCATELLI. Spiega standard, procedure, materiale didattico e situazioni ricorrenti; MainHub rimane il luogo in cui viene svolto e registrato il lavoro in corso."
+        },
+        {
+          "type": "callout",
+          "label": "Nota di sviluppo",
+          "text": "Il contenuto di questa anteprima convalida solo l'interfaccia di apprendimento e non rappresenta la politica finale."
+        }
+      ]
+    },
+    {
+      "heading": "Una semplice regola di lavoro",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Usa Atlas quando hai bisogno di capire come affrontare qualcosa.",
+            "Utilizza MainHub quando devi agire sul lavoro aziendale dal vivo o registrare una decisione attuale.",
+            "Quando un riferimento e un record in tempo reale sono in conflitto, fermati e solleva la discrepanza invece di sceglierne uno silenziosamente."
+          ]
+        }
+      ]
+    }
+  ]
+}

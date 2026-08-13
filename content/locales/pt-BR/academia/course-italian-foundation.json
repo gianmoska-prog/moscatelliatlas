@@ -1,0 +1,37 @@
+{
+  "id": "course.italian-foundation",
+  "slug": "italian-foundation",
+  "type": "academia-course",
+  "area": "Aulas de italiano",
+  "title": "Italiano · Fundamentos",
+  "summary": "Um primeiro caminho de aprendizagem restrito para italiano prático, usado em torno de datas, apresentações e coordenação de rotina.",
+  "owner": "People",
+  "audience": [
+    "Membros da equipe estudando italiano"
+  ],
+  "estimatedMinutes": 90,
+  "status": "current",
+  "version": "0.1-demo",
+  "demo": true,
+  "modules": [
+    {
+      "id": "presence",
+      "title": "Presença",
+      "summary": "Apresente-se e faça cortesias profissionais simples.",
+      "lessons": [
+        "italian-introductions",
+        "italian-courtesy"
+      ]
+    },
+    {
+      "id": "coordination",
+      "title": "Coordenação",
+      "summary": "Use números, datas e horários em situações normais de agendamento.",
+      "lessons": [
+        "italian-numbers-dates",
+        "italian-times-scheduling"
+      ]
+    }
+  ],
+  "sortOrder": 40
+}

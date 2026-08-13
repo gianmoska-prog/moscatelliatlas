@@ -1,0 +1,65 @@
+{
+  "id": "lesson.photography-review-foundation",
+  "slug": "photography-review-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "brand-foundations",
+  "moduleId": "image",
+  "order": 3,
+  "category": "brand",
+  "topic": "Fotografia",
+  "eyebrow": "Lição acadêmica",
+  "title": "Revisão de fotografia · Fundamentos",
+  "summary": "Uma primeira revisão concisa da adequação da imagem antes da aprovação detalhada do criativo.",
+  "keywords": [
+    "fotografia",
+    "imagem",
+    "aprovação",
+    "resolução",
+    "marca"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "opcional",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "Técnico antes de estético",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirme se a imagem é tecnicamente utilizável antes de dedicar algum tempo a um julgamento criativo detalhado. A resolução, a flexibilidade de corte, a integridade das cores e a qualidade do arquivo de origem devem ser conhecidas primeiro."
+        }
+      ]
+    },
+    {
+      "heading": "Então julgue a imagem como MOSCATELLI",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "A imagem parece controlada em vez de ocupada?",
+            "O produto ou assunto é representado com veracidade?",
+            "A luz suporta material e forma?",
+            "A imagem permaneceria credível ao lado do resto da casa?"
+          ]
+        }
+      ]
+    }
+  ]
+}

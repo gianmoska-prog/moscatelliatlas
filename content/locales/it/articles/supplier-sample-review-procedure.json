@@ -1,0 +1,115 @@
+{
+  "id": "article.sample-review",
+  "slug": "supplier-sample-review-procedure",
+  "type": "article",
+  "category": "products-and-quality",
+  "topic": "Fasi del campione",
+  "eyebrow": "Procedura di qualità",
+  "title": "Procedura di revisione del campione del fornitore",
+  "summary": "Un processo dimostrativo ripetibile per l'ispezione, la documentazione e la risposta al campione di un fornitore.",
+  "keywords": [
+    "fornitore",
+    "campione",
+    "prototipo",
+    "revisione",
+    "qualità"
+  ],
+  "readingMinutes": 8,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Creativo",
+    "Operazioni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Prima dell'ispezione",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Registrare quando è arrivato il campione e identificare la specifica, il preventivo o il campione precedente rispetto al quale dovrebbe essere esaminato."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Fornitore e progetto corretti",
+            "Lo stadio del campione è noto",
+            "Sono disponibili le specifiche pertinenti o i riferimenti precedenti",
+            "L'imballaggio e le condizioni di trasporto vengono registrati prima dello smaltimento"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Sequenza di revisione",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Ispezionare in modo obiettivo",
+              "text": "Controllare dimensioni, materiali, costruzione, finitura ed eventuali requisiti misurabili concordati."
+            },
+            {
+              "title": "Prove fotografiche",
+              "text": "Cattura sia il campione complessivo che i dettagli che spiegano qualsiasi deviazione o revisione richiesta."
+            },
+            {
+              "title": "Separare i fatti dalle preferenze",
+              "text": "Distinguere gli errori nelle specifiche dai perfezionamenti creativi in ​​modo che il fornitore possa comprenderne la priorità."
+            },
+            {
+              "title": "Consolidare il feedback",
+              "text": "Invia una richiesta di revisione coerente anziché commenti frammentati da più canali."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Classificazione dei risultati",
+      "blocks": [
+        {
+          "type": "callout",
+          "label": "Distinzione utile",
+          "text": "Un difetto non è la stessa cosa di una modifica di progettazione. Registrare la distinzione migliora la responsabilità del fornitore e preserva una cronologia di sviluppo più chiara."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Critico: impedisce l'approvazione o l'uso sicuro",
+            "Materiale: deviazione significativa dalle specifiche o dalla qualità prevista",
+            "Minore: accettabile per il palco ma vale la pena monitorare",
+            "Revisione creativa: modifica richiesta piuttosto che non conformità del fornitore"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Chiudi la recensione",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Registrare il risultato, il campione o l'azione successiva richiesta e qualsiasi tempistica concordata. Conservare le prove con il registro dello sviluppo in modo che la revisione successiva possa confrontare i risultati simili."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "reviewing-a-supplier-quotation",
+    "product-naming-standards"
+  ],
+  "mainHubLinks": []
+}

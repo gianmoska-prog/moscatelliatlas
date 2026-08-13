@@ -1,0 +1,67 @@
+{
+  "id": "lesson.italian-times-scheduling",
+  "slug": "italian-times-scheduling",
+  "type": "academia-lesson",
+  "courseSlug": "italian-foundation",
+  "moduleId": "coordination",
+  "order": 4,
+  "category": "people",
+  "topic": "Desenvolvimento",
+  "eyebrow": "Lição acadêmica",
+  "title": "Orari e appuntamenti",
+  "summary": "Utilize estruturas simples para propor, confirmar e alterar horários.",
+  "keywords": [
+    "italiano",
+    "tempo",
+    "agendar",
+    "encontro",
+    "calendário"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "Formulários principais",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Tudo novo. — Às nove.",
+            "Verso le tre. — Por volta das três.",
+            "Domani mattina. — Amanhã de manhã.",
+            "Você vai se beneficiar com os quatro? — Quatro horas está bom?",
+            "Podemos postar o aplicativo? — Podemos adiar o compromisso?",
+            "Confermo per venerdì alle dieci. — Confirmo para sexta às dez."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "A precisão é importante",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Para coordenação operacional, repita o dia e a hora na confirmação em vez de confiar no contexto. Isso reduz mal-entendidos enquanto o aluno ainda desenvolve confiança."
+        }
+      ]
+    }
+  ]
+}

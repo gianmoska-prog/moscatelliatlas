@@ -1,0 +1,1650 @@
+{
+  "schemaVersion": 4,
+  "generatedFor": "Patch 08 development preview",
+  "contentStatus": "demonstration",
+  "notice": "Todo o conteúdo de política neste conjunto de dados é material de demonstração para validação de interface e não deve ser tratado como política MOSCATELLI final.",
+  "categories": [
+    {
+      "slug": "the-house",
+      "name": "A Maison",
+      "shortName": "A Maison",
+      "description": "A própria instituição: finalidade, estrutura, responsabilidades e linguagem utilizada no MOSCATELLI.",
+      "topics": [
+        "A história de MOSCATELLI",
+        "Missão e valores",
+        "Estrutura organizacional",
+        "Funções e responsabilidades",
+        "Terminologia interna",
+        "Contatos da empresa"
+      ]
+    },
+    {
+      "slug": "brand",
+      "name": "Marca",
+      "shortName": "Marca",
+      "description": "Os padrões que regem a aparência, o som e a apresentação de MOSCATELLI.",
+      "topics": [
+        "Identidade visual",
+        "Uso de logotipo e monograma",
+        "Cor",
+        "Tipografia",
+        "Tom de voz",
+        "Escrita",
+        "Fotografia",
+        "Redes sociais",
+        "Ativos aprovados"
+      ]
+    },
+    {
+      "slug": "products-and-quality",
+      "name": "Produtos e Qualidade",
+      "shortName": "Produtos",
+      "description": "Desenvolvimento de produtos, materiais, construção, nomenclatura, revisão e padrões de lançamento.",
+      "topics": [
+        "Desenvolvimento de produto",
+        "Estágios de amostra",
+        "Materiais",
+        "Construção",
+        "Padrões de qualidade",
+        "Nomenclatura do produto",
+        "Requisitos de fotografia",
+        "Embalagem",
+        "Revisões",
+        "Lista de verificação de lançamento"
+      ]
+    },
+    {
+      "slug": "operations",
+      "name": "Operações",
+      "shortName": "Operações",
+      "description": "Como o trabalho é organizado, registrado e desenvolvido em toda a empresa.",
+      "topics": [
+        "Procedimentos do projeto",
+        "Convenções de calendário",
+        "Fluxo de trabalho de produção",
+        "Comunicação com fornecedores",
+        "Envio",
+        "Alfândega",
+        "Registros",
+        "Organização de arquivos",
+        "Tratamento de incidentes"
+      ]
+    },
+    {
+      "slug": "suppliers",
+      "name": "Fornecedores",
+      "shortName": "Fornecedores",
+      "description": "Procedimentos de referência para seleção, briefing, revisão e trabalho com fornecedores.",
+      "topics": [
+        "Integração de fornecedores",
+        "Cotações",
+        "Amostras",
+        "Negociações",
+        "Documentação",
+        "Pagamentos",
+        "Disputas de qualidade",
+        "Terminando um relacionamento"
+      ]
+    },
+    {
+      "slug": "finance-and-administration",
+      "name": "Finanças e Administração",
+      "shortName": "Finanças",
+      "description": "Orientação administrativa para despesas, faturas, recibos, moedas, aprovações e confidencialidade.",
+      "topics": [
+        "Renda",
+        "Despesas",
+        "Categorias de despesas",
+        "Faturas",
+        "Recibos",
+        "Custos recorrentes",
+        "Custos de treinamento",
+        "Moedas",
+        "Aprovações",
+        "Confidencialidade"
+      ],
+      "permissionHint": "Acesso com reconhecimento de função necessário posteriormente"
+    },
+    {
+      "slug": "people",
+      "name": "Pessoas",
+      "shortName": "Pessoas",
+      "description": "Integração, comunicação, responsabilidades e práticas de trabalho profissional.",
+      "topics": [
+        "Integração da equipe",
+        "Funções",
+        "Padrões de comunicação",
+        "Práticas de trabalho",
+        "Disponibilidade",
+        "Desenvolvimento",
+        "Políticas internas"
+      ]
+    },
+    {
+      "slug": "systems",
+      "name": "Sistemas",
+      "shortName": "Sistemas",
+      "description": "Como usar e solucionar problemas dos sistemas internos e acesso à conta de MOSCATELLI.",
+      "topics": [
+        "MainHub",
+        "Atlas",
+        "Slack",
+        "E-mail",
+        "Acesso à conta",
+        "Orientação sobre senha",
+        "Instalação do PWA",
+        "Solução de problemas",
+        "Relatando problemas técnicos"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "article.welcome-atlas",
+      "slug": "welcome-to-moscatelli-atlas",
+      "type": "article",
+      "category": "the-house",
+      "topic": "Terminologia interna",
+      "eyebrow": "Orientação",
+      "title": "Bem-vindo ao MOSCATELLI Atlas",
+      "summary": "Para que serve o Atlas, o que pertence aqui e como distinguir o conhecimento institucional do trabalho operacional em andamento.",
+      "keywords": [
+        "Atlas",
+        "conhecimento",
+        "padrões",
+        "orientação",
+        "MainHub"
+      ],
+      "readingMinutes": 4,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-11-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.house-standards",
+      "slug": "working-with-standards-at-moscatelli",
+      "type": "article",
+      "category": "the-house",
+      "topic": "Missão e valores",
+      "eyebrow": "A Maison",
+      "title": "Trabalhando com os padrões da MOSCATELLI",
+      "summary": "Uma referência de demonstração de como os padrões devem orientar as decisões sem transformar o julgamento em burocracia.",
+      "keywords": [
+        "padrões",
+        "valores",
+        "decisões",
+        "qualidade"
+      ],
+      "readingMinutes": 5,
+      "owner": "Founder",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-11-13",
+      "languageStatus": "English demonstration",
+      "status": "under-review",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.tone-of-voice",
+      "slug": "introduction-to-moscatelli-tone-of-voice",
+      "type": "article",
+      "category": "brand",
+      "topic": "Tom de voz",
+      "eyebrow": "Padrão da marca",
+      "title": "Introdução ao tom de voz de MOSCATELLI",
+      "summary": "Uma introdução prática à contenção, clareza e autoridade na escrita MOSCATELLI interna e externa.",
+      "keywords": [
+        "marca",
+        "tom",
+        "voz",
+        "escrita",
+        "comunicação"
+      ],
+      "readingMinutes": 7,
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.photography-approval",
+      "slug": "photography-approval-checklist",
+      "type": "article",
+      "category": "brand",
+      "topic": "Fotografia",
+      "eyebrow": "Lista de verificação da marca",
+      "title": "Lista de verificação de aprovação de fotografia",
+      "summary": "Os pontos visuais e técnicos a serem revisados ​​antes que uma imagem seja tratada como material MOSCATELLI aprovado.",
+      "keywords": [
+        "fotografia",
+        "imagem",
+        "aprovação",
+        "resolução",
+        "marca"
+      ],
+      "readingMinutes": 6,
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Criativo",
+        "Marketing",
+        "Operações"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.product-naming",
+      "slug": "product-naming-standards",
+      "type": "article",
+      "category": "products-and-quality",
+      "topic": "Nomenclatura do produto",
+      "eyebrow": "Padrão do produto",
+      "title": "Padrões de nomenclatura de produtos",
+      "summary": "Uma estrutura de demonstração para a criação de nomes de produtos que permaneçam coerentes, distintivos e utilizáveis ​​em registros e comunicações.",
+      "keywords": [
+        "produto",
+        "nomeando",
+        "padrões",
+        "SKU",
+        "coleção"
+      ],
+      "readingMinutes": 6,
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Criativo",
+        "Operações",
+        "Marketing"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.sample-review",
+      "slug": "supplier-sample-review-procedure",
+      "type": "article",
+      "category": "products-and-quality",
+      "topic": "Estágios de amostra",
+      "eyebrow": "Procedimento de qualidade",
+      "title": "Procedimento de revisão de amostra de fornecedor",
+      "summary": "Um processo de demonstração repetível para inspecionar, documentar e responder a uma amostra de fornecedor.",
+      "keywords": [
+        "fornecedor",
+        "amostra",
+        "protótipo",
+        "análise",
+        "qualidade"
+      ],
+      "readingMinutes": 8,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Criativo",
+        "Operações"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.decision-records",
+      "slug": "how-moscatelli-records-decisions",
+      "type": "article",
+      "category": "operations",
+      "topic": "Registros",
+      "eyebrow": "Prática operacional",
+      "title": "Como MOSCATELLI registra decisões",
+      "summary": "Onde deve ser registrada uma decisão significativa, que contexto preservar e como deixar uma trilha institucional útil.",
+      "keywords": [
+        "registro",
+        "decisão",
+        "MainHub",
+        "documentação",
+        "história"
+      ],
+      "readingMinutes": 5,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-11-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.file-organisation",
+      "slug": "file-organisation-and-naming",
+      "type": "article",
+      "category": "operations",
+      "topic": "Organização de arquivos",
+      "eyebrow": "Padrão operacional",
+      "title": "Organização e nomenclatura de arquivos",
+      "summary": "Uma convenção de demonstração para manter o material do projeto localizável, com reconhecimento de versão e compreensível para outro membro da equipe.",
+      "keywords": [
+        "arquivos",
+        "pastas",
+        "nomeando",
+        "versão",
+        "registros"
+      ],
+      "readingMinutes": 5,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-11-13",
+      "languageStatus": "English demonstration",
+      "status": "under-review",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.quotation-review",
+      "slug": "reviewing-a-supplier-quotation",
+      "type": "article",
+      "category": "suppliers",
+      "topic": "Cotações",
+      "eyebrow": "Procedimento do fornecedor",
+      "title": "Como revisar uma cotação de fornecedor",
+      "summary": "O que verificar antes de uma cotação ser tratada como comparável, completa e pronta para uma decisão comercial.",
+      "keywords": [
+        "fornecedor",
+        "fornecedor",
+        "cotação",
+        "citar",
+        "custo",
+        "Quantidade mínima"
+      ],
+      "readingMinutes": 7,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Operações",
+        "Fundador"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.training-expense",
+      "slug": "recording-a-training-expense",
+      "type": "article",
+      "category": "finance-and-administration",
+      "topic": "Custos de treinamento",
+      "eyebrow": "Orientação financeira",
+      "title": "Registrando uma despesa de treinamento",
+      "summary": "Um procedimento administrativo demonstrativo para preservação da fatura, finalidade, moeda e aprovação interna das despesas de treinamento.",
+      "keywords": [
+        "treinamento",
+        "despesa",
+        "custo",
+        "fatura",
+        "recibo",
+        "financiar"
+      ],
+      "readingMinutes": 6,
+      "owner": "Finance",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Fundador",
+        "Operações"
+      ],
+      "permissions": [
+        "finance-guidance"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.communication-standards",
+      "slug": "internal-communication-standards",
+      "type": "article",
+      "category": "people",
+      "topic": "Padrões de comunicação",
+      "eyebrow": "Padrão de pessoas",
+      "title": "Padrões de comunicação interna",
+      "summary": "Um guia de demonstração para atualizações concisas, responsabilidade, contexto e uso apropriado de comunicação síncrona versus assíncrona.",
+      "keywords": [
+        "pessoas",
+        "equipe",
+        "funcionários",
+        "comunicação",
+        "Slack",
+        "e-mail"
+      ],
+      "readingMinutes": 6,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-11-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "article.mainhub-access",
+      "slug": "mainhub-access-troubleshooting",
+      "type": "article",
+      "category": "systems",
+      "topic": "MainHub",
+      "eyebrow": "Guia de sistemas",
+      "title": "Solução de problemas de acesso ao MainHub",
+      "summary": "Uma lista de verificação de demonstração de primeira resposta para problemas comuns de acesso antes que um problema técnico seja escalado.",
+      "keywords": [
+        "MainHub",
+        "Conecte-se",
+        "entrar",
+        "acesso",
+        "senha",
+        "solução de problemas"
+      ],
+      "readingMinutes": 5,
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.responding-to-a-delayed-supplier",
+      "slug": "responding-to-a-delayed-supplier",
+      "type": "playbook",
+      "category": "suppliers",
+      "topic": "Comunicação com fornecedores",
+      "eyebrow": "Manual operacional",
+      "title": "Um fornecedor parou de responder",
+      "summary": "Uma sequência calma para restabelecer o contato, proteger o cronograma e escalar somente quando o silêncio se tornar operacionalmente material.",
+      "keywords": [
+        "fornecedor",
+        "fornecedor",
+        "atrasado",
+        "sem resposta",
+        "seguir",
+        "prazo final",
+        "comunicação"
+      ],
+      "owner": "Operations",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.sample-arrived-damaged",
+      "slug": "sample-arrived-damaged",
+      "type": "playbook",
+      "category": "products-and-quality",
+      "topic": "Estágios de amostra",
+      "eyebrow": "Manual operacional",
+      "title": "Uma amostra chegou danificada",
+      "summary": "Uma resposta que prioriza a preservação para documentar danos, separando problemas de trânsito de problemas de mão de obra e protegendo a trilha de revisão.",
+      "keywords": [
+        "amostra",
+        "protótipo",
+        "danificado",
+        "qualidade",
+        "envio",
+        "evidência",
+        "fotografia"
+      ],
+      "owner": "Product Development",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.invoice-does-not-match-quotation",
+      "slug": "invoice-does-not-match-quotation",
+      "type": "playbook",
+      "category": "finance-and-administration",
+      "topic": "Faturas",
+      "eyebrow": "Manual operacional",
+      "title": "Uma fatura não corresponde à cotação",
+      "summary": "Uma sequência de verificação de valores, quantidades, moedas ou condições de pagamento incompatíveis antes que qualquer registro financeiro seja tratado como final.",
+      "keywords": [
+        "fatura",
+        "conta",
+        "cotação",
+        "citar",
+        "quantia",
+        "moeda",
+        "pagamento",
+        "incompatibilidade"
+      ],
+      "owner": "Finance & Administration",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.deadline-will-be-missed",
+      "slug": "deadline-will-be-missed",
+      "type": "playbook",
+      "category": "operations",
+      "topic": "Procedimentos do projeto",
+      "eyebrow": "Manual operacional",
+      "title": "Um prazo será perdido",
+      "summary": "Uma resposta que prioriza a decisão para revelar antecipadamente o retrocesso, separando os fatos das suposições e redefinindo os compromissos com um responsável documentado.",
+      "keywords": [
+        "prazo final",
+        "tarde",
+        "atraso",
+        "marco",
+        "agendar",
+        "linha do tempo",
+        "escalada"
+      ],
+      "owner": "Operations",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.confidential-information-request",
+      "slug": "confidential-information-request",
+      "type": "playbook",
+      "category": "people",
+      "topic": "Políticas internas",
+      "eyebrow": "Manual operacional",
+      "title": "Alguém solicita informações confidenciais",
+      "summary": "Uma resposta pouco dramática para interromper a divulgação, verificar a necessidade e a autoridade e registrar decisões sobre informações confidenciais.",
+      "keywords": [
+        "confidencial",
+        "privado",
+        "Informação",
+        "dados",
+        "fornecedor",
+        "solicitar",
+        "permissão"
+      ],
+      "owner": "Operations",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.mainhub-access-failure",
+      "slug": "mainhub-access-failure",
+      "type": "playbook",
+      "category": "systems",
+      "topic": "MainHub",
+      "eyebrow": "Manual operacional",
+      "title": "Um membro da equipe não pode acessar MainHub",
+      "summary": "Uma breve rota de diagnóstico para distinguir problemas de conta, sessão e permissão antes de escalar um problema de sistema.",
+      "keywords": [
+        "MainHub",
+        "Conecte-se",
+        "entrar",
+        "acesso",
+        "conta",
+        "permissão",
+        "solução de problemas"
+      ],
+      "owner": "Operations",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.image-has-wrong-resolution",
+      "slug": "image-has-wrong-resolution",
+      "type": "playbook",
+      "category": "brand",
+      "topic": "Fotografia",
+      "eyebrow": "Manual operacional",
+      "title": "Uma imagem tem a resolução errada",
+      "summary": "Uma resposta controlada para impedir o progresso de imagens inadequadas, preservando o arquivo de origem e o histórico de aprovação.",
+      "keywords": [
+        "imagem",
+        "resolução",
+        "fotografia",
+        "pixels",
+        "qualidade",
+        "aprovação",
+        "ativo"
+      ],
+      "owner": "Creative Direction",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.payment-recorded-twice",
+      "slug": "payment-recorded-twice",
+      "type": "playbook",
+      "category": "finance-and-administration",
+      "topic": "Pagamentos",
+      "eyebrow": "Manual operacional",
+      "title": "Um pagamento foi registrado duas vezes",
+      "summary": "Um processo de verificação não destrutivo para registros suspeitos de duplicação antes de corrigir o histórico financeiro.",
+      "keywords": [
+        "pagamento",
+        "duplicado",
+        "registro",
+        "despesa",
+        "financiar",
+        "transação",
+        "duas vezes"
+      ],
+      "owner": "Finance & Administration",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "playbook.shipment-held-at-customs",
+      "slug": "shipment-held-at-customs",
+      "type": "playbook",
+      "category": "operations",
+      "topic": "Alfândega",
+      "eyebrow": "Manual operacional",
+      "title": "Uma remessa é retida na alfândega",
+      "summary": "Uma resposta baseada em factos para estabelecer o motivo da retenção, reunir documentos e escalar apenas com o registro de envio relevante intacto.",
+      "keywords": [
+        "remessa",
+        "envio",
+        "entrega",
+        "alfândega",
+        "mantido",
+        "operadora",
+        "documentos"
+      ],
+      "owner": "Operations",
+      "readingMinutes": 4,
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.welcome-to-atlas",
+      "slug": "welcome-to-atlas",
+      "type": "academia-lesson",
+      "courseSlug": "moscatelli-onboarding",
+      "moduleId": "orientation",
+      "order": 1,
+      "category": "systems",
+      "topic": "Atlas",
+      "eyebrow": "Lição acadêmica",
+      "title": "Bem-vindo ao Atlas",
+      "summary": "Entenda para que serve o Atlas, o que não é e quando consultá-lo antes de pedir orientação institucional.",
+      "keywords": [
+        "Atlas",
+        "integração",
+        "conhecimento",
+        "memória institucional",
+        "MainHub"
+      ],
+      "estimatedMinutes": 12,
+      "readingMinutes": 12,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": true,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.working-with-standards",
+      "slug": "working-with-standards",
+      "type": "academia-lesson",
+      "courseSlug": "moscatelli-onboarding",
+      "moduleId": "orientation",
+      "order": 2,
+      "category": "the-house",
+      "topic": "Missão e valores",
+      "eyebrow": "Lição acadêmica",
+      "title": "Trabalhando com padrões",
+      "summary": "Aprenda como tratar os padrões publicados como referências controladas em vez de sugestões informais.",
+      "keywords": [
+        "padrões",
+        "procedimento",
+        "versão",
+        "análise",
+        "governança"
+      ],
+      "estimatedMinutes": 16,
+      "readingMinutes": 16,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.recording-decisions",
+      "slug": "recording-decisions",
+      "type": "academia-lesson",
+      "courseSlug": "moscatelli-onboarding",
+      "moduleId": "working-practice",
+      "order": 3,
+      "category": "operations",
+      "topic": "Registros",
+      "eyebrow": "Lição acadêmica",
+      "title": "Gravando decisões",
+      "summary": "Pratique um registro de decisões conciso que preserve o contexto sem transformar o trabalho rotineiro em burocracia.",
+      "keywords": [
+        "registro",
+        "decisão",
+        "responsável",
+        "contexto",
+        "MainHub"
+      ],
+      "estimatedMinutes": 20,
+      "readingMinutes": 20,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": true,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.communication-basics",
+      "slug": "communication-basics",
+      "type": "academia-lesson",
+      "courseSlug": "moscatelli-onboarding",
+      "moduleId": "working-practice",
+      "order": 4,
+      "category": "people",
+      "topic": "Padrões de comunicação",
+      "eyebrow": "Lição acadêmica",
+      "title": "Noções básicas de comunicação interna",
+      "summary": "Utilize uma estrutura calma e precisa para atualizações internas, solicitações e passagens de responsabilidade.",
+      "keywords": [
+        "comunicação",
+        "entregar",
+        "atualizar",
+        "solicitar",
+        "equipe"
+      ],
+      "estimatedMinutes": 22,
+      "readingMinutes": 22,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.tone-of-voice-foundation",
+      "slug": "tone-of-voice-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "brand-foundations",
+      "moduleId": "voice",
+      "order": 1,
+      "category": "brand",
+      "topic": "Tom de voz",
+      "eyebrow": "Lição acadêmica",
+      "title": "Tom de voz · Fundamentos",
+      "summary": "Reconheça a diferença entre confiança contida e linguagem que parece inflada, genérica ou sobrescrita.",
+      "keywords": [
+        "marca",
+        "tom",
+        "voz",
+        "escrita",
+        "linguagem"
+      ],
+      "estimatedMinutes": 22,
+      "readingMinutes": 22,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": true,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.product-naming-foundation",
+      "slug": "product-naming-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "brand-foundations",
+      "moduleId": "voice",
+      "order": 2,
+      "category": "products-and-quality",
+      "topic": "Nomenclatura do produto",
+      "eyebrow": "Lição acadêmica",
+      "title": "Nome do produto · Fundamentos",
+      "summary": "Entenda a disciplina inicial de nomenclatura usada para manter a linguagem do produto coerente e revisável.",
+      "keywords": [
+        "produto",
+        "nomeando",
+        "nome",
+        "coleção",
+        "padrão"
+      ],
+      "estimatedMinutes": 18,
+      "readingMinutes": 18,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.photography-review-foundation",
+      "slug": "photography-review-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "brand-foundations",
+      "moduleId": "image",
+      "order": 3,
+      "category": "brand",
+      "topic": "Fotografia",
+      "eyebrow": "Lição acadêmica",
+      "title": "Revisão de fotografia · Fundamentos",
+      "summary": "Uma primeira revisão concisa da adequação da imagem antes da aprovação detalhada do criativo.",
+      "keywords": [
+        "fotografia",
+        "imagem",
+        "aprovação",
+        "resolução",
+        "marca"
+      ],
+      "estimatedMinutes": 25,
+      "readingMinutes": 25,
+      "requirement": "opcional",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.quotation-review-foundation",
+      "slug": "quotation-review-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "supplier-procedures",
+      "moduleId": "commercial",
+      "order": 1,
+      "category": "suppliers",
+      "topic": "Cotações",
+      "eyebrow": "Lição acadêmica",
+      "title": "Revisão de cotação · Fundamentos",
+      "summary": "Leia as cotações de fornecedores como registros comerciais versionados e identifique os detalhes que devem estar claros antes da aprovação.",
+      "keywords": [
+        "fornecedor",
+        "fornecedor",
+        "cotação",
+        "citar",
+        "preço",
+        "termos"
+      ],
+      "estimatedMinutes": 22,
+      "readingMinutes": 22,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": true,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.sample-review-foundation",
+      "slug": "sample-review-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "supplier-procedures",
+      "moduleId": "samples",
+      "order": 2,
+      "category": "products-and-quality",
+      "topic": "Estágios de amostra",
+      "eyebrow": "Lição acadêmica",
+      "title": "Revisão de amostra · Fundamentos",
+      "summary": "Uma primeira passagem controlada para amostras físicas que mantém evidências, observações e revisões separadas.",
+      "keywords": [
+        "amostra",
+        "protótipo",
+        "qualidade",
+        "análise",
+        "fornecedor"
+      ],
+      "estimatedMinutes": 25,
+      "readingMinutes": 25,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.supplier-follow-up-foundation",
+      "slug": "supplier-follow-up-foundation",
+      "type": "academia-lesson",
+      "courseSlug": "supplier-procedures",
+      "moduleId": "samples",
+      "order": 3,
+      "category": "suppliers",
+      "topic": "Comunicação com fornecedores",
+      "eyebrow": "Lição acadêmica",
+      "title": "Acompanhamento de fornecedores · Fundamentos",
+      "summary": "Lide com uma falta de resposta do fornecedor sem criar ruído, perder a data da decisão ou escalar prematuramente.",
+      "keywords": [
+        "fornecedor",
+        "fornecedor",
+        "seguir",
+        "atraso",
+        "comunicação"
+      ],
+      "estimatedMinutes": 23,
+      "readingMinutes": 23,
+      "requirement": "opcional",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.italian-introductions",
+      "slug": "italian-introductions",
+      "type": "academia-lesson",
+      "courseSlug": "italian-foundation",
+      "moduleId": "presence",
+      "order": 1,
+      "category": "people",
+      "topic": "Desenvolvimento",
+      "eyebrow": "Lição acadêmica",
+      "title": "Apresentar com precisão",
+      "summary": "Use um pequeno conjunto de estruturas naturais para se apresentar e apresentar sua função, sem sobrecarregar a primeira conversa.",
+      "keywords": [
+        "italiano",
+        "introduções",
+        "apresentarsi",
+        "papel",
+        "linguagem"
+      ],
+      "estimatedMinutes": 20,
+      "readingMinutes": 20,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.italian-courtesy",
+      "slug": "italian-courtesy",
+      "type": "academia-lesson",
+      "courseSlug": "italian-foundation",
+      "moduleId": "presence",
+      "order": 2,
+      "category": "people",
+      "topic": "Desenvolvimento",
+      "eyebrow": "Lição acadêmica",
+      "title": "Cortesia profissional",
+      "summary": "Crie um conjunto compacto de formulários educados para solicitações, agradecimentos e esclarecimentos em conversas profissionais comuns.",
+      "keywords": [
+        "italiano",
+        "cortesia",
+        "por favor",
+        "obrigado",
+        "esclarecimento"
+      ],
+      "estimatedMinutes": 20,
+      "readingMinutes": 20,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": true,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.italian-numbers-dates",
+      "slug": "italian-numbers-dates",
+      "type": "academia-lesson",
+      "courseSlug": "italian-foundation",
+      "moduleId": "coordination",
+      "order": 3,
+      "category": "people",
+      "topic": "Desenvolvimento",
+      "eyebrow": "Lição acadêmica",
+      "title": "Números e data",
+      "summary": "Reconhecer e produzir os formulários de número e data mais úteis para preços, quantidades e compromissos.",
+      "keywords": [
+        "italiano",
+        "números",
+        "datas",
+        "quantidades",
+        "preços"
+      ],
+      "estimatedMinutes": 25,
+      "readingMinutes": 25,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "lesson.italian-times-scheduling",
+      "slug": "italian-times-scheduling",
+      "type": "academia-lesson",
+      "courseSlug": "italian-foundation",
+      "moduleId": "coordination",
+      "order": 4,
+      "category": "people",
+      "topic": "Desenvolvimento",
+      "eyebrow": "Lição acadêmica",
+      "title": "Orari e appuntamenti",
+      "summary": "Utilize estruturas simples para propor, confirmar e alterar horários.",
+      "keywords": [
+        "italiano",
+        "tempo",
+        "agendar",
+        "encontro",
+        "calendário"
+      ],
+      "estimatedMinutes": 25,
+      "readingMinutes": 25,
+      "requirement": "obrigatório",
+      "acknowledgementRequired": false,
+      "owner": "Academia",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "publishedDate": "2026-08-13",
+      "lastReviewed": "2026-08-13",
+      "nextReview": "2026-10-13",
+      "languageStatus": "English demonstration",
+      "status": "current",
+      "audience": [
+        "Alunos internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "demo": true
+    },
+    {
+      "id": "update.atlas-foundation",
+      "slug": "atlas-foundation",
+      "type": "update",
+      "updateType": "informational",
+      "changeKind": "new",
+      "category": "systems",
+      "topic": "Atlas",
+      "eyebrow": "Novo conteúdo",
+      "title": "A fundação Atlas já está disponível",
+      "summary": "O primeiro conhecimento, pesquisa, manual e experiências de aprendizagem do Atlas estão disponíveis na referência de desenvolvimento.",
+      "changeSummary": "Agora existe uma referência interna estruturada para material da Biblioteca, Playbooks situacionais e roteiros de aprendizagem da Academia.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "welcome-to-moscatelli-atlas",
+        "label": "Bem-vindo ao MOSCATELLI Atlas"
+      },
+      "keywords": [
+        "Atlas",
+        "novo conteúdo",
+        "conhecimento",
+        "lançar"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.sample-review-revised",
+      "slug": "sample-review-revised",
+      "type": "update",
+      "updateType": "important",
+      "changeKind": "revised",
+      "category": "products-and-quality",
+      "topic": "Estágios de amostra",
+      "eyebrow": "Conteúdo revisado",
+      "title": "Procedimento de revisão de amostra de fornecedor revisado",
+      "summary": "A referência de revisão de amostra de demonstração agora coloca o registro de inspeção física antes das decisões de disposição.",
+      "changeSummary": "A revisão esclarece a sequência: primeiro documente a condição, depois compare com a referência aprovada e depois decida se aceita, revisa ou escala.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Product Development",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "Desenvolvimento de Produto",
+        "Operações"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "supplier-sample-review-procedure",
+        "label": "Procedimento de revisão de amostra de fornecedor"
+      },
+      "keywords": [
+        "amostra",
+        "revisado",
+        "inspeção",
+        "fornecedor"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.photography-check-required",
+      "slug": "photography-check-required",
+      "type": "update",
+      "updateType": "required",
+      "changeKind": "important",
+      "category": "brand",
+      "topic": "Fotografia",
+      "eyebrow": "Leitura obrigatória",
+      "title": "As verificações de aprovação de fotografia exigem revisão",
+      "summary": "Os usuários criativos e de marketing devem revisar a lista de verificação atual de aprovação de fotografias de demonstração antes dos exercícios de aprovação de imagens.",
+      "changeSummary": "Esta visualização marca uma mudança de conhecimento como leitura obrigatória para validar o comportamento de reconhecimento e a apresentação de governança.",
+      "effectiveDate": "2026-08-14",
+      "publishedDate": "2026-08-13",
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "Criativo",
+        "Marketing"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": true,
+      "target": {
+        "type": "article",
+        "slug": "photography-approval-checklist",
+        "label": "Lista de verificação de aprovação de fotografia"
+      },
+      "keywords": [
+        "leitura obrigatória",
+        "fotografia",
+        "aprovação",
+        "reconhecimento"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.mainhub-access-important",
+      "slug": "mainhub-access-important",
+      "type": "update",
+      "updateType": "important",
+      "changeKind": "revised",
+      "category": "systems",
+      "topic": "MainHub",
+      "eyebrow": "Atualização importante",
+      "title": "Solução de problemas de acesso ao MainHub esclarecida",
+      "summary": "A referência de solução de problemas de acesso agora separa as verificações de conta, navegador e permissão de forma mais clara.",
+      "changeSummary": "A mudança de demonstração facilita a identificação das condições de escalonamento antes que um problema técnico seja transmitido.",
+      "effectiveDate": "2026-08-15",
+      "publishedDate": "2026-08-13",
+      "owner": "Operations",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "Todos os usuários internos"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "mainhub-access-troubleshooting",
+        "label": "Solução de problemas de acesso ao MainHub"
+      },
+      "keywords": [
+        "MainHub",
+        "acesso",
+        "solução de problemas",
+        "importante"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.naming-standard-revised",
+      "slug": "naming-standard-revised",
+      "type": "update",
+      "updateType": "informational",
+      "changeKind": "revised",
+      "category": "products-and-quality",
+      "topic": "Nomenclatura do produto",
+      "eyebrow": "Conteúdo revisado",
+      "title": "Referência de nomenclatura do produto atualizada",
+      "summary": "A referência de nomenclatura de demonstração agora enfatiza a verificação da família de nomenclatura mais ampla antes da aprovação.",
+      "changeSummary": "A atualização reforça que a nomenclatura é um sistema e não uma série de decisões criativas isoladas.",
+      "effectiveDate": "2026-08-16",
+      "publishedDate": "2026-08-13",
+      "owner": "Creative Direction",
+      "approver": "Founder",
+      "version": "0.2-demo",
+      "audience": [
+        "Criativo",
+        "Desenvolvimento de Produto"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "current",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "product-naming-standards",
+        "label": "Padrões de nomenclatura de produtos"
+      },
+      "keywords": [
+        "nomeando",
+        "produto",
+        "revisado",
+        "padrão"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    },
+    {
+      "id": "update.training-expense-archive",
+      "slug": "training-expense-archive",
+      "type": "update",
+      "updateType": "archived",
+      "changeKind": "archived",
+      "category": "finance-and-administration",
+      "topic": "Custos de treinamento",
+      "eyebrow": "Aviso arquivado",
+      "title": "Nota anterior de despesas de treinamento arquivada",
+      "summary": "Uma nota de demonstração anterior foi substituída pela atual referência de despesas de treinamento.",
+      "changeSummary": "Este aviso arquivado existe para demonstrar como o Atlas pode preservar o conhecimento substituído sem apresentá-lo como orientação atual.",
+      "effectiveDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "owner": "Finance",
+      "approver": "Founder",
+      "version": "0.1-demo",
+      "audience": [
+        "Finanças",
+        "Operações"
+      ],
+      "permissions": [
+        "internal"
+      ],
+      "status": "archived",
+      "acknowledgementRequired": false,
+      "target": {
+        "type": "article",
+        "slug": "recording-a-training-expense",
+        "label": "Registrando uma despesa de treinamento"
+      },
+      "keywords": [
+        "arquivado",
+        "despesa de treinamento",
+        "substituído",
+        "financiar"
+      ],
+      "readingMinutes": 1,
+      "demo": true
+    }
+  ]
+}

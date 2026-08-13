@@ -1,0 +1,67 @@
+{
+  "id": "lesson.italian-courtesy",
+  "slug": "italian-courtesy",
+  "type": "academia-lesson",
+  "courseSlug": "italian-foundation",
+  "moduleId": "presence",
+  "order": 2,
+  "category": "people",
+  "topic": "Sviluppo",
+  "eyebrow": "Lezione accademica",
+  "title": "Cortesia professionale",
+  "summary": "Costruisci un insieme compatto di moduli educati per richieste, ringraziamenti e chiarimenti nella normale conversazione professionale.",
+  "keywords": [
+    "Italiano",
+    "cortesia",
+    "Per favore",
+    "Grazie",
+    "chiarimento"
+  ],
+  "estimatedMinutes": 20,
+  "readingMinutes": 20,
+  "requirement": "necessario",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "Forme utili",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Per favore. - Per favore.",
+            "Grazie mille. - Grazie mille.",
+            "potresti ripetere? — Potresti ripetere? (informale)",
+            "Potrebbe ripetere? — Potresti ripetere? (formale)",
+            "Non ho capito bene. — Non ho capito bene.",
+            "Va bene, grazie. — Va bene, grazie."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Registro",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "L'italiano cambia a seconda della familiarità e della formalità. Questa anteprima introduce sia forme informali che formali, ma un vero curriculum dovrebbe definire il registro preferito per specifiche situazioni MOSCATELLI."
+        }
+      ]
+    }
+  ]
+}

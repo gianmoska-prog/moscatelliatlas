@@ -1,0 +1,109 @@
+{
+  "id": "article.welcome-atlas",
+  "slug": "welcome-to-moscatelli-atlas",
+  "type": "article",
+  "category": "the-house",
+  "topic": "Terminologia interna",
+  "eyebrow": "Orientação",
+  "title": "Bem-vindo ao MOSCATELLI Atlas",
+  "summary": "Para que serve o Atlas, o que pertence aqui e como distinguir o conhecimento institucional do trabalho operacional em andamento.",
+  "keywords": [
+    "Atlas",
+    "conhecimento",
+    "padrões",
+    "orientação",
+    "MainHub"
+  ],
+  "readingMinutes": 4,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Atlas e MainHub",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Atlas é a camada de referência: explica normas, procedimentos e conhecimento institucional. MainHub continua sendo o local para trabalho operacional em andamento, projetos atuais e registros."
+        },
+        {
+          "type": "callout",
+          "label": "Distinção de trabalho",
+          "text": "Se a informação ainda for útil após o término da tarefa atual, ela provavelmente pertence ao Atlas. Se representar trabalho ativo, responsabilidade ou registro operacional atual, pertence a MainHub."
+        }
+      ]
+    },
+    {
+      "heading": "O que pertence aqui",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "O Atlas deve conter orientações duradouras nas quais outro membro da equipe possa confiar sem reconstruir o contexto a partir de mensagens, reuniões ou memória."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Padrões que definem um limite de qualidade esperado",
+            "Procedimentos que devem ser repetidos consistentemente",
+            "Material de referência que explica a terminologia ou decisões de MOSCATELLI",
+            "Material de aprendizagem que apoia a integração e o desenvolvimento de funções"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Como usar um artigo",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Confirme o estado",
+              "text": "Verifique se o artigo está atual, em revisão, substituído ou arquivado."
+            },
+            {
+              "title": "Leia o contexto governamental",
+              "text": "Use o responsável, o aprovador e as datas de revisão para entender quem mantém a referência."
+            },
+            {
+              "title": "Acompanhe o material relacionado",
+              "text": "Mude para um procedimento vinculado ou destino MainHub quando a referência apontar para o trabalho ativo."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "O conteúdo de demonstração nesta visualização é explicitamente rotulado e não deve ser tratado como política final da empresa."
+        }
+      ]
+    },
+    {
+      "heading": "Memória institucional",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "O objetivo de longo prazo do Atlas é reduzir a dependência da memória individual. Um sistema de conhecimento útil torna a empresa mais fácil de operar, ensinar e melhorar, sem tornar o trabalho burocrático."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "working-with-standards-at-moscatelli",
+    "how-moscatelli-records-decisions"
+  ],
+  "mainHubLinks": []
+}

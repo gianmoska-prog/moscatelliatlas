@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "demonstration",
+  "notice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "courses": [
+    {
+      "slug": "moscatelli-onboarding",
+      "title": "Integração de MOSCATELLI",
+      "area": "Integração"
+    },
+    {
+      "slug": "brand-foundations",
+      "title": "Fundamentos da marca",
+      "area": "Educação da marca"
+    },
+    {
+      "slug": "supplier-procedures",
+      "title": "Procedimentos do fornecedor",
+      "area": "Procedimentos do fornecedor"
+    },
+    {
+      "slug": "italian-foundation",
+      "title": "Italiano · Fundamentos",
+      "area": "Aulas de italiano"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "playbook.confidential-information-request",
+  "slug": "confidential-information-request",
+  "type": "playbook",
+  "category": "people",
+  "topic": "Politiche interne",
+  "eyebrow": "Manuale operativo",
+  "title": "Qualcuno richiede informazioni riservate",
+  "summary": "Una risposta poco drammatica per sospendere la divulgazione, verificare necessità e autorità e registrare decisioni relative a informazioni sensibili.",
+  "keywords": [
+    "confidenziale",
+    "privato",
+    "informazioni",
+    "dati",
+    "fornitore",
+    "richiesta",
+    "permesso"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Playbook dimostrativo per la convalida dell'interfaccia. Non è la politica MOSCATELLI definitiva e deve essere rivista prima dell'uso operativo.",
+  "scenario": "Utilizzalo quando un fornitore, appaltatore, candidato, membro del team o parte esterna richiede informazioni che potrebbero essere commercialmente sensibili, personali, limitate o al di fuori del loro consueto accesso.",
+  "immediateAction": [
+    "Non divulgare le informazioni se l'autorità o lo scopo non sono chiari.",
+    "Chiarire esattamente cosa viene richiesto, perché è necessario e chi lo riceverà.",
+    "Indirizzare la richiesta al responsabile delle informazioni o al Fondatore quando la base di autorizzazione non è già stabilita."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsabile delle informazioni",
+      "when": "Prima che qualsiasi informazione riservata venga condivisa."
+    },
+    {
+      "role": "Fondatore",
+      "when": "Per divulgazioni commercialmente sensibili, strategiche, finanziarie o eccezionali."
+    }
+  ],
+  "whatToRecord": [
+    "Richiedente e organizzazione",
+    "Informazioni esatte richieste",
+    "Scopo dichiarato",
+    "Responsabile della decisione e approvazione/rifiuto",
+    "Ciò che alla fine è stato condiviso, se non altro"
+  ],
+  "escalationConditions": [
+    "Il richiedente fa pressioni per una divulgazione immediata senza una chiara necessità.",
+    "La richiesta include informazioni finanziarie, strategiche, personali o di controllo degli accessi.",
+    "Sussistono dubbi sull'identità del destinatario, sul rischio di inoltro o sulla riservatezza contrattuale."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Response structure",
+      "label": "Trattenendo la risposta",
+      "text": "Riconoscere la richiesta, spiegare che l'accesso deve essere verificato internamente e fornire un tempo realistico per una risposta senza implicare l'approvazione."
+    }
+  ],
+  "relatedProcedures": [
+    "internal-communication-standards",
+    "working-with-standards-at-moscatelli"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "course.supplier-procedures",
+  "slug": "supplier-procedures",
+  "type": "academia-course",
+  "area": "Procedure per i fornitori",
+  "title": "Procedure per i fornitori",
+  "summary": "Una base pratica per preventivi, campioni fisici e comunicazioni con i fornitori senza complicare eccessivamente il flusso di lavoro.",
+  "owner": "Operations",
+  "audience": [
+    "Operazioni",
+    "Sviluppo del prodotto"
+  ],
+  "estimatedMinutes": 70,
+  "status": "current",
+  "version": "0.1-demo",
+  "demo": true,
+  "modules": [
+    {
+      "id": "commercial",
+      "title": "Documenti commerciali",
+      "summary": "Leggere le citazioni come documenti di lavoro controllati.",
+      "lessons": [
+        "quotation-review-foundation"
+      ]
+    },
+    {
+      "id": "samples",
+      "title": "Campioni e follow-up",
+      "summary": "Esamina attentamente i campioni fisici e gestisci il silenzio senza perdere la registrazione.",
+      "lessons": [
+        "sample-review-foundation",
+        "supplier-follow-up-foundation"
+      ]
+    }
+  ],
+  "sortOrder": 30
+}

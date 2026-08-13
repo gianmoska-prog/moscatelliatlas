@@ -1,0 +1,77 @@
+{
+  "id": "lesson.sample-review-foundation",
+  "slug": "sample-review-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "supplier-procedures",
+  "moduleId": "samples",
+  "order": 2,
+  "category": "products-and-quality",
+  "topic": "Fasi del campione",
+  "eyebrow": "Lezione accademica",
+  "title": "Revisione del campione · Fondamenti",
+  "summary": "Un primo passaggio controllato per i campioni fisici che mantiene separate prove, osservazioni e revisioni.",
+  "keywords": [
+    "campione",
+    "prototipo",
+    "qualità",
+    "revisione",
+    "fornitore"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "necessario",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "Rivedi in un ordine ripetibile",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Condizione ricevuta",
+              "text": "Documentare l'imballaggio e qualsiasi problema di trasporto prima di alterare il campione."
+            },
+            {
+              "title": "Specifica",
+              "text": "Confronta i dettagli misurabili con la versione richiesta."
+            },
+            {
+              "title": "Costruzione e materiale",
+              "text": "Registrare le osservazioni come fatti prima di proporre revisioni."
+            },
+            {
+              "title": "Decisione",
+              "text": "Indicare se il campione è approvato, rifiutato o richiede una nuova revisione."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Mantieni il sentiero intatto",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Un revisore successivo dovrebbe essere in grado di distinguere il campione arrivato, le osservazioni fatte su di esso e la revisione successivamente richiesta."
+        }
+      ]
+    }
+  ]
+}

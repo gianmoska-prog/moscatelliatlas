@@ -1,0 +1,75 @@
+{
+  "id": "playbook.deadline-will-be-missed",
+  "slug": "deadline-will-be-missed",
+  "type": "playbook",
+  "category": "operations",
+  "topic": "Procedimentos do projeto",
+  "eyebrow": "Manual operacional",
+  "title": "Um prazo será perdido",
+  "summary": "Uma resposta que prioriza a decisão para revelar antecipadamente o retrocesso, separando os fatos das suposições e redefinindo os compromissos com um responsável documentado.",
+  "keywords": [
+    "prazo final",
+    "tarde",
+    "atraso",
+    "marco",
+    "agendar",
+    "linha do tempo",
+    "escalada"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Manual de demonstração para validação de interface. Não é a política final do MOSCATELLI e deve ser revisada antes do uso operacional.",
+  "scenario": "Use isto quando um marco interno ou externo comprometido não for mais alcançável de forma realista na data acordada.",
+  "immediateAction": [
+    "Confirme a data de conclusão confiável mais próxima e a dependência específica que está causando a alteração.",
+    "Notifique o responsável antes que o prazo expire; evite esperar por informações perfeitas.",
+    "Apresentar o impacto, a data revista proposta e uma opção prática de mitigação."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsável do projeto",
+      "when": "Assim que a derrapagem for credível e não meramente possível."
+    },
+    {
+      "role": "Fundador",
+      "when": "No lançamento, os compromissos dos fornecedores, a comunicação pública ou os gastos com materiais podem mudar."
+    }
+  ],
+  "whatToRecord": [
+    "Data original e responsável",
+    "Causa declarada como fato observável",
+    "Nova data de previsão",
+    "Dependências afetadas",
+    "Decisão tomada e pessoa responsável"
+  ],
+  "escalationConditions": [
+    "A data revisada afeta o lançamento, o compromisso com o cliente ou o intervalo de produção.",
+    "Mais de um marco dependente é movido.",
+    "A causa é recorrente ou revela uma falha de processo/controle."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Update structure",
+      "label": "Nota de alteração de prazo",
+      "text": "Compromisso original → fato atual → impacto → data revisada → mitigação → decisão necessária."
+    }
+  ],
+  "relatedProcedures": [
+    "how-moscatelli-records-decisions",
+    "file-organisation-and-naming"
+  ]
+}

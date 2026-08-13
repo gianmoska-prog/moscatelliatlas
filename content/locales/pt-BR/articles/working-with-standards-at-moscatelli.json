@@ -1,0 +1,82 @@
+{
+  "id": "article.house-standards",
+  "slug": "working-with-standards-at-moscatelli",
+  "type": "article",
+  "category": "the-house",
+  "topic": "Missão e valores",
+  "eyebrow": "A Maison",
+  "title": "Trabalhando com os padrões da MOSCATELLI",
+  "summary": "Uma referência de demonstração de como os padrões devem orientar as decisões sem transformar o julgamento em burocracia.",
+  "keywords": [
+    "padrões",
+    "valores",
+    "decisões",
+    "qualidade"
+  ],
+  "readingMinutes": 5,
+  "owner": "Founder",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "under-review",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Propósito",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Os padrões criam um limite de qualidade compartilhado e um ponto de referência repetível. Deveriam apoiar o julgamento em vez de substituí-lo."
+        },
+        {
+          "type": "callout",
+          "label": "Princípio",
+          "text": "Um padrão deve tornar mais clara uma decisão importante. Se apenas criar documentação sem proteger a qualidade, a consistência ou a responsabilização, deverá ser reconsiderado."
+        }
+      ]
+    },
+    {
+      "heading": "Quando um padrão se aplica",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use um padrão publicado quando o trabalho estiver dentro do escopo declarado. Se as circunstâncias diferirem materialmente, registre a exceção em vez de ignorar silenciosamente o padrão."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Confirme se a versão atual se aplica",
+            "Identifique qualquer exceção material antes de prosseguir",
+            "Registre quem aprovou uma saída quando for necessário",
+            "Alimentar exceções recorrentes na próxima revisão"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Padrões e julgamento",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A qualidade do luxo depende tanto do discernimento quanto da consistência. Um padrão define o gênero e o vocabulário compartilhado; o julgamento criativo e comercial ainda determina a melhor resposta dentro dessa estrutura."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "welcome-to-moscatelli-atlas",
+    "how-moscatelli-records-decisions"
+  ],
+  "mainHubLinks": []
+}

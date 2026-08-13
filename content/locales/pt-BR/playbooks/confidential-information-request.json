@@ -1,0 +1,75 @@
+{
+  "id": "playbook.confidential-information-request",
+  "slug": "confidential-information-request",
+  "type": "playbook",
+  "category": "people",
+  "topic": "Políticas internas",
+  "eyebrow": "Manual operacional",
+  "title": "Alguém solicita informações confidenciais",
+  "summary": "Uma resposta pouco dramática para interromper a divulgação, verificar a necessidade e a autoridade e registrar decisões sobre informações confidenciais.",
+  "keywords": [
+    "confidencial",
+    "privado",
+    "Informação",
+    "dados",
+    "fornecedor",
+    "solicitar",
+    "permissão"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Manual de demonstração para validação de interface. Não é a política final do MOSCATELLI e deve ser revisada antes do uso operacional.",
+  "scenario": "Use isto quando um fornecedor, contratado, candidato, membro da equipe ou parte externa solicitar informações que possam ser comercialmente sensíveis, pessoais, restritas ou fora do seu acesso habitual.",
+  "immediateAction": [
+    "Não divulgue as informações enquanto a autoridade ou o propósito não estiverem claros.",
+    "Esclareça exatamente o que está sendo solicitado, por que é necessário e quem irá recebê-lo.",
+    "Encaminhe a solicitação para o responsável ou fundador da informação quando a base de permissão ainda não estiver estabelecida."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsável da informação",
+      "when": "Antes que qualquer informação restrita seja compartilhada."
+    },
+    {
+      "role": "Fundador",
+      "when": "Para divulgações comercialmente sensíveis, estratégicas, financeiras ou excepcionais."
+    }
+  ],
+  "whatToRecord": [
+    "Solicitante e organização",
+    "Informações exatas solicitadas",
+    "Finalidade declarada",
+    "Responsável da decisão e aprovação/recusa",
+    "O que foi finalmente compartilhado, se alguma coisa"
+  ],
+  "escalationConditions": [
+    "O solicitante pressiona para divulgação imediata sem necessidade clara.",
+    "A solicitação inclui informações financeiras, estratégicas, pessoais ou de controle de acesso.",
+    "Há dúvidas sobre a identidade do destinatário, risco de encaminhamento ou confidencialidade contratual."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Response structure",
+      "label": "Segurando resposta",
+      "text": "Reconheça a solicitação, explique que o acesso deve ser verificado internamente e forneça um prazo realista para resposta sem implicar aprovação."
+    }
+  ],
+  "relatedProcedures": [
+    "internal-communication-standards",
+    "working-with-standards-at-moscatelli"
+  ]
+}

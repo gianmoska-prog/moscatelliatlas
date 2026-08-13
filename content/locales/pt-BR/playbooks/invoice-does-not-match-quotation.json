@@ -1,0 +1,81 @@
+{
+  "id": "playbook.invoice-does-not-match-quotation",
+  "slug": "invoice-does-not-match-quotation",
+  "type": "playbook",
+  "category": "finance-and-administration",
+  "topic": "Faturas",
+  "eyebrow": "Manual operacional",
+  "title": "Uma fatura não corresponde à cotação",
+  "summary": "Uma sequência de verificação de valores, quantidades, moedas ou condições de pagamento incompatíveis antes que qualquer registro financeiro seja tratado como final.",
+  "keywords": [
+    "fatura",
+    "conta",
+    "cotação",
+    "citar",
+    "quantia",
+    "moeda",
+    "pagamento",
+    "incompatibilidade"
+  ],
+  "owner": "Finance & Administration",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Manual de demonstração para validação de interface. Não é a política final do MOSCATELLI e deve ser revisada antes do uso operacional.",
+  "scenario": "Use isto quando uma fatura for diferente da cotação aprovada, do entendimento de compra ou dos termos comerciais documentados.",
+  "immediateAction": [
+    "Pausar a aprovação do valor contestado; não edite silenciosamente o documento do fornecedor nem reinterprete a diferença.",
+    "Compare a fatura com a última cotação aprovada e qualquer revisão documentada.",
+    "Identifique cada discrepância explicitamente: valor, quantidade, moeda, imposto, frete, prazo de pagamento ou item de linha."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsável do orçamento/registro",
+      "when": "Assim que a incompatibilidade for confirmada."
+    },
+    {
+      "role": "Fundador",
+      "when": "Antes de aprovar uma exceção material ou novo termo comercial."
+    }
+  ],
+  "whatToRecord": [
+    "Identificador e data da fatura",
+    "Cotação/versão usada para comparação",
+    "Linha(s) incompatível(s) exata(s)",
+    "Tratamento monetário e fiscal mostrado",
+    "Explicação do fornecedor e resolução final"
+  ],
+  "escalationConditions": [
+    "O fornecedor solicita o pagamento antes de corrigir ou explicar a discrepância.",
+    "A diferença altera o orçamento ou compromisso aprovado.",
+    "A incompatibilidade sugere faturamento duplicado, alteração de escopo não documentada ou problema recorrente de documentação."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Comparison",
+      "label": "Nota de discrepância",
+      "text": "Liste o valor cotado, o valor faturado, a diferença e o documento de origem para cada linha incompatível."
+    },
+    {
+      "kind": "Reference",
+      "label": "Registrando uma despesa de treinamento",
+      "route": "#/article/recording-a-training-expense"
+    }
+  ],
+  "relatedProcedures": [
+    "reviewing-a-supplier-quotation",
+    "recording-a-training-expense"
+  ]
+}

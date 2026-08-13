@@ -1,0 +1,80 @@
+{
+  "id": "playbook.image-has-wrong-resolution",
+  "slug": "image-has-wrong-resolution",
+  "type": "playbook",
+  "category": "brand",
+  "topic": "Fotografia",
+  "eyebrow": "Manual operacional",
+  "title": "Uma imagem tem a resolução errada",
+  "summary": "Uma resposta controlada para impedir o progresso de imagens inadequadas, preservando o arquivo de origem e o histórico de aprovação.",
+  "keywords": [
+    "imagem",
+    "resolução",
+    "fotografia",
+    "pixels",
+    "qualidade",
+    "aprovação",
+    "ativo"
+  ],
+  "owner": "Creative Direction",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Manual de demonstração para validação de interface. Não é a política final do MOSCATELLI e deve ser revisada antes do uso operacional.",
+  "scenario": "Use isto quando uma imagem for muito pequena, exportada incorretamente, visivelmente degradada ou de outra forma inadequada para a saída MOSCATELLI pretendida.",
+  "immediateAction": [
+    "Não aumente ou substitua o arquivo de origem apenas para fazer com que as dimensões pareçam compatíveis.",
+    "Identifique a saída pretendida e as dimensões reais dos pixels/características do arquivo.",
+    "Localize a fonte da mais alta qualidade ou solicite uma nova exportação antes que a aprovação continue."
+  ],
+  "whoToInform": [
+    {
+      "role": "Direção Criativa",
+      "when": "Quando o ativo não consegue atender ao resultado pretendido sem a substituição da fonte."
+    },
+    {
+      "role": "Responsável do ativo",
+      "when": "Quando uma nova exportação ou arquivo original for necessária."
+    }
+  ],
+  "whatToRecord": [
+    "Nome e localização do arquivo do ativo",
+    "Uso/resultado pretendido",
+    "Dimensões reais e formato de arquivo",
+    "Disponibilidade de fonte/original",
+    "Decisão de substituição ou aprovação"
+  ],
+  "escalationConditions": [
+    "Não existe nenhuma fonte adequada.",
+    "A imagem já foi distribuída ou publicada de forma errada.",
+    "Erros repetidos de exportação indicam um problema no fluxo de trabalho de gerenciamento de ativos."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Reference",
+      "label": "Lista de verificação de aprovação de fotografia",
+      "route": "#/article/photography-approval-checklist"
+    },
+    {
+      "kind": "Reference",
+      "label": "Organização e nomenclatura de arquivos",
+      "route": "#/article/file-organisation-and-naming"
+    }
+  ],
+  "relatedProcedures": [
+    "photography-approval-checklist",
+    "file-organisation-and-naming"
+  ]
+}

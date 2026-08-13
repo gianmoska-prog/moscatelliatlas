@@ -1,3 +1,5 @@
+import { t } from './i18n.js';
+
 /**
  * Atlas PWA boundary.
  *
@@ -18,11 +20,11 @@ function getStatusElements() {
 function showStatus(message, { actionLabel = '', onAction = null, persistent = false } = {}) {
   const { root, text, action, dismiss } = getStatusElements();
   if (!root || !text || !action) return;
-  text.textContent = message;
+  text.textContent = t(message);
   root.hidden = false;
   root.dataset.persistent = String(persistent);
   action.hidden = !actionLabel;
-  action.textContent = actionLabel || '';
+  action.textContent = actionLabel ? t(actionLabel) : '';
   action.onclick = typeof onAction === 'function' ? onAction : null;
   if (dismiss) dismiss.onclick = hideStatus;
 

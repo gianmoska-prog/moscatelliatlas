@@ -1,0 +1,38 @@
+{
+  "id": "course.brand-foundations",
+  "slug": "brand-foundations",
+  "type": "academia-course",
+  "area": "Educazione al marchio",
+  "title": "Fondamenti del marchio",
+  "summary": "Giudizio visivo e verbale fondamentale per le persone che creano, revisionano o rappresentano il materiale MOSCATELLI.",
+  "owner": "Creative Direction",
+  "audience": [
+    "Creativo",
+    "Marketing",
+    "Operazioni"
+  ],
+  "estimatedMinutes": 65,
+  "status": "current",
+  "version": "0.1-demo",
+  "demo": true,
+  "modules": [
+    {
+      "id": "voice",
+      "title": "Voce e denominazione",
+      "summary": "Applicare moderazione e precisione al linguaggio e alla denominazione dei prodotti.",
+      "lessons": [
+        "tone-of-voice-foundation",
+        "product-naming-foundation"
+      ]
+    },
+    {
+      "id": "image",
+      "title": "Revisione delle immagini",
+      "summary": "Comprendere la logica minima di revisione prima che le immagini vadano avanti.",
+      "lessons": [
+        "photography-review-foundation"
+      ]
+    }
+  ],
+  "sortOrder": 20
+}

@@ -11,6 +11,9 @@ import { buildLocalSearchIndex, searchAtlas } from './search.js';
 import { closeDialogWithMotion, commitRouteWithMotion, enhanceRouteReveals, prepareRouteMotion, pulseState } from './motion.js';
 import { getAuthenticationSnapshot, initAuthenticationThreshold, signOutAtlas } from './auth-gate.js';
 import { prepareAuthProvider } from './auth-provider.js';
+import { initI18n } from './i18n.js';
+
+initI18n();
 import { slackAdapter } from './integrations/slack.js';
 
 const outlet = document.querySelector('#app');

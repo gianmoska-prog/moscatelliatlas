@@ -1,0 +1,73 @@
+{
+  "id": "lesson.working-with-standards",
+  "slug": "working-with-standards",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "orientation",
+  "order": 2,
+  "category": "the-house",
+  "topic": "Missão e valores",
+  "eyebrow": "Lição acadêmica",
+  "title": "Trabalhando com padrões",
+  "summary": "Aprenda como tratar os padrões publicados como referências controladas em vez de sugestões informais.",
+  "keywords": [
+    "padrões",
+    "procedimento",
+    "versão",
+    "análise",
+    "governança"
+  ],
+  "estimatedMinutes": 16,
+  "readingMinutes": 16,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "Leia o registro, não apenas a manchete",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Um padrão deve ser lido junto com seu responsável, versão, status e informações de revisão. Esses detalhes estabelecem se a referência é atual e quem é o responsável por ela."
+        }
+      ]
+    },
+    {
+      "heading": "Quando algo não está claro",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Verifique a versão atual",
+              "text": "Confirme se o item é atual e não arquivado ou em revisão."
+            },
+            {
+              "title": "Identifique o responsável",
+              "text": "Esclarecimento direto à pessoa ou função responsável pela norma."
+            },
+            {
+              "title": "Preservar a incerteza",
+              "text": "Não transforme uma interpretação numa nova regra sem uma decisão documentada."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

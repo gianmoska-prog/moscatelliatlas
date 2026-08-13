@@ -1,0 +1,64 @@
+{
+  "id": "lesson.supplier-follow-up-foundation",
+  "slug": "supplier-follow-up-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "supplier-procedures",
+  "moduleId": "samples",
+  "order": 3,
+  "category": "suppliers",
+  "topic": "Comunicação com fornecedores",
+  "eyebrow": "Lição acadêmica",
+  "title": "Acompanhamento de fornecedores · Fundamentos",
+  "summary": "Lide com uma falta de resposta do fornecedor sem criar ruído, perder a data da decisão ou escalar prematuramente.",
+  "keywords": [
+    "fornecedor",
+    "fornecedor",
+    "seguir",
+    "atraso",
+    "comunicação"
+  ],
+  "estimatedMinutes": 23,
+  "readingMinutes": 23,
+  "requirement": "opcional",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "Um acompanhamento claro é melhor do que perseguições repetidas",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Reafirme o item pendente, a expectativa anterior e a data em que MOSCATELLI agora precisa de uma resposta. Em seguida, registre o próximo ponto de verificação em vez de enviar mensagens repetidas sem limite de decisão."
+        }
+      ]
+    },
+    {
+      "heading": "Aumentar o impacto",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Um slot de produção ou amostra pode ser perdido.",
+            "Um pagamento ou compromisso comercial está se aproximando.",
+            "Um lançamento ou marco interno está agora materialmente em risco."
+          ]
+        }
+      ]
+    }
+  ]
+}
