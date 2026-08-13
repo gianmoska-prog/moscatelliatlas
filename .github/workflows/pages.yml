@@ -25,11 +25,15 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
-      - name: Assemble private static shell
+      - name: Assemble application shell and localized content
         run: |
           mkdir _site
           cp index.html offline.html manifest.webmanifest robots.txt sw.js _site/
           cp -R assets _site/assets
+          mkdir -p _site/content
+          cp -R content/locales _site/content/locales
+          test -f _site/content/locales/it/index.json
+          test -f _site/content/locales/pt-BR/index.json
       - uses: actions/configure-pages@v5
         with:
           enablement: true
