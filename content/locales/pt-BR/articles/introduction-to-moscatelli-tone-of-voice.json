@@ -1,0 +1,114 @@
+{
+  "id": "article.tone-of-voice",
+  "slug": "introduction-to-moscatelli-tone-of-voice",
+  "type": "article",
+  "category": "brand",
+  "topic": "Tom de voz",
+  "eyebrow": "Padrão da marca",
+  "title": "Introdução ao tom de voz de MOSCATELLI",
+  "summary": "Uma introdução prática à contenção, clareza e autoridade na escrita MOSCATELLI interna e externa.",
+  "keywords": [
+    "marca",
+    "tom",
+    "voz",
+    "escrita",
+    "comunicação"
+  ],
+  "readingMinutes": 7,
+  "owner": "Creative Direction",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Princípios",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Prefira linguagem precisa, confiança calma e contexto útil. Evite reivindicações inflacionadas, enchimentos e informalidade desnecessária."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Diga exatamente o que é conhecido e o que não é.",
+            "Use moderação em vez de superlativos.",
+            "Escreva para compreensão antes de enfeitar.",
+            "Preserve o calor sem se tornar casual ou prolixo."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Autoridade sem ruído",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "MOSCATELLI não deveria precisar insistir que algo é excepcional. A redação deve transmitir confiança por meio de especificidade, proporção e controle."
+        },
+        {
+          "type": "callout",
+          "label": "Evitar",
+          "text": "Uma linguagem genérica de luxo, como “inigualável”, “elegância intemporal” ou “o melhor”, não deve substituir informações concretas."
+        }
+      ]
+    },
+    {
+      "heading": "Escrita interna",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A comunicação interna pode ser mais direta do que a cópia pública, mas deve permanecer suficientemente clara para que outra pessoa possa compreender a decisão, a ação e o contexto posteriormente."
+        },
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Lidere com o ponto",
+              "text": "Declare a decisão, solicite ou altere antecipadamente."
+            },
+            {
+              "title": "Adicione contexto material",
+              "text": "Inclua apenas as informações necessárias para entender por que isso é importante."
+            },
+            {
+              "title": "Torne a responsabilidade explícita",
+              "text": "Quando for necessária ação, identifique quem a possui e quando ela é esperada."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Teste de revisão",
+      "blocks": [
+        {
+          "type": "checklist",
+          "items": [
+            "Toda reivindicação é suportável?",
+            "A frase poderia ser mais curta sem perder o sentido?",
+            "O tom soa composto em vez de promocional?",
+            "O texto ainda faria sentido fora da conversa imediata?"
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "photography-approval-checklist",
+    "internal-communication-standards"
+  ],
+  "mainHubLinks": []
+}

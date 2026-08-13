@@ -1,0 +1,98 @@
+{
+  "id": "article.product-naming",
+  "slug": "product-naming-standards",
+  "type": "article",
+  "category": "products-and-quality",
+  "topic": "Nomenclatura do produto",
+  "eyebrow": "Padrão do produto",
+  "title": "Padrões de nomenclatura de produtos",
+  "summary": "Uma estrutura de demonstração para a criação de nomes de produtos que permaneçam coerentes, distintivos e utilizáveis ​​em registros e comunicações.",
+  "keywords": [
+    "produto",
+    "nomeando",
+    "padrões",
+    "SKU",
+    "coleção"
+  ],
+  "readingMinutes": 6,
+  "owner": "Creative Direction",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Criativo",
+    "Operações",
+    "Marketing"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Teste de nomenclatura",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "O nome de um produto deve ser suficientemente distinto para identificar o objeto e, ao mesmo tempo, permanecer consistente em contextos editoriais, operacionais e comerciais."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Fácil de ler e pronunciar nos principais idiomas operacionais",
+            "Distinto de um nome de produto ou projeto existente",
+            "Apropriado ao produto, em vez de depender da linguagem temporária da campanha",
+            "Utilizável em registros internos sem ambiguidade"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Nome de trabalho e nome final",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Os nomes de desenvolvimento podem ser práticos e temporários. O nome final do produto só deverá substituí-los quando a alteração puder ser refletida de forma consistente nos registros relevantes."
+        },
+        {
+          "type": "callout",
+          "label": "Consistência",
+          "text": "Evite permitir que equipes diferentes usem nomes concorrentes para o mesmo produto. Se um nome mudar, a referência anterior deverá permanecer rastreável."
+        }
+      ]
+    },
+    {
+      "heading": "Sequência de aprovação",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Verifique o catálogo existente",
+              "text": "Confirme que o nome proposto não cria uma colisão evitável."
+            },
+            {
+              "title": "Revise o significado e o uso",
+              "text": "Considere a pronúncia, a conotação e como o nome aparece nos contextos editoriais e operacionais."
+            },
+            {
+              "title": "Aprovar uma vez",
+              "text": "Registre a decisão final e atualize as referências dependentes de uma única fonte de verdade."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "supplier-sample-review-procedure",
+    "photography-approval-checklist"
+  ],
+  "mainHubLinks": []
+}

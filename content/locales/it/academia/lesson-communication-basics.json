@@ -1,0 +1,73 @@
+{
+  "id": "lesson.communication-basics",
+  "slug": "communication-basics",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "working-practice",
+  "order": 4,
+  "category": "people",
+  "topic": "Standard di comunicazione",
+  "eyebrow": "Lezione accademica",
+  "title": "Nozioni di base sulla comunicazione interna",
+  "summary": "Utilizza una struttura calma e precisa per aggiornamenti interni, richieste e passaggi di consegne.",
+  "keywords": [
+    "comunicazione",
+    "devolvere",
+    "aggiornamento",
+    "richiesta",
+    "squadra"
+  ],
+  "estimatedMinutes": 22,
+  "readingMinutes": 22,
+  "requirement": "necessario",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "La struttura prima dello stile",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Dichiara il punto",
+              "text": "Apri con la decisione, richiesta o aggiornamento materiale."
+            },
+            {
+              "title": "Aggiungi solo contesto utile",
+              "text": "Includi i fatti di cui un'altra persona ha bisogno per rispondere correttamente."
+            },
+            {
+              "title": "Rendi visibile la responsabilità",
+              "text": "Se è necessaria un'azione, indicare chi è tenuto a fare cosa ed entro quando."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Evitare ambiguità",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La cortesia non dovrebbe oscurare la richiesta. Un messaggio MOSCATELLI composto può comunque essere esplicito riguardo alla responsabilità, ai tempi e alla decisione necessaria."
+        }
+      ]
+    }
+  ]
+}

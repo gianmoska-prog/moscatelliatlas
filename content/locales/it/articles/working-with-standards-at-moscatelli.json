@@ -1,0 +1,82 @@
+{
+  "id": "article.house-standards",
+  "slug": "working-with-standards-at-moscatelli",
+  "type": "article",
+  "category": "the-house",
+  "topic": "Missione e valori",
+  "eyebrow": "La Maison",
+  "title": "Lavorare con gli standard presso MOSCATELLI",
+  "summary": "Un riferimento dimostrativo su come gli standard dovrebbero guidare le decisioni senza trasformare il giudizio in burocrazia.",
+  "keywords": [
+    "standard",
+    "valori",
+    "decisioni",
+    "qualità"
+  ],
+  "readingMinutes": 5,
+  "owner": "Founder",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "under-review",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Scopo",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Gli standard creano una soglia di qualità condivisa e un punto di riferimento ripetibile. Dovrebbero supportare il giudizio piuttosto che sostituirlo."
+        },
+        {
+          "type": "callout",
+          "label": "Principio",
+          "text": "Uno standard dovrebbe rendere più chiara una decisione importante. Se crea solo pratiche burocratiche senza proteggere la qualità, la coerenza o la responsabilità, dovrebbe essere riconsiderato."
+        }
+      ]
+    },
+    {
+      "heading": "Quando si applica una norma",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Utilizzare uno standard pubblicato quando il lavoro rientra nell'ambito dichiarato. Se le circostanze differiscono materialmente, registra l’eccezione invece di ignorare silenziosamente lo standard."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Confermare che si applica la versione corrente",
+            "Identificare qualsiasi eccezione materiale prima di procedere",
+            "Registra chi ha approvato una partenza quando è necessaria",
+            "Reinserisci le eccezioni ricorrenti nella revisione successiva"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Standard e giudizio",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La qualità del lusso dipende dal discernimento e dalla coerenza. Uno standard definisce la base e il vocabolario condiviso; il giudizio creativo e commerciale determina ancora la risposta migliore in tale contesto."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "welcome-to-moscatelli-atlas",
+    "how-moscatelli-records-decisions"
+  ],
+  "mainHubLinks": []
+}

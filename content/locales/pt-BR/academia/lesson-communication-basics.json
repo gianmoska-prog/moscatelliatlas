@@ -1,0 +1,73 @@
+{
+  "id": "lesson.communication-basics",
+  "slug": "communication-basics",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "working-practice",
+  "order": 4,
+  "category": "people",
+  "topic": "Padrões de comunicação",
+  "eyebrow": "Lição acadêmica",
+  "title": "Noções básicas de comunicação interna",
+  "summary": "Utilize uma estrutura calma e precisa para atualizações internas, solicitações e passagens de responsabilidade.",
+  "keywords": [
+    "comunicação",
+    "entregar",
+    "atualizar",
+    "solicitar",
+    "equipe"
+  ],
+  "estimatedMinutes": 22,
+  "readingMinutes": 22,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "Estrutura antes do estilo",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Indique o ponto",
+              "text": "Comece pela decisão, solicitação ou atualização do material."
+            },
+            {
+              "title": "Adicione apenas contexto útil",
+              "text": "Inclua os fatos que outra pessoa precisa para responder corretamente."
+            },
+            {
+              "title": "Torne a responsabilidade visível",
+              "text": "Se for necessária uma ação, indique quem deve fazer o quê e quando."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Evite ambiguidade",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A polidez não deve obscurecer o pedido. Uma mensagem MOSCATELLI composta ainda pode ser explícita sobre a responsabilidade, o momento e a decisão necessária."
+        }
+      ]
+    }
+  ]
+}

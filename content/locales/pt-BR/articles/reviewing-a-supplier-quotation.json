@@ -1,0 +1,101 @@
+{
+  "id": "article.quotation-review",
+  "slug": "reviewing-a-supplier-quotation",
+  "type": "article",
+  "category": "suppliers",
+  "topic": "Cotações",
+  "eyebrow": "Procedimento do fornecedor",
+  "title": "Como revisar uma cotação de fornecedor",
+  "summary": "O que verificar antes de uma cotação ser tratada como comparável, completa e pronta para uma decisão comercial.",
+  "keywords": [
+    "fornecedor",
+    "fornecedor",
+    "cotação",
+    "citar",
+    "custo",
+    "Quantidade mínima"
+  ],
+  "readingMinutes": 7,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Operações",
+    "Fundador"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Entradas comparáveis",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirme material, dimensões, quantidade, moeda, impostos, premissas de envio, custos de amostra, prazo de entrega e condições de pagamento antes de comparar cotações."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Material e especificação correspondem ao briefing",
+            "Quantidade e MOQ são explícitos",
+            "A moeda e a base tributária são claras",
+            "Os custos de amostragem e ferramentas são separados quando relevante",
+            "Frete, Incoterms ou premissas de entrega são declarados",
+            "O lead time começa a partir de um evento definido",
+            "O cronograma de pagamento é compreendido"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Normalize antes de comparar",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dois preços unitários principais podem não ser comparáveis ​​se excluirmos ferramentas, acabamento, embalagem ou transporte. Converta as cotações no mesmo quadro comercial antes de tirar uma conclusão."
+        },
+        {
+          "type": "callout",
+          "label": "Cuidado comercial",
+          "text": "O menor preço unitário não é necessariamente o menor custo total ou o menor risco operacional."
+        }
+      ]
+    },
+    {
+      "heading": "Perguntas de volta ao fornecedor",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Consolidar lacunas",
+              "text": "Reúna pontos ausentes ou ambíguos em uma solicitação clara."
+            },
+            {
+              "title": "Faça referência à cotação exata",
+              "text": "Use a data ou identificador da cotação para que ambas as partes discutam o mesmo documento."
+            },
+            {
+              "title": "Preservar revisões",
+              "text": "Mantenha a cotação revisada em vez de substituir silenciosamente a história comercial anterior."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "supplier-sample-review-procedure",
+    "recording-a-training-expense"
+  ],
+  "mainHubLinks": []
+}

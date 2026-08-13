@@ -1,0 +1,77 @@
+{
+  "id": "lesson.sample-review-foundation",
+  "slug": "sample-review-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "supplier-procedures",
+  "moduleId": "samples",
+  "order": 2,
+  "category": "products-and-quality",
+  "topic": "Estágios de amostra",
+  "eyebrow": "Lição acadêmica",
+  "title": "Revisão de amostra · Fundamentos",
+  "summary": "Uma primeira passagem controlada para amostras físicas que mantém evidências, observações e revisões separadas.",
+  "keywords": [
+    "amostra",
+    "protótipo",
+    "qualidade",
+    "análise",
+    "fornecedor"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "Revise em uma ordem repetível",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Condição recebida",
+              "text": "Documente a embalagem e qualquer problema de trânsito antes de alterar a amostra."
+            },
+            {
+              "title": "Especificação",
+              "text": "Compare os detalhes mensuráveis ​​com a versão solicitada."
+            },
+            {
+              "title": "Construção e materiais",
+              "text": "Registre as observações como fatos antes de propor revisões."
+            },
+            {
+              "title": "Decisão",
+              "text": "Informar se a amostra foi aprovada, rejeitada ou necessita de nova revisão."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Mantenha a trilha intacta",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Um revisor posterior deverá ser capaz de distinguir a amostra que chegou, as observações feitas sobre ela e a revisão que foi posteriormente solicitada."
+        }
+      ]
+    }
+  ]
+}

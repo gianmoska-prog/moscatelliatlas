@@ -1,0 +1,75 @@
+{
+  "id": "playbook.shipment-held-at-customs",
+  "slug": "shipment-held-at-customs",
+  "type": "playbook",
+  "category": "operations",
+  "topic": "Dogana",
+  "eyebrow": "Manuale operativo",
+  "title": "Una spedizione viene trattenuta in dogana",
+  "summary": "Una risposta basata sui fatti per stabilire il motivo del blocco, raccogliere documenti e procedere all'escalation solo con il relativo record di spedizione intatto.",
+  "keywords": [
+    "spedizione",
+    "spedizione",
+    "consegna",
+    "dogana",
+    "tenuto",
+    "vettore",
+    "documenti"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Playbook dimostrativo per la convalida dell'interfaccia. Non è la politica MOSCATELLI definitiva e deve essere rivista prima dell'uso operativo.",
+  "scenario": "Utilizzalo quando un corriere, un intermediario o un'autorità doganale indica che una spedizione è stata trattenuta, ritardata per la documentazione o in attesa di chiarimenti.",
+  "immediateAction": [
+    "Conferma il riferimento della spedizione, lo stato attuale del corriere e il motivo dichiarato della trattenuta.",
+    "Raccogli la fattura commerciale, le informazioni sull'imballaggio e l'eventuale documentazione di spedizione già emessa senza creare documenti sostitutivi in ​​modo casuale.",
+    "Identificare chi richiede formalmente informazioni e rispondere attraverso il canale stabilito del vettore/intermediario."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsabile della spedizione/progetto",
+      "when": "Immediatamente una volta confermata una presa."
+    },
+    {
+      "role": "Fondatore",
+      "when": "La sospensione minaccia un traguardo di lancio/produzione o richiede una decisione finanziaria/commerciale eccezionale."
+    }
+  ],
+  "whatToRecord": [
+    "Riferimento di tracciabilità/spedizione",
+    "Contatto del vettore/intermediario",
+    "Motivo dichiarato della sospensione",
+    "Documenti richiesti/forniti",
+    "Scadenze, tariffe o impatto sui traguardi comunicati"
+  ],
+  "escalationConditions": [
+    "Il motivo della sospensione non è chiaro o contraddittorio.",
+    "Sorgono costi aggiuntivi, rischio di restituzione/distruzione o questioni legali/di conformità.",
+    "Il ritardo nella consegna influisce su un campione critico, una produzione o un traguardo di lancio."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Record",
+      "label": "Nota sull'incidente di spedizione",
+      "text": "Conserva lo stato del corriere, la richiesta, i documenti inviati, i timestamp e il prossimo aggiornamento previsto in un unico record continuo."
+    }
+  ],
+  "relatedProcedures": [
+    "file-organisation-and-naming",
+    "how-moscatelli-records-decisions"
+  ]
+}

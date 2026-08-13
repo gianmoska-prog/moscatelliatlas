@@ -1,0 +1,69 @@
+{
+  "id": "lesson.quotation-review-foundation",
+  "slug": "quotation-review-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "supplier-procedures",
+  "moduleId": "commercial",
+  "order": 1,
+  "category": "suppliers",
+  "topic": "Preventivi",
+  "eyebrow": "Lezione accademica",
+  "title": "Revisione del preventivo · Fondamenti",
+  "summary": "Leggi le quotazioni dei fornitori come documenti commerciali con versione e identifica i dettagli che devono essere chiari prima dell'approvazione.",
+  "keywords": [
+    "fornitore",
+    "venditore",
+    "preventivo",
+    "citazione",
+    "prezzo",
+    "termini"
+  ],
+  "estimatedMinutes": 22,
+  "readingMinutes": 22,
+  "requirement": "necessario",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "Cosa stabilire prima",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Identità del fornitore e data del preventivo",
+            "Valuta",
+            "Descrizione del prodotto o del servizio",
+            "Requisiti di quantità e ordine minimo",
+            "Prezzo unitario e totale",
+            "Termini di pagamento",
+            "Tempi di consegna e periodo di validità"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Non colmare le lacune basandosi su supposizioni",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Se un termine commerciale è assente o ambiguo, il passo successivo corretto è il chiarimento. Il silenzio in una citazione non dovrebbe essere convertito in un'ipotesi favorevole nel registro interno."
+        }
+      ]
+    }
+  ]
+}

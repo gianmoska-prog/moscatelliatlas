@@ -1,0 +1,66 @@
+{
+  "id": "lesson.italian-introductions",
+  "slug": "italian-introductions",
+  "type": "academia-lesson",
+  "courseSlug": "italian-foundation",
+  "moduleId": "presence",
+  "order": 1,
+  "category": "people",
+  "topic": "Desenvolvimento",
+  "eyebrow": "Lição acadêmica",
+  "title": "Apresentar com precisão",
+  "summary": "Use um pequeno conjunto de estruturas naturais para se apresentar e apresentar sua função, sem sobrecarregar a primeira conversa.",
+  "keywords": [
+    "italiano",
+    "introduções",
+    "apresentarsi",
+    "papel",
+    "linguagem"
+  ],
+  "estimatedMinutes": 20,
+  "readingMinutes": 20,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "Estruturas centrais",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Mi chiamo… — Meu nome é…",
+            "Trabalho com MOSCATELLI. — Eu trabalho com MOSCATELLI.",
+            "Mi occupo di… — Sou responsável por/eu lido com…",
+            "Piacere di conoscerti. - Prazer em conhecê-lo. (informal)",
+            "Piacere di conoscerla. - Prazer em conhecê-lo. (formal)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Prática",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Combine apenas as informações que a situação exige: nome, organização e uma descrição clara da sua função. O objetivo é um discurso confortável e inteligível, em vez de uma biografia memorizada."
+        }
+      ]
+    }
+  ]
+}

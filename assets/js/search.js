@@ -1,5 +1,6 @@
 import { getCategories, getSearchableItems, loadSearchableItem } from './content-service.js';
 import { getSupabaseClient } from './auth-adapter.js';
+import { getLocale } from './i18n.js';
 
 /**
  * Atlas local Search implementation (expanded through Patch 09).
@@ -184,6 +185,7 @@ export async function buildLocalSearchIndex() {
 }
 
 async function searchDatabase(terms) {
+  if (getLocale() !== 'en') return null;
   const client = getSupabaseClient();
   if (!client) return null;
   const searchQuery = terms.expanded.join(' OR ');

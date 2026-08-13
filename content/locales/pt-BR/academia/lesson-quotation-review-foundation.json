@@ -1,0 +1,69 @@
+{
+  "id": "lesson.quotation-review-foundation",
+  "slug": "quotation-review-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "supplier-procedures",
+  "moduleId": "commercial",
+  "order": 1,
+  "category": "suppliers",
+  "topic": "Cotações",
+  "eyebrow": "Lição acadêmica",
+  "title": "Revisão de cotação · Fundamentos",
+  "summary": "Leia as cotações de fornecedores como registros comerciais versionados e identifique os detalhes que devem estar claros antes da aprovação.",
+  "keywords": [
+    "fornecedor",
+    "fornecedor",
+    "cotação",
+    "citar",
+    "preço",
+    "termos"
+  ],
+  "estimatedMinutes": 22,
+  "readingMinutes": 22,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "O que estabelecer primeiro",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Identidade do fornecedor e data da cotação",
+            "Moeda",
+            "Descrição do produto ou serviço",
+            "Quantidade e requisitos mínimos de pedido",
+            "Preço unitário e total",
+            "Condições de pagamento",
+            "Prazo de entrega e período de validade"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Não preencha lacunas por suposições",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Se um termo comercial estiver ausente ou ambíguo, o próximo passo correto é o esclarecimento. O silêncio numa citação não deve ser convertido numa suposição favorável no registro interno."
+        }
+      ]
+    }
+  ]
+}

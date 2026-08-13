@@ -1,0 +1,80 @@
+{
+  "id": "playbook.sample-arrived-damaged",
+  "slug": "sample-arrived-damaged",
+  "type": "playbook",
+  "category": "products-and-quality",
+  "topic": "Fasi del campione",
+  "eyebrow": "Manuale operativo",
+  "title": "Un campione è arrivato danneggiato",
+  "summary": "Una risposta incentrata sulla conservazione per documentare i danni, separare i problemi di trasporto da quelli di lavorazione e proteggere il percorso di revisione.",
+  "keywords": [
+    "campione",
+    "prototipo",
+    "danneggiato",
+    "qualità",
+    "spedizione",
+    "prova",
+    "fotografia"
+  ],
+  "owner": "Product Development",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Playbook dimostrativo per la convalida dell'interfaccia. Non è la politica MOSCATELLI definitiva e deve essere rivista prima dell'uso operativo.",
+  "scenario": "Utilizzalo quando arriva un campione fisico con danni visibili, deformazioni, contaminazione, componenti mancanti o errori di imballaggio che potrebbero distorcere la recensione del prodotto.",
+  "immediateAction": [
+    "Non riparare, pulire o alterare il campione prima di documentarne le condizioni ricevute.",
+    "Fotografa l'imballaggio esterno, le etichette, la protezione interna e i danni in una sequenza coerente.",
+    "Separare ciò che sembra essere un danno dovuto al trasporto da ogni possibile problema di costruzione o di qualità; non supporre la causa."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsabile del prodotto",
+      "when": "Immediatamente dopo che la condizione ricevuta è stata documentata."
+    },
+    {
+      "role": "Contatto fornitore",
+      "when": "Dopo che le prove sono complete e il problema può essere descritto in modo neutrale."
+    }
+  ],
+  "whatToRecord": [
+    "Data di consegna e riferimento del corriere",
+    "Condizioni dell'imballaggio",
+    "Luogo del set fotografico",
+    "Danni osservati senza speculazioni",
+    "Indica se la revisione può continuare o necessita di essere sostituita"
+  ],
+  "escalationConditions": [
+    "Il danno impedisce una revisione significativa dell'adattamento, della costruzione o del materiale.",
+    "Sono presenti danni ripetuti in più di una spedizione o campione.",
+    "Inizia una controversia sulla qualità o i tempi di sostituzione influiscono su un traguardo di lancio."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Checklist",
+      "label": "Sequenza delle prove dei danni",
+      "text": "Confezione esterna → etichetta di spedizione → protezione interna → campione completo → danno in primo piano → immagine in scala/riferimento."
+    },
+    {
+      "kind": "Reference",
+      "label": "Lista di controllo per l'approvazione della fotografia",
+      "route": "#/article/photography-approval-checklist"
+    }
+  ],
+  "relatedProcedures": [
+    "supplier-sample-review-procedure",
+    "photography-approval-checklist"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "lesson.tone-of-voice-foundation",
+  "slug": "tone-of-voice-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "brand-foundations",
+  "moduleId": "voice",
+  "order": 1,
+  "category": "brand",
+  "topic": "Tom de voz",
+  "eyebrow": "Lição acadêmica",
+  "title": "Tom de voz · Fundamentos",
+  "summary": "Reconheça a diferença entre confiança contida e linguagem que parece inflada, genérica ou sobrescrita.",
+  "keywords": [
+    "marca",
+    "tom",
+    "voz",
+    "escrita",
+    "linguagem"
+  ],
+  "estimatedMinutes": 22,
+  "readingMinutes": 22,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "O princípio subjacente",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A linguagem MOSCATELLI deve fazer com que a precisão pareça fácil. Não deveria depender de superlativos, mística fabricada ou repetidas reivindicações de luxo para criar estatura."
+        }
+      ]
+    },
+    {
+      "heading": "Um passe de edição útil",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Remova reivindicações que não podem ser demonstradas.",
+            "Prefira um substantivo ou verbo preciso a adjetivos empilhados.",
+            "Mantenha a redação institucional calma mesmo quando o assunto for importante.",
+            "Permitir que produto, material e contexto tenham prestígio."
+          ]
+        }
+      ]
+    }
+  ]
+}

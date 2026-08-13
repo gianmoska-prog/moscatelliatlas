@@ -1,0 +1,81 @@
+{
+  "id": "playbook.invoice-does-not-match-quotation",
+  "slug": "invoice-does-not-match-quotation",
+  "type": "playbook",
+  "category": "finance-and-administration",
+  "topic": "Fatture",
+  "eyebrow": "Manuale operativo",
+  "title": "Una fattura non corrisponde al preventivo",
+  "summary": "Una sequenza di verifica per importi, quantità, valute o termini di pagamento non corrispondenti prima che qualsiasi registro finanziario venga considerato definitivo.",
+  "keywords": [
+    "fattura",
+    "conto",
+    "preventivo",
+    "citazione",
+    "quantità",
+    "valuta",
+    "pagamento",
+    "mancata corrispondenza"
+  ],
+  "owner": "Finance & Administration",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Playbook dimostrativo per la convalida dell'interfaccia. Non è la politica MOSCATELLI definitiva e deve essere rivista prima dell'uso operativo.",
+  "scenario": "Utilizzare questa opzione quando una fattura differisce dal preventivo approvato, dall'accordo di acquisto o dai termini commerciali documentati.",
+  "immediateAction": [
+    "Sospendere l'approvazione dell'importo contestato; non modificare silenziosamente il documento del fornitore né reinterpretare la differenza.",
+    "Confronta la fattura con l'ultimo preventivo approvato e qualsiasi revisione documentata.",
+    "Identifica esplicitamente ogni discrepanza: importo, quantità, valuta, imposta, trasporto, termine di pagamento o voce."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsabile del budget/record",
+      "when": "Non appena la mancata corrispondenza viene confermata."
+    },
+    {
+      "role": "Fondatore",
+      "when": "Prima di approvare un'eccezione materiale o un nuovo termine commerciale."
+    }
+  ],
+  "whatToRecord": [
+    "Identificativo e data della fattura",
+    "Citazione/versione utilizzata per il confronto",
+    "Linee esatte non corrispondenti",
+    "Valuta e trattamento fiscale mostrati",
+    "Spiegazione del fornitore e risoluzione finale"
+  ],
+  "escalationConditions": [
+    "Il fornitore richiede il pagamento prima di correggere o spiegare la discrepanza.",
+    "La differenza modifica il budget o l'impegno approvato.",
+    "La mancata corrispondenza suggerisce una fatturazione duplicata, una modifica dell'ambito non documentata o un problema di documentazione ricorrente."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Comparison",
+      "label": "Nota di discrepanza",
+      "text": "Elenca il valore citato, il valore fatturato, la differenza e il documento di origine per ciascuna riga non corrispondente."
+    },
+    {
+      "kind": "Reference",
+      "label": "Registrazione di una spesa di formazione",
+      "route": "#/article/recording-a-training-expense"
+    }
+  ],
+  "relatedProcedures": [
+    "reviewing-a-supplier-quotation",
+    "recording-a-training-expense"
+  ]
+}

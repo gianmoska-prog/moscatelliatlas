@@ -1,0 +1,37 @@
+{
+  "id": "course.moscatelli-onboarding",
+  "slug": "moscatelli-onboarding",
+  "type": "academia-course",
+  "area": "Onboarding",
+  "title": "MOSCATELLI onboarding",
+  "summary": "Un'introduzione misurata alla Camera, all'Atlante, agli standard e al modo in cui le decisioni vengono registrate e comunicate internamente.",
+  "owner": "Operations",
+  "audience": [
+    "Nuovi utenti interni"
+  ],
+  "estimatedMinutes": 70,
+  "status": "current",
+  "version": "0.1-demo",
+  "demo": true,
+  "modules": [
+    {
+      "id": "orientation",
+      "title": "Orientamento",
+      "summary": "Comprendere dove vive la conoscenza istituzionale e come Atlas si relaziona al lavoro attivo.",
+      "lessons": [
+        "welcome-to-atlas",
+        "working-with-standards"
+      ]
+    },
+    {
+      "id": "working-practice",
+      "title": "Pratica lavorativa",
+      "summary": "Imparare la forma prevista dei registri e delle comunicazioni interne.",
+      "lessons": [
+        "recording-decisions",
+        "communication-basics"
+      ]
+    }
+  ],
+  "sortOrder": 10
+}

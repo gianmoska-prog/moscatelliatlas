@@ -1,0 +1,67 @@
+{
+  "id": "lesson.italian-numbers-dates",
+  "slug": "italian-numbers-dates",
+  "type": "academia-lesson",
+  "courseSlug": "italian-foundation",
+  "moduleId": "coordination",
+  "order": 3,
+  "category": "people",
+  "topic": "Sviluppo",
+  "eyebrow": "Lezione accademica",
+  "title": "Numeri e data",
+  "summary": "Riconoscere e produrre le forme numeriche e di data più utili per prezzi, quantità e appuntamenti.",
+  "keywords": [
+    "Italiano",
+    "numeri",
+    "date",
+    "quantità",
+    "prezzi"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "necessario",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "Modello di data",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "L'italiano comunemente indica il giorno prima del mese: 13 agosto 2026. Per il primo giorno di un mese, primo è comune: il primo settembre."
+        }
+      ]
+    },
+    {
+      "heading": "Set di esercitazioni",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "13 agosto — 13 agosto",
+            "24 aprile — 24 aprile",
+            "trenta-trenta",
+            "cento: cento",
+            "mille: mille",
+            "duecentocinquanta euro — duecentocinquanta euro"
+          ]
+        }
+      ]
+    }
+  ]
+}

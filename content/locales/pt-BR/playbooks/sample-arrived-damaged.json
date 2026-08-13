@@ -1,0 +1,80 @@
+{
+  "id": "playbook.sample-arrived-damaged",
+  "slug": "sample-arrived-damaged",
+  "type": "playbook",
+  "category": "products-and-quality",
+  "topic": "Estágios de amostra",
+  "eyebrow": "Manual operacional",
+  "title": "Uma amostra chegou danificada",
+  "summary": "Uma resposta que prioriza a preservação para documentar danos, separando problemas de trânsito de problemas de mão de obra e protegendo a trilha de revisão.",
+  "keywords": [
+    "amostra",
+    "protótipo",
+    "danificado",
+    "qualidade",
+    "envio",
+    "evidência",
+    "fotografia"
+  ],
+  "owner": "Product Development",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Manual de demonstração para validação de interface. Não é a política final do MOSCATELLI e deve ser revisada antes do uso operacional.",
+  "scenario": "Use-o quando uma amostra física chegar com danos visíveis, deformação, contaminação, falta de componentes ou falha na embalagem que possam distorcer a análise do produto.",
+  "immediateAction": [
+    "Não repare, limpe ou altere a amostra antes de documentar a condição recebida.",
+    "Fotografe a embalagem externa, os rótulos, a proteção interna e os danos em uma sequência consistente.",
+    "Separe o que parece ser dano de trânsito de qualquer possível problema de construção ou qualidade; não assuma a causa."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsável do produto",
+      "when": "Imediatamente após a condição recebida ser documentada."
+    },
+    {
+      "role": "Contato do fornecedor",
+      "when": "Depois que as evidências estiverem completas e o problema puder ser descrito de forma neutra."
+    }
+  ],
+  "whatToRecord": [
+    "Data de entrega e referência da transportadora",
+    "Condição da embalagem",
+    "Localização do conjunto de fotos",
+    "Danos observados sem especulação",
+    "Se a revisão pode continuar ou precisa de substituição"
+  ],
+  "escalationConditions": [
+    "O dano impede ajuste significativo, construção ou revisão de material.",
+    "Há danos repetidos em mais de uma remessa ou amostra.",
+    "Uma disputa de qualidade começa ou o momento da substituição afeta um marco de lançamento."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Checklist",
+      "label": "Sequência de evidências de danos",
+      "text": "Embalagem externa → etiqueta de envio → proteção interna → amostra completa → danos em close-up → escala/imagem de referência."
+    },
+    {
+      "kind": "Reference",
+      "label": "Lista de verificação de aprovação de fotografia",
+      "route": "#/article/photography-approval-checklist"
+    }
+  ],
+  "relatedProcedures": [
+    "supplier-sample-review-procedure",
+    "photography-approval-checklist"
+  ]
+}

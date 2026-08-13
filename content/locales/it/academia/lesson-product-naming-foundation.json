@@ -1,0 +1,64 @@
+{
+  "id": "lesson.product-naming-foundation",
+  "slug": "product-naming-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "brand-foundations",
+  "moduleId": "voice",
+  "order": 2,
+  "category": "products-and-quality",
+  "topic": "Denominazione del prodotto",
+  "eyebrow": "Lezione accademica",
+  "title": "Denominazione del prodotto · Fondotinta",
+  "summary": "Comprendere la disciplina di denominazione iniziale utilizzata per mantenere il linguaggio del prodotto coerente e rivedibile.",
+  "keywords": [
+    "prodotto",
+    "denominazione",
+    "nome",
+    "collezione",
+    "standard"
+  ],
+  "estimatedMinutes": 18,
+  "readingMinutes": 18,
+  "requirement": "necessario",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "La denominazione è un sistema",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "I nomi dei prodotti dovrebbero funzionare come una famiglia piuttosto che come esercizi creativi isolati. Un nome deve essere sufficientemente distintivo per identificare l'oggetto pur rimanendo compatibile con il vocabolario domestico più ampio."
+        }
+      ]
+    },
+    {
+      "heading": "Prima dell'approvazione",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Confronta il nome con i nomi di prodotti e progetti esistenti.",
+            "Conferma l'ortografia, gli accenti e la pronuncia prevista.",
+            "Registrare il modulo approvato una volta presa la decisione."
+          ]
+        }
+      ]
+    }
+  ]
+}

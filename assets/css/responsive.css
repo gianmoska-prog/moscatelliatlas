@@ -47,6 +47,8 @@
   .atlas-wordmark__house { font-size: 0.94rem; }
   .atlas-wordmark__product { font-size: 0.62rem; }
   .menu-trigger { padding-inline: 0.8rem; }
+  .language-switcher { padding-left: .45rem; }
+  .language-switcher__globe { display: none; }
 
   .home-search-stage h1 { max-width: 10ch; margin-inline: auto; }
   .atlas-search-box__icon { display: none; }

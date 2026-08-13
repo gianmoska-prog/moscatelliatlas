@@ -1,0 +1,98 @@
+{
+  "id": "article.mainhub-access",
+  "slug": "mainhub-access-troubleshooting",
+  "type": "article",
+  "category": "systems",
+  "topic": "MainHub",
+  "eyebrow": "Guia de sistemas",
+  "title": "Solução de problemas de acesso ao MainHub",
+  "summary": "Uma lista de verificação de demonstração de primeira resposta para problemas comuns de acesso antes que um problema técnico seja escalado.",
+  "keywords": [
+    "MainHub",
+    "Conecte-se",
+    "entrar",
+    "acesso",
+    "senha",
+    "solução de problemas"
+  ],
+  "readingMinutes": 5,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Primeiras verificações",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirme a conta correta, a conectividade, o estado do navegador e se o problema está isolado antes de escalar com uma descrição concisa do que foi testado."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "A conta MOSCATELLI correta está sendo usada",
+            "A conexão de rede está funcionando normalmente",
+            "O navegador foi atualizado ou reiniciado",
+            "Problema reproduzido em um contexto de navegador limpo, quando apropriado",
+            "A mensagem de erro ou comportamento exato foi capturado"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Não enfraqueça a segurança",
+      "blocks": [
+        {
+          "type": "callout",
+          "label": "Importante",
+          "text": "A solução de problemas nunca deve envolver o compartilhamento de senhas, o desvio de controles de acesso ou a exposição de segredos de produção. O acesso deverá ser restaurado através do caminho de autenticação aprovado."
+        },
+        {
+          "type": "paragraph",
+          "text": "Se o problema parecer relacionado à permissão, registre qual área o usuário esperava acessar, em vez de tentar revelar conteúdo restrito por meio de outra conta."
+        }
+      ]
+    },
+    {
+      "heading": "Nota de escalonamento",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Descreva a falha",
+              "text": "Indique o caminho ou ação, o resultado esperado e o resultado real."
+            },
+            {
+              "title": "Anexe evidências úteis",
+              "text": "Inclua o texto exato do erro e uma captura de tela somente quando não expor dados confidenciais."
+            },
+            {
+              "title": "Listar verificações já realizadas",
+              "text": "Evite que a próxima pessoa repita a solução de problemas básicos desnecessariamente."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "internal-communication-standards",
+    "file-organisation-and-naming"
+  ],
+  "mainHubLinks": []
+}

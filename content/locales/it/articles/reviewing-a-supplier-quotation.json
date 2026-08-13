@@ -1,0 +1,101 @@
+{
+  "id": "article.quotation-review",
+  "slug": "reviewing-a-supplier-quotation",
+  "type": "article",
+  "category": "suppliers",
+  "topic": "Preventivi",
+  "eyebrow": "Procedura del fornitore",
+  "title": "Revisione del preventivo di un fornitore",
+  "summary": "Cosa verificare prima che un preventivo venga considerato comparabile, completo e pronto per una decisione commerciale.",
+  "keywords": [
+    "fornitore",
+    "venditore",
+    "preventivo",
+    "citazione",
+    "costo",
+    "MOQ"
+  ],
+  "readingMinutes": 7,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Operazioni",
+    "Fondatore"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Ingressi comparabili",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Conferma materiale, dimensioni, quantità, valuta, tasse, ipotesi di spedizione, costi del campione, tempi di consegna e termini di pagamento prima di confrontare i preventivi."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Il materiale e le specifiche corrispondono al brief",
+            "Quantità e MOQ sono espliciti",
+            "La valuta e la base fiscale sono chiare",
+            "I costi di campionamento e attrezzature sono separati ove rilevante",
+            "Vengono indicati il ​​trasporto, gli Incoterms o le ipotesi di consegna",
+            "Il lead time inizia da un evento definito",
+            "Il programma di pagamento è compreso"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Normalizzare prima di confrontare",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Due prezzi unitari principali potrebbero non essere comparabili se si escludono attrezzature, finitura, imballaggio o trasporto. Converti le citazioni nella stessa cornice commerciale prima di trarre una conclusione."
+        },
+        {
+          "type": "callout",
+          "label": "Cautela commerciale",
+          "text": "Il prezzo unitario più basso non corrisponde necessariamente al costo totale più basso o al rischio operativo più basso."
+        }
+      ]
+    },
+    {
+      "heading": "Domande al fornitore",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Consolidare le lacune",
+              "text": "Raccogli i punti mancanti o ambigui in un'unica richiesta chiara."
+            },
+            {
+              "title": "Fai riferimento alla citazione esatta",
+              "text": "Utilizza la data o l'identificatore della citazione in modo che entrambe le parti stiano discutendo dello stesso documento."
+            },
+            {
+              "title": "Conservare le revisioni",
+              "text": "Mantenere la quotazione rivista anziché sostituire silenziosamente la cronologia commerciale precedente."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    "supplier-sample-review-procedure",
+    "recording-a-training-expense"
+  ],
+  "mainHubLinks": []
+}

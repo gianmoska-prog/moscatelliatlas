@@ -1,0 +1,109 @@
+{
+  "id": "article.welcome-atlas",
+  "slug": "welcome-to-moscatelli-atlas",
+  "type": "article",
+  "category": "the-house",
+  "topic": "Terminologia interna",
+  "eyebrow": "Orientamento",
+  "title": "Benvenuti a MOSCATELLI Atlas",
+  "summary": "A cosa serve Atlas, quali contenuti vi appartengono e come distinguere la conoscenza istituzionale dal lavoro operativo corrente.",
+  "keywords": [
+    "Atlas",
+    "conoscenza",
+    "standard",
+    "orientamento",
+    "MainHub"
+  ],
+  "readingMinutes": 4,
+  "owner": "Operations",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-11-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Atlas e MainHub",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Atlas è il livello di riferimento: spiega standard, procedure e conoscenze istituzionali. MainHub rimane il luogo per il lavoro operativo corrente, i progetti attuali e i registri."
+        },
+        {
+          "type": "callout",
+          "label": "Distinzione lavorativa",
+          "text": "Se le informazioni dovessero essere ancora utili al termine dell'attività corrente, probabilmente apparterranno ad Atlas. Se rappresenta lavoro in corso, responsabilità o un record operativo corrente, appartiene a MainHub."
+        }
+      ]
+    },
+    {
+      "heading": "Ciò che appartiene qui",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "L'Atlante dovrebbe contenere una guida duratura su cui un altro membro del team possa fare affidamento senza ricostruire il contesto da messaggi, riunioni o ricordi."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Standard che definiscono una soglia di qualità attesa",
+            "Procedure che dovrebbero essere ripetute con costanza",
+            "Materiale di riferimento che spiega la terminologia o le decisioni di MOSCATELLI",
+            "Materiale didattico che supporta l'onboarding e lo sviluppo del ruolo"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Come utilizzare un articolo",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Conferma lo stato",
+              "text": "Controlla se l'articolo è attuale, in fase di revisione, sostituito o archiviato."
+            },
+            {
+              "title": "Leggi il contesto normativo",
+              "text": "Utilizza le date del responsabile, dell'approvatore e della revisione per capire chi mantiene il riferimento."
+            },
+            {
+              "title": "Segui il materiale correlato",
+              "text": "Passare a una procedura collegata o a una destinazione MainHub quando i punti di riferimento per lavorare dal vivo."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Il contenuto dimostrativo in questa anteprima è esplicitamente etichettato e non deve essere considerato come una politica aziendale finale."
+        }
+      ]
+    },
+    {
+      "heading": "Memoria istituzionale",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Lo scopo a lungo termine di Atlas è ridurre la dipendenza dalla memoria individuale. Un sistema di conoscenza utile rende l’azienda più facile da gestire, insegnare e migliorare senza rendere il lavoro burocratico."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "working-with-standards-at-moscatelli",
+    "how-moscatelli-records-decisions"
+  ],
+  "mainHubLinks": []
+}

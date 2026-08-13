@@ -1,0 +1,67 @@
+{
+  "id": "lesson.italian-numbers-dates",
+  "slug": "italian-numbers-dates",
+  "type": "academia-lesson",
+  "courseSlug": "italian-foundation",
+  "moduleId": "coordination",
+  "order": 3,
+  "category": "people",
+  "topic": "Desenvolvimento",
+  "eyebrow": "Lição acadêmica",
+  "title": "Números e data",
+  "summary": "Reconhecer e produzir os formulários de número e data mais úteis para preços, quantidades e compromissos.",
+  "keywords": [
+    "italiano",
+    "números",
+    "datas",
+    "quantidades",
+    "preços"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "Padrão de data",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "O italiano geralmente declara o dia anterior ao mês: 13 de agosto de 2026. Para o primeiro dia do mês, primo é comum: il primo settembre."
+        }
+      ]
+    },
+    {
+      "heading": "Conjunto de prática",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "13 de agosto - 13 de agosto",
+            "24 de abril – 24 de abril",
+            "trenta – trinta",
+            "cento – cem",
+            "mil – mil",
+            "duecentocinquanta euro — duzentos e cinquenta euros"
+          ]
+        }
+      ]
+    }
+  ]
+}

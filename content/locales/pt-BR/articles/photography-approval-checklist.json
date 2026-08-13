@@ -1,0 +1,100 @@
+{
+  "id": "article.photography-approval",
+  "slug": "photography-approval-checklist",
+  "type": "article",
+  "category": "brand",
+  "topic": "Fotografia",
+  "eyebrow": "Lista de verificação da marca",
+  "title": "Lista de verificação de aprovação de fotografia",
+  "summary": "Os pontos visuais e técnicos a serem revisados ​​antes que uma imagem seja tratada como material MOSCATELLI aprovado.",
+  "keywords": [
+    "fotografia",
+    "imagem",
+    "aprovação",
+    "resolução",
+    "marca"
+  ],
+  "readingMinutes": 6,
+  "owner": "Creative Direction",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Criativo",
+    "Marketing",
+    "Operações"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de demonstração para desenvolvimento de interface Atlas; não é uma política MOSCATELLI final.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Antes da aprovação",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirme o assunto, o corte, a resolução, o tratamento de cores, o status dos direitos e o uso pretendido antes de tratar uma imagem como material aprovado."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "A composição suporta a hierarquia e o corte pretendidos",
+            "O foco e os detalhes são suficientes no tamanho de saída pretendido",
+            "A cor e o contraste permanecem naturais para a direção de arte",
+            "Sem artefatos que distraem, marcas acidentais ou retoques não resolvidos",
+            "Os direitos de uso e a fonte são documentados quando necessário"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Revisão técnica",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A adequação técnica depende da colocação pretendida. Um recorte social, uma imagem de site em largura total e material impresso podem exigir diferentes dimensões e tratamento de exportação."
+        },
+        {
+          "type": "callout",
+          "label": "Não aprove apenas pela aparência",
+          "text": "Uma visualização visualmente agradável ainda pode ser inadequada se o arquivo de origem for muito pequeno, excessivamente compactado ou faltando as informações de uso necessárias."
+        }
+      ]
+    },
+    {
+      "heading": "Revisão criativa",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "A imagem parece consistente com a linguagem visual MOSCATELLI aprovada.",
+            "A iluminação, os materiais e os tons de pele ou produtos permanecem críveis.",
+            "O enquadramento não depende de efeitos da moda que sobrecarregam o assunto.",
+            "O corte preserva o espaço negativo intencional onde a cópia pode ser necessária."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Registre a decisão",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Quando uma imagem for aprovada, mantenha a fonte aprovada e o contexto de decisão juntos para que as equipes posteriores não precisem determinar novamente qual versão é oficial."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "introduction-to-moscatelli-tone-of-voice",
+    "product-naming-standards"
+  ],
+  "mainHubLinks": []
+}

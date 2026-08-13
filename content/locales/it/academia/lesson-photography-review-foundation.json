@@ -1,0 +1,65 @@
+{
+  "id": "lesson.photography-review-foundation",
+  "slug": "photography-review-foundation",
+  "type": "academia-lesson",
+  "courseSlug": "brand-foundations",
+  "moduleId": "image",
+  "order": 3,
+  "category": "brand",
+  "topic": "Fotografia",
+  "eyebrow": "Lezione accademica",
+  "title": "Revisione fotografica · Fondamenti",
+  "summary": "Una prima revisione concisa dell'idoneità dell'immagine prima dell'approvazione dettagliata della creatività.",
+  "keywords": [
+    "fotografia",
+    "immagine",
+    "approvazione",
+    "risoluzione",
+    "marca"
+  ],
+  "estimatedMinutes": 25,
+  "readingMinutes": 25,
+  "requirement": "opzionale",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "Tecnica prima che estetica",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Conferma che l'immagine è tecnicamente utilizzabile prima di dedicare tempo a un giudizio creativo dettagliato. Per prima cosa è necessario conoscere la risoluzione, la flessibilità del ritaglio, l'integrità del colore e la qualità del file sorgente."
+        }
+      ]
+    },
+    {
+      "heading": "Quindi giudica l'immagine come MOSCATELLI",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "L'immagine sembra controllata piuttosto che occupata?",
+            "Il prodotto o l'argomento è rappresentato in modo veritiero?",
+            "La luce sostiene la materia e la forma?",
+            "L’immagine sarebbe rimasta credibile accanto al resto della casa?"
+          ]
+        }
+      ]
+    }
+  ]
+}

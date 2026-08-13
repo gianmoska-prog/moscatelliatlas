@@ -1,0 +1,73 @@
+{
+  "id": "lesson.working-with-standards",
+  "slug": "working-with-standards",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "orientation",
+  "order": 2,
+  "category": "the-house",
+  "topic": "Missione e valori",
+  "eyebrow": "Lezione accademica",
+  "title": "Lavorare con gli standard",
+  "summary": "Impara come trattare gli standard pubblicati come riferimenti controllati piuttosto che come suggerimenti informali.",
+  "keywords": [
+    "standard",
+    "procedura",
+    "versione",
+    "revisione",
+    "governo"
+  ],
+  "estimatedMinutes": 16,
+  "readingMinutes": 16,
+  "requirement": "necessario",
+  "acknowledgementRequired": false,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "Leggi il resoconto, non solo il titolo",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Uno standard dovrebbe essere letto insieme alle informazioni su responsabile, versione, stato e revisione. Questi dettagli stabiliscono se il riferimento è attuale e chi ne è responsabile."
+        }
+      ]
+    },
+    {
+      "heading": "Quando qualcosa non è chiaro",
+      "blocks": [
+        {
+          "type": "procedure",
+          "steps": [
+            {
+              "title": "Controlla la versione attuale",
+              "text": "Conferma che l'elemento sia attuale anziché archiviato o in fase di revisione."
+            },
+            {
+              "title": "Identificare il responsabile",
+              "text": "Chiarimento diretto alla persona o alla funzione responsabile dello standard."
+            },
+            {
+              "title": "Preservare l'incertezza",
+              "text": "Non trasformare un'interpretazione in una nuova regola senza una decisione documentata."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

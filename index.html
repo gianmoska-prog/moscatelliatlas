@@ -33,7 +33,11 @@
   <section class="auth-gate" data-auth-gate data-state="checking" aria-labelledby="atlas-auth-title">
     <div class="auth-gate__stage">
       <div class="auth-gate__brand" aria-label="MOSCATELLI ATLAS">
-        <strong>MOSCATELLI</strong><span>ATLAS</span>
+        <div><strong>MOSCATELLI</strong><span>ATLAS</span></div>
+        <label class="language-switcher language-switcher--auth">
+          <span class="sr-only">Language</span><span class="language-switcher__globe" aria-hidden="true">◎</span>
+          <select data-language-select aria-label="Language"><option value="en">EN</option><option value="it">IT</option><option value="pt-BR">PT</option></select>
+        </label>
       </div>
 
       <div class="auth-gate__center">
@@ -120,6 +124,13 @@
       </a>
 
       <div class="app-header__actions">
+        <label class="language-switcher">
+          <span class="sr-only">Language</span>
+          <span class="language-switcher__globe" aria-hidden="true">◎</span>
+          <select data-language-select aria-label="Language">
+            <option value="en">EN</option><option value="it">IT</option><option value="pt-BR">PT</option>
+          </select>
+        </label>
         <button class="menu-trigger" type="button" data-menu-open aria-haspopup="dialog" aria-controls="atlas-menu">
           <span>Browse</span>
           <span class="menu-trigger__icon" aria-hidden="true"><i></i><i></i></span>

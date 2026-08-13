@@ -1,0 +1,87 @@
+{
+  "id": "article.training-expense",
+  "slug": "recording-a-training-expense",
+  "type": "article",
+  "category": "finance-and-administration",
+  "topic": "Spese di formazione",
+  "eyebrow": "Guida finanziaria",
+  "title": "Registrazione di una spesa di formazione",
+  "summary": "Una procedura amministrativa dimostrativa per preservare la fattura, lo scopo, la valuta e l'approvazione interna delle spese di formazione.",
+  "keywords": [
+    "formazione",
+    "spese",
+    "costo",
+    "fattura",
+    "ricevuta",
+    "finanza"
+  ],
+  "readingMinutes": 6,
+  "owner": "Finance",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Fondatore",
+    "Operazioni"
+  ],
+  "permissions": [
+    "finance-guidance"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti dimostrativi per lo sviluppo dell'interfaccia Atlas; politica MOSCATELLI non definitiva.",
+  "tableOfContents": true,
+  "sections": [
+    {
+      "heading": "Record minimo",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Conservare il fornitore, lo scopo, l'importo, la valuta, la fattura o ricevuta, la data e qualsiasi riferimento di approvazione interna richiesto dall'eventuale processo finanziario."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Nome del fornitore o dell'insegnante",
+            "Scopo della formazione e partecipante",
+            "Importo lordo e valuta",
+            "Fattura, ricevuta o prova equivalente",
+            "Data di pagamento o data di scadenza",
+            "Approvazione interna o contesto di budget, ove applicabile"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Valuta e conversione",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Registra la valuta della transazione originale. Se un report interno richiede successivamente una conversione, l'importo convertito non dovrebbe cancellare il valore di origine o la base utilizzata."
+        },
+        {
+          "type": "callout",
+          "label": "Solo dimostrazione",
+          "text": "L'esatto trattamento contabile e fiscale sarà definito con consulenza professionale e procedure di finanziamento della produzione. Questo articolo attualmente convalida solo la struttura delle informazioni dell'Atlante."
+        }
+      ]
+    },
+    {
+      "heading": "Perché è stata acquistata la formazione",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Una breve nota di scopo aiuta a distinguere lo sviluppo correlato al ruolo da altre spese e rende più significativa la successiva revisione degli investimenti nella formazione."
+        }
+      ]
+    }
+  ],
+  "related": [
+    "reviewing-a-supplier-quotation",
+    "how-moscatelli-records-decisions"
+  ],
+  "mainHubLinks": []
+}

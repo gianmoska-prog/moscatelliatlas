@@ -1,0 +1,66 @@
+{
+  "id": "lesson.recording-decisions",
+  "slug": "recording-decisions",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "working-practice",
+  "order": 3,
+  "category": "operations",
+  "topic": "Registros",
+  "eyebrow": "Lição acadêmica",
+  "title": "Gravando decisões",
+  "summary": "Pratique um registro de decisões conciso que preserve o contexto sem transformar o trabalho rotineiro em burocracia.",
+  "keywords": [
+    "registro",
+    "decisão",
+    "responsável",
+    "contexto",
+    "MainHub"
+  ],
+  "estimatedMinutes": 20,
+  "readingMinutes": 20,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "O que um registro útil preserva",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "O que foi decidido",
+            "Por que a decisão foi necessária",
+            "Quem é o dono da próxima ação",
+            "Qualquer restrição de material ou prazo",
+            "Os documentos de origem ou discussão que o informaram"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Escreva para o próximo leitor",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Um bom registro interno deveria fazer sentido para um colega que não estava presente. Deve ser conciso o suficiente para ser digitalizado e completo o suficiente para evitar a reconstrução da decisão a partir de mensagens dispersas."
+        }
+      ]
+    }
+  ]
+}

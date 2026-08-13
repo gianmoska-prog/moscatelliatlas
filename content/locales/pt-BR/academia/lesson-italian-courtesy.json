@@ -1,0 +1,67 @@
+{
+  "id": "lesson.italian-courtesy",
+  "slug": "italian-courtesy",
+  "type": "academia-lesson",
+  "courseSlug": "italian-foundation",
+  "moduleId": "presence",
+  "order": 2,
+  "category": "people",
+  "topic": "Desenvolvimento",
+  "eyebrow": "Lição acadêmica",
+  "title": "Cortesia profissional",
+  "summary": "Crie um conjunto compacto de formulários educados para solicitações, agradecimentos e esclarecimentos em conversas profissionais comuns.",
+  "keywords": [
+    "italiano",
+    "cortesia",
+    "por favor",
+    "obrigado",
+    "esclarecimento"
+  ],
+  "estimatedMinutes": 20,
+  "readingMinutes": 20,
+  "requirement": "obrigatório",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Alunos internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Conteúdo de aprendizagem de demonstração para validação de interface. Não é uma política, currículo ou ensino de idioma final do MOSCATELLI e deve ser revisado antes do uso operacional.",
+  "sections": [
+    {
+      "heading": "Formulários úteis",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Por favor. - Por favor.",
+            "Grazie mille. - Muito obrigado.",
+            "Você pode amadurecer? — Você poderia repetir? (informal)",
+            "Pode ser maduro? — Você poderia repetir? (formal)",
+            "Non ho capito bene. — Não entendi claramente.",
+            "Tudo bem, grazie. — Está bem, obrigado."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Cadastre-se",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "O italiano muda de acordo com a familiaridade e a formalidade. Esta pré-visualização introduz formas formais e informais, mas um currículo real deve definir o registro preferido para situações MOSCATELLI específicas."
+        }
+      ]
+    }
+  ]
+}

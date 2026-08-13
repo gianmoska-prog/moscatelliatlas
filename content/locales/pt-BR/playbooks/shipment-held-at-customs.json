@@ -1,0 +1,75 @@
+{
+  "id": "playbook.shipment-held-at-customs",
+  "slug": "shipment-held-at-customs",
+  "type": "playbook",
+  "category": "operations",
+  "topic": "Alfândega",
+  "eyebrow": "Manual operacional",
+  "title": "Uma remessa é retida na alfândega",
+  "summary": "Uma resposta baseada em factos para estabelecer o motivo da retenção, reunir documentos e escalar apenas com o registro de envio relevante intacto.",
+  "keywords": [
+    "remessa",
+    "envio",
+    "entrega",
+    "alfândega",
+    "mantido",
+    "operadora",
+    "documentos"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Todos os usuários internos"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Manual de demonstração para validação de interface. Não é a política final do MOSCATELLI e deve ser revisada antes do uso operacional.",
+  "scenario": "Use isto quando uma transportadora, despachante ou autoridade alfandegária indicar que uma remessa está retida, atrasada para documentação ou aguardando esclarecimento.",
+  "immediateAction": [
+    "Confirme a referência da remessa, o status atual da transportadora e o motivo declarado da retenção.",
+    "Reúna a fatura comercial, informações de embalagem e qualquer documentação de remessa já emitida sem criar documentos de substituição casualmente.",
+    "Identifique quem está solicitando informações formalmente e responda por meio do canal transportador/corretor estabelecido."
+  ],
+  "whoToInform": [
+    {
+      "role": "Responsável da remessa/projeto",
+      "when": "Imediatamente após a confirmação da retenção."
+    },
+    {
+      "role": "Fundador",
+      "when": "A suspensão ameaça um marco de lançamento/produção ou requer uma decisão financeira/comercial excepcional."
+    }
+  ],
+  "whatToRecord": [
+    "Referência de rastreamento/envio",
+    "Contato da transportadora/corretora",
+    "Motivo de retenção declarado",
+    "Documentos solicitados/fornecidos",
+    "Prazos, taxas ou impacto de marcos comunicados"
+  ],
+  "escalationConditions": [
+    "O motivo da retenção não é claro ou contraditório.",
+    "Surgem encargos adicionais, risco de devolução/destruição ou questões legais/de conformidade.",
+    "O atraso na entrega afeta um marco crítico de amostra, produção ou lançamento."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Record",
+      "label": "Nota de incidente de remessa",
+      "text": "Mantenha o status da transportadora, a solicitação, os documentos enviados, os carimbos de data e hora e a próxima atualização esperada em um registro contínuo."
+    }
+  ],
+  "relatedProcedures": [
+    "file-organisation-and-naming",
+    "how-moscatelli-records-decisions"
+  ]
+}

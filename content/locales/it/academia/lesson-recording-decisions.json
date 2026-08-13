@@ -1,0 +1,66 @@
+{
+  "id": "lesson.recording-decisions",
+  "slug": "recording-decisions",
+  "type": "academia-lesson",
+  "courseSlug": "moscatelli-onboarding",
+  "moduleId": "working-practice",
+  "order": 3,
+  "category": "operations",
+  "topic": "Record",
+  "eyebrow": "Lezione accademica",
+  "title": "Decisioni di registrazione",
+  "summary": "Pratica un registro decisionale conciso che preservi il contesto senza trasformare il lavoro di routine in burocrazia.",
+  "keywords": [
+    "documentazione",
+    "decisione",
+    "responsabile",
+    "contesto",
+    "MainHub"
+  ],
+  "estimatedMinutes": 20,
+  "readingMinutes": 20,
+  "requirement": "necessario",
+  "acknowledgementRequired": true,
+  "owner": "Academia",
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Discenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "sections": [
+    {
+      "heading": "Che utile documento conserva",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Cosa è stato deciso",
+            "Perché la decisione era necessaria",
+            "Chi possiede l'azione successiva",
+            "Qualsiasi vincolo materiale o scadenza",
+            "I documenti di origine o la discussione che lo ha informato"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Scrivi per il prossimo lettore",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Un buon registro interno dovrebbe avere senso per un collega che non era presente. Dovrebbe essere sufficientemente conciso da poter essere scansionato e sufficientemente completo per evitare di ricostruire la decisione a partire da messaggi sparsi."
+        }
+      ]
+    }
+  ]
+}

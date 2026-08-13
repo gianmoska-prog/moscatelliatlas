@@ -1,0 +1,74 @@
+{
+  "id": "playbook.mainhub-access-failure",
+  "slug": "mainhub-access-failure",
+  "type": "playbook",
+  "category": "systems",
+  "topic": "MainHub",
+  "eyebrow": "Manuale operativo",
+  "title": "Un membro del team non può accedere a MainHub",
+  "summary": "Un breve percorso diagnostico per distinguere i problemi di account, sessione e autorizzazione prima di inoltrare un problema di sistema.",
+  "keywords": [
+    "MainHub",
+    "login",
+    "registrazione",
+    "accesso",
+    "account",
+    "permesso",
+    "Risoluzione dei problemi"
+  ],
+  "owner": "Operations",
+  "readingMinutes": 4,
+  "approver": "Founder",
+  "version": "0.1-demo",
+  "publishedDate": "2026-08-13",
+  "lastReviewed": "2026-08-13",
+  "nextReview": "2026-10-13",
+  "languageStatus": "English demonstration",
+  "status": "current",
+  "audience": [
+    "Tutti gli utenti interni"
+  ],
+  "permissions": [
+    "internal"
+  ],
+  "demo": true,
+  "contentNotice": "Playbook dimostrativo per la convalida dell'interfaccia. Non è la politica MOSCATELLI definitiva e deve essere rivista prima dell'uso operativo.",
+  "scenario": "Utilizzalo quando un utente interno non può accedere a MainHub, può accedere ma non può raggiungere un'area prevista o vede uno stato di accesso diverso dal suo ruolo.",
+  "immediateAction": [
+    "Conferma se l'errore è legato all'accesso, alla sessione, al dispositivo/browser o all'autorizzazione.",
+    "Chiedi all'utente di acquisire l'esatto errore/stato visibile senza condividere password o codici di autenticazione.",
+    "Controlla se il problema si verifica in una sessione pulita o in un altro browser supportato prima di trattarlo come una modifica delle autorizzazioni."
+  ],
+  "whoToInform": [
+    {
+      "role": "Operazioni/responsabile del sistema",
+      "when": "Dopo che lo stato di base è stato identificato."
+    },
+    {
+      "role": "Fondatore",
+      "when": "È effettivamente necessario un cambiamento di ruolo/autorizzazione oppure è coinvolto un accesso sensibile."
+    }
+  ],
+  "whatToRecord": [
+    "Identità utente/e-mail dell'account",
+    "Dispositivo/browser e ora approssimativa",
+    "Percorso o funzione esatta tentata",
+    "Testo dell'errore visibile o posizione dello screenshot",
+    "Se l'accesso stesso ha esito positivo"
+  ],
+  "escalationConditions": [
+    "Sono interessati più utenti.",
+    "Sembra che l'utente disponga dell'accesso che non dovrebbe avere.",
+    "Una mappatura di ruolo/autorizzazione richiesta manca o è modificata in modo imprevisto."
+  ],
+  "templatesResources": [
+    {
+      "kind": "Reference",
+      "label": "Risoluzione dei problemi di accesso a MainHub",
+      "route": "#/article/mainhub-access-troubleshooting"
+    }
+  ],
+  "relatedProcedures": [
+    "mainhub-access-troubleshooting"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "demonstration",
+  "notice": "Contenuti didattici dimostrativi per la convalida dell'interfaccia. Non costituisce la politica, il curriculum o l'insegnamento della lingua MOSCATELLI finale e deve essere rivisto prima dell'uso operativo.",
+  "courses": [
+    {
+      "slug": "moscatelli-onboarding",
+      "title": "MOSCATELLI onboarding",
+      "area": "Onboarding"
+    },
+    {
+      "slug": "brand-foundations",
+      "title": "Fondamenti del marchio",
+      "area": "Educazione al marchio"
+    },
+    {
+      "slug": "supplier-procedures",
+      "title": "Procedure per i fornitori",
+      "area": "Procedure per i fornitori"
+    },
+    {
+      "slug": "italian-foundation",
+      "title": "Italiano · Fondamenti",
+      "area": "Lezioni di italiano"
+    }
+  ]
+}
