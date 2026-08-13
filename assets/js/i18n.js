@@ -1,5 +1,6 @@
 const STORAGE_KEY = 'moscatelli.atlas.locale.v1';
 export const SUPPORTED_LOCALES = Object.freeze(['en', 'it', 'pt-BR']);
+export const MAINHUB_LOCALES = Object.freeze(['en', 'pt-BR']);
 const labels = Object.freeze({ en: 'English', it: 'Italiano', 'pt-BR': 'Português (Brasil)' });
 
 const it = {
@@ -39,7 +40,28 @@ function savedLocale() {
   return 'en';
 }
 
-let locale = savedLocale();
+export function linkedLocale(search = '') {
+  try {
+    const value = new URLSearchParams(search).get('lang');
+    return MAINHUB_LOCALES.includes(value) ? value : null;
+  } catch { return null; }
+}
+
+function initialLocale() {
+  const linked = linkedLocale(globalThis.location?.search || '');
+  if (!linked) return savedLocale();
+  try { localStorage.setItem(STORAGE_KEY, linked); } catch {}
+  return linked;
+}
+
+export function localeURL(next, href) {
+  const url = new URL(href);
+  if (MAINHUB_LOCALES.includes(next)) url.searchParams.set('lang', next);
+  else url.searchParams.delete('lang');
+  return url.toString();
+}
+
+let locale = initialLocale();
 export function getLocale() { return locale; }
 export function getLocaleLabel(value = locale) { return labels[value] || labels.en; }
 export function t(value) {
@@ -78,7 +100,7 @@ export function translateDOM(root = document) {
 export function setLocale(next) {
   if (!SUPPORTED_LOCALES.includes(next) || next === locale) return;
   try { localStorage.setItem(STORAGE_KEY, next); } catch {}
-  window.location.reload();
+  window.location.replace(localeURL(next, window.location.href));
 }
 
 export function initI18n() {
