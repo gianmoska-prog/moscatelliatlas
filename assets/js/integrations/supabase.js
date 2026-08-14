@@ -26,7 +26,7 @@ export const supabaseAdapter = Object.freeze({
   ...supabaseDescriptor,
   async getProfile() {
     const { data: auth } = await client().auth.getUser();
-    return rows(client().from('profiles').select('id,email,display_name,role,division,is_active').eq('id',auth.user.id).single());
+    return rows(client().from('profiles').select('id,email,display_name,role,division,grammatical_gender,is_active').eq('id',auth.user.id).single());
   },
   listCategories: () => rows(client().from('atlas_categories').select('*').order('sort_order')),
   listArticles: ({ category = null } = {}) => rows((category ? client().from('atlas_content').select('*').eq('content_type','article').eq('category_slug',category) : client().from('atlas_content').select('*').eq('content_type','article'))),

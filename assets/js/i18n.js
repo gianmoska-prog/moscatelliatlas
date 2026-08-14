@@ -41,7 +41,9 @@ Object.assign(it, {
   'Confirming secure access':'Verifica dell’accesso sicuro',
   'Private Atlas':'Atlas riservato',
   'Welcome back':'È bello rivederti',
-  'Welcome back, {name}':'È bello rivederti, {name}'
+  'Welcome back, {name}':'È bello rivederti, {name}',
+  'Welcome back, {name} (masculine)':'Bentornato, {name}',
+  'Welcome back, {name} (feminine)':'Bentornata, {name}'
 });
 Object.assign(pt, {
   '01 / Private access':'01 / Acesso privado',
@@ -51,7 +53,9 @@ Object.assign(pt, {
   'Confirming secure access':'Confirmando acesso seguro',
   'Private Atlas':'Atlas privado',
   'Welcome back':'Que bom ter você de volta',
-  'Welcome back, {name}':'Que bom ter você de volta, {name}'
+  'Welcome back, {name}':'Que bom ter você de volta, {name}',
+  'Welcome back, {name} (masculine)':'Bem-vindo de volta, {name}',
+  'Welcome back, {name} (feminine)':'Bem-vinda de volta, {name}'
 });
 const dictionaries = Object.freeze({ en: Object.freeze({}), it: Object.freeze(it), 'pt-BR': Object.freeze(pt) });
 

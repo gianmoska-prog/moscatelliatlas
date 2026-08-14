@@ -11,13 +11,16 @@ import {
   signOut,
   updatePassword,
   verifyEmailOtp,
-} from './auth-adapter.js';
-import { t } from './i18n.js?v=1.9.0';
-import { setStorageIdentity } from './store.js';
+} from './auth-adapter.js?v=1.10.1';
+import { getLocale, t } from './i18n.js?v=1.10.1';
+import { setStorageIdentity } from './store.js?v=1.10.1';
 
 const DEMO_SESSION_KEY = 'moscatelli.atlas.demo.auth-session.v1';
 const AUTO_AUTH_MINIMUM_MS = 900;
 const EMPTY_SESSION_MINIMUM_MS = 260;
+const AUTH_STAGE_MINIMUM_MS = 420;
+const AUTH_CONTENT_FADE_MS = 230;
+const AUTH_GATE_FADE_MS = 270;
 let currentSession = null;
 let onAuthenticatedCallback = null;
 let providerUnsubscribe = null;
@@ -68,9 +71,14 @@ function showWelcome(user) {
   if (!welcome || !welcomeText || !user) return;
   hideWelcome({ immediate: true });
   const firstName = welcomeFirstName(user);
-  welcomeText.textContent = firstName
-    ? t('Welcome back, {name}').replace('{name}', firstName)
-    : t('Welcome back');
+  const grammaticalGender = ['masculine', 'feminine'].includes(user.grammaticalGender)
+    ? user.grammaticalGender
+    : 'neutral';
+  const genderedKey = `Welcome back, {name} (${grammaticalGender})`;
+  const greeting = firstName && getLocale() !== 'en' && grammaticalGender !== 'neutral'
+    ? t(genderedKey)
+    : (firstName ? t('Welcome back, {name}') : t('Welcome back'));
+  welcomeText.textContent = firstName ? greeting.replace('{name}', firstName) : greeting;
   welcomeRevealTimer = window.setTimeout(() => {
     welcome.setAttribute('aria-hidden', 'false');
     welcome.dataset.visible = 'true';
@@ -162,6 +170,7 @@ async function sessionFromProvider(session) {
       displayName: profile.display_name || profile.email || user.email || 'Atlas user',
       role: profile.role || '',
       division: profile.division || '',
+      grammaticalGender: profile.grammatical_gender || 'neutral',
     }),
     raw: session,
   });
@@ -229,6 +238,8 @@ async function refreshProviderProfile(session) {
 
 async function revealApplication(session) {
   const serial = ++revealSerial;
+  const stageStartedAt = performance.now();
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   currentSession = session;
   setStorageIdentity(session?.user?.id || session?.provider || 'anonymous');
   document.documentElement.dataset.authState = 'checking';
@@ -242,36 +253,33 @@ async function revealApplication(session) {
   await new Promise((resolve) => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
   if (serial !== revealSerial || !currentSession) return;
 
-  // Put the fully prepared application beneath the gate before its opaque
-  // canvas fades. This avoids exposing a blank page between auth and Home.
+  if (!reducedMotion) await waitForMinimum(stageStartedAt, AUTH_STAGE_MINIMUM_MS);
+  if (serial !== revealSerial || !currentSession) return;
+
+  // Prepare the complete application beneath one opaque gate. Atlas first
+  // removes the loading content, then dismisses the gate; the application
+  // itself never fades against the departing authentication layer.
   if (appSurface) {
-    appSurface.dataset.authEntering = 'true';
     appSurface.removeAttribute('inert');
     appSurface.setAttribute('aria-hidden', 'false');
   }
   document.documentElement.dataset.authState = 'authenticated';
 
   if (root) {
-    root.dataset.state = 'success';
+    root.dataset.state = 'departing';
     root.setAttribute('aria-hidden', 'true');
     root.inert = true;
   }
 
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    await new Promise((resolve) => window.setTimeout(resolve, 270));
-  }
+  if (!reducedMotion) await new Promise((resolve) => window.setTimeout(resolve, AUTH_CONTENT_FADE_MS));
+  if (serial !== revealSerial || !currentSession) return;
+
+  if (root) root.dataset.state = 'success';
+  if (!reducedMotion) await new Promise((resolve) => window.setTimeout(resolve, AUTH_GATE_FADE_MS));
   if (serial !== revealSerial || !currentSession) return;
 
   if (root) root.hidden = true;
   showWelcome(session?.user);
-
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    appSurface?.removeAttribute('data-auth-entering');
-  } else {
-    window.setTimeout(() => {
-      if (serial === revealSerial) appSurface?.removeAttribute('data-auth-entering');
-    }, 370);
-  }
 }
 
 function showGate({ message = '' } = {}) {
@@ -286,7 +294,6 @@ function showGate({ message = '' } = {}) {
   document.documentElement.dataset.authState = 'locked';
   document.documentElement.dataset.authMode = ATLAS_CONFIG.demoMode ? 'demo-preview' : 'provider';
   if (appSurface) {
-    appSurface.removeAttribute('data-auth-entering');
     appSurface.setAttribute('inert', '');
     appSurface.setAttribute('aria-hidden', 'true');
   }

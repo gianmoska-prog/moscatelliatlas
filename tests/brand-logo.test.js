@@ -17,9 +17,9 @@ describe('Atlas brand wordmark', () => {
     expect(html).toContain('class="atlas-logo atlas-logo--auth"');
     expect(html).toContain('class="atlas-logo atlas-logo--header"');
     expect(html).toContain('class="atlas-logo atlas-logo--menu"');
-    expect(html.match(/rel="stylesheet" href="[^"]+\?v=1\.9\.0"/g)).toHaveLength(11);
+    expect(html.match(/rel="stylesheet" href="[^"]+\?v=1\.10\.1"/g)).toHaveLength(11);
     expect(serviceWorker).toContain("'./assets/brand/atlas-wordmark.png'");
-    expect(serviceWorker).toContain("atlas-shell-v1.9.0");
+    expect(serviceWorker).toContain("atlas-shell-v1.10.1");
     expect(logo.subarray(0, 8)).toEqual(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]));
     expect(logo.byteLength).toBeGreaterThan(10_000);
   });

@@ -1,20 +1,20 @@
-import { ATLAS_CONFIG } from './config.js';
-import { initPWA } from './pwa.js';
-import { navigate, resolveRoute, startRouter } from './router.js';
-import { readDemoJSON, writeDemoJSON } from './store.js';
-import { getAcademiaCourses, getAcademiaLessonMetadata, getArticleMetadata, getCategories, getCategory, getLibraryItems, getPlaybookItems, getPlaybookMetadata, getUpdates, loadAcademiaCourse, loadAcademiaLesson, loadArticle, loadContentIndex, loadPlaybook, resetContentService, resolveAcademiaPath } from './content-service.js';
-import { getReadingProgress, hydrateReadingProgress, resetReadingProgress, trackReadingProgress } from './reading-progress.js';
-import { getBookmarks, hydrateBookmarks, isBookmarked, resetBookmarks, toggleBookmark } from './bookmarks.js';
-import { getAcknowledgements, hydrateAcknowledgements, resetAcknowledgements, setAcknowledgement } from './acknowledgements.js';
-import { getReadingHistory, recordReadingHistory } from './history.js';
-import { buildLocalSearchIndex, resetSearchIndex, searchAtlas } from './search.js';
-import { cancelRouteMotion, closeDialogWithMotion, commitRouteWithMotion, enhanceRouteReveals, prepareRouteMotion, pulseState } from './motion.js';
-import { getAuthenticationSnapshot, initAuthenticationThreshold, signOutAtlas } from './auth-gate.js?v=1.9.0';
-import { prepareAuthProvider } from './auth-provider.js';
-import { initI18n, t } from './i18n.js?v=1.9.0';
+import { ATLAS_CONFIG } from './config.js?v=1.10.1';
+import { initPWA } from './pwa.js?v=1.10.1';
+import { navigate, resolveRoute, startRouter } from './router.js?v=1.10.1';
+import { readDemoJSON, writeDemoJSON } from './store.js?v=1.10.1';
+import { getAcademiaCourses, getAcademiaLessonMetadata, getArticleMetadata, getCategories, getCategory, getLibraryItems, getPlaybookItems, getPlaybookMetadata, getUpdates, loadAcademiaCourse, loadAcademiaLesson, loadArticle, loadContentIndex, loadPlaybook, resetContentService, resolveAcademiaPath } from './content-service.js?v=1.10.1';
+import { getReadingProgress, hydrateReadingProgress, resetReadingProgress, trackReadingProgress } from './reading-progress.js?v=1.10.1';
+import { getBookmarks, hydrateBookmarks, isBookmarked, resetBookmarks, toggleBookmark } from './bookmarks.js?v=1.10.1';
+import { getAcknowledgements, hydrateAcknowledgements, resetAcknowledgements, setAcknowledgement } from './acknowledgements.js?v=1.10.1';
+import { getReadingHistory, recordReadingHistory } from './history.js?v=1.10.1';
+import { buildLocalSearchIndex, resetSearchIndex, searchAtlas } from './search.js?v=1.10.1';
+import { cancelRouteMotion, closeDialogWithMotion, commitRouteWithMotion, enhanceRouteReveals, prepareRouteMotion, pulseState } from './motion.js?v=1.10.1';
+import { getAuthenticationSnapshot, initAuthenticationThreshold, signOutAtlas } from './auth-gate.js?v=1.10.1';
+import { prepareAuthProvider } from './auth-provider.js?v=1.10.1';
+import { initI18n, t } from './i18n.js?v=1.10.1';
 
 initI18n();
-import { slackAdapter } from './integrations/slack.js';
+import { slackAdapter } from './integrations/slack.js?v=1.10.1';
 
 const outlet = document.querySelector('#app');
 const main = document.querySelector('#main-content');

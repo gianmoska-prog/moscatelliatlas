@@ -33,8 +33,10 @@ describe('transition stability', () => {
   it('reveals the prepared app beneath the departing authentication layer', async () => {
     const auth = await read('assets/js/auth-gate.js');
     expect(auth.indexOf("dataset.authState = 'authenticated'")).toBeLessThan(auth.indexOf('if (root) root.hidden = true'));
-    expect(auth).toContain("appSurface.dataset.authEntering = 'true'");
-    expect(auth).toContain('avoids exposing a blank page');
+    expect(auth).toContain("root.dataset.state = 'departing'");
+    expect(auth).toContain("root.dataset.state = 'success'");
+    expect(auth).not.toContain('dataset.authEntering');
+    expect(auth).toContain('never fades against the departing authentication layer');
   });
 
   it('keeps routine Supabase session events visually silent', async () => {

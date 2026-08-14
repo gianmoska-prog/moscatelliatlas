@@ -1,4 +1,4 @@
-const VERSION = 'atlas-shell-v1.9.0';
+const VERSION = 'atlas-shell-v1.10.1';
 const SHELL_CACHE = `${VERSION}-static`;
 
 const SHELL_ASSETS = [
@@ -94,14 +94,16 @@ async function navigationResponse(request) {
 }
 
 async function shellAssetResponse(request) {
-  const cached = await caches.match(request);
-  if (cached) return cached;
-  const response = await fetch(request);
-  if (response.ok && response.type === 'basic') {
-    const cache = await caches.open(SHELL_CACHE);
-    await cache.put(request, response.clone());
+  try {
+    const response = await fetch(request);
+    if (response.ok && response.type === 'basic') {
+      const cache = await caches.open(SHELL_CACHE);
+      await cache.put(request, response.clone());
+    }
+    return response;
+  } catch {
+    return (await caches.match(request)) || Response.error();
   }
-  return response;
 }
 
 self.addEventListener('fetch', (event) => {

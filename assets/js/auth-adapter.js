@@ -128,7 +128,7 @@ export async function getProfile() {
     const client = requireClient();
     const { data: authData, error: authError } = await client.auth.getUser();
     if (authError || !authData?.user?.id) throw authError || new Error('Authenticated user is unavailable.');
-    const { data, error } = await client.from('profiles').select('id,email,display_name,role,division,is_active').eq('id', authData.user.id).single();
+    const { data, error } = await client.from('profiles').select('id,email,display_name,role,division,grammatical_gender,is_active').eq('id', authData.user.id).single();
     if (error) throw error;
     if (!data?.is_active) throw new AtlasAuthError('AUTH_PROFILE_INACTIVE', 'This Atlas profile is inactive.');
     return data;
