@@ -12,10 +12,12 @@ import {
   updatePassword,
   verifyEmailOtp,
 } from './auth-adapter.js';
-import { t } from './i18n.js';
+import { t } from './i18n.js?v=1.9.0';
 import { setStorageIdentity } from './store.js';
 
 const DEMO_SESSION_KEY = 'moscatelli.atlas.demo.auth-session.v1';
+const AUTO_AUTH_MINIMUM_MS = 900;
+const EMPTY_SESSION_MINIMUM_MS = 260;
 let currentSession = null;
 let onAuthenticatedCallback = null;
 let providerUnsubscribe = null;
@@ -32,7 +34,49 @@ const forms = [...(root?.querySelectorAll('[data-auth-form]') || [])];
 const modeButtons = [...(root?.querySelectorAll('[data-auth-mode]') || [])];
 const demoEntry = root?.querySelector('[data-auth-demo-entry]');
 const appSurface = document.querySelector('[data-auth-app-surface]');
+const welcome = document.querySelector('[data-atlas-welcome]');
+const welcomeText = welcome?.querySelector('[data-atlas-welcome-text]');
 let revealSerial = 0;
+let welcomeRevealTimer = null;
+let welcomeDismissTimer = null;
+
+function waitForMinimum(startedAt, minimumMs) {
+  const elapsed = performance.now() - startedAt;
+  return new Promise((resolve) => window.setTimeout(resolve, Math.max(0, minimumMs - elapsed)));
+}
+
+function welcomeFirstName(user = null) {
+  const rawName = String(user?.displayName || user?.email?.split('@')[0] || '')
+    .trim().replace(/\s+/g, ' ');
+  const firstName = rawName.split(' ')[0].replace(/[._-]+/g, ' ').trim().split(' ')[0] || '';
+  if (!firstName) return '';
+  return `${firstName.charAt(0).toLocaleUpperCase()}${firstName.slice(1)}`.slice(0, 40);
+}
+
+function hideWelcome({ immediate = false } = {}) {
+  window.clearTimeout(welcomeRevealTimer);
+  window.clearTimeout(welcomeDismissTimer);
+  welcomeRevealTimer = null;
+  welcomeDismissTimer = null;
+  if (!welcome) return;
+  welcome.removeAttribute('data-visible');
+  welcome.setAttribute('aria-hidden', 'true');
+  if (immediate) welcome.getBoundingClientRect();
+}
+
+function showWelcome(user) {
+  if (!welcome || !welcomeText || !user) return;
+  hideWelcome({ immediate: true });
+  const firstName = welcomeFirstName(user);
+  welcomeText.textContent = firstName
+    ? t('Welcome back, {name}').replace('{name}', firstName)
+    : t('Welcome back');
+  welcomeRevealTimer = window.setTimeout(() => {
+    welcome.setAttribute('aria-hidden', 'false');
+    welcome.dataset.visible = 'true';
+    welcomeDismissTimer = window.setTimeout(() => hideWelcome(), 2100);
+  }, 140);
+}
 
 function focusableElements(container) {
   if (!container) return [];
@@ -189,6 +233,7 @@ async function revealApplication(session) {
   setStorageIdentity(session?.user?.id || session?.provider || 'anonymous');
   document.documentElement.dataset.authState = 'checking';
   document.documentElement.dataset.authMode = session?.demo ? 'demo' : 'provider';
+  if (root) root.dataset.state = 'checking';
   publishSession();
 
   await onAuthenticatedCallback?.(getAuthenticationSnapshot());
@@ -213,18 +258,19 @@ async function revealApplication(session) {
   }
 
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    await new Promise((resolve) => window.setTimeout(resolve, 170));
+    await new Promise((resolve) => window.setTimeout(resolve, 270));
   }
   if (serial !== revealSerial || !currentSession) return;
 
   if (root) root.hidden = true;
+  showWelcome(session?.user);
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     appSurface?.removeAttribute('data-auth-entering');
   } else {
     window.setTimeout(() => {
       if (serial === revealSerial) appSurface?.removeAttribute('data-auth-entering');
-    }, 230);
+    }, 370);
   }
 }
 
@@ -236,6 +282,7 @@ function showGate({ message = '' } = {}) {
   setStorageIdentity(null);
   providerRevealPromise = null;
   providerRevealUserId = null;
+  hideWelcome();
   document.documentElement.dataset.authState = 'locked';
   document.documentElement.dataset.authMode = ATLAS_CONFIG.demoMode ? 'demo-preview' : 'provider';
   if (appSurface) {
@@ -257,6 +304,12 @@ function showGate({ message = '' } = {}) {
   });
 }
 
+function reportAuthFailure(error, fallback) {
+  const message = error?.message || fallback;
+  if (root?.dataset.state === 'checking') showGate({ message });
+  else setStatus(message, 'error');
+}
+
 async function handlePasswordSubmit(event) {
   event.preventDefault();
   const form = event.currentTarget;
@@ -272,9 +325,8 @@ async function handlePasswordSubmit(event) {
     if (!session) throw new AtlasAuthError('AUTH_SESSION_MISSING', 'The authentication provider did not return an active session.');
     setStatus('Access confirmed.', 'success');
     await openProviderSession(session);
-  } catch (error) {
-    setStatus(error?.message || 'Atlas could not sign in.', 'error');
-  } finally { setBusy(false); }
+  } catch (error) { reportAuthFailure(error, 'Atlas could not sign in.'); }
+  finally { setBusy(false); }
 }
 
 async function handleOtpSubmit(event) {
@@ -299,7 +351,7 @@ async function handleOtpSubmit(event) {
       setStatus('Check your email, then enter the six-digit code or use the secure link.', 'success');
       window.requestAnimationFrame(() => form.elements.token?.focus());
     }
-  } catch (error) { setStatus(error?.message || 'Atlas could not request email access.', 'error'); }
+  } catch (error) { reportAuthFailure(error, 'Atlas could not request email access.'); }
   finally { setBusy(false); }
 }
 
@@ -315,7 +367,7 @@ async function handleRecoverySubmit(event) {
     const session = await getSession();
     setStatus('Password updated. Opening Atlas…', 'success');
     await openProviderSession(session);
-  } catch (error) { setStatus(error?.message || 'Atlas could not update the password.', 'error'); }
+  } catch (error) { reportAuthFailure(error, 'Atlas could not update the password.'); }
   finally { setBusy(false); }
 }
 
@@ -399,10 +451,15 @@ export async function initAuthenticationThreshold({ onAuthenticated } = {}) {
   if (!ATLAS_CONFIG.demoMode && getAuthAdapterStatus().configured) {
     setBusy(true); setStatus('Checking your session…', 'loading');
     try {
+      const sessionCheckStartedAt = performance.now();
       const session = await getSession();
       const isRecovery = new URLSearchParams(window.location.hash.slice(1)).get('type') === 'recovery';
-      if (session && isRecovery) setMode('recovery');
-      else if (session) await openProviderSession(session);
+      await waitForMinimum(sessionCheckStartedAt, session ? AUTO_AUTH_MINIMUM_MS : EMPTY_SESSION_MINIMUM_MS);
+      if (session && isRecovery) {
+        document.documentElement.dataset.authState = 'locked';
+        root.dataset.state = 'ready';
+        setMode('recovery');
+      } else if (session) await openProviderSession(session);
       else showGate();
       providerUnsubscribe = onAuthStateChange(async (event, nextSession) => {
         try {

@@ -19,17 +19,17 @@
   <link rel="icon" href="assets/icons/atlas-temp-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="assets/icons/atlas-temp-192.png">
   <title>MOSCATELLI ATLAS</title>
-  <link rel="stylesheet" href="assets/css/tokens.css?v=1.8.1">
-  <link rel="stylesheet" href="assets/css/reset.css?v=1.8.1">
-  <link rel="stylesheet" href="assets/css/base.css?v=1.8.1">
-  <link rel="stylesheet" href="assets/css/layout.css?v=1.8.1">
-  <link rel="stylesheet" href="assets/css/components.css?v=1.8.1">
-  <link rel="stylesheet" href="assets/css/pages.css?v=1.8.1">
-  <link rel="stylesheet" href="assets/css/motion.css?v=1.8.1">
-  <link rel="stylesheet" href="assets/css/responsive.css?v=1.8.1">
-  <link rel="stylesheet" href="assets/css/accessibility.css?v=1.8.1">
-  <link rel="stylesheet" href="assets/css/auth.css?v=1.8.1">
-  <link rel="stylesheet" href="assets/css/mobile.css?v=1.8.1">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=1.9.0">
+  <link rel="stylesheet" href="assets/css/reset.css?v=1.9.0">
+  <link rel="stylesheet" href="assets/css/base.css?v=1.9.0">
+  <link rel="stylesheet" href="assets/css/layout.css?v=1.9.0">
+  <link rel="stylesheet" href="assets/css/components.css?v=1.9.0">
+  <link rel="stylesheet" href="assets/css/pages.css?v=1.9.0">
+  <link rel="stylesheet" href="assets/css/motion.css?v=1.9.0">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=1.9.0">
+  <link rel="stylesheet" href="assets/css/accessibility.css?v=1.9.0">
+  <link rel="stylesheet" href="assets/css/auth.css?v=1.9.0">
+  <link rel="stylesheet" href="assets/css/mobile.css?v=1.9.0">
 </head>
 <body>
   <section class="auth-gate" data-auth-gate data-state="checking" aria-labelledby="atlas-auth-title">
@@ -43,14 +43,31 @@
       </div>
 
       <div class="auth-gate__center">
-        <div class="auth-panel" data-auth-panel>
-          <header class="auth-panel__intro">
-            <p class="auth-panel__eyebrow">Private institutional reference</p>
-            <h1 id="atlas-auth-title" data-auth-title>Welcome back.</h1>
-            <p class="auth-panel__description" data-auth-description>Sign in to enter MOSCATELLI Atlas.</p>
-          </header>
+        <div class="auth-check" data-auth-check role="status" aria-live="polite" aria-atomic="true">
+          <p class="auth-check__eyebrow">Private institutional reference</p>
+          <h1>Preparing your Atlas</h1>
+          <p class="auth-check__copy">Confirming secure access</p>
+          <div class="auth-check__track" aria-hidden="true"><span></span></div>
+        </div>
 
-          <form class="auth-form" data-auth-form="password" novalidate>
+        <div class="auth-panel" data-auth-panel>
+          <aside class="auth-panel__context">
+            <p class="auth-panel__index">01 / Private access</p>
+            <div>
+              <p class="auth-panel__statement">Knowledge, standards and practice.</p>
+              <p class="auth-panel__context-copy">The institutional reference for considered work and shared standards.</p>
+            </div>
+            <p class="auth-panel__assurance"><span aria-hidden="true"></span> Secure MOSCATELLI workspace</p>
+          </aside>
+
+          <div class="auth-panel__access">
+            <header class="auth-panel__intro">
+              <p class="auth-panel__eyebrow">Private institutional reference</p>
+              <h1 id="atlas-auth-title" data-auth-title>Welcome back.</h1>
+              <p class="auth-panel__description" data-auth-description>Sign in to enter MOSCATELLI Atlas.</p>
+            </header>
+
+            <form class="auth-form" data-auth-form="password" novalidate>
             <div class="auth-field">
               <label for="atlas-auth-email">Email</label>
               <input id="atlas-auth-email" name="email" type="email" inputmode="email" autocomplete="username" autocapitalize="none" spellcheck="false" required>
@@ -64,9 +81,9 @@
               <button class="auth-option" type="button" data-auth-mode="otp" aria-pressed="false">Use email code</button>
               <button class="auth-option" type="button" data-auth-mode="reset" aria-pressed="false">Forgot password?</button>
             </div>
-          </form>
+            </form>
 
-          <form class="auth-form" data-auth-form="otp" novalidate hidden>
+            <form class="auth-form" data-auth-form="otp" novalidate hidden>
             <div class="auth-field">
               <label for="atlas-auth-otp-email">Email</label>
               <input id="atlas-auth-otp-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" required>
@@ -77,9 +94,9 @@
               <input id="atlas-auth-otp-token" name="token" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6">
             </div>
             <div class="auth-options"><button class="auth-option" type="button" data-auth-mode="password" aria-pressed="false">Use password instead</button></div>
-          </form>
+            </form>
 
-          <form class="auth-form" data-auth-form="recovery" novalidate hidden>
+            <form class="auth-form" data-auth-form="recovery" novalidate hidden>
             <div class="auth-field">
               <label for="atlas-auth-new-password">New password</label>
               <input id="atlas-auth-new-password" name="password" type="password" autocomplete="new-password" minlength="12" required>
@@ -89,28 +106,37 @@
               <input id="atlas-auth-confirm-password" name="confirmation" type="password" autocomplete="new-password" minlength="12" required>
             </div>
             <button class="auth-submit" type="submit">Update password</button>
-          </form>
+            </form>
 
-          <form class="auth-form" data-auth-form="reset" novalidate hidden>
+            <form class="auth-form" data-auth-form="reset" novalidate hidden>
             <div class="auth-field">
               <label for="atlas-auth-reset-email">Email</label>
               <input id="atlas-auth-reset-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" required>
             </div>
             <button class="auth-submit" type="submit">Send reset email</button>
             <div class="auth-options"><button class="auth-option" type="button" data-auth-mode="password" aria-pressed="false">Return to sign in</button></div>
-          </form>
+            </form>
 
-          <p class="auth-status" data-auth-status role="status" aria-live="polite" aria-atomic="true" hidden></p>
+            <p class="auth-status" data-auth-status role="status" aria-live="polite" aria-atomic="true" hidden></p>
 
-          <aside class="auth-demo" aria-label="Development preview access" hidden>
-            <span class="auth-demo__label">Development preview</span>
-            <p>This preview uses an isolated demo session. It does not validate credentials and must not be mistaken for production security.</p>
-            <button class="auth-demo__button" type="button" data-auth-demo-entry>Enter Atlas demo</button>
-          </aside>
+            <aside class="auth-demo" aria-label="Development preview access" hidden>
+              <span class="auth-demo__label">Development preview</span>
+              <p>This preview uses an isolated demo session. It does not validate credentials and must not be mistaken for production security.</p>
+              <button class="auth-demo__button" type="button" data-auth-demo-entry>Enter Atlas demo</button>
+            </aside>
+          </div>
         </div>
       </div>
 
       <p class="auth-gate__foot">Protected by MOSCATELLI Supabase authentication and database-level Row Level Security.</p>
+    </div>
+  </section>
+
+  <section class="atlas-welcome" data-atlas-welcome role="status" aria-live="polite" aria-hidden="true">
+    <div class="atlas-welcome__card">
+      <div class="atlas-welcome__rule" aria-hidden="true"></div>
+      <p class="atlas-welcome__kicker">Private Atlas</p>
+      <p class="atlas-welcome__text" data-atlas-welcome-text>Welcome back</p>
     </div>
   </section>
 
@@ -281,6 +307,6 @@
     <div class="noscript-note">Atlas requires JavaScript for application routing. The full knowledge content will remain progressively readable as later content patches are implemented.</div>
   </noscript>
 
-  <script type="module" src="assets/js/app.js"></script>
+  <script type="module" src="assets/js/app.js?v=1.9.0"></script>
 </body>
 </html>

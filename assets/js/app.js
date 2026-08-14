@@ -9,9 +9,9 @@ import { getAcknowledgements, hydrateAcknowledgements, resetAcknowledgements, se
 import { getReadingHistory, recordReadingHistory } from './history.js';
 import { buildLocalSearchIndex, resetSearchIndex, searchAtlas } from './search.js';
 import { cancelRouteMotion, closeDialogWithMotion, commitRouteWithMotion, enhanceRouteReveals, prepareRouteMotion, pulseState } from './motion.js';
-import { getAuthenticationSnapshot, initAuthenticationThreshold, signOutAtlas } from './auth-gate.js';
+import { getAuthenticationSnapshot, initAuthenticationThreshold, signOutAtlas } from './auth-gate.js?v=1.9.0';
 import { prepareAuthProvider } from './auth-provider.js';
-import { initI18n, t } from './i18n.js';
+import { initI18n, t } from './i18n.js?v=1.9.0';
 
 initI18n();
 import { slackAdapter } from './integrations/slack.js';

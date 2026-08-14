@@ -33,6 +33,26 @@ Object.assign(it, { 'reference':'riferimento','references':'riferimenti','result
 Object.assign(pt, { 'reference':'referência','references':'referências','result':'resultado','results':'resultados' });
 Object.assign(it, { 'Mobile Atlas navigation':'Navigazione mobile di Atlas','Filter this view':'Filtra questa vista' });
 Object.assign(pt, { 'Mobile Atlas navigation':'Navegação móvel do Atlas','Filter this view':'Filtrar esta visualização' });
+Object.assign(it, {
+  '01 / Private access':'01 / Accesso riservato',
+  'The institutional reference for considered work and shared standards.':'Il riferimento istituzionale per un lavoro ponderato e standard condivisi.',
+  'Secure MOSCATELLI workspace':'Spazio MOSCATELLI protetto',
+  'Preparing your Atlas':'Preparazione del tuo Atlas',
+  'Confirming secure access':'Verifica dell’accesso sicuro',
+  'Private Atlas':'Atlas riservato',
+  'Welcome back':'È bello rivederti',
+  'Welcome back, {name}':'È bello rivederti, {name}'
+});
+Object.assign(pt, {
+  '01 / Private access':'01 / Acesso privado',
+  'The institutional reference for considered work and shared standards.':'A referência institucional para um trabalho criterioso e padrões compartilhados.',
+  'Secure MOSCATELLI workspace':'Ambiente MOSCATELLI protegido',
+  'Preparing your Atlas':'Preparando seu Atlas',
+  'Confirming secure access':'Confirmando acesso seguro',
+  'Private Atlas':'Atlas privado',
+  'Welcome back':'Que bom ter você de volta',
+  'Welcome back, {name}':'Que bom ter você de volta, {name}'
+});
 const dictionaries = Object.freeze({ en: Object.freeze({}), it: Object.freeze(it), 'pt-BR': Object.freeze(pt) });
 
 function savedLocale() {
