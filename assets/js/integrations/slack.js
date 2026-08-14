@@ -1,4 +1,4 @@
-import { getSupabaseClient } from '../auth-adapter.js';
+import { getSupabaseClient } from '../auth-adapter.js?v=1.10.2';
 
 /**
  * Slack boundary.

@@ -1,4 +1,4 @@
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import { describe, expect, it } from 'vitest';
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), 'utf8');
@@ -50,14 +50,24 @@ describe('authentication arrival experience', () => {
       read('sw.js'),
     ]);
 
-    expect(html).toContain('assets/js/app.js?v=1.10.1');
-    expect(app).toContain("./auth-gate.js?v=1.10.1");
-    expect(app).toContain("./i18n.js?v=1.10.1");
-    expect(auth).toContain("./auth-adapter.js?v=1.10.1");
-    expect(auth).toContain("./i18n.js?v=1.10.1");
-    expect(auth).toContain("./store.js?v=1.10.1");
-    expect(app).toContain("./motion.js?v=1.10.1");
+    expect(html).toContain('assets/js/app.js?v=1.10.2');
+    expect(app).toContain("./auth-gate.js?v=1.10.2");
+    expect(app).toContain("./i18n.js?v=1.10.2");
+    expect(auth).toContain("./auth-adapter.js?v=1.10.2");
+    expect(auth).toContain("./i18n.js?v=1.10.2");
+    expect(auth).toContain("./store.js?v=1.10.2");
+    expect(app).toContain("./motion.js?v=1.10.2");
     expect(serviceWorker.indexOf('const response = await fetch(request)')).toBeLessThan(serviceWorker.indexOf('return (await caches.match(request))'));
+  });
+
+  it('uses one cache-safe URL for every shared JavaScript module', async () => {
+    const root = new URL('../assets/js/', import.meta.url);
+    const paths = (await readdir(root, { recursive: true })).filter((path) => path.endsWith('.js'));
+    const sources = await Promise.all(paths.map((path) => readFile(new URL(path.replaceAll('\\', '/'), root), 'utf8')));
+    const imports = sources.flatMap((source) => [...source.matchAll(/from\s+['"](\.\.?\/[^'"]+\.js(?:\?v=([^'"]+))?)['"]/g)]);
+
+    expect(imports.length).toBeGreaterThan(20);
+    expect(imports.every((entry) => entry[2] === '1.10.2')).toBe(true);
   });
 
   it('sources grammatical gender from the protected profile rather than guessing from names', async () => {

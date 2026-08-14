@@ -1,5 +1,5 @@
-import { readDemoJSON, writeDemoJSON } from './store.js';
-import { getSupabaseClient } from './auth-adapter.js';
+import { readDemoJSON, writeDemoJSON } from './store.js?v=1.10.2';
+import { getSupabaseClient } from './auth-adapter.js?v=1.10.2';
 
 const STORAGE_KEY = 'reading-progress.v1';
 let databaseProgress = null;

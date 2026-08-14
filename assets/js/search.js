@@ -1,6 +1,6 @@
-import { getCategories, getSearchableItems, loadSearchableItem } from './content-service.js';
-import { getSupabaseClient } from './auth-adapter.js';
-import { getLocale } from './i18n.js';
+import { getCategories, getSearchableItems, loadSearchableItem } from './content-service.js?v=1.10.2';
+import { getSupabaseClient } from './auth-adapter.js?v=1.10.2';
+import { getLocale } from './i18n.js?v=1.10.2';
 
 /**
  * Atlas local Search implementation (expanded through Patch 09).

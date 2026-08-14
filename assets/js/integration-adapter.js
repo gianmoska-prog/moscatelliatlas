@@ -5,10 +5,10 @@
  * disabled and intentionally throws a typed error if invoked. No credentials,
  * production URLs or live provider clients are bundled in Atlas.
  */
-import { supabaseAdapter } from './integrations/supabase.js';
-import { mainHubAdapter } from './integrations/mainhub.js';
-import { slackAdapter } from './integrations/slack.js';
-import { gmailAdapter } from './integrations/gmail.js';
+import { supabaseAdapter } from './integrations/supabase.js?v=1.10.2';
+import { mainHubAdapter } from './integrations/mainhub.js?v=1.10.2';
+import { slackAdapter } from './integrations/slack.js?v=1.10.2';
+import { gmailAdapter } from './integrations/gmail.js?v=1.10.2';
 
 const adapters = Object.freeze({
   supabase: supabaseAdapter,

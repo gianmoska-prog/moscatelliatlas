@@ -1,5 +1,5 @@
-import { getSupabaseClient } from './auth-adapter.js';
-import { getLocale } from './i18n.js';
+import { getSupabaseClient } from './auth-adapter.js?v=1.10.2';
+import { getLocale } from './i18n.js?v=1.10.2';
 
 /**
  * Local content service for the Atlas development preview.

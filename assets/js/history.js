@@ -1,4 +1,4 @@
-import { readDemoJSON, writeDemoJSON } from './store.js';
+import { readDemoJSON, writeDemoJSON } from './store.js?v=1.10.2';
 
 const HISTORY_STORAGE_KEY = 'reading-history.v1';
 const MAX_ITEMS = 60;

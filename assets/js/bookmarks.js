@@ -1,5 +1,5 @@
-import { readDemoJSON, writeDemoJSON } from './store.js';
-import { getSupabaseClient } from './auth-adapter.js';
+import { readDemoJSON, writeDemoJSON } from './store.js?v=1.10.2';
+import { getSupabaseClient } from './auth-adapter.js?v=1.10.2';
 
 const BOOKMARK_STORAGE_KEY = 'bookmarks.v1';
 let databaseBookmarks = null;

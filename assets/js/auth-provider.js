@@ -1,6 +1,6 @@
-import { createClient } from '../vendor/supabase.js';
-import { ATLAS_CONFIG } from './config.js';
-import { configureAuthAdapter, getAuthAdapterStatus } from './auth-adapter.js';
+import { createClient } from '../vendor/supabase.js?v=1.10.2';
+import { ATLAS_CONFIG } from './config.js?v=1.10.2';
+import { configureAuthAdapter, getAuthAdapterStatus } from './auth-adapter.js?v=1.10.2';
 
 /**
  * Provider bootstrap boundary.

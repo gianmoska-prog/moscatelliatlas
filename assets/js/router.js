@@ -1,4 +1,4 @@
-import { ATLAS_CONFIG } from './config.js';
+import { ATLAS_CONFIG } from './config.js?v=1.10.2';
 
 const ROUTE_PATTERNS = Object.freeze([
   { name: 'home', pattern: /^\/home\/?$/ },

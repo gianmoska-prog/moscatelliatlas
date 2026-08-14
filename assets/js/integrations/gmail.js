@@ -1,4 +1,4 @@
-import { createAdapterDescriptor, createInactiveMethod } from './errors.js';
+import { createAdapterDescriptor, createInactiveMethod } from './errors.js?v=1.10.2';
 
 /**
  * Gmail boundary.

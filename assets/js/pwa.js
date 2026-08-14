@@ -1,4 +1,4 @@
-import { t } from './i18n.js';
+import { t } from './i18n.js?v=1.10.2';
 
 /**
  * Atlas PWA boundary.

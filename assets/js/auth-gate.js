@@ -1,4 +1,4 @@
-import { ATLAS_CONFIG } from './config.js';
+import { ATLAS_CONFIG } from './config.js?v=1.10.2';
 import {
   AtlasAuthError,
   getAuthAdapterStatus,
@@ -11,9 +11,9 @@ import {
   signOut,
   updatePassword,
   verifyEmailOtp,
-} from './auth-adapter.js?v=1.10.1';
-import { getLocale, t } from './i18n.js?v=1.10.1';
-import { setStorageIdentity } from './store.js?v=1.10.1';
+} from './auth-adapter.js?v=1.10.2';
+import { getLocale, t } from './i18n.js?v=1.10.2';
+import { setStorageIdentity } from './store.js?v=1.10.2';
 
 const DEMO_SESSION_KEY = 'moscatelli.atlas.demo.auth-session.v1';
 const AUTO_AUTH_MINIMUM_MS = 900;

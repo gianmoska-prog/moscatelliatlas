@@ -1,4 +1,4 @@
-import { getSupabaseClient } from '../auth-adapter.js';
+import { getSupabaseClient } from '../auth-adapter.js?v=1.10.2';
 
 const capabilities = Object.freeze([
   'profiles.read','content.read','search.query','bookmarks.readWrite',
