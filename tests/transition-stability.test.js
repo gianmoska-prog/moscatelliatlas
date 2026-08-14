@@ -30,10 +30,11 @@ describe('transition stability', () => {
     expect(css).not.toContain('::view-transition-old(root)');
   });
 
-  it('fully dismisses authentication before revealing the app surface', async () => {
+  it('reveals the prepared app beneath the departing authentication layer', async () => {
     const auth = await read('assets/js/auth-gate.js');
-    expect(auth.indexOf('if (root) root.hidden = true')).toBeLessThan(auth.indexOf("dataset.authState = 'authenticated'"));
+    expect(auth.indexOf("dataset.authState = 'authenticated'")).toBeLessThan(auth.indexOf('if (root) root.hidden = true'));
     expect(auth).toContain("appSurface.dataset.authEntering = 'true'");
+    expect(auth).toContain('avoids exposing a blank page');
   });
 
   it('keeps routine Supabase session events visually silent', async () => {

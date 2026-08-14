@@ -197,6 +197,15 @@ async function revealApplication(session) {
   await new Promise((resolve) => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
   if (serial !== revealSerial || !currentSession) return;
 
+  // Put the fully prepared application beneath the gate before its opaque
+  // canvas fades. This avoids exposing a blank page between auth and Home.
+  if (appSurface) {
+    appSurface.dataset.authEntering = 'true';
+    appSurface.removeAttribute('inert');
+    appSurface.setAttribute('aria-hidden', 'false');
+  }
+  document.documentElement.dataset.authState = 'authenticated';
+
   if (root) {
     root.dataset.state = 'success';
     root.setAttribute('aria-hidden', 'true');
@@ -209,12 +218,6 @@ async function revealApplication(session) {
   if (serial !== revealSerial || !currentSession) return;
 
   if (root) root.hidden = true;
-  if (appSurface) {
-    appSurface.dataset.authEntering = 'true';
-    appSurface.removeAttribute('inert');
-    appSurface.setAttribute('aria-hidden', 'false');
-  }
-  document.documentElement.dataset.authState = 'authenticated';
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     appSurface?.removeAttribute('data-auth-entering');
