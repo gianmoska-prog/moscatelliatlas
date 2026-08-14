@@ -6,9 +6,9 @@
 
 .app-header {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between;
   gap: var(--space-3);
   padding-inline: var(--gutter);
   position: relative;
@@ -16,6 +16,8 @@
 }
 
 .app-header__actions {
+  grid-column: 3;
+  justify-self: end;
   display: flex;
   align-items: center;
   gap: var(--space-3);

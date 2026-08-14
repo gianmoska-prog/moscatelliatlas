@@ -15,6 +15,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/brand/atlas-wordmark.png" as="image" type="image/png">
   <link rel="icon" href="assets/icons/atlas-temp-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="assets/icons/atlas-temp-192.png">
   <title>MOSCATELLI ATLAS</title>
@@ -34,7 +35,7 @@
   <section class="auth-gate" data-auth-gate data-state="checking" aria-labelledby="atlas-auth-title">
     <div class="auth-gate__stage">
       <div class="auth-gate__brand" aria-label="MOSCATELLI ATLAS">
-        <div><strong>MOSCATELLI</strong><span>ATLAS</span></div>
+        <img class="atlas-logo atlas-logo--auth" src="assets/brand/atlas-wordmark.png" alt="MOSCATELLI ATLAS" width="1200" height="213">
         <label class="language-switcher language-switcher--auth">
           <span class="sr-only">Language</span><span class="language-switcher__globe" aria-hidden="true">◎</span>
           <select data-language-select aria-label="Language"><option value="en">EN</option><option value="it">IT</option><option value="pt-BR">PT</option></select>
@@ -120,8 +121,7 @@
   <div class="atlas-shell">
     <header class="app-header" aria-label="MOSCATELLI Atlas">
       <a class="atlas-wordmark" href="#/home" data-route-link aria-label="MOSCATELLI Atlas home">
-        <span class="atlas-wordmark__house">MOSCATELLI</span>
-        <span class="atlas-wordmark__product">ATLAS</span>
+        <img class="atlas-logo atlas-logo--header" src="assets/brand/atlas-wordmark.png" alt="" width="1200" height="213">
       </a>
 
       <div class="app-header__actions">
@@ -191,7 +191,7 @@
     <div class="atlas-menu__panel">
       <header class="atlas-menu__header">
         <div>
-          <p class="menu-eyebrow">MOSCATELLI ATLAS</p>
+          <img class="atlas-logo atlas-logo--menu" src="assets/brand/atlas-wordmark.png" alt="" width="1200" height="213">
           <h2 id="atlas-menu-title">Browse</h2>
         </div>
         <button class="menu-close" type="button" data-menu-close aria-label="Close menu">

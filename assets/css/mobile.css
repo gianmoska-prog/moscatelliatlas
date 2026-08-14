@@ -26,28 +26,13 @@
     backdrop-filter: blur(18px) saturate(1.15);
   }
   .atlas-wordmark {
-    flex: 0 1 auto;
+    grid-column: 2;
+    justify-self: center;
+    width: clamp(7.9rem, 36vw, 10rem);
     min-width: 0;
     min-height: 44px;
-    gap: .5rem;
-    overflow: hidden;
-    white-space: nowrap;
   }
-  .atlas-wordmark__house {
-    flex: 0 1 auto;
-    overflow: hidden;
-    font-size: .84rem;
-    letter-spacing: .075em;
-    text-overflow: clip;
-    white-space: nowrap;
-  }
-  .atlas-wordmark__product {
-    flex: 0 0 auto;
-    font-size: .58rem;
-    letter-spacing: .14em;
-    white-space: nowrap;
-  }
-  .app-header__actions { gap: .35rem; }
+  .app-header__actions { grid-column: 3; justify-self: end; gap: .35rem; }
   .app-header .menu-trigger { display: none; }
   .app-header .language-switcher {
     min-height: 40px;
@@ -413,8 +398,7 @@
 }
 
 @media (max-width: 390px) {
-  .atlas-wordmark__house { font-size: .78rem; letter-spacing: .06em; }
-  .atlas-wordmark__product { font-size: .54rem; letter-spacing: .11em; }
+  .atlas-wordmark { width: clamp(7.25rem, 34vw, 8.4rem); }
   .app-header .language-switcher { padding-left: .42rem; }
   .home-search-stage h1 { font-size: clamp(2.05rem, 10.5vw, 2.55rem); }
   .library-hero h1,
@@ -431,7 +415,7 @@
 }
 
 @media (max-width: 340px) {
-  .atlas-wordmark__product { display: none; }
+  .atlas-wordmark { width: 7rem; }
   .mobile-tabbar { padding-inline: .15rem; }
   .mobile-tabbar a,
   .mobile-tabbar button { font-size: .55rem; }

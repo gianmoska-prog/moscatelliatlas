@@ -43,9 +43,6 @@
 }
 
 @media (max-width: 480px) {
-  .atlas-wordmark { gap: 0.45rem; }
-  .atlas-wordmark__house { font-size: 0.94rem; }
-  .atlas-wordmark__product { font-size: 0.62rem; }
   .menu-trigger { padding-inline: 0.8rem; }
   .language-switcher { padding-left: .45rem; }
   .language-switcher__globe { display: none; }
@@ -394,9 +391,6 @@
    target as well, which also protects high browser-zoom effective viewports. */
 @media (max-width: 340px) {
   .app-header { gap: 0.4rem; }
-  .atlas-wordmark { gap: 0.32rem; }
-  .atlas-wordmark__house { font-size: 0.84rem; letter-spacing: 0.055em; }
-  .atlas-wordmark__product { font-size: 0.6rem; letter-spacing: 0.12em; }
   .menu-trigger { gap: 0.45rem; padding-inline: 0.65rem; }
   .menu-trigger__icon { width: 14px; }
   .home-view,

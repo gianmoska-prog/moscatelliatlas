@@ -13,24 +13,17 @@
 .skip-link:focus { transform: translateY(0.75rem); }
 
 .atlas-wordmark {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.7rem;
+  grid-column: 2;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  width: clamp(12rem, 17vw, 15.5rem);
   min-height: 44px;
   text-decoration: none;
-  line-height: 1;
 }
-.atlas-wordmark__house {
-  font-family: var(--atlas-serif);
-  font-size: 1.05rem;
-  letter-spacing: 0.09em;
-}
-.atlas-wordmark__product {
-  color: var(--atlas-muted);
-  font-size: 0.7rem;
-  font-weight: 650;
-  letter-spacing: 0.2em;
-}
+.atlas-logo { display: block; width: 100%; height: auto; object-fit: contain; }
+.atlas-logo--header { max-height: 2.55rem; }
+.atlas-logo--menu { width: min(11.5rem, 56vw); margin-bottom: .55rem; }
 
 
 .menu-trigger {
@@ -627,8 +620,6 @@
   scrollbar-gutter: stable;
 }
 
-.atlas-wordmark__house,
-.atlas-wordmark__product,
 .menu-disabled small,
 .library-item__title,
 .library-item__summary,
